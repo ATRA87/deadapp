@@ -37,11 +37,12 @@
 
 /* Navbar link */
 .navbar-wagon-link {
-  color: #616668;
+  color: #35477D;
   font-size: 14px;
 }
 .navbar-wagon-link:hover {
-  color: #da552f;
+  color: #35477D;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -74,4 +75,14 @@
   transform: rotate(45deg);
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
+}
+
+
+/* WHEN USER NOT LOGGED IN */
+
+.navbar-user-status {
+  background: transparent !important;
+  box-shadow: none !important;
+  color: white;
+  font-weight: bold;
 }
