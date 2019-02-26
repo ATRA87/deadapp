@@ -1,9 +1,12 @@
 <div class="container">
   <h1><%= @project.name %></h1>
-  <% @project.project_assets.each do |asset| %>
-    <%= asset.web_url %>
-  <% end %>
+  <%= link_to 'add photo/video', new_project_project_asset_url(@project) %>
 
+  <div class="project-assets">
+    <% @project.project_assets.each do |asset| %>
+      <%= cl_image_tag asset.photo, height: 300, width: 400, crop: :fill %>
+    <% end %>
+  </div>
   <div id="reviews-container">
     <h2>Reviews</h2>
     <div class="row">

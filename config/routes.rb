@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root to: 'projects#index'
   resources :projects do
     resources :orders, only: [:new, :create]
-    resources :projet_assets, only: [:new, :create]
+    resources :project_assets, only: [:new, :create]
     resources :teams, only: [:create, :destroy]
   end
   resources :orders, except: [:new, :create] do
