@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row">
+    <% @projects.each do |project| %>
+      <div class="col-xs-12">
+        <%= render 'card', project %>
+      </div>
+    <% end %>
+  </div>
+</div>

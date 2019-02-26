@@ -10,10 +10,74 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_25_175317) do
+ActiveRecord::Schema.define(version: 2019_02_26_163359) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "features", force: :cascade do |t|
+    t.bigint "order_id"
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["order_id"], name: "index_features_on_order_id"
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "project_id"
+    t.string "state", default: "pending"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["project_id"], name: "index_orders_on_project_id"
+    t.index ["user_id"], name: "index_orders_on_user_id"
+  end
+
+  create_table "project_assets", force: :cascade do |t|
+    t.bigint "project_id"
+    t.string "web_url"
+    t.integer "priority"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["project_id"], name: "index_project_assets_on_project_id"
+  end
+
+  create_table "project_details", force: :cascade do |t|
+    t.bigint "project_id"
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["project_id"], name: "index_project_details_on_project_id"
+  end
+
+  create_table "project_members", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "project_id"
+    t.string "state", default: "pending"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["project_id"], name: "index_project_members_on_project_id"
+    t.index ["user_id"], name: "index_project_members_on_user_id"
+  end
+
+  create_table "projects", force: :cascade do |t|
+    t.bigint "user_id"
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_projects_on_user_id"
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "order_id"
+    t.integer "rating"
+    t.text "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["order_id"], name: "index_reviews_on_order_id"
+    t.index ["user_id"], name: "index_reviews_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -27,4 +91,14 @@ ActiveRecord::Schema.define(version: 2019_02_25_175317) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "features", "orders"
+  add_foreign_key "orders", "projects"
+  add_foreign_key "orders", "users"
+  add_foreign_key "project_assets", "projects"
+  add_foreign_key "project_details", "projects"
+  add_foreign_key "project_members", "projects"
+  add_foreign_key "project_members", "users"
+  add_foreign_key "projects", "users"
+  add_foreign_key "reviews", "orders"
+  add_foreign_key "reviews", "users"
 end
