@@ -9,4 +9,10 @@ class User < ApplicationRecord
   has_many :side_projects, through: :project_members, source: :project, dependent: :destroy
   has_many :orders, dependent: :destroy
   has_many :project_orders, through: :projects, source: :orders
+
+  def self.from_omniauth(auth)
+    where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
+      user.email = auth.info.email
+    end
+  end
 end
