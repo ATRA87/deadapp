@@ -1,4 +1,4 @@
 class ProjectDetail < ApplicationRecord
   belongs_to :project
-  validates :description
+  validates :description, presence: true
 end
