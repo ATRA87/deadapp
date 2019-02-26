@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'authorizations/linkedin'
+  get 'authorizations/failure'
   root to: 'project#index'
   resources :projects do
     resources :orders, only: [:new, :create]
