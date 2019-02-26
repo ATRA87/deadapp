@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+
 u1 = User.create!(email: 'mati@gmail.com', password: 123456) #creator of the project deadapp
 u2 = User.create!(email: 'bill@gmail.com', password: 123456) #client hiring projects
 u3 = User.create!(email: 'alfonso@gmail.com', password: 123456) #member of the team of the project
@@ -19,3 +20,4 @@ pm1 = ProjectMember.create!(user: User.find(3), project: Project.find(1)) #user 
 o1 = Order.create!(project: Project.find(1), user: User.find(2), state: 'pending') #user 2 hires project 1
 o2 = Order.create!(project: Project.find(2), user: User.find(2), state: 'pending') #user 2 hires project 2
 
+r = Review.new(order: o1, rating: 5, content: 'nice app')

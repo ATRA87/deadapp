@@ -1,0 +1,17 @@
+<div class="container">
+  <h1><%= @project.name %></h1>
+  <% @project.project_assets.each do |asset| %>
+    <%= asset.web_url %>
+  <% end %>
+
+  <div id="reviews-container">
+    <h2>Reviews</h2>
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <% @project.reviews.each do |review| %>
+          <%= render 'review', review: review %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
