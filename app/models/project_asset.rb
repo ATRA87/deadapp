@@ -1,4 +1,5 @@
 class ProjectAsset < ApplicationRecord
   belongs_to :project
-  validates :web_url, presence: true
+  validates :photo, presence: true
+  mount_uploader :photo, PhotoUploader
 end

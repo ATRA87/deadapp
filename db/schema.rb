@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 2019_02_26_203722) do
     t.integer "priority"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "photo"
     t.index ["project_id"], name: "index_project_assets_on_project_id"
   end
 
