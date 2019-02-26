@@ -2,7 +2,9 @@
   <div class="row">
     <% @projects.each do |project| %>
       <div class="col-xs-12">
-        <%= render 'card', project %>
+        <%= link_to project_path(project) do %>
+          <%= render 'card', project: project %>
+        <% end %>
       </div>
     <% end %>
   </div>

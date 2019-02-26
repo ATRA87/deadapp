@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'project#index'
+  root to: 'projects#index'
   resources :projects do
     resources :orders, only: [:new, :create]
     resources :projet_assets, only: [:new, :create]
