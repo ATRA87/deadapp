@@ -6,4 +6,5 @@ class Project < ApplicationRecord
   has_many :project_details, dependent: :destroy
   has_many :orders, dependent: :destroy
   has_many :reviews, through: :orders
+  validates :name
 end
