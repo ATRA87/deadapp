@@ -1,4 +1,4 @@
 class Feature < ApplicationRecord
   belongs_to :order
-  validates :description
+  validates :description, presence: true
 end
