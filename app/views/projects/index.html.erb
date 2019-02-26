@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <% @projects.each do |project| %>
-      <div class="col-xs-12">
+      <div class="col-xs-12 col-md-6">
         <%= link_to project_path(project) do %>
           <%= render 'card', project: project %>
         <% end %>

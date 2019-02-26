@@ -1,14 +1,55 @@
 .card {
-  height: 100px;
+  height: 400px;
   background-color: white;
   border-radius: 3px;
   box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
-  margin: 5px;
+  margin: 10px 5px;
   display: flex;
+  flex-direction: column;
+  color: black;
+  position: relative;
+}
+
+.card:hover {
+    text-decoration: none;
 }
 
 .card-img {
   background-color: grey;
-  height: 100%;
-  width: 100px;
+  height: 50%;
+  width: 100%;
 }
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.title-rating {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px;
+  h3 {
+    margin: 0;
+  }
+}
+
+.description {
+  padding: 10px 10px;
+}
+
+.owner-info {
+  display: flex;
+  justify-content: left;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  padding: 10px 10px;
+  .avatar {
+    margin-right: 10px;
+  }
+}
+
+
