@@ -20,4 +20,4 @@ pm1 = ProjectMember.create!(user: User.find(3), project: Project.find(1)) #user 
 o1 = Order.create!(project: Project.find(1), user: User.find(2), state: 'pending') #user 2 hires project 1
 o2 = Order.create!(project: Project.find(2), user: User.find(2), state: 'pending') #user 2 hires project 2
 
-r = Review.new(order: o1, rating: 5, content: 'nice app')
+r = Review.new(user: User.all.first, order: o1, rating: 5, content: 'nice app')

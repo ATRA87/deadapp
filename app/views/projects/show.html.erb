@@ -1,42 +1,45 @@
 <div class="container">
-  <div class="project-assets-and-info">
-    <div class="project-title-and-assets">
-      <h1><%= @project.name %></h1>
-      <div class="project-assets">
-        <%= render 'shared/carousel', project: @project %>
-      <% if policy(@project).update? %>
-        <%= link_to 'add photo/video', new_project_project_asset_url(@project) %>
-      <% end %>
+  <div class="project-core-info">
+    <div class="project-assets-and-info">
+      <div class="project-title-and-assets">
+        <h1><%= @project.name %></h1>
+        <div class="project-assets">
+          <%= render 'shared/carousel', project: @project %>
+        <% if policy(@project).update? %>
+          <%= link_to 'add photo/video', new_project_project_asset_url(@project) %>
+        <% end %>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="user-info">
+          <div class="user-img">
+            <%= render 'shared/avatar', user: @project.user %>
+          </div>
+          <p id="user-name"><%= @project.user.email %></p>
+        </div>
+        <div class="ratings">
+          <ul>
+            <li><strong>Editor's review</strong></li>
+            <li>Code quality <%= render 'shared/stars', project: @project %></li>
+            <li><strong>User's review</strong></li>
+            <li>Comunication <%= render 'shared/stars', project: @project %></li>
+            <li>Quality of product <%= render 'shared/stars', project: @project %></li>
+            <li>Delivered on time <%= render 'shared/stars', project: @project %></li>
+          </ul>
+        </div>
+        <div class="social-buttons">
+          share download coment
+        </div>
       </div>
     </div>
-    <div class="project-info">
-      <div class="user-info">
-        :)(avatar)
-        <p id="user-name"><%= @project.user.email %></p>
-      </div>
-      <div class="ratings">
-        <ul>
-          <li><strong>Editor's review</strong></li>
-          <li>Code quality <%= render 'shared/stars', project: @project %></li>
-          <li><strong>User's review</strong></li>
-          <li>Comunication <%= render 'shared/stars', project: @project %></li>
-          <li>Quality of product <%= render 'shared/stars', project: @project %></li>
-          <li>Delivered on time <%= render 'shared/stars', project: @project %></li>
-        </ul>
-      </div>
-      <div class="social-buttons">
-        share download coment
-      </div>
+    <div class="project-description">
+      <%= @project.description %>
     </div>
   </div>
   <div id="reviews-container">
     <h2>Reviews</h2>
-    <div class="row">
-      <div class="col-sm-6 col-sm-offset-3">
-        <% @project.reviews.each do |review| %>
-          <%= render 'review', review: review %>
-        <% end %>
-      </div>
-    </div>
+    <% @project.reviews.each do |review| %>
+      <%= render 'review', review: review %>
+    <% end %>
   </div>
 </div>
