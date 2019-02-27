@@ -1,19 +1,28 @@
-<div class="container-fluid banner" style="background-image: url('https://picsum.photos/1200/600?random'), linear-gradient(-255deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 100%);" >
+<div class="container-fluid banner" style="background-image: url('https://picsum.photos/1200/600?random'), linear-gradient(-115deg, rgba(53,71,125,0.38) 22%, rgba(53,71,125,0.23) 58%);" >
   <div class="row">
     <div class="col-xs-12">
       <%= render 'shared/navbar' %>
     </div>
   </div>
-  <div class="row" style="height: 100%;">
-    <div class="col-xs-12 col-md-6" style="height: 100%;">
-      <h1>Title</h1>
-    </div>
-    <div class="col-xs-12 col-md-6 sign-up-wrapper">
-      <div class="sign-up-card" style="background: rgba(250,250,250,0.6);">
-        <h2>Sign up</h2>
-        <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-        <%= f.error_notification %>
-        <div class="form-inputs">
+  <div class="row">
+    <div class="col-xs-12 col-md-6 sign-up-text">
+      <h2><strong>Developers </strong></h2>
+      <p> Repurpose your apps and bring them back to life </p>
+      <h2><strong>Entrepreneurs</strong></h2>
+      <p>Lower the cost & time to market for your app</p>
+      <div>
+        <div class="col-xs-12 col-md-6 sign-up-text">
+        <h3>Join</h3>
+        <%= image_tag "logo.png" %>
+        </div>
+      </div>
+      </div>
+      <div class="col-xs-12 col-md-6 sign-up-wrapper">
+        <div class="sign-up-card" style="background: rgba(250,250,250,0.6);">
+         <h2>Sign up</h2>
+         <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+         <%= f.error_notification %>
+         <div class="form-inputs">
           <%= f.input :email,
           required: true,
           autofocus: true,

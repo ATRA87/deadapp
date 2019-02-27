@@ -6,22 +6,47 @@
 
 .sign-up-wrapper {
   justify-content: center;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  height: calc(100vh - 70px);
+}
+.sign-up-text{
+  color: rgba(255,255,255,0.8);
+  border-color: bold;
+  width: 450px;
+  height: 300px;
+  margin: 50px 0 0 100px;
+  padding-left: 50px;
+  h3{
+    font-size: 30px;
+    font-family: roboto;
+    color: rgb(50,50,50);
+    font-weight: bold;
+  }
+
+  p{
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 400;
+  }
+
+
 }
 
 .sign-up-card {
-  background: rgba(250,250,250,0.8);
-  padding: 30px 40px;
+  background: rgba(250,250,250,0.6);
+  padding: 40px 40px;
   text-align: center;
-  margin-right: 100px;
-  width: 60%;
+  width: 50%;
+  height: 60%;
+  border-radius: 8px;
+  margin-bottom: 70px;
   h2 {
-    color: #35477D;
+    align-items: flex-end;
+    color: #35477d;
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 }
 
@@ -48,6 +73,11 @@
   border-color: #35477D;
   outline: none;
   box-shadow: 0px 0px 2px #35477D;
+  background-color: #ffffff9c;
+}
+
+#dead-font{
+  font-family: Permanent-Marker;
 }
 
 #linked-in-btn {
