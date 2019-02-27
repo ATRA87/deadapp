@@ -1,0 +1,54 @@
+deadapp:
+  name: App From The Dead
+  user: mati
+  project_detail: deadapp_1
+
+parkingapp:
+  name: ParkingApp
+  user: claire
+  project_detail: parkingapp_1
+
+makent:
+  name: Makent – Airbnb Clone
+  user: tat1
+  project_detail:
+
+makent_cars:
+  name: Makent Cars – Airbnb Clone For Cars
+  user: tat2
+  project_detail:
+
+makent_boats:
+  name: Makent Boats – Boat Rental Script
+  user: tat3
+  project_detail:
+
+gofer:
+  name: Gofer – Uber Clone
+  user: tat1
+  project_detail:
+
+spiffy:
+  name: Spiffy – Fancy Clone
+  user: tat2
+  project_detail:
+
+igniter:
+  name: Igniter – Tinder Clone
+  user: tat3
+  project_detail:
+
+ea_treat:
+  name: eaTreat – Just Eat Clone
+  user: tat1
+  project_detail:
+
+gofer_eats:
+  name: GoferEats – UberEats Clone
+  user: tat2
+  project_detail:
+
+pass_up:
+  name: PassUp – Letgo Clone
+  user: tat3
+  project_detail:

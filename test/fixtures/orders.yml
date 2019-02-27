@@ -1,0 +1,9 @@
+deadapp_order_1:
+  project: deadapp
+  user: bill
+  state: pending
+
+parkingapp_order_1:
+  project: parkingapp
+  user: bill
+  state: pending
