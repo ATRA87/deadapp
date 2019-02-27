@@ -21,10 +21,11 @@ pm1 = ProjectMember.create!(user: User.find(3), project: Project.find(1)) #user 
 o1 = Order.create!(project: Project.find(1), user: User.find(2), state: 'pending') #user 2 hires project 1
 o2 = Order.create!(project: Project.find(2), user: User.find(2), state: 'pending') #user 2 hires project 2
 
-r = Review.create!(order: o1, rating: 5, content: 'nice app')
+r = Review.create!(user: User.first, order: o1, rating: 5, content: 'nice app')
 
 # The above are the main ones -- two apps, four users, two open orders, one team member, two app owners
 # We need several "dead" projects, who will need users, and orders, and ratings…
 
 # Parsley, Sage, Rosemary, and Thyme are the users who have fulfilled orders and left
 # reviews on the two main projects.
+

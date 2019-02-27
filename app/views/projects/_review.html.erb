@@ -1,12 +1,21 @@
 <div class="review">
-  <div class="user-img">
-  </div>
   <div class="user-info">
-    <%= review.user.email %>
+    <div class="user-img">
+      <%= render 'shared/avatar', user: review.user %>
+    </div>
+    <p><%= review.user.email %></p>
   </div>
-  <div class="content">
-    <%= review.rating %>
-    <br>
-    <%= review.content %>
+    <p><%= review.created_at %></p>
+  <div class="content-container">
+    <div class="content">
+      <%= review.content %>
+    </div>
+    <div class="ratings">
+      <ul>
+        <li>Comunication <%= render 'shared/stars', project: review.order.project %></li>
+        <li>Quality of product <%= render 'shared/stars', project: review.order.project %></li>
+        <li>Delivered on time <%= render 'shared/stars', project: review.order.project %></li>
+      </ul>
+    </div>
   </div>
 </div>
