@@ -50,7 +50,7 @@
   }
 }
 
-.sign-up-btn, #linked-in-btn {
+.sign-up-btn{
   background: #35477d;
   color: white;
   width: 100%;
@@ -80,6 +80,16 @@
   font-family: Permanent-Marker;
 }
 
-#linked-in-btn {
+.linked-in-btn {
+  a {
+    font-weight: bold;
+    color: white;
+    &:hover {
+      text-decoration: none;
+      color: white
+    }
+  }
+  background-color: #0077B5;
+  padding: 7px;
 
 }

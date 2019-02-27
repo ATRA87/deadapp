@@ -4,12 +4,9 @@
       <%= render 'shared/navbar' %>
     </div>
   </div>
-  <div class="row" style="height: 100%;">
-    <div class="col-xs-12 col-md-6" style="height: 100%;">
-      <h1>Title</h1>
-    </div>
+  <div class="row">
     <div class="col-xs-12 col-md-6 sign-up-wrapper">
-      <div class="sign-up-card";">
+      <div class="sign-up-card" >
         <h2>Log in</h2>
         <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <%= f.error_notification %>
@@ -21,9 +18,6 @@
           <%= f.input :password,
           required: false,
           input_html: { autocomplete: "current-password", class: 'auth-inputs' }, label: false, placeholder: "Password" %>
-          <%= f.input :password_confirmation,
-          required: true,
-          input_html: { autocomplete: "new-password" }, label: false %>
         </div>
 
         <div class="form-actions">
@@ -31,7 +25,11 @@
         </div>
         <% end %>
         <p id="separator">or</p>
-        <%= link_to "LinkedIn", user_linkedin_omniauth_authorize_path %>
+        <div class="sign-up-btn linked-in-btn">
+          <%= link_to user_linkedin_omniauth_authorize_path do %>
+            <i class="fab fa-linkedin"></i> Linked in
+          <% end %>
+        </div>
       </div>
     </div>
   </div>
