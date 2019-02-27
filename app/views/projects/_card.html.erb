@@ -15,10 +15,8 @@
       description description description description
     </div>
     <div class="owner-info">
-      <div class="avatar">
-        :)
-      </div>
-      <%= project.user.email %>
+      <%= render 'shared/avatar', user: project.user %>
+      <p><%= project.user.email %></p>
     </div>
   </div>
 </div>
