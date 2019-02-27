@@ -4,14 +4,7 @@
   <div class="card-info">
     <div class="title-rating">
       <h3><%= project.name %></h3>
-      <div class="rating">
-        <% project.rating.times do %>
-          <i class="fas fa-star"></i>
-        <% end %>
-        <% (5 - project.rating).times do %>
-          <i class="fas fa-star gray"></i>
-        <% end %>
-      </div>
+        <%= render 'shared/stars', project: project %>
     </div>
     <div class="description">
       description description description description
