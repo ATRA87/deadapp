@@ -12,10 +12,12 @@
         <%= render 'shared/stars', project: project %>
     </div>
     <div class="description">
-      description description description description
+      <p><%= project.description %></p>
     </div>
     <div class="owner-info">
-      <%= render 'shared/avatar', user: project.user %>
+      <div class="avatar-container">
+        <%= render 'shared/avatar', user: project.user %>
+      </div>
       <p><%= project.user.email %></p>
     </div>
   </div>
