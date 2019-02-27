@@ -1,7 +1,8 @@
 <div class="container">
   <h1><%= @project.name %></h1>
-  <%= link_to 'add photo/video', new_project_project_asset_url(@project) %>
-
+  <% if policy(@project).update? %>
+    <%= link_to 'add photo/video', new_project_project_asset_url(@project) %>
+  <% end %>
   <div class="project-assets">
     <% @project.project_assets.each do |asset| %>
       <%= cl_image_tag asset.photo, height: 300, width: 400, crop: :fill %>
