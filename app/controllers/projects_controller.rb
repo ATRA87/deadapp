@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-  before_action :set_project, only: [:show, :edit, :update]
+  before_action :set_project, only: [:show, :edit, :update, :primary_photo]
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
@@ -17,6 +17,10 @@ class ProjectsController < ApplicationController
   def update
     authorize @project
     @project.update(project_params)
+  end
+
+  def project_assets
+    @project.project_assets.order_by(priority: :desc)
   end
 
   private
