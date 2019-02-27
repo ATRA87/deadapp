@@ -21,10 +21,4 @@ class User < ApplicationRecord
       user.profile_picture = auth.info.picture_url
     end
   end
-
-  protected
-
-  # def password_required?
-  #   false
-  # end
 end

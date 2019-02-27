@@ -10,6 +10,6 @@ class AddOauthToUsers < ActiveRecord::Migration[5.2]
     add_column :users, :access_token, :string
     add_column :users, :first_name, :string
     add_column :users, :last_name, :string
-    add_column :users, :profile_picture, :string
+    add_column :users, :profile_picture, :string, null: false, default: "unofficial_hand.jpg"
   end
 end
