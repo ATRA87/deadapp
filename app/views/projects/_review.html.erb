@@ -1,11 +1,6 @@
 <div class="review">
-  <div class="user-info">
-    <div class="user-img">
-      <%= render 'shared/avatar', user: review.user %>
-    </div>
-    <p><%= review.user.email %></p>
-  </div>
-    <p><%= review.created_at %></p>
+  <%= render 'shared/avatar_with_name', user: review.user %>
+  <p><%= review.created_at %></p>
   <div class="content-container">
     <div class="content">
       <%= review.content %>
