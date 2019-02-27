@@ -11,44 +11,55 @@ parkingapp:
 makent:
   name: Makent – Airbnb Clone
   user: tat1
-  project_detail:
+  project_detail: makent_1
+  project_detail: makent_2
+  project_detail: makent_3
+  project_asset: makent_1
 
 makent_cars:
   name: Makent Cars – Airbnb Clone For Cars
   user: tat2
   project_detail:
+  project_asset: m_cars_1
 
 makent_boats:
   name: Makent Boats – Boat Rental Script
   user: tat3
   project_detail:
+  project_asset:
 
 gofer:
   name: Gofer – Uber Clone
   user: tat1
   project_detail:
+  project_asset:
 
 spiffy:
   name: Spiffy – Fancy Clone
   user: tat2
   project_detail:
+  project_asset:
 
 igniter:
   name: Igniter – Tinder Clone
   user: tat3
   project_detail:
+  project_asset:
 
 ea_treat:
   name: eaTreat – Just Eat Clone
   user: tat1
   project_detail:
+  project_asset:
 
 gofer_eats:
   name: GoferEats – UberEats Clone
   user: tat2
   project_detail:
+  project_asset:
 
 pass_up:
   name: PassUp – Letgo Clone
   user: tat3
   project_detail:
+  project_asset:
