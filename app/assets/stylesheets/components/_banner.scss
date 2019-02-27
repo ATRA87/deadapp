@@ -42,8 +42,6 @@
   height: 60%;
   border-radius: 8px;
   margin-bottom: 70px;
-
-
   h2 {
     align-items: flex-end;
     color: #35477d;
@@ -52,7 +50,7 @@
   }
 }
 
-.sign-up-btn {
+.sign-up-btn, #linked-in-btn {
   background: #35477d;
   color: white;
   width: 100%;
@@ -80,4 +78,8 @@
 
 #dead-font{
   font-family: Permanent-Marker;
+}
+
+#linked-in-btn {
+
 }

@@ -29,18 +29,18 @@
           input_html: { autocomplete: "email" }, label: false, placeholder: "appfrom@thedead.com" %>
           <%= f.input :password,
           required: true,
-          input_html: { autocomplete: "new-password", class: 'auth-inputs' }, label: false, placeholder: "Password" %>
+          input_html: { autocomplete: "new-password", class: 'auth-inputs' }, label: false, placeholder: "Enter password" %>
           <%= f.input :password_confirmation,
           required: true,
-          input_html: { autocomplete: "new-password" }, label: false, placeholder: "Re-enter Password" %>
+          input_html: { autocomplete: "new-password" }, label: false, placeholder: "Confirm password" %>
         </div>
 
         <div class="form-actions">
           <%= f.button :submit, "Let's bring it back!", class:"sign-up-btn" %>
         </div>
+        <div id="separator">or</div>
+        <div id="linked-in-btn"><%= link_to "LinkedIn", user_linkedin_omniauth_authorize_path %></div>
         <% end %>
-        <p id="separator">or</p>
-        <%= link_to "LinkedIn", user_linkedin_omniauth_authorize_path %>
       </div>
     </div>
   </div>
