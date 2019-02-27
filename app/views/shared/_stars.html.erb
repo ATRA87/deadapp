@@ -1,0 +1,8 @@
+<div class="rating">
+  <% project.rating.times do %>
+    <i class="fas fa-star"></i>
+  <% end %>
+  <% (5 - project.rating).times do %>
+    <i class="fas fa-star gray"></i>
+  <% end %>
+</div>

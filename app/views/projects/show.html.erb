@@ -1,11 +1,33 @@
 <div class="container">
-  <h1><%= @project.name %></h1>
-  <%= link_to 'add photo/video', new_project_project_asset_url(@project) %>
-
-  <div class="project-assets">
-    <% @project.project_assets.each do |asset| %>
-      <%= cl_image_tag asset.photo, height: 300, width: 400, crop: :fill %>
-    <% end %>
+  <div class="project-assets-and-info">
+    <div class="project-title-and-assets">
+      <h1><%= @project.name %></h1>
+      <div class="project-assets">
+        <%= render 'shared/carousel', project: @project %>
+      <% if policy(@project).update? %>
+        <%= link_to 'add photo/video', new_project_project_asset_url(@project) %>
+      <% end %>
+      </div>
+    </div>
+    <div class="project-info">
+      <div class="user-info">
+        :)(avatar)
+        <p id="user-name"><%= @project.user.email %></p>
+      </div>
+      <div class="ratings">
+        <ul>
+          <li><strong>Editor's review</strong></li>
+          <li>Code quality <%= render 'shared/stars', project: @project %></li>
+          <li><strong>User's review</strong></li>
+          <li>Comunication <%= render 'shared/stars', project: @project %></li>
+          <li>Quality of product <%= render 'shared/stars', project: @project %></li>
+          <li>Delivered on time <%= render 'shared/stars', project: @project %></li>
+        </ul>
+      </div>
+      <div class="social-buttons">
+        share download coment
+      </div>
+    </div>
   </div>
   <div id="reviews-container">
     <h2>Reviews</h2>
