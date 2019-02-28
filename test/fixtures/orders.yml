@@ -3,10 +3,60 @@ deadapp_order_1:
   user: bill
   state: pending
 
+deadapp_order_2:
+  project: deadapp
+  user: parsley
+  state: accepted
+
+deadapp_order_3:
+  project: deadapp
+  user: sage
+  state: accepted
+
+deadapp_order_4:
+  project: deadapp
+  user: rosemary
+  state: accepted
+
+deadapp_order_5:
+  project: deadapp
+  user: thyme
+  state: accepted
+
+deadapp_order_6:
+  project: deadapp
+  user: zombie
+  state: accepted
+
 parkingapp_order_1:
   project: parkingapp
   user: bill
   state: pending
+
+parkingapp_order_2:
+  project: parkingapp
+  user: parsley
+  state: accepted
+
+parkingapp_order_3:
+  project: parkingapp
+  user: sage
+  state: accepted
+
+parkingapp_order_4:
+  project: parkingapp
+  user: rosemary
+  state: accepted
+
+parkingapp_order_5:
+  project: parkingapp
+  user: thyme
+  state: accepted
+
+parkingapp_order_6:
+  project: parkingapp
+  user: zombie
+  state: accepted
 
 makent_order_1:
   project: makent

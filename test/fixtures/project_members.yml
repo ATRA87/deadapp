@@ -2,7 +2,94 @@ deadapp_collaborator_1:
   user: alfonso
   project: deadapp
 
-deadapp_collaborator_2:
+deadapp_collaborator_1:
+  user: sage
+  project: deadapp
+
+deadapp_collaborator_1:
+  user: zombie
+  project: deadapp
+
+parkingapp_collaborator_1:
+  user: parsley
+  project: parkingapp
+
+parkingapp_collaborator_2:
   user: thyme
   project: parkingapp
 
+parkingapp_collaborator_2:
+  user: rosemary
+  project: parkingapp
+
+makent_collaborator_1:
+  user: tat2
+  project: makent
+
+makent_collaborator_2:
+  user: tat3
+  project: makent
+
+gofer_collaborator_1:
+  user: tat2
+  project: gofer
+
+gofer_collaborator_2:
+  user: tat3
+  project: gofer
+
+ea_treat_collaborator_1:
+  user: tat2
+  project: ea_treat
+
+ea_treat_collaborator_2:
+  user: tat3
+  project: ea_treat
+
+makent_cars_collaborator_1:
+  user: tat1
+  project: makent_cars
+
+makent_cars_collaborator_2:
+  user: tat3
+  project: makent_cars
+
+spiffy_collaborator_1:
+  user: tat1
+  project: spiffy
+
+spiffy_collaborator_2:
+  user: tat3
+  project: spiffy
+
+gofer_eats_collaborator_1:
+  user: tat1
+  project: gofer_eats
+
+gofer_eats_collaborator_2:
+  user: tat3
+  project: gofer_eats
+
+makent_boats_collaborator_1:
+  user: tat1
+  project: makent_boats
+
+makent_boats_collaborator_2:
+  user: tat2
+  project: makent_boats
+
+igniter_collaborator_1:
+  user: tat1
+  project: igniter
+
+igniter_collaborator_2:
+  user: tat2
+  project: igniter
+
+pass_up_collaborator_1:
+  user: tat1
+  project: pass_up
+
+pass_up_collaborator_2:
+  user: tat2
+  project: pass_up
