@@ -9,6 +9,9 @@ Rails.application.routes.draw do
     resources :orders, only: [:new, :create]
     resources :project_assets, only: [:new, :create]
     resources :teams, only: [:create, :destroy]
+    collection do
+      get 'mine'
+    end
   end
   resources :orders, except: [:new, :create] do
     resources :reviews, only: [:new, :create]
