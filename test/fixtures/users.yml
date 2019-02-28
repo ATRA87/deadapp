@@ -3,56 +3,63 @@ mati:
   encrypted_password: <%= User.new.send(:password_digest, '123456') %>
   first_name: Mati
   last_name: C
-  profile_picture:
+  profile_picture: Scooby-Doo.jpg
 
 bill:
   email: 'bill@gmail.com'
   encrypted_password: <%= User.new.send(:password_digest, '123456') %>
   first_name: Bill
   last_name: K
-  profile_picture:
+  profile_picture: Shaggy.png
 
 alfonso:
   email: 'alfonso@gmail.com'
   encrypted_password: <%= User.new.send(:password_digest, '123456') %>
   first_name: Alfonso
   last_name: Q
-  profile_picture:
+  profile_picture: Fred.jpg
 
 claire:
   email: 'claire@gmail.com'
   encrypted_password: <%= User.new.send(:password_digest, '123456') %>
   first_name: Claire
   last_name: F
-  profile_picture:
+  profile_picture: Velma.jpg
 
 parsley:
   email: parsley@deadapp.com
   encrypted_password: <%= User.new.send(:password_digest, '123456') %>
   first_name: Parsley
   last_name: Herb
-  profile_picture:
+  profile_picture: Parsley.jpg
 
 sage:
   email: sage@deadapp.com
   encrypted_password: <%= User.new.send(:password_digest, '123456') %>
   first_name: Sage
   last_name: Herb
-  profile_picture:
+  profile_picture: Sage.jpg
 
 rosemary:
   email: rosemary@deadapp.com
   encrypted_password: <%= User.new.send(:password_digest, '123456') %>
   first_name: Rosemary
   last_name: Herb
-  profile_picture:
+  profile_picture: Rosemary.jpg
 
 thyme:
   email: thyme@deadapp.com
   encrypted_password: <%= User.new.send(:password_digest, '123456') %>
   first_name: Thyme
   last_name: Herb
-  profile_picture:
+  profile_picture: Thyme.jpg
+
+zombie:
+  email: zombie@deadapp.com
+  encrypted_password: <%= User.new.send(:password_digest, '123456') %>
+  first_name: Zombie
+  last_name: App
+  profile_picture: unofficial_hand.jpg
 
 tat1:
   email: tat1@trioangletechnologies.com

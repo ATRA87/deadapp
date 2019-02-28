@@ -15,6 +15,14 @@ ActiveRecord::Schema.define(version: 2019_02_26_213439) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "customizations", force: :cascade do |t|
+    t.bigint "project_id"
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["project_id"], name: "index_customizations_on_project_id"
+  end
+
   create_table "features", force: :cascade do |t|
     t.bigint "order_id"
     t.string "description"
@@ -41,14 +49,6 @@ ActiveRecord::Schema.define(version: 2019_02_26_213439) do
     t.datetime "updated_at", null: false
     t.string "photo"
     t.index ["project_id"], name: "index_project_assets_on_project_id"
-  end
-
-  create_table "project_details", force: :cascade do |t|
-    t.bigint "project_id"
-    t.string "description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["project_id"], name: "index_project_details_on_project_id"
   end
 
   create_table "project_members", force: :cascade do |t|
@@ -104,11 +104,11 @@ ActiveRecord::Schema.define(version: 2019_02_26_213439) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "customizations", "projects"
   add_foreign_key "features", "orders"
   add_foreign_key "orders", "projects"
   add_foreign_key "orders", "users"
   add_foreign_key "project_assets", "projects"
-  add_foreign_key "project_details", "projects"
   add_foreign_key "project_members", "projects"
   add_foreign_key "project_members", "users"
   add_foreign_key "projects", "users"
