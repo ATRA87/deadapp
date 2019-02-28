@@ -1,28 +1,6 @@
 <div class="container">
   <div class="form-container">
     <h1>New project</h1>
-    <%= simple_form_for(@project) do |f| %>
-      <%= f.input :name, label: "Project name" %>
-      <%= f.input :description, label: "Project description" %>
-      <%= f.input :category, collection: Project::CATEGORIES %>
-
-      <div class="form-group select optional project_users" id="members">
-        <label class="form-control-label select optional" for="project_user_ids">Team members</label>
-        <input name="project[user_ids][]" type="hidden" value="" />
-        <div class="btn btn-primary" id="add-btn">add</div>
-        <select class="form-control select optional" name="project[user_ids][]" id="project_user_ids">
-          <option value=""></option>
-          <% @users.each do |user| %>
-            <option value="<%= user.id %>"><%= user.email %></option>
-          <% end %>
-        </select>
-      </div>
-
-      <%= simple_form_for([@project, ProjectAsset.new]) do |f2| %>
-          <%= f.input :photo %>
-  <%= f.input :photo_cache, as: :hidden %>
-      <% end %>
-      <%= f.submit %>
-    <% end %>
+    <%= render 'form', project: @project, users: @users %>
   </div>
 </div>

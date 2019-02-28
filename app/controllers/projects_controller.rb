@@ -12,12 +12,19 @@ class ProjectsController < ApplicationController
     @project = Project.new(project_params)
     authorize @project
     @project.user = current_user
-    params[:project][:user_ids].each do |member_id|
+    ids = params[:project][:user_ids].uniq
+    ids.delete(current_user.id.to_s)
+
+    ids.each do |member_id|
       next if member_id == ""
 
       user = User.find(member_id)
       ProjectMember.create(project: @project, user: user) if user
     end
+
+    photo = params[:project][:project_asset][:photo]
+    ProjectAsset.create(project: @project, photo: photo)
+
     return redirect_to @project if @project.save
 
     render :new
@@ -32,12 +39,29 @@ class ProjectsController < ApplicationController
   end
 
   def edit
+    @users = User.all
     authorize @project
   end
 
   def update
     authorize @project
     @project.update(project_params)
+    ids = params[:project][:user_ids].uniq
+    ids.delete(current_user.id.to_s)
+
+    ids.each do |member_id|
+      next if member_id == ""
+
+      user = User.find(member_id)
+      ProjectMember.create(project: @project, user: user) if user
+    end
+
+    photo = params[:project][:project_asset][:photo]
+    ProjectAsset.create(project: @project, photo: photo)
+
+    return redirect_to @project if @project.save
+
+    render :new
   end
 
   def project_assets
