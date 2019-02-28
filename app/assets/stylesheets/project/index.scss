@@ -16,6 +16,9 @@
   font-size: 16px;
   transition: all .1s ease-in-out;
   padding: 10px;
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card:hover {
@@ -28,6 +31,17 @@
   border-radius: 9px;
   height: 50%;
   width: 100%;
+  background-size: 60%;
+}
+
+.card-img-placeholder {
+  background-color: #eaeaea;
+  border-radius: 9px;
+  height: 50%;
+  width: 100%;
+  background-size: 80%;
+  background-position: 50% 58%;
+  background-repeat: no-repeat;
 }
 
 .card-info {
