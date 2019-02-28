@@ -1,95 +1,95 @@
 deadapp_collaborator_1:
-  user: alfonso
-  project: deadapp
+  users: alfonso
+  projects: deadapp
 
 deadapp_collaborator_1:
-  user: sage
-  project: deadapp
+  users: sage
+  projects: deadapp
 
 deadapp_collaborator_1:
-  user: zombie
-  project: deadapp
+  users: zombie
+  projects: deadapp
 
 parkingapp_collaborator_1:
-  user: parsley
-  project: parkingapp
+  users: parsley
+  projects: parkingapp
 
 parkingapp_collaborator_2:
-  user: thyme
-  project: parkingapp
+  users: thyme
+  projects: parkingapp
 
 parkingapp_collaborator_2:
-  user: rosemary
-  project: parkingapp
+  users: rosemary
+  projects: parkingapp
 
 makent_collaborator_1:
-  user: tat2
-  project: makent
+  users: tat2
+  projects: makent
 
 makent_collaborator_2:
-  user: tat3
-  project: makent
+  users: tat3
+  projects: makent
 
 gofer_collaborator_1:
-  user: tat2
-  project: gofer
+  users: tat2
+  projects: gofer
 
 gofer_collaborator_2:
-  user: tat3
-  project: gofer
+  users: tat3
+  projects: gofer
 
 ea_treat_collaborator_1:
-  user: tat2
-  project: ea_treat
+  users: tat2
+  projects: ea_treat
 
 ea_treat_collaborator_2:
-  user: tat3
-  project: ea_treat
+  users: tat3
+  projects: ea_treat
 
 makent_cars_collaborator_1:
-  user: tat1
-  project: makent_cars
+  users: tat1
+  projects: makent_cars
 
 makent_cars_collaborator_2:
-  user: tat3
-  project: makent_cars
+  users: tat3
+  projects: makent_cars
 
 spiffy_collaborator_1:
-  user: tat1
-  project: spiffy
+  users: tat1
+  projects: spiffy
 
 spiffy_collaborator_2:
-  user: tat3
-  project: spiffy
+  users: tat3
+  projects: spiffy
 
 gofer_eats_collaborator_1:
-  user: tat1
-  project: gofer_eats
+  users: tat1
+  projects: gofer_eats
 
 gofer_eats_collaborator_2:
-  user: tat3
-  project: gofer_eats
+  users: tat3
+  projects: gofer_eats
 
 makent_boats_collaborator_1:
-  user: tat1
-  project: makent_boats
+  users: tat1
+  projects: makent_boats
 
 makent_boats_collaborator_2:
-  user: tat2
-  project: makent_boats
+  users: tat2
+  projects: makent_boats
 
 igniter_collaborator_1:
-  user: tat1
-  project: igniter
+  users: tat1
+  projects: igniter
 
 igniter_collaborator_2:
-  user: tat2
-  project: igniter
+  users: tat2
+  projects: igniter
 
 pass_up_collaborator_1:
-  user: tat1
-  project: pass_up
+  users: tat1
+  projects: pass_up
 
 pass_up_collaborator_2:
-  user: tat2
-  project: pass_up
+  users: tat2
+  projects: pass_up

@@ -45,7 +45,7 @@ ActiveRecord::Schema.define(version: 2019_02_26_213439) do
 
   create_table "project_details", force: :cascade do |t|
     t.bigint "project_id"
-    t.string "description"
+    t.string "customize"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["project_id"], name: "index_project_details_on_project_id"
