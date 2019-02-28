@@ -39,7 +39,10 @@
   </div>
 
   <div id="reviews-container">
-    <h2>Reviews</h2>
+    <h2>Reviews <span>(<%= @project.reviews.count %>)</span></h2>
+    <% if @project.reviews.count.zero? %>
+      <p>No reviews yet...</p>
+    <% end %>
     <% @project.reviews.each do |review| %>
       <%= render 'review', review: review %>
     <% end %>

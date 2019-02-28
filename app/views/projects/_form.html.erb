@@ -1,4 +1,4 @@
-<%= simple_form_for(@project) do |f| %>
+<%= simple_form_for(project) do |f| %>
   <%= f.input :name, label: "Project name" %>
   <%= f.input :description, label: "Project description" %>
   <%= f.input :category, collection: Project::CATEGORIES %>
@@ -7,6 +7,11 @@
     <label class="form-control-label select optional" for="project_user_ids">Team members</label>
     <input name="project[user_ids][]" type="hidden" value="" />
     <div class="btn btn-primary" id="add-btn">add</div>
+    <% project.users.each do |selected_user| %>
+      <select class="form-control select optional" name="project[user_ids][]" id="project_user_ids">
+      <option value="<%= selected_user.id %>"><%= selected_user.email %></option>
+    </select>
+    <% end %>
     <select class="form-control select optional" name="project[user_ids][]" id="project_user_ids">
       <option value=""></option>
       <% @users.each do |user| %>
