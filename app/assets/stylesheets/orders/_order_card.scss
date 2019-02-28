@@ -1,0 +1,22 @@
+.order-card {
+  display: flex;
+  height: 5em;
+  box-shadow: 5px 5px 15px 5px #000000;
+  margin: 2em;
+
+  .avatar {
+    width: 15em;
+  }
+
+  .project-name {
+    width: 100%;
+  }
+
+    .project-description {
+    width: 100%;
+  }
+
+      .project-stats {
+    width: 100%;
+  }
+}

@@ -1,12 +1,19 @@
 <div class="container">
+  <h1>All Orders</h1>
+  <h2>My Orders</h2>
   <div id="orders_as_client">
     <% @orders_as_client.each do |order| %>
       <%= render "order_card", order: order %>
     <% end %>
   </div>
+  <% if not @orders_as_owner.empty? %>
 
+<h2>Client Order's</h2>
   <div id="orders_as_owner">
-
+    <% @orders_as_owner.each do |order| %>
+      <%= render "order_card", order: order %>
+    <% end %>
   </div>
+  <% end %>
 </div>
 

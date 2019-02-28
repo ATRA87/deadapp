@@ -1,12 +1,13 @@
 <div class="order-card">
-  <img src="" alt="">
+  <%= image_tag "Hand_&_Logo.svg", class: "avatar" %>
   <div class="project-name">
-    <%= order.name %>
+    <%= order.project.name %>
   </div>
   <div class="project-description">
-    <%= order.project.details %>
+    <%= order.project.description %>
   </div>
   <div class="project-stats">
     <%= order.state %>
+    <p>place holder for price and due date</p>
   </div>
 </div>
