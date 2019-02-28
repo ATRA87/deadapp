@@ -3,7 +3,7 @@
     <div class="card-img" style="background-image: url('<%= project.project_assets.first.photo_url %>'); background-position: center; background-size: cover;">
     </div>
   <% else %>
-    <div class="card-img" style="background-image: url('https://res.cloudinary.com/dy3nldgkf/image/upload/v1551292620/image-placeholder_3x2.svg'); background-position: center;">
+    <div class="card-img-placeholder" style="background-image: url(<%= image_path "hand_with_logo" %>); background-position: center;">
     </div>
   <% end %>
   <div class="card-info">
