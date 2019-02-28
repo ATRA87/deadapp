@@ -48,9 +48,10 @@ class ProjectsController < ApplicationController
     @project.update(project_params)
     ids = params[:project][:user_ids].uniq
     ids.delete(current_user.id.to_s)
-
     ids.each do |member_id|
       next if member_id == ""
+
+      next if @project.users.map { |user| user.id.to_s }.include?(member_id)
 
       user = User.find(member_id)
       ProjectMember.create(project: @project, user: user) if user
