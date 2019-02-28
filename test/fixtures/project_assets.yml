@@ -1,11 +1,11 @@
-# makent_0:
-#   project: makent
-#   photo: https://res.cloudinary.com/diyosnlxf/image/upload/v1550774196/uaypees8fujchsyoff5w.jpg
+makent_0:
+  project: makent
+  photo: https://res.cloudinary.com/diyosnlxf/image/upload/v1550774196/uaypees8fujchsyoff5w.jpg
+  priority: 1 # 1 is default
 
 makent_1:
   project: makent
   photo: https://www.trioangle.com/images/makent-banner.svg
-  priority: 1 # 1 is default
 
 makent_2:
   project: makent
