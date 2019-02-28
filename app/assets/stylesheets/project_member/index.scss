@@ -1,0 +1,23 @@
+.horizontal-card {
+  height: 100px;
+  background-color: white;
+  border-radius: 9px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  margin: 10px 5px;
+  display: flex;
+  color: black;
+  font-family: $body-font;
+  font-weight: lighter;
+  font-size: 16px;
+  transition: all .1s ease-in-out;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-img.small {
+  height: 80px;
+  width: 80px;
+  margin-right: 10px;
+}

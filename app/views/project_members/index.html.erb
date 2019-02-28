@@ -1,0 +1,17 @@
+<div class="container">
+  <% @invitations.each do |inv| %>
+    <div class="horizontal-card">
+        <% if inv.project.project_assets.count != 0 %>
+          <div class="card-img small" style="background-image: url('<%= inv.project.project_assets.first.photo_url %>'); background-position: center; background-size: cover;">
+          </div>
+          <% else %>
+          <div class="card-img small" style="background-image: url('https://res.cloudinary.com/dy3nldgkf/image/upload/v1551292620/image-placeholder_3x2.svg'); background-position: center;">
+          </div>
+        <% end %>
+      <%= link_to inv.project.name, project_path(inv.project) %>
+      <%= link_to 'Reject', project_member_path(inv), method: 'delete', class:"btn btn-danger" %>
+      <%= link_to 'Join', project_member_path(inv), method: 'patch', class:"btn btn-success" %>
+
+    </div>
+  <% end %>
+</div>
