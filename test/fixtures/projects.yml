@@ -17,6 +17,7 @@ makent:
   project_asset: makent_1
   project_asset: makent_2
   project_asset: makent_3
+  project_asset: makent_4
 
 makent_cars:
   name: Makent Cars – Airbnb Clone For Cars
@@ -38,6 +39,7 @@ makent_boats:
   project_asset: m_boats_1
   project_asset: m_boats_2
   project_asset: m_boats_3
+  project_asset: m_boats_4
 
 gofer:
   name: Gofer – Uber Clone

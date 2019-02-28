@@ -7,3 +7,228 @@ parkingapp_order_1:
   project: parkingapp
   user: bill
   state: pending
+
+makent_order_1:
+  project: makent
+  user: parsley
+  state: accepted
+
+makent_order_2:
+  project: makent
+  user: sage
+  state: accepted
+
+makent_order_3:
+  project: makent
+  user: rosemary
+  state: accepted
+
+makent_order_4:
+  project: makent
+  user: thyme
+  state: accepted
+
+makent_order_5:
+  project: makent
+  user: zombie
+  state: accepted
+
+makent_cars_order_1:
+  project: makent_cars
+  user: parsley
+  state: accepted
+
+makent_cars_order_2:
+  project: makent_cars
+  user: sage
+  state: accepted
+
+makent_cars_order_3:
+  project: makent_cars
+  user: rosemary
+  state: accepted
+
+makent_cars_order_4:
+  project: makent_cars
+  user: thyme
+  state: accepted
+
+makent_cars_order_5:
+  project: makent_cars
+  user: zombie
+  state: accepted
+
+makent_boats_order_1:
+  project: makent_boats
+  user: parsley
+  state: accepted
+
+makent_boats_order_2:
+  project: makent_boats
+  user: sage
+  state: accepted
+
+makent_boats_order_3:
+  project: makent_boats
+  user: rosemary
+  state: accepted
+
+makent_boats_order_4:
+  project: makent_boats
+  user: thyme
+  state: accepted
+
+makent_boats_order_5:
+  project: makent_boats
+  user: zombie
+  state: accepted
+
+gofer_order_1:
+  project: gofer
+  user: parsley
+  state: accepted
+
+gofer_order_2:
+  project: gofer
+  user: sage
+  state: accepted
+
+gofer_order_3:
+  project: gofer
+  user: rosemary
+  state: accepted
+
+gofer_order_4:
+  project: gofer
+  user: thyme
+  state: accepted
+
+gofer_order_5:
+  project: gofer
+  user: zombie
+  state: accepted
+
+spiffy_order_1:
+  project: spiffy
+  user: parsley
+  state: accepted
+
+spiffy_order_2:
+  project: spiffy
+  user: sage
+  state: accepted
+
+spiffy_order_3:
+  project: spiffy
+  user: rosemary
+  state: accepted
+
+spiffy_order_4:
+  project: spiffy
+  user: thyme
+  state: accepted
+
+spiffy_order_5:
+  project: spiffy
+  user: zombie
+  state: accepted
+
+igniter_order_1:
+  project: igniter
+  user: parsley
+  state: accepted
+
+igniter_order_2:
+  project: igniter
+  user: sage
+  state: accepted
+
+igniter_order_3:
+  project: igniter
+  user: rosemary
+  state: accepted
+
+igniter_order_4:
+  project: igniter
+  user: thyme
+  state: accepted
+
+igniter_order_5:
+  project: igniter
+  user: zombie
+  state: accepted
+
+ea_treat_order_1:
+  project: ea_treat
+  user: parsley
+  state: accepted
+
+ea_treat_order_2:
+  project: ea_treat
+  user: sage
+  state: accepted
+
+ea_treat_order_3:
+  project: ea_treat
+  user: rosemary
+  state: accepted
+
+ea_treat_order_4:
+  project: ea_treat
+  user: thyme
+  state: accepted
+
+ea_treat_order_5:
+  project: ea_treat
+  user: zombie
+  state: accepted
+
+gofer_eats_order_1:
+  project: gofer_eats
+  user: parsley
+  state: accepted
+
+gofer_eats_order_2:
+  project: gofer_eats
+  user: sage
+  state: accepted
+
+gofer_eats_order_3:
+  project: gofer_eats
+  user: rosemary
+  state: accepted
+
+gofer_eats_order_4:
+  project: gofer_eats
+  user: thyme
+  state: accepted
+
+gofer_eats_order_5:
+  project: gofer_eats
+  user: zombie
+  state: accepted
+
+pass_up_order_1:
+  project: pass_up
+  user: parsley
+  state: accepted
+
+pass_up_order_2:
+  project: pass_up
+  user: sage
+  state: accepted
+
+pass_up_order_3:
+  project: pass_up
+  user: rosemary
+  state: accepted
+
+pass_up_order_4:
+  project: pass_up
+  user: thyme
+  state: accepted
+
+pass_up_order_5:
+  project: pass_up
+  user: zombie
+  state: accepted
