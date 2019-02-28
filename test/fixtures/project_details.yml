@@ -1,112 +1,139 @@
 makent_1:
-  description: "Native iOS & Android Apps: Our experts crafted all the features of the app in
+  project: makent
+  customize: "Native iOS & Android Apps: Our experts crafted all the features of the app in
   native languages of iOS & Android to provide light weight script."
 
 makent_2:
-  description: "Standard Features: Cloud Storage, Static Page Management, Google Map Integration,
+  project: makent
+  customize: "Standard Features: Cloud Storage, Static Page Management, Google Map Integration,
   Social Media Integration"
 
 makent_3:
-  description: "Addons: Multiple Languages, Multiple Currency"
+  project: makent
+  customize: "Addons: Multiple Languages, Multiple Currency"
 
 cars_1:
-  description: "Free White Labeling: It is important for it to have your logo and company name
+  project: makent_cars
+  customize: "Free White Labeling: It is important for it to have your logo and company name
   everywhere. In the admin panel you can remove our name and logo from everywhere visible and
   replace it with yours."
 
 cars_2:
-  description: "Multiple Login / Sign up: It's easy to create account and login to Makent using various
+  project: makent_cars
+  customize: "Multiple Login / Sign up: It's easy to create account and login to Makent using various
   options like Facebook, Google, LinkedIn & Email."
 
 cars_3:
-  description: "100% Source Code: Based on the packages selection, you will be afforded with full
+  project: makent_cars
+  customize: "100% Source Code: Based on the packages selection, you will be afforded with full
   source code. It helps to change the script to attract your customers."
 
 boats_1:
-  description: "Multiple Login & Signup: Makent Boats lets user to easily sign up and login into
+  project: makent_boats
+  customize: "Multiple Login & Signup: Makent Boats lets user to easily sign up and login into
   the service using the multiple medium like Facebook, Google, Linkedin & E-mail."
 
 boats_2:
-  description: "Native iOS & Android Apps: Our experts crafted all the features of the app in native
+  project: makent_boats
+  customize: "Native iOS & Android Apps: Our experts crafted all the features of the app in native
   languages of iOS & Android to provide light weight script. "
 
 boats_3:
-  description: "Free White Labeling: It is important for it to have your logo and company name
+  project: makent_boats
+  customize: "Free White Labeling: It is important for it to have your logo and company name
   everywhere. In the admin panel you can remove our name and logo from everywhere visible and replace
   it with yours."
 
 gofer_1:
-  description: "Simple Signup / Login: Gofer has simple signup/login option for all it's users. Riders
+  project: gofer
+  customize: "Simple Signup / Login: Gofer has simple signup/login option for all it's users. Riders
   can signup by using Facebook, Google & Phone number. Drivers can signup their account using phone
   number to ensure security with verification code."
 
 gofer_2:
-  description: "Free Server Installation: Once the purchase is completed, we install our script to
+  project: gofer
+  customize: "Free Server Installation: Once the purchase is completed, we install our script to
   your server at free of cost. With short span, we help you to make your script live."
 
 gofer_3:
-  description: "Free Bug Support: We continuously work to deliver high quality bug free products. In
+  project: gofer
+  customize: "Free Bug Support: We continuously work to deliver high quality bug free products. In
   case of any critical bugs, It's our pleasure to work immediately in free of cost within the support
   period. Otherwise, we will include it in our near future updates."
 
 spiffy_1:
-  description: "Native iOS & Android Apps: Our experts crafted all the features of the app in native
+  project: spiffy
+  customize: "Native iOS & Android Apps: Our experts crafted all the features of the app in native
   languages of iOS & Android to provide light weight script."
 
 spiffy_2:
-  description: "Free App Submission: We submit your apps which is bought from us. We give you complete
+  project: spiffy
+  customize: "Free App Submission: We submit your apps which is bought from us. We give you complete
   support to submit iOS Apps in App Store & Android apps in Play Store."
 
 spiffy_3:
-  description: "Support After App Rejection: We are always here to support you even after the purchase
+  project: spiffy
+  customize: "Support After App Rejection: We are always here to support you even after the purchase
   is completed. We wholeheartedly accept if any rejection happens after app submission."
 
 igniter_1:
-  description: "Smooth Search Filters: Igniter has many interesting search filter options which can
+  project: igniter
+  customize: "Smooth Search Filters: Igniter has many interesting search filter options which can
   make its users to search comfortably with the options like age, gender and distance."
 
 igniter_2:
-  description: "24 / 7 Support: We are always ready to support you in all means of communication
+  project: igniter
+  customize: "24 / 7 Support: We are always ready to support you in all means of communication
   channels in both online & offline."
 
 igniter_3:
-  description: "Can Able To Use It In Multiple Domain / Server With Both iOS & Android Application"
+  project: igniter
+  customize: "Can Able To Use It In Multiple Domain / Server With Both iOS & Android Application"
 
 eat_1:
-  description: "It's possible for restaurant owners to set the available date and time of the food
+  project: ea_treat
+  customize: "It's possible for restaurant owners to set the available date and time of the food
   item. So that, it will be easy for the user to make orders. "
 
 eat_2:
-  description: "Multiple Login & Signup: Users can get connected with eaTreat through hassle free
+  project: ea_treat
+  customize: "Multiple Login & Signup: Users can get connected with eaTreat through hassle free
   signup using phone number or Email. Restaurants can create their profile using mail or phone number."
 
 eat_3:
-  description: "The 1 year of technical support will only be valid for the source code which we
+  project: ea_treat
+  customize: "The 1 year of technical support will only be valid for the source code which we
   provide you, the tech support will be terminated if the source code is edited or tampered."
 
 gofer_eats_1:
-  description: "Track Orders: Users can easily track the orders from their app from restaurant to
+  project: gofer_eats
+  customize: "Track Orders: Users can easily track the orders from their app from restaurant to
   the specified address. Tracking is also available for the restaurant owners to track driver moves
   for collecting food items for delivery."
 
 gofer_eats_2:
-  description: "Our app contains the promotion / coupon code. It may help you to create an attraction
+  project: gofer_eats
+  customize: "Our app contains the promotion / coupon code. It may help you to create an attraction
   towards the app. "
 
 gofer_eats_3:
-  description: "Free App Submission: We submit your apps which is bought from us. We give you
+  project: gofer_eats
+  customize: "Free App Submission: We submit your apps which is bought from us. We give you
   complete support to submit iOS Apps in App Store & Android apps in Play Store."
 
 passup_1:
-  description: "Multiple SignUp / LogIn: Using FB, Gmail and email, the users can easily sign up &
+  project: pass_up
+  customize: "Multiple SignUp / LogIn: Using FB, Gmail and email, the users can easily sign up &
   login to the site. With same account, the users of PassUp can buy or sell product easily."
 
 passup_2:
-  description: "We have a team of technical experts who can handle all your customisation
+  project: pass_up
+  customize: "We have a team of technical experts who can handle all your customisation
   requirements. You can get quote for customisation works from sales@trioangle.com."
 
 passup_3:
-  description: "We offer only native Applications where Android was developed in Java and iOS was
+  project: pass_up
+  customize: "We offer only native Applications where Android was developed in Java and iOS was
   developed with Swift."
 
 

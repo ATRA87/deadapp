@@ -1,284 +1,284 @@
 deadapp_order_1:
-  projects: deadapp
-  users: bill
+  project: deadapp
+  user: bill
   state: pending
 
 deadapp_order_2:
-  projects: deadapp
-  users: parsley
+  project: deadapp
+  user: parsley
   state: accepted
 
 deadapp_order_3:
-  projects: deadapp
-  users: sage
+  project: deadapp
+  user: sage
   state: accepted
 
 deadapp_order_4:
-  projects: deadapp
-  users: rosemary
+  project: deadapp
+  user: rosemary
   state: accepted
 
 deadapp_order_5:
-  projects: deadapp
-  users: thyme
+  project: deadapp
+  user: thyme
   state: accepted
 
 deadapp_order_6:
-  projects: deadapp
-  users: zombie
+  project: deadapp
+  user: zombie
   state: accepted
 
 parkingapp_order_1:
-  projects: parkingapp
-  users: bill
+  project: parkingapp
+  user: bill
   state: pending
 
 parkingapp_order_2:
-  projects: parkingapp
-  users: parsley
+  project: parkingapp
+  user: parsley
   state: accepted
 
 parkingapp_order_3:
-  projects: parkingapp
-  users: sage
+  project: parkingapp
+  user: sage
   state: accepted
 
 parkingapp_order_4:
-  projects: parkingapp
-  users: rosemary
+  project: parkingapp
+  user: rosemary
   state: accepted
 
 parkingapp_order_5:
-  projects: parkingapp
-  users: thyme
+  project: parkingapp
+  user: thyme
   state: accepted
 
 parkingapp_order_6:
-  projects: parkingapp
-  users: zombie
+  project: parkingapp
+  user: zombie
   state: accepted
 
 makent_order_1:
-  projects: makent
-  users: parsley
+  project: makent
+  user: parsley
   state: accepted
 
 makent_order_2:
-  projects: makent
-  users: sage
+  project: makent
+  user: sage
   state: accepted
 
 makent_order_3:
-  projects: makent
-  users: rosemary
+  project: makent
+  user: rosemary
   state: accepted
 
 makent_order_4:
-  projects: makent
-  users: thyme
+  project: makent
+  user: thyme
   state: accepted
 
 makent_order_5:
-  projects: makent
-  users: zombie
+  project: makent
+  user: zombie
   state: accepted
 
 makent_cars_order_1:
-  projects: makent_cars
-  users: parsley
+  project: makent_cars
+  user: parsley
   state: accepted
 
 makent_cars_order_2:
-  projects: makent_cars
-  users: sage
+  project: makent_cars
+  user: sage
   state: accepted
 
 makent_cars_order_3:
-  projects: makent_cars
-  users: rosemary
+  project: makent_cars
+  user: rosemary
   state: accepted
 
 makent_cars_order_4:
-  projects: makent_cars
-  users: thyme
+  project: makent_cars
+  user: thyme
   state: accepted
 
 makent_cars_order_5:
-  projects: makent_cars
-  users: zombie
+  project: makent_cars
+  user: zombie
   state: accepted
 
 makent_boats_order_1:
-  projects: makent_boats
-  users: parsley
+  project: makent_boats
+  user: parsley
   state: accepted
 
 makent_boats_order_2:
-  projects: makent_boats
-  users: sage
+  project: makent_boats
+  user: sage
   state: accepted
 
 makent_boats_order_3:
-  projects: makent_boats
-  users: rosemary
+  project: makent_boats
+  user: rosemary
   state: accepted
 
 makent_boats_order_4:
-  projects: makent_boats
-  users: thyme
+  project: makent_boats
+  user: thyme
   state: accepted
 
 makent_boats_order_5:
-  projects: makent_boats
-  users: zombie
+  project: makent_boats
+  user: zombie
   state: accepted
 
 gofer_order_1:
-  projects: gofer
-  users: parsley
+  project: gofer
+  user: parsley
   state: accepted
 
 gofer_order_2:
-  projects: gofer
-  users: sage
+  project: gofer
+  user: sage
   state: accepted
 
 gofer_order_3:
-  projects: gofer
-  users: rosemary
+  project: gofer
+  user: rosemary
   state: accepted
 
 gofer_order_4:
-  projects: gofer
-  users: thyme
+  project: gofer
+  user: thyme
   state: accepted
 
 gofer_order_5:
-  projects: gofer
-  users: zombie
+  project: gofer
+  user: zombie
   state: accepted
 
 spiffy_order_1:
-  projects: spiffy
-  users: parsley
+  project: spiffy
+  user: parsley
   state: accepted
 
 spiffy_order_2:
-  projects: spiffy
-  users: sage
+  project: spiffy
+  user: sage
   state: accepted
 
 spiffy_order_3:
-  projects: spiffy
-  users: rosemary
+  project: spiffy
+  user: rosemary
   state: accepted
 
 spiffy_order_4:
-  projects: spiffy
-  users: thyme
+  project: spiffy
+  user: thyme
   state: accepted
 
 spiffy_order_5:
-  projects: spiffy
-  users: zombie
+  project: spiffy
+  user: zombie
   state: accepted
 
 igniter_order_1:
-  projects: igniter
-  users: parsley
+  project: igniter
+  user: parsley
   state: accepted
 
 igniter_order_2:
-  projects: igniter
-  users: sage
+  project: igniter
+  user: sage
   state: accepted
 
 igniter_order_3:
-  projects: igniter
-  users: rosemary
+  project: igniter
+  user: rosemary
   state: accepted
 
 igniter_order_4:
-  projects: igniter
-  users: thyme
+  project: igniter
+  user: thyme
   state: accepted
 
 igniter_order_5:
-  projects: igniter
-  users: zombie
+  project: igniter
+  user: zombie
   state: accepted
 
 ea_treat_order_1:
-  projects: ea_treat
-  users: parsley
+  project: ea_treat
+  user: parsley
   state: accepted
 
 ea_treat_order_2:
-  projects: ea_treat
-  users: sage
+  project: ea_treat
+  user: sage
   state: accepted
 
 ea_treat_order_3:
-  projects: ea_treat
-  users: rosemary
+  project: ea_treat
+  user: rosemary
   state: accepted
 
 ea_treat_order_4:
-  projects: ea_treat
-  users: thyme
+  project: ea_treat
+  user: thyme
   state: accepted
 
 ea_treat_order_5:
-  projects: ea_treat
-  users: zombie
+  project: ea_treat
+  user: zombie
   state: accepted
 
 gofer_eats_order_1:
-  projects: gofer_eats
-  users: parsley
+  project: gofer_eats
+  user: parsley
   state: accepted
 
 gofer_eats_order_2:
-  projects: gofer_eats
-  users: sage
+  project: gofer_eats
+  user: sage
   state: accepted
 
 gofer_eats_order_3:
-  projects: gofer_eats
-  users: rosemary
+  project: gofer_eats
+  user: rosemary
   state: accepted
 
 gofer_eats_order_4:
-  projects: gofer_eats
-  users: thyme
+  project: gofer_eats
+  user: thyme
   state: accepted
 
 gofer_eats_order_5:
-  projects: gofer_eats
-  users: zombie
+  project: gofer_eats
+  user: zombie
   state: accepted
 
 pass_up_order_1:
-  projects: pass_up
-  users: parsley
+  project: pass_up
+  user: parsley
   state: accepted
 
 pass_up_order_2:
-  projects: pass_up
-  users: sage
+  project: pass_up
+  user: sage
   state: accepted
 
 pass_up_order_3:
-  projects: pass_up
-  users: rosemary
+  project: pass_up
+  user: rosemary
   state: accepted
 
 pass_up_order_4:
-  projects: pass_up
-  users: thyme
+  project: pass_up
+  user: thyme
   state: accepted
 
 pass_up_order_5:
-  projects: pass_up
-  users: zombie
+  project: pass_up
+  user: zombie
   state: accepted

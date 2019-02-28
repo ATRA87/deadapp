@@ -8,7 +8,6 @@ deadapp:
 parkingapp:
   name: ParkingApp
   user: claire
-  project_details: parkingapp_1
   description: "Rent out your parking space while you're not using it"
 
 makent:
@@ -27,13 +26,13 @@ makent:
   right ground to start a perfect shared economy business and can give a big hit easily. When Airbnb
   update a new feature, you are about to get that feature in your business too.
   "
-  project_details: makent_1
-  project_details: makent_2
-  project_details: makent_3
-  project_assets: makent_1
-  project_assets: makent_2
-  project_assets: makent_3
-  project_assets: makent_4
+  # project_details: makent_1
+  # project_details: makent_2
+  # project_details: makent_3
+  # project_assets: makent_1
+  # project_assets: makent_2
+  # project_assets: makent_3
+  # project_assets: makent_4
 
 makent_cars:
   name: Makent Cars – Airbnb Clone For Cars
@@ -47,13 +46,13 @@ makent_cars:
   all the features from Airbnb along with the customized features for car rental business, it’s the
   right script for you to start business. With responsive website and user friendly admin panel, your
   choice to buy script from Trioangle is the great start for your car rental business."
-  project_details: cars_1
-  project_details: cars_2
-  project_details: cars_3
-  project_assets: m_cars_1
-  project_assets: m_cars_2
-  project_assets: m_cars_3
-  project_assets: m_cars_4
+  # project_details: cars_1
+  # project_details: cars_2
+  # project_details: cars_3
+  # project_assets: m_cars_1
+  # project_assets: m_cars_2
+  # project_assets: m_cars_3
+  # project_assets: m_cars_4
 
 makent_boats:
   name: Makent Boats – Boat Rental Script
@@ -69,13 +68,13 @@ makent_boats:
   and provides an instant technical solution to launch the boat rental business. So we assure that the
   technical solution from Trioangle for inaugurating the boat rental business is impeccable and great
   choice to give a hit."
-  project_details: boats_1
-  project_details: boats_2
-  project_details: boats_3
-  project_assets: m_boats_1
-  project_assets: m_boats_2
-  project_assets: m_boats_3
-  project_assets: m_boats_4
+  # project_details: boats_1
+  # project_details: boats_2
+  # project_details: boats_3
+  # project_assets: m_boats_1
+  # project_assets: m_boats_2
+  # project_assets: m_boats_3
+  # project_assets: m_boats_4
 
 gofer:
   name: Gofer – Uber Clone
@@ -88,15 +87,15 @@ gofer:
   plumbing, gardening, laundry, courier, delivery and much more on demand services. Our best
   on-demand Uber clone script has all the standard and extraordinary features for both the end
   users and service providers."
-  project_details: gofer_1
-  project_details: gofer_2
-  project_details: gofer_3
-  project_assets: gofer_1
-  project_assets: gofer_2
-  project_assets: gofer_3
-  project_assets: gofer_4
-  project_assets: gofer_5
-  project_assets: gofer_6
+  # project_details: gofer_1
+  # project_details: gofer_2
+  # project_details: gofer_3
+  # project_assets: gofer_1
+  # project_assets: gofer_2
+  # project_assets: gofer_3
+  # project_assets: gofer_4
+  # project_assets: gofer_5
+  # project_assets: gofer_6
 
 spiffy:
   name: Spiffy – Fancy Clone
@@ -110,14 +109,14 @@ spiffy:
   In an eCommerce Concept, multi-vendor which means allowing vendors to create their profile online
   and offers them a platform to sell their products to their customers spread across the globe. Spiffy
   also offers the same functionality through its trending and best multi-vendor eCommerce clone script."
-  project_details: spiffy_1
-  project_details: spiffy_2
-  project_details: spiffy_3
-  project_assets: spiffy_1
-  project_assets: spiffy_2
-  project_assets: spiffy_3
-  project_assets: spiffy_4
-  project_assets: spiffy_5
+  # project_details: spiffy_1
+  # project_details: spiffy_2
+  # project_details: spiffy_3
+  # project_assets: spiffy_1
+  # project_assets: spiffy_2
+  # project_assets: spiffy_3
+  # project_assets: spiffy_4
+  # project_assets: spiffy_5
 
 igniter:
   name: Igniter – Tinder Clone
@@ -132,13 +131,13 @@ igniter:
   By creating an account , the users of Igniter can enjoy unlimited likes, matches and chatting.
   Igniter subscribers can have benefits of super like, location change, boost features, profile
   control and many more breath taking features"
-  project_details: igniter_2
-  project_details: igniter_3
-  project_assets: igniter_1
-  project_assets: igniter_2
-  project_assets: igniter_3
-  project_assets: igniter_4
-  project_assets: igniter_5
+  # project_details: igniter_2
+  # project_details: igniter_3
+  # project_assets: igniter_1
+  # project_assets: igniter_2
+  # project_assets: igniter_3
+  # project_assets: igniter_4
+  # project_assets: igniter_5
 
 ea_treat:
   name: eaTreat – Just Eat Clone
@@ -154,12 +153,12 @@ ea_treat:
   cript is the reason behind the distinctive exclusiveness. The most important trait is our clone
   script is reliable as well as customizable according to the business requirements. Undeniably
   eaTreat will meet all the requirements to commence your online food ordering business."
-  project_details: eat_1
-  project_details: eat_2
-  project_details: eat_3
-  project_assets: eat_1
-  project_assets: eat_2
-  project_assets: eat_3
+  # project_details: eat_1
+  # project_details: eat_2
+  # project_details: eat_3
+  # project_assets: eat_1
+  # project_assets: eat_2
+  # project_assets: eat_3
 
 gofer_eats:
   name: GoferEats – UberEats Clone
@@ -174,14 +173,14 @@ gofer_eats:
   Responsive and reliability is the major traits of our clone script. Our clone script can be
   reinforced in both Android and iOS. Salient features of our clone script helps to make stand
   distinctive from competitors."
-  project_details: gofer_eats_1
-  project_details: gofer_eats_2
-  project_details: gofer_eats_3
-  project_assets: gofer_eats_1
-  project_assets: gofer_eats_2
-  project_assets: gofer_eats_3
-  project_assets: gofer_eats_4
-  project_assets: gofer_eats_5
+  # project_details: gofer_eats_1
+  # project_details: gofer_eats_2
+  # project_details: gofer_eats_3
+  # project_assets: gofer_eats_1
+  # project_assets: gofer_eats_2
+  # project_assets: gofer_eats_3
+  # project_assets: gofer_eats_4
+  # project_assets: gofer_eats_5
 
 pass_up:
   name: PassUp – Letgo Clone
@@ -197,11 +196,11 @@ pass_up:
   friendly features like Letgo which supports buy and sell concept of any products. Our supreme
   quality letgo clone script is crafted with latest technologies & features. PassUp will be easy to
   customize and maintain."
-  project_details: passup_2
-  project_details: passup_3
-  project_assets: passup_1
-  project_assets: passup_2
-  project_assets: passup_3
+  # project_details: passup_2
+  # project_details: passup_3
+  # project_assets: passup_1
+  # project_assets: passup_2
+  # project_assets: passup_3
 
 
 
