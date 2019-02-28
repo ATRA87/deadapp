@@ -69,6 +69,11 @@ class ProjectsController < ApplicationController
     @project.project_assets.order_by(priority: :desc)
   end
 
+  def mine
+    @projects = policy_scope(Project).where(user: current_user)
+    render :index
+  end
+
   private
 
   def project_params
