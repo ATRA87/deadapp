@@ -2,12 +2,24 @@
 .profile {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
+
+    h3 {
+      padding-left: 40px;
+      font-family: roboto;
+      color: rgba(0,0,0,0.6);
+    }
+    h1{
+      text-align: center;
+      font-family: roboto;
+      color: rgba(10,10,10,0.9);
+      font-weight: normal;
+    }
 }
 .profile-info {
   border-radius: 10px;
   border: 1px solid rgba(0,0,0,0.1);
-  box-shadow: 0px px 6px rgba(0,0,0,0.1);
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
   padding: 20px;
 }
 
@@ -32,18 +44,20 @@
 }
 
 .profile-ratings {
-  flex: 1 0 50%;
-  margin-left: 20px;
+  flex: 1 0 33%;
+  margin-left: 70px;
+
 }
 
 .profile-rating {
-  width: 50%;
+  width: 86%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
   align-items: center;
   span {
-    font-weight: bold;
+    font-weight: lighte;
+    font-family: sans-serif;
   }
 }
 
@@ -52,10 +66,34 @@
   font-size: 50px;
   display: flex;
   justify-content: space-around;
+  padding-right: 60px;
 }
 
 .profile-description {
-  padding: 20px 0px;
+    padding: 40px 0px 0px 0px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    color: #464646;
+    font-family: rooto;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.profile-review {
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    h3{
+      padding-left: 0px;
+      font-weight: normal;
+    }
+
 }
 
 
+.profile-review-detail {
+  display: flex;
+  align-items: center;
+}
