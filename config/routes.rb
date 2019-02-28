@@ -8,10 +8,10 @@ Rails.application.routes.draw do
   resources :projects do
     resources :orders, only: [:new, :create]
     resources :project_assets, only: [:new, :create]
-    resources :teams, only: [:create, :destroy]
     collection do
       get 'mine'
     end
+    resources :project_members, only: [:create, :destroy]
   end
 
   resources :orders, except: [:new, :create] do

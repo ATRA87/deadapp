@@ -2,7 +2,7 @@
   <div class="project-core-info">
     <div class="project-assets-and-info">
       <div class="project-title-and-assets">
-        <h1><%= @project.name %></h1>
+        <h1><%= @project.name %> <%= link_to 'edit', edit_project_path(@project) %></h1>
         <div class="project-assets">
           <%= render 'shared/carousel', project: @project %>
         <% if policy(@project).update? %>
@@ -11,12 +11,7 @@
         </div>
       </div>
       <div class="project-info">
-        <div class="user-info">
-          <div class="user-img">
-            <%= render 'shared/avatar', user: @project.user %>
-          </div>
-          <p id="user-name"><%= @project.user.email %></p>
-        </div>
+        <%= render 'shared/avatar_with_name', user: @project.user %>
         <div class="ratings">
           <ul>
             <li><strong>Editor's review</strong></li>
@@ -30,14 +25,24 @@
         <div class="social-buttons">
           share download coment
         </div>
+        <div class="team">
+          <% @project.users.each do |user| %>
+            <p><%= user.email %></p>
+          <% end %>
+        </div>
       </div>
     </div>
     <div class="project-description">
       <%= @project.description %>
     </div>
+    <%= link_to 'Contact dev!', edit_project_path(@project), class:'btn btn-primary' %>
   </div>
+
   <div id="reviews-container">
-    <h2>Reviews</h2>
+    <h2>Reviews <span>(<%= @project.reviews.count %>)</span></h2>
+    <% if @project.reviews.count.zero? %>
+      <p>No reviews yet...</p>
+    <% end %>
     <% @project.reviews.each do |review| %>
       <%= render 'review', review: review %>
     <% end %>

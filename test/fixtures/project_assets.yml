@@ -2,3 +2,132 @@ makent_1:
   web_url: https://www.trioangle.com/images/makent-banner.svg
   priority: 1 # 1 is default
 
+makent_2:
+  web_url: https://www.youtube.com/embed/_pmOOsm5FL0?rel=0&amp;showinfo=0
+
+makent_3:
+  web_url: https://www.trioangle.com/images/makent/airbnb_clone_Signup.png
+
+makent_4:
+  web_url: https://www.trioangle.com/images/makent/technology.svg
+
+m_cars_1:
+  web_url: https://www.trioangle.com/images/makentcars-banner.svg
+
+m_cars_2:
+  web_url: https://www.youtube.com/embed/O_7oQeeaYXI?rel=0&amp;showinfo=0
+
+m_cars_3:
+  web_url: https://www.trioangle.com/images/makentcars/car_rental_Multi_login.png
+
+m_cars_4:
+  web_url: https://www.trioangle.com/images/makentcars/technology.svg
+
+m_boats_1:
+  web_url: https://www.trioangle.com/images/makentboats-banner.svg
+
+m_boats_2:
+  web_url: https://www.youtube.com/embed/9MlmOfwimUk?rel=0&amp;showinfo=0
+
+m_boats_3:
+  web_url: https://www.trioangle.com/images/makentboats/boat_rental_Multiple_Login_SignUp-Boats.png
+
+m_boats_4:
+  web_url: https://www.trioangle.com/images/makentboats/technology.svg
+
+gofer_1:
+  web_url: https://www.trioangle.com/images/gofer-banner.svg
+
+gofer_2:
+  web_url: https://www.youtube.com/embed/TDdNh9RNxmg?rel=0&amp;showinfo=0
+
+gofer_3:
+  web_url: https://www.youtube.com/embed/6SroRpybKVc?rel=0&amp;showinfo=0
+
+gofer_4:
+  web_url: https://www.trioangle.com/images/gofer/uber_clone_Simple_SignUp_Login.png
+
+gofer_5:
+  web_url: https://www.trioangle.com/images/gofer/uber_clone_admin.png
+
+gofer_6:
+  web_url: https://www.trioangle.com/images/gofer/technology.svg
+
+spiffy_1:
+  web_url: https://www.trioangle.com/images/spiffy-banner.svg
+
+spiffy_2:
+  web_url: https://www.youtube.com/embed/S3NLdxXpDKg?rel=0&amp;showinfo=0
+
+spiffy_3:
+  web_url: https://www.trioangle.com/images/spiffy/fancy_clone__multiple_login_sign_up.pngs
+
+spiffy_4:
+  web_url: https://www.trioangle.com/images/spiffy/fancy_clone_buyer.png
+
+spiffy_5:
+  web_url: https://www.trioangle.com/images/spiffy/technology.svg
+
+igniter_1:
+  web_url: https://www.trioangle.com/images/igniter-banner.svg
+
+igniter_2:
+  web_url: https://www.youtube.com/embed/whTJggEswLk?rel=0&amp;showinfo=0
+
+igniter_3:
+  web_url: https://www.trioangle.com/images/igniter/tinder_clone_Smooth_Search_Filters.png
+
+igniter_4:
+  web_url: https://www.trioangle.com/images/igniter/tinder_clone_AppStore.png
+
+igniter_5:
+  web_url: https://www.trioangle.com/images/igniter/technology.svg
+
+eat_1:
+  web_url: https://www.trioangle.com/images/eatreat-banner.svg
+
+eat_2:
+  web_url: https://www.youtube.com/embed/hLtRUeNQqKE?rel=0&amp;showinfo=0
+
+eat_3:
+  web_url: https://www.trioangle.com/images/eatreat/technology.svg
+
+gofer_eats_1:
+  web_url: https://www.trioangle.com/images/gofereats-banner.svg
+
+gofer_eats_2:
+  web_url: https://www.youtube.com/embed/KL9KJnc-5Hk?rel=0&amp;showinfo=0
+
+gofer_eats_3:
+  web_url: https://www.trioangle.com/images/gofereats/ubereats_clone_track_order.png
+
+gofer_eats_4:
+  web_url: https://www.trioangle.com/images/gofereats/ubereats_clone_admin.png
+
+gofer_eats_5:
+  web_url: https://www.trioangle.com/images/gofereats/technology.svg
+
+passup_1:
+  web_url: https://www.trioangle.com/images/passup-banner.svg
+
+passup_2:
+  web_url: https://www.trioangle.com/images/passup/letgo_clone_easy_signup.png
+
+passup_3:
+  web_url: https://www.trioangle.com/images/passup/technology.svg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
