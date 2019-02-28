@@ -65,6 +65,7 @@ ActiveRecord::Schema.define(version: 2019_02_28_200907) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "description"
+    t.string "category"
     t.index ["user_id"], name: "index_projects_on_user_id"
   end
 
