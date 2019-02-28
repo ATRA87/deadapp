@@ -15,6 +15,9 @@ Rails.application.routes.draw do
   end
   resources :orders, except: [:new, :create] do
     resources :reviews, only: [:new, :create]
+    collection do
+      get 'mine'
+    end
   end
   resources :teams, only: [:index, :show, :edit, :update]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
