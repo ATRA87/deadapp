@@ -11,12 +11,7 @@
         </div>
       </div>
       <div class="project-info">
-        <div class="user-info">
-          <div class="user-img">
-            <%= render 'shared/avatar', user: @project.user %>
-          </div>
-          <p id="user-name"><%= @project.user.email %></p>
-        </div>
+        <%= render 'shared/avatar_with_name', user: @project.user %>
         <div class="ratings">
           <ul>
             <li><strong>Editor's review</strong></li>
