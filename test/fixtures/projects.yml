@@ -15,51 +15,112 @@ makent:
   project_detail: makent_2
   project_detail: makent_3
   project_asset: makent_1
+  project_asset: makent_2
+  project_asset: makent_3
 
 makent_cars:
   name: Makent Cars – Airbnb Clone For Cars
   user: tat2
-  project_detail:
+  project_detail: cars_1
+  project_detail: cars_2
+  project_detail: cars_3
   project_asset: m_cars_1
+  project_asset: m_cars_2
+  project_asset: m_cars_3
+  project_asset: m_cars_4
 
 makent_boats:
   name: Makent Boats – Boat Rental Script
   user: tat3
-  project_detail:
-  project_asset:
+  project_detail: boats_1
+  project_detail: boats_2
+  project_detail: boats_3
+  project_asset: m_boats_1
+  project_asset: m_boats_2
+  project_asset: m_boats_3
 
 gofer:
   name: Gofer – Uber Clone
   user: tat1
-  project_detail:
-  project_asset:
+  project_detail: gofer_1
+  project_detail: gofer_2
+  project_detail: gofer_3
+  project_asset: gofer_1
+  project_asset: gofer_2
+  project_asset: gofer_3
+  project_asset: gofer_4
+  project_asset: gofer_5
+  project_asset: gofer_6
 
 spiffy:
   name: Spiffy – Fancy Clone
   user: tat2
-  project_detail:
-  project_asset:
+  project_detail: spiffy_1
+  project_detail: spiffy_2
+  project_detail: spiffy_3
+  project_asset: spiffy_1
+  project_asset: spiffy_2
+  project_asset: spiffy_3
+  project_asset: spiffy_4
+  project_asset: spiffy_5
 
 igniter:
   name: Igniter – Tinder Clone
   user: tat3
-  project_detail:
-  project_asset:
+  project_detail: igniter_1
+  project_detail: igniter_2
+  project_detail: igniter_3
+  project_asset: igniter_1
+  project_asset: igniter_2
+  project_asset: igniter_3
+  project_asset: igniter_4
+  project_asset: igniter_5
 
 ea_treat:
   name: eaTreat – Just Eat Clone
   user: tat1
-  project_detail:
-  project_asset:
+  project_detail: eat_1
+  project_detail: eat_2
+  project_detail: eat_3
+  project_asset: eat_1
+  project_asset: eat_2
+  project_asset: eat_3
 
 gofer_eats:
   name: GoferEats – UberEats Clone
   user: tat2
-  project_detail:
-  project_asset:
+  project_detail: gofer_1
+  project_detail: gofer_2
+  project_detail: gofer_3
+  project_asset: gofer_1
+  project_asset: gofer_2
+  project_asset: gofer_3
+  project_asset: gofer_4
+  project_asset: gofer_5
 
 pass_up:
   name: PassUp – Letgo Clone
   user: tat3
-  project_detail:
-  project_asset:
+  project_detail: passup_1
+  project_detail: passup_2
+  project_detail: passup_3
+  project_asset: passup_1
+  project_asset: passup_2
+  project_asset: passup_3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
