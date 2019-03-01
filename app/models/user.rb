@@ -24,7 +24,7 @@ class User < ApplicationRecord
 
   def full_name
     first = first_name.capitalize if first_name
-    last = las_name.capitalize if last_name
+    last = last_name.capitalize if last_name
 
     if first_name or last_name
       "#{first} #{last}"
