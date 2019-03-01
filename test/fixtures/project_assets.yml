@@ -1,7 +1,7 @@
 makent_0:
   project: makent
   photo: https://res.cloudinary.com/diyosnlxf/image/upload/v1550774196/uaypees8fujchsyoff5w.jpg
-  priority: 1 # 1 is default
+  priority: 3 # 1 is default
 
 makent_1:
   project: makent
@@ -10,6 +10,7 @@ makent_1:
 makent_2:
   project: makent
   photo: https://www.youtube.com/embed/_pmOOsm5FL0?rel=0&amp;showinfo=0
+  priority: 2
 
 makent_3:
   project: makent
@@ -26,6 +27,7 @@ m_cars_1:
 m_cars_2:
   project: makent_cars
   photo: https://www.youtube.com/embed/O_7oQeeaYXI?rel=0&amp;showinfo=0
+  priority: 2
 
 m_cars_3:
   project: makent_cars
@@ -42,6 +44,7 @@ m_boats_1:
 m_boats_2:
   project: makent_boats
   photo: https://www.youtube.com/embed/9MlmOfwimUk?rel=0&amp;showinfo=0
+  priority: 2
 
 m_boats_3:
   project: makent_boats
@@ -58,10 +61,12 @@ gofer_1:
 gofer_2:
   project: gofer
   photo: https://www.youtube.com/embed/TDdNh9RNxmg?rel=0&amp;showinfo=0
+  priority: 2
 
 gofer_3:
   project: gofer
   photo: https://www.youtube.com/embed/6SroRpybKVc?rel=0&amp;showinfo=0
+  priority: 2
 
 gofer_4:
   project: gofer
@@ -82,6 +87,7 @@ spiffy_1:
 spiffy_2:
   project: spiffy
   photo: https://www.youtube.com/embed/S3NLdxXpDKg?rel=0&amp;showinfo=0
+  priority: 2
 
 spiffy_3:
   project: spiffy
@@ -102,6 +108,7 @@ igniter_1:
 igniter_2:
   project: igniter
   photo: https://www.youtube.com/embed/whTJggEswLk?rel=0&amp;showinfo=0
+  priority: 2
 
 igniter_3:
   project: igniter
@@ -122,6 +129,7 @@ eat_1:
 eat_2:
   project: ea_treat
   photo: https://www.youtube.com/embed/hLtRUeNQqKE?rel=0&amp;showinfo=0
+  priority: 2
 
 eat_3:
   project: ea_treat
@@ -134,6 +142,7 @@ gofer_eats_1:
 gofer_eats_2:
   project: gofer_eats
   photo: https://www.youtube.com/embed/KL9KJnc-5Hk?rel=0&amp;showinfo=0
+  priority: 2
 
 gofer_eats_3:
   project: gofer_eats
