@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'authorizations/linkedin'
   get 'authorizations/failure'
   root to: 'projects#index'
+  get "profile", to: "pages#profile", as: :profile
   devise_for :users, controllers: { omniauth_callbacks: 'authorizations' }
 
   resources :projects do
@@ -17,7 +18,7 @@ Rails.application.routes.draw do
   resources :orders, except: [:new, :create] do
     resources :reviews, only: [:new, :create]
   end
-  resources :teams, only: [:index, :show, :edit, :update]
+  resources :project_members, only: [:index, :show, :edit, :update, :destroy]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
 end

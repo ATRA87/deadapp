@@ -1,0 +1,20 @@
+  <div class="horizontal-card">
+    <% classes = "card-img small" %>
+    <%= render 'shared/project_photo', project: invitation.project, classes: classes %>
+    <div class="names">
+      <h4><%= link_to invitation.project.name, project_path(invitation.project) %></h4>
+      <%= render 'shared/avatar_with_name', user: invitation.project.user %>
+    </div>
+    <div class="project-info"> info
+    </div>
+    <% if invitation.pending? %>
+      <div class="answer-buttons">
+        <%= link_to 'Join', project_member_path(invitation), method: 'patch', class:"btn btn-success" %>
+        <%= link_to 'Reject', project_member_path(invitation), method: 'delete', class:"btn btn-danger" %>
+      </div>
+    <% end %>
+    <div class="state">
+      <p><%= render 'shared/state_color', state: invitation.state %></p>
+      <p class="invitation-date"><%= invitation.created_at.to_date %></p>
+    </div>
+  </div>
