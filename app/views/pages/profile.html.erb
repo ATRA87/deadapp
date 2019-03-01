@@ -1,103 +1,105 @@
 
 <div style="background-color: #fbfbfb;">
-<div class="container profile">
-  <h1><%= current_user.full_name %></h1>
-  <h3>About</h3>
-  <div class="profile-info">
-    <div class="profile-edit">
-      <%= link_to "#", class: "unstyle-color-link" do %>
-      <i class="fas fa-edit"></i>
+  <div class="container profile">
+    <h1><%= current_user.full_name %></h1>
+    <h3>About</h3>
+    <div class="profile-info">
+      <div class="profile-edit">
+        <%= link_to "#", class: "unstyle-color-link" do %>
+        <i class="fas fa-edit"></i>
+        <% end %>
+      </div>
+      <div class="profile-info-details">
+        <div class="profile-info-img" style="background-image: url('https://picsum.photos/250/150?random');" >
+        </div>
+        <div class="profile-ratings">
+          <div class="profile-rating">
+           <span>Comunication</span>
+           <div class="profile-star">
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="profile-rating">
+         <span>Quality of product</span>
+         <div class="profile-star">
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="profile-rating">
+       <span>Delivered on time</span>
+       <div class="profile-star">
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+  </div> <!-- end of the profile-ratings div -->
+  <div class="profile-links">
+    <%= link_to "#", class: "unstyle-color-link" do %>
+    <i class="fas fa-paperclip"></i>
+    <% end %>
+    <%= link_to "#", class: "unstyle-color-link" do %>
+    <i class="far fa-comments"></i>
+    <% end %>
+    <%= link_to "#", class: "unstyle-color-link" do %>
+    <i class="fab fa-linkedin-in"></i>
+    <% end %>
+  </div><!-- end of the profile-links-div -->
+</div> <!-- end of the profile-info-details-div -->
+<div class="profile-description">
+  <p>Lorem ipsum dolor sit amet, wisi moderatius vim at, at mel lobortis consetetur. Quo et tritani consectetuer,
+  .</p>
+</div>
+</div>  <!-- end of the profile-info div -->
+
+<div class="profile-reviews">
+  <h3>Reviews</h3>
+  <div class="profile-review">
+    <h3>Review on project name</h3>
+    <p>By user name</p>
+    <span>1/28/2019 </span>
+    <div class="profile-review-detail">
+      <div class="profile-description">
+        <p>Lorem ipsum dolor sit amet, wisi moderatius vim at, at mel lobortis consetetur. Quo et tritani consectetuer,
+         persius invidunt sententiae no mei. Eos quando feugiat ei, liber errem  singulis vis ne.
+       </p>
+       <div class="profile-ratings">
+        <div class="profile-rating">
+          <span>Comunication</span>
+          <div class="profile-star">
+           <i class="fas fa-star"></i>
+         </div>
+       </div>
+       <div class="profile-rating">
+        <span>Quality of product</span>
+        <div class="profile-star">
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="profile-rating">
+       <span>Delivered on time</span>
+       <div class="profile-star">
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+  </div> <!-- end of the profile-ratings div -->
+</div>
+</div>
+</div>
+</div> <!-- end of the profile-reviews div -->
+<div class="profile-projects">
+  <h3>Projects</h3>
+  <div class="row">
+    <% @projects.each do |project| %>
+    <div class="col-xs-12 col-md-6 card-wrapper">
+      <%= link_to project_path(project) do %>
+      <%= render 'projects/card', project: project %>
       <% end %>
     </div>
-    <div class="profile-info-details">
-      <div class="profile-info-img" style="background-image: url('https://picsum.photos/250/150?random');" >
-      </div>
-      <div class="profile-ratings">
-        <div class="profile-rating">
-         <span>Comunication</span>
-          <div class="profile-star">
-          <i class="fas fa-star"></i>
-          </div>
-        </div>
-       <div class="profile-rating">
-         <span>Quality of product</span>
-          <div class="profile-star">
-          <i class="fas fa-star"></i>
-          </div>
-       </div>
-       <div class="profile-rating">
-         <span>Delivered on time</span>
-          <div class="profile-star">
-          <i class="fas fa-star"></i>
-          </div>
-       </div>
-      </div> <!-- end of the profile-ratings div -->
-        <div class="profile-links">
-          <%= link_to "#", class: "unstyle-color-link" do %>
-          <i class="fas fa-paperclip"></i>
-          <% end %>
-          <%= link_to "#", class: "unstyle-color-link" do %>
-          <i class="far fa-comments"></i>
-          <% end %>
-          <%= link_to "#", class: "unstyle-color-link" do %>
-            <i class="fab fa-linkedin-in"></i>
-          <% end %>
-        </div><!-- end of the profile-links-div -->
-    </div> <!-- end of the profile-info-details-div -->
-   <div class="profile-description">
-      <p>Lorem ipsum dolor sit amet, wisi moderatius vim at, at mel lobortis consetetur. Quo et tritani consectetuer,
-  .</p>
-   </div>
-  </div>  <!-- end of the profile-info div -->
-
-  <div class="profile-reviews">
-    <h3>Reviews</h3>
-    <div class="profile-review">
-      <h3>Review on project name</h3>
-      <p>By user name</p>
-      <span>1/28/2019 </span>
-      <div class="profile-review-detail">
-        <div class="profile-description">
-            <p>Lorem ipsum dolor sit amet, wisi moderatius vim at, at mel lobortis consetetur. Quo et tritani consectetuer,
-  persius invidunt sententiae no mei. Eos quando feugiat ei, liber errem  singulis vis ne.
-</p>
-          <div class="profile-ratings">
-            <div class="profile-rating">
-             <span>Comunication</span>
-              <div class="profile-star">
-              <i class="fas fa-star"></i>
-              </div>
-            </div>
-           <div class="profile-rating">
-             <span>Quality of product</span>
-              <div class="profile-star">
-              <i class="fas fa-star"></i>
-              </div>
-           </div>
-           <div class="profile-rating">
-             <span>Delivered on time</span>
-              <div class="profile-star">
-              <i class="fas fa-star"></i>
-           </div>
-          </div> <!-- end of the profile-ratings div -->
-        </div>
-      </div>
-    </div> <!-- end of the profile-reviews div -->
-    <div class="profile-projects">
-      <h3>Projects</h3>
-        <div class="row">
-          <% @projects.each do |project| %>
-          <div class="col-xs-12 col-md-6 card-wrapper">
-            <%= link_to project_path(project) do %>
-            <%= render 'projects/card', project: project %>
-            <% end %>
-          </div>
-          <% end %>
-        </div>
-
-    </div>
+    <% end %>
   </div>
+
 </div>
 </div>
+</div>
+
 
 
