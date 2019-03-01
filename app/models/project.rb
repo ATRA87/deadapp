@@ -1,5 +1,5 @@
 class Project < ApplicationRecord
-  CATEGORIES = %w[Games Business Education Lifestyle Entretainment Travel Health Other]
+  CATEGORIES = %w[Games Business Education Lifestyle Entertainment Travel Health Other]
   belongs_to :user
   has_many :project_members, dependent: :destroy
   has_many :users, through: :project_members
@@ -25,7 +25,7 @@ class Project < ApplicationRecord
       pm.state == 'accepted'
     end.map { |pm2| pm2.user }
   end
-  
+
   def main_asset
     self.project_assets.find do |pa|
       pa.priority == 1

@@ -11,6 +11,6 @@ options.forEach(option => {
   });
 });
 btn.addEventListener('click', (event) => {
-  membersForm.insertAdjacentHTML('beforeend', `<select class="form-control select optional" name="project[user_ids][]" id="project_user_ids">`+memberField.innerHTML+`</select>`);
-  console.log(options);
+  membersForm.insertAdjacentHTML('beforeend', `<select class="form-control select optional" name="project[user_ids][]" id="project_user_ids"> <option value=""></option>`+memberField.innerHTML+`</select>`);
+  console.log(memberField.innerHTML);
 });
