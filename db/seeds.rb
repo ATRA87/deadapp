@@ -1,23 +1,35 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+puts "---------------- Loading Fixtures --------------"
 
+`rails db:fixtures:load`
 
-u1 = User.create!(email: 'mati@gmail.com', password: 123456) #creator of the project deadapp
-u2 = User.create!(email: 'bill@gmail.com', password: 123456) #client hiring projects
-u3 = User.create!(email: 'alfonso@gmail.com', password: 123456) #member of the team of the project
-u4 = User.create!(email: 'claire@gmail.com', password: 123456) #creator of the project parkingapp
+puts "---------------- Validating Customizations --------------"
 
-p1 = Project.create!(name:'deadapp', user: User.find(1)) #creator user 1
-p2 = Project.create!(name:'parkingapp', user: User.find(4)) #creator user 4
+Customization.find_each(&:validate!)
 
-pm1 = ProjectMember.create!(user: User.find(3), project: Project.find(1)) #user 3 member of project 1
+puts "---------------- Validating Features --------------"
 
-o1 = Order.create!(project: Project.find(1), user: User.find(2), state: 'pending') #user 2 hires project 1
-o2 = Order.create!(project: Project.find(2), user: User.find(2), state: 'pending') #user 2 hires project 2
+Feature.find_each(&:validate!)
 
-r = Review.new(user: User.all.first, order: o1, rating: 5, content: 'nice app')
+puts "---------------- Validating Orders --------------"
+
+Order.find_each(&:validate!)
+
+puts "---------------- Validating ProjectMembers --------------"
+
+ProjectMember.find_each(&:validate!)
+
+puts "---------------- Validating Users --------------"
+
+User.find_each(&:validate!)
+
+puts "---------------- Validating Reviews --------------"
+
+Review.find_each(&:validate!)
+
+puts "---------------- Validating Projects --------------"
+
+Project.find_each(&:validate!)
+
+puts "---------------- Validating ProjectAssets --------------"
+
+ProjectAsset.find_each(&:validate!)

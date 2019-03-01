@@ -1,0 +1,284 @@
+deadapp_review_1:
+  order: deadapp_order_1
+  rating: 5
+  content: 'Nice app, team was a pleasure to work with'
+
+deadapp_review_2:
+  order: deadapp_order_2
+  rating: 4
+  content: "The customization process worked surprizingly smoothly. I couldn't believe how easy it was to totally change the look of the app, with the help of the dev team"
+
+deadapp_review_3:
+  order: deadapp_order_3
+  rating: 5
+  content: "I wasn't sure what some of the features were for. The dev team were very supportive and helped me to fully understand the app and to make informed decisions"
+
+deadapp_review_4:
+  order: deadapp_order_4
+  rating: 3
+  content: "It was great to be able to communicate with the dev team whenever I had a doubt about the process, and I felt comfortable signing the contract"
+
+deadapp_review_5:
+  order: deadapp_order_5
+  rating: 4
+  content: "The contract design process helped me to feel secure that I wouldn't get ripped off"
+
+deadapp_review_6:
+  order: deadapp_order_6
+  rating: 5
+  content: "I'm glad I found this site -- I could get my business app up and running without needing to know about programming, and without having to commission a custom app. The devs were happy to explain things to me in layman's terms"
+
+parkingapp_review_1:
+  order: parkingapp_order_1
+  rating: 5
+  content: "I wish I had opted to add an iOS app, but otherwise I'm happy with how it turned out"
+
+parkingapp_review_2:
+  order: parkingapp_order_2
+  rating: 4
+  content: 'Nice app, team was a pleasure to work with'
+
+parkingapp_review_3:
+  order: parkingapp_order_3
+  rating: 4
+  content: "The customization process worked surprizingly smoothly. I couldn't believe how easy it was to totally change the look of the app, with the help of the dev team"
+
+parkingapp_review_4:
+  order: parkingapp_order_4
+  rating: 3
+  content: "I wasn't sure what some of the features were for. The dev team were very supportive and helped me to fully understand the app and to make informed decisions"
+
+parkingapp_review_5:
+  order: parkingapp_order_5
+  rating: 4
+  content: "It was great to be able to communicate with the dev team whenever I had a doubt about the process, and I felt comfortable signing the contract"
+
+parkingapp_review_6:
+  order: parkingapp_order_6
+  rating: 3
+  content: "The contract design process helped me to feel secure that I wouldn't get ripped off"
+
+makent_review_1:
+  order: makent_order_1
+  rating: 3
+  content:  'Nice app, team was a pleasure to work with'
+
+makent_review_2:
+  order: makent_order_2
+  rating: 3
+  content: "The customization process worked surprizingly smoothly. I couldn't believe how easy it was to totally change the look of the app, with the help of the dev team"
+
+makent_review_3:
+  order: makent_order_3
+  rating: 4
+  content: "I wasn't sure what some of the features were for. The dev team were very supportive and helped me to fully understand the app and to make informed decisions"
+
+makent_review_4:
+  order: makent_order_4
+  rating: 4
+  content: "It was great to be able to communicate with the dev team whenever I had a doubt about the process, and I felt comfortable signing the contract"
+
+makent_review_5:
+  order: makent_order_5
+  rating: 5
+  content: "The contract design process helped me to feel secure that I wouldn't get ripped off"
+
+makent_cars_review_1:
+  order: makent_cars_order_1
+  rating: 2
+  content: "I'm glad I found this site -- I could get my business app up and running without needing to know about programming, and without having to commission a custom app. The devs were happy to explain things to me in layman's terms"
+
+makent_cars_review_2:
+  order: makent_cars_order_2
+  rating: 3
+  content: "I wish I had opted to add an iOS app, but otherwise I'm happy with how it turned out"
+
+makent_cars_review_3:
+  order: makent_cars_order_3
+  rating: 4
+  content: 'Nice app, team was a pleasure to work with'
+
+makent_cars_review_4:
+  order: makent_cars_order_4
+  rating: 3
+  content: "The customization process worked surprizingly smoothly. I couldn't believe how easy it was to totally change the look of the app, with the help of the dev team"
+
+makent_cars_review_5:
+  order: makent_cars_order_5
+  rating: 5
+  content: "I wasn't sure what some of the features were for. The dev team were very supportive and helped me to fully understand the app and to make informed decisions"
+
+makent_boats_review_1:
+  order: makent_boats_order_1
+  rating: 3
+  content: "It was great to be able to communicate with the dev team whenever I had a doubt about the process, and I felt comfortable signing the contract"
+
+makent_boats_review_2:
+  order: makent_boats_order_2
+  rating: 3
+  content: "The contract design process helped me to feel secure that I wouldn't get ripped off"
+
+makent_boats_review_3:
+  order: makent_boats_order_3
+  rating: 4
+  content: "I'm glad I found this site -- I could get my business app up and running without needing to know about programming, and without having to commission a custom app. The devs were happy to explain things to me in layman's terms"
+
+makent_boats_review_4:
+  order: makent_boats_order_4
+  rating: 4
+  content: "I wish I had opted to add an iOS app, but otherwise I'm happy with how it turned out"
+
+makent_boats_review_5:
+  order: makent_boats_order_5
+  rating: 5
+  content: 'Nice app, team was a pleasure to work with'
+
+gofer_review_1:
+  order: gofer_order_1
+  rating: 3
+  content: "The customization process worked surprizingly smoothly. I couldn't believe how easy it was to totally change the look of the app, with the help of the dev team"
+
+gofer_review_2:
+  order: gofer_order_2
+  rating: 5
+  content: "I wasn't sure what some of the features were for. The dev team were very supportive and helped me to fully understand the app and to make informed decisions"
+
+gofer_review_3:
+  order: gofer_order_3
+  rating: 4
+  content: "It was great to be able to communicate with the dev team whenever I had a doubt about the process, and I felt comfortable signing the contract"
+
+gofer_review_4:
+  order: gofer_order_4
+  rating: 4
+  content: "The contract design process helped me to feel secure that I wouldn't get ripped off"
+
+gofer_review_5:
+  order: gofer_order_5
+  rating: 5
+  content: "I'm glad I found this site -- I could get my business app up and running without needing to know about programming, and without having to commission a custom app. The devs were happy to explain things to me in layman's terms"
+
+spiffy_review_1:
+  order: spiffy_order_1
+  rating: 3
+  content: "I wish I had opted to add an iOS app, but otherwise I'm happy with how it turned out"
+
+spiffy_review_2:
+  order: spiffy_order_2
+  rating: 3
+  content: 'Nice app, team was a pleasure to work with'
+
+spiffy_review_3:
+  order: spiffy_order_3
+  rating: 4
+  content: "The customization process worked surprizingly smoothly. I couldn't believe how easy it was to totally change the look of the app, with the help of the dev team"
+
+spiffy_review_4:
+  order: spiffy_order_4
+  rating: 4
+  content: "I wasn't sure what some of the features were for. The dev team were very supportive and helped me to fully understand the app and to make informed decisions"
+
+spiffy_review_5:
+  order: spiffy_order_5
+  rating: 5
+  content: "It was great to be able to communicate with the dev team whenever I had a doubt about the process, and I felt comfortable signing the contract"
+
+igniter_review_1:
+  order: igniter_order_1
+  rating: 3
+  content: "The contract design process helped me to feel secure that I wouldn't get ripped off"
+
+igniter_review_2:
+  order: igniter_order_2
+  rating: 3
+  content: "I'm glad I found this site -- I could get my business app up and running without needing to know about programming, and without having to commission a custom app. The devs were happy to explain things to me in layman's terms"
+
+igniter_review_3:
+  order: igniter_order_3
+  rating: 4
+  content: "I wish I had opted to add an iOS app, but otherwise I'm happy with how it turned out"
+
+igniter_review_4:
+  order: igniter_order_4
+  rating: 4
+  content: 'Nice app, team was a pleasure to work with'
+
+igniter_review_5:
+  order: igniter_order_5
+  rating: 5
+  content: "The customization process worked surprizingly smoothly. I couldn't believe how easy it was to totally change the look of the app, with the help of the dev team"
+
+ea_treat_review_1:
+  order: ea_treat_order_1
+  rating: 3
+  content: "I wasn't sure what some of the features were for. The dev team were very supportive and helped me to fully understand the app and to make informed decisions"
+
+ea_treat_review_2:
+  order: ea_treat_order_2
+  rating: 3
+  content: "It was great to be able to communicate with the dev team whenever I had a doubt about the process, and I felt comfortable signing the contract"
+
+ea_treat_review_3:
+  order: ea_treat_order_3
+  rating: 4
+  content: "The contract design process helped me to feel secure that I wouldn't get ripped off"
+
+ea_treat_review_4:
+  order: ea_treat_order_4
+  rating: 4
+  content: "I'm glad I found this site -- I could get my business app up and running without needing to know about programming, and without having to commission a custom app. The devs were happy to explain things to me in layman's terms"
+
+ea_treat_review_5:
+  order: ea_treat_order_5
+  rating: 5
+  content: "I wish I had opted to add an iOS app, but otherwise I'm happy with how it turned out"
+
+gofer_eats_review_1:
+  order: gofer_eats_order_1
+  rating: 3
+  content: 'Nice app, team was a pleasure to work with'
+
+gofer_eats_review_2:
+  order: gofer_eats_order_2
+  rating: 3
+  content: "The customization process worked surprizingly smoothly. I couldn't believe how easy it was to totally change the look of the app, with the help of the dev team"
+
+gofer_eats_review_3:
+  order: gofer_eats_order_3
+  rating: 4
+  content: "I wasn't sure what some of the features were for. The dev team were very supportive and helped me to fully understand the app and to make informed decisions"
+
+gofer_eats_review_4:
+  order: gofer_eats_order_4
+  rating: 4
+  content: "It was great to be able to communicate with the dev team whenever I had a doubt about the process, and I felt comfortable signing the contract"
+
+gofer_eats_review_5:
+  order: gofer_eats_order_5
+  rating: 2
+  content: "The contract design process helped me to feel secure that I wouldn't get ripped off"
+
+pass_up_review_1:
+  order: pass_up_order_1
+  rating: 2
+  content: "I'm glad I found this site -- I could get my business app up and running without needing to know about programming, and without having to commission a custom app. The devs were happy to explain things to me in layman's terms"
+
+pass_up_review_2:
+  order: pass_up_order_2
+  rating: 2
+  content: "I wish I had opted to add an iOS app, but otherwise I'm happy with how it turned out"
+
+pass_up_review_3:
+  order: pass_up_order_3
+  rating: 3
+  content: 'Nice app, team was a pleasure to work with'
+
+pass_up_review_4:
+  order: pass_up_order_4
+  rating: 4
+  content: "The customization process worked surprizingly smoothly. I couldn't believe how easy it was to totally change the look of the app, with the help of the dev team"
+
+pass_up_review_5:
+  order: pass_up_order_5
+  rating: 3
+  content: "I wasn't sure what some of the features were for. The dev team were very supportive and helped me to fully understand the app and to make informed decisions"
