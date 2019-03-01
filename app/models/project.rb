@@ -1,4 +1,5 @@
 class Project < ApplicationRecord
+  CATEGORIES = %w[Games Business Education Lifestyle Entretainment Travel Health Other]
   belongs_to :user
   has_many :project_members, dependent: :destroy
   has_many :users, through: :project_members
@@ -8,6 +9,8 @@ class Project < ApplicationRecord
   has_many :orders, dependent: :destroy
   has_many :reviews, through: :orders
   validates :name, presence: true
+  validates :category, inclusion: { in: CATEGORIES }
+  accepts_nested_attributes_for :project_assets
 
   def rating
     ratings = []
