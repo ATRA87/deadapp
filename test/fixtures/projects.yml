@@ -1,7 +1,7 @@
 deadapp:
   name: App From The Dead
   user: mati
-  category:
+  category: <%= Project::CATEGORIES[1] %>
   description: "Got a working app that's gathering dust at the back of your hard disk? Give it some
   new life by showcasing it on our platform -- maybe it's the perfect app for someone!"
 
@@ -9,13 +9,13 @@ deadapp:
 parkingapp:
   name: ParkingApp
   user: claire
-  category:
+  category: <%= Project::CATEGORIES[5] %>
   description: "Rent out your parking space while you're not using it"
 
 makent:
   name: Makent – Airbnb Clone
   user: tat1
-  category: Travel
+  category: <%= Project::CATEGORIES[5] %>
   description: "Sharing economy created a great impact in all business, one among them is property rental. Top companies
   like Airbnb, VRBO, Homestay with millions of listings changes the historical booking flow of rooms.
   With latest technologies & features, each one differs themselves from others and created their own
@@ -33,7 +33,7 @@ makent:
 makent_cars:
   name: Makent Cars – Airbnb Clone For Cars
   user: tat2
-  category: Travel
+  category: <%= Project::CATEGORIES[5] %>
   description: "Makent Cars is the best sharing economy script for cars. It attracts world-wide
   customers for your business with effective marketing. This on-line interface enables the business
   owners to connect the car owners & riders effectively. Makent Cars is an exemplary web based peer
@@ -47,7 +47,7 @@ makent_cars:
 makent_boats:
   name: Makent Boats – Boat Rental Script
   user: tat3
-  category: Travel
+  category: <%= Project::CATEGORIES[5] %>
   description: "Airbnb, the pioneer of rental business influences many business minds to initiate
   business in the Airbnb module. The idea of rental business can be customized for different items,
   for example, rentals of living property, transports, books, planner dresses and so on.
@@ -63,7 +63,7 @@ makent_boats:
 gofer:
   name: Gofer – Uber Clone
   user: tat1
-  category: Travel
+  category: <%= Project::CATEGORIES[5] %>
   description: "Gofer is the best Uber clone script with all the needed features to start the taxi
   booking business instantly.
 
@@ -76,7 +76,7 @@ gofer:
 spiffy:
   name: Spiffy – Fancy Clone
   user: tat2
-  category: Lifestyle
+  category: <%= Project::CATEGORIES[3] %>
   description: "Spiffy is a Fancy Clone Script with Multi-vendor and Best Social eCommerce features.
   Spiffy is an online shopping clone script which allows users to engaged in social media to do
   shopping in eCommerce site through picture feeds and sharing. This script is a single platform which
@@ -90,7 +90,7 @@ spiffy:
 igniter:
   name: Igniter – Tinder Clone
   user: tat3
-  category: Lifestyle
+  category: <%= Project::CATEGORIES[3] %>
   description: "People who use Internet to date someone is increasing every year. Dating Businesses
   have also became the most profitable niche on the web and all dating business leaders are increasing
   their revenue every year. Igniter (Tinder clone) is the dating script sparks with the concept of
@@ -105,7 +105,7 @@ igniter:
 ea_treat:
   name: eaTreat – Just Eat Clone
   user: tat1
-  category: Lifestyle
+  category: <%= Project::CATEGORIES[3] %>
   description: "With the simple business model, Online food ordering business is increasing their
   revenue day by day. The only reason is convenience. With hand filled menus, the user can easily
   order their foods. The restaurants are benefited by wide exposure & the admin of these business
@@ -121,7 +121,7 @@ ea_treat:
 gofer_eats:
   name: GoferEats – UberEats Clone
   user: tat2
-  category: Lifestyle
+  category: <%= Project::CATEGORIES[3] %>
   description: "Food ordering & delivery service is flourishing really fast. Many successful business
   proven the worth of online food ordering business, here comes another business module with the
   combination of both food ordering & delivery option from third party other than the restaurant's
@@ -136,7 +136,7 @@ gofer_eats:
 pass_up:
   name: PassUp – Letgo Clone
   user: tat3
-  category: Lifestyle
+  category: <%= Project::CATEGORIES[3] %>
   description: "Old myths of buying and selling products are totally changed due to the emerge of
   eCommerce business concept, the world faced lot of changes in buying & selling products. Not only
   for new products, its also easy to buy & sell old products with the same concept. Beyond the

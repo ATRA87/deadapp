@@ -9,7 +9,7 @@ makent_1:
 
 makent_2:
   project: makent
-  photo: https://www.youtube.com/embed/_pmOOsm5FL0?rel=0&amp;showinfo=0
+  photo: <iframe width="auto" height="auto" src="https://www.youtube.com/embed/_pmOOsm5FL0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   priority: 2
 
 makent_3:
