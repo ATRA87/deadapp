@@ -44,6 +44,7 @@ class ProjectsController < ApplicationController
   end
 
   def update
+    @users = User.all
     authorize @project
     @project.update(project_params)
     ids = params[:project][:user_ids].uniq
@@ -60,9 +61,11 @@ class ProjectsController < ApplicationController
     photo = params[:project][:project_asset][:photo]
     ProjectAsset.create(project: @project, photo: photo)
 
-    return redirect_to @project if @project.save
-
-    render :new
+    if @project.save
+      redirect_to @project
+    else
+      render :edit
+    end
   end
 
   def project_assets

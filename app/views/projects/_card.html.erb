@@ -1,5 +1,5 @@
 <div class="card">
-  <% classes = "card-img small" %>
+  <% classes = "card-img" %>
   <%= render 'shared/project_photo', project: project, classes: classes  %>
 
   <div class="card-info">
@@ -8,7 +8,7 @@
         <%= render 'shared/stars', project: project %>
     </div>
     <div class="description">
-      <p><%= project.description %></p>
+      <p><%= project.description.truncate(200, separator: /\s/) %></p>
     </div>
     <div class="owner-info">
       <div class="avatar-container">
