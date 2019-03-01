@@ -16,4 +16,10 @@ class Project < ApplicationRecord
     end
     return ratings.empty? ? 0 : ratings.sum / ratings.count
   end
+
+  def main_asset
+    self.project_assets.find do |pa|
+      pa.priority == 1
+    end
+  end
 end

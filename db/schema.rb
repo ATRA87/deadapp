@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(version: 2019_02_28_200907) do
   create_table "project_assets", force: :cascade do |t|
     t.bigint "project_id"
     t.string "web_url"
-    t.integer "priority"
+    t.integer "priority", default: 1
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "photo"

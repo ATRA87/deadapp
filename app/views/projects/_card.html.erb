@@ -1,6 +1,6 @@
 <div class="card">
   <% if project.project_assets.count != 0 %>
-    <div class="card-img" style="background-image: url('<%= project.project_assets.first.photo.identifier %>'); background-position: center; background-size: cover;">
+    <div class="card-img" style="background-image: url('<%= project.main_asset.photo.identifier %>'); background-position: center; background-size: cover;">
     </div>
   <% else %>
     <div class="card-img" style="background-image: url('https://res.cloudinary.com/dy3nldgkf/image/upload/v1551292620/image-placeholder_3x2.svg'); background-position: center;">
