@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   resources :orders, except: [:new, :create] do
     resources :reviews, only: [:new, :create]
   end
-  resources :teams, only: [:index, :show, :edit, :update]
+  resources :project_members, only: [:index, :show, :edit, :update, :destroy]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
 end

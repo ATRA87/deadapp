@@ -1,0 +1,7 @@
+<% if project.project_assets.count != 0 %>
+  <div class="card-img" style="background-image: url('<%= project.main_asset.photo.identifier %>'); background-position: center; background-size: cover;">
+  </div>
+<% else %>
+  <div class="card-img-placeholder" style="background-image: url(<%= image_path "Hand_&_Logo.svg" %>); background-position: center;">
+  </div>
+<% end %>
