@@ -1,9 +1,13 @@
+
+<div style="background-color: #fbfbfb;">
 <div class="container profile">
-  <h1>your profile</h1>
+  <h1><%= current_user.full_name %></h1>
   <h3>About</h3>
   <div class="profile-info">
     <div class="profile-edit">
+      <%= link_to "#", class: "unstyle-color-link" do %>
       <i class="fas fa-edit"></i>
+      <% end %>
     </div>
     <div class="profile-info-details">
       <div class="profile-info-img" style="background-image: url('https://picsum.photos/250/150?random');" >
@@ -25,14 +29,19 @@
          <span>Delivered on time</span>
           <div class="profile-star">
           <i class="fas fa-star"></i>
-
           </div>
        </div>
       </div> <!-- end of the profile-ratings div -->
         <div class="profile-links">
+          <%= link_to "#", class: "unstyle-color-link" do %>
           <i class="fas fa-paperclip"></i>
+          <% end %>
+          <%= link_to "#", class: "unstyle-color-link" do %>
           <i class="far fa-comments"></i>
-          <i class="fab fa-linkedin-in"></i>
+          <% end %>
+          <%= link_to "#", class: "unstyle-color-link" do %>
+            <i class="fab fa-linkedin-in"></i>
+          <% end %>
         </div><!-- end of the profile-links-div -->
     </div> <!-- end of the profile-info-details-div -->
    <div class="profile-description">
@@ -63,14 +72,11 @@
              <span>Comunication</span>
               <div class="profile-star">
               <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
               </div>
             </div>
            <div class="profile-rating">
              <span>Quality of product</span>
               <div class="profile-star">
-              <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               </div>
            </div>
@@ -85,18 +91,19 @@
     </div> <!-- end of the profile-reviews div -->
     <div class="profile-projects">
       <h3>Projects</h3>
-      <div class="container">
         <div class="row">
           <% @projects.each do |project| %>
-            <div class="col-xs-12 col-md-6 card-wrapper">
-              <%= link_to project_path(project) do %>
-                <%= render 'card', project: project %>
-              <% end %>
-            </div>
+          <div class="col-xs-12 col-md-6 card-wrapper">
+            <%= link_to project_path(project) do %>
+            <%= render 'projects/card', project: project %>
+            <% end %>
+          </div>
           <% end %>
         </div>
-      </div>
+
     </div>
   </div>
+</div>
+</div>
 
 

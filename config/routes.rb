@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'authorizations/linkedin'
   get 'authorizations/failure'
   root to: 'projects#index'
-  get "profile", to: "pages#profile"
+  get "profile", to: "pages#profile", as: :profile
   devise_for :users, controllers: { omniauth_callbacks: 'authorizations' }
 
   resources :projects do

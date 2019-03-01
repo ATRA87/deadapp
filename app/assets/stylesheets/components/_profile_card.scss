@@ -4,10 +4,11 @@
     flex-direction: column;
 
 
+
     h3 {
-      padding-left: 40px;
+      padding-left: 10px;
       font-family: roboto;
-      color: rgba(0,0,0,0.6);
+      color:#35477D;
     }
     h1{
       text-align: center;
@@ -21,6 +22,7 @@
   border: 1px solid rgba(0,0,0,0.1);
   box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
   padding: 20px;
+  background-color: white;
 }
 
 .profile-edit{
@@ -56,8 +58,9 @@
   margin-bottom: 10px;
   align-items: center;
   span {
-    font-weight: lighte;
+    font-weight: bold;
     font-family: sans-serif;
+    color: #636363;
   }
 }
 
@@ -81,6 +84,7 @@
 }
 
 .profile-review {
+    background-color: white;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
@@ -88,6 +92,8 @@
     h3{
       padding-left: 0px;
       font-weight: normal;
+      font-family: sans-serif;
+      color: gray;
     }
 
 }
@@ -96,4 +102,8 @@
 .profile-review-detail {
   display: flex;
   align-items: center;
+}
+
+ a.unstyle-color-link {
+  color: #35477D;
 }
