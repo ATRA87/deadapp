@@ -10,7 +10,10 @@
     text-align: center;
   }
 }
+.ratings {
+  min-width: 250px;
 
+}
 .review {
   font-family: $body-font;
   padding: 15px 0 10px 0;
@@ -69,7 +72,6 @@
 }
 
 .project-info {
-  min-width: 250px;
   margin-left: 20px;
   .user-info {
     display: flex;
@@ -85,7 +87,12 @@
   width: 50px;
 }
 
+.project-description {
+  margin-bottom: 20px;
+}
+
 .ratings{
+  min-width: 250px;
   .fas.fa-star {
     font-size: 16px;
   }

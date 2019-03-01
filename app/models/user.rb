@@ -21,4 +21,17 @@ class User < ApplicationRecord
       user.profile_picture = auth.info.picture_url
     end
   end
+
+  def full_name
+    first = first_name.capitalize if first_name
+    last = las_name.capitalize if last_name
+
+    if first_name or last_name
+      "#{first} #{last}"
+    else
+      email
+    end
+
+
+  end
 end

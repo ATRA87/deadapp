@@ -52,7 +52,7 @@ ActiveRecord::Schema.define(version: 2019_02_28_200907) do
   create_table "project_members", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "project_id"
-    t.string "state", default: "pending"
+    t.integer "state", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["project_id"], name: "index_project_members_on_project_id"
@@ -65,6 +65,7 @@ ActiveRecord::Schema.define(version: 2019_02_28_200907) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "description"
+    t.string "category"
     t.index ["user_id"], name: "index_projects_on_user_id"
   end
 
@@ -97,7 +98,7 @@ ActiveRecord::Schema.define(version: 2019_02_28_200907) do
     t.string "access_token"
     t.string "first_name"
     t.string "last_name"
-    t.string "profile_picture", default: "https://res.cloudinary.com/dy3nldgkf/image/upload/c_scale,h_60,w_60/v1551213914/profile-placeholder.png", null: false
+    t.string "profile_picture", default: "unofficial_hand.jpg", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
