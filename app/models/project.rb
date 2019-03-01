@@ -25,4 +25,10 @@ class Project < ApplicationRecord
       pm.state == 'accepted'
     end.map { |pm2| pm2.user }
   end
+  
+  def main_asset
+    self.project_assets.find do |pa|
+      pa.priority == 1
+    end
+  end
 end

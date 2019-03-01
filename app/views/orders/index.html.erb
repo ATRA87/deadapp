@@ -1,0 +1,12 @@
+<div class="container">
+  <div id="orders_as_client">
+    <% @orders_as_client.each do |order| %>
+      <%= render "order_card", order: order %>
+    <% end %>
+  </div>
+
+  <div id="orders_as_owner">
+
+  </div>
+</div>
+

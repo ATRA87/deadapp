@@ -15,4 +15,8 @@ class ProjectPolicy < ApplicationPolicy
   def update?
     record.user == user
   end
+
+  # def mine?
+  #   true
+  # end
 end

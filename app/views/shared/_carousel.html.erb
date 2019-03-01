@@ -24,11 +24,11 @@
     <div class="carousel-inner" style="border-radius: 9px; min-width: 100%;">
       <% if  project.project_assets.count != 0 %>
         <div class="item active">
-          <img src="<%= project.project_assets.first.photo_url %>" style="width:100%; height: 100%;">
+          <img src="<%= project.project_assets.first.photo.identifier %>" style="width:100%; height: 100%;">
         </div>
         <% project.project_assets.drop(1).each do |asset| %>
           <div class="item">
-            <img src="<%= asset.photo_url %>" style="width:100%; height: 200%;">
+            <img src="<%= asset.photo.identifier %>" style="width:100%; height: 200%;">
           </div>
         <% end %>
       <% else %>

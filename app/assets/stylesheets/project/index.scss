@@ -31,6 +31,17 @@
   border-radius: 9px;
   height: 50%;
   width: 100%;
+  background-size: 60%;
+}
+
+.card-img-placeholder {
+  background-color: #eaeaea;
+  border-radius: 9px;
+  height: 50%;
+  width: 100%;
+  background-size: 80%;
+  background-position: 50% 58%;
+  background-repeat: no-repeat;
 }
 
 .card-info {
@@ -58,6 +69,7 @@
 .description {
   // padding: 10px 10px;
   flex-grow: 1;
+  overflow: hidden;
 }
 
 .owner-info {
