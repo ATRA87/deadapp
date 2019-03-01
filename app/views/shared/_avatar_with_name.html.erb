@@ -1,6 +1,8 @@
-<div class="user-info">
-  <div class="user-img" style="width: 50px; height: 50px;">
-    <%= render 'shared/avatar', user: user %>
+<%= link_to profile_path(user) do %>
+  <div class="user-info">
+    <div class="user-img" style="width: 50px; height: 50px;">
+      <%= render 'shared/avatar', user: user %>
+    </div>
+    <p><%= user.email %></p>
   </div>
-  <p><%= user.email %></p>
-</div>
+<% end %>
