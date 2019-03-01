@@ -10,10 +10,63 @@
     text-align: center;
   }
 }
-.ratings {
-  min-width: 250px;
+
+.dropdown-btn {
+  border-radius: 3px 0 0 3px;
+  padding:  5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border: 1px solid #EAEAEA;
+  padding: 5px;
+  .user-img {
+    width: 30px!important;
+    height: 30px!important;
+  }
 
 }
+
+.team-member {
+  font-family: $body-font;
+  background-color: white;
+  width: 100%;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-bottom: 5px;
+}
+
+.team-member:hover .user-info {
+  p { color: #20367A; }
+  .card-avatar { border: 1px solid #20367A}
+}
+
+.dropdown:hover .dropdown-btn {
+  background-color: #EAEAEA;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.ratings {
+  min-width: 250px;
+}
+
+.developers {
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+  .user-info {
+    margin: 0 10px 0 0 !important;
+  }
+  p {
+    margin: 0;
+  }
+}
+
 .review {
   font-family: $body-font;
   padding: 15px 0 10px 0;

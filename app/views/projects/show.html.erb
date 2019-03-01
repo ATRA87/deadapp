@@ -11,7 +11,21 @@
         </div>
       </div>
       <div class="project-info">
-        <%= render 'shared/avatar_with_name', user: @project.user %>
+        <div class="developers">
+          <%= render 'shared/avatar_with_name', user: @project.user %>
+          <div class="dropdown">
+            <div class="dropdown-btn">
+              Rest of the team <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="dropdown-content">
+              <% @project.team.each do |user| %>
+                <div class="team-member">
+                  <%= render 'shared/avatar_with_name', user: user %>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        </div>
         <div class="ratings">
           <ul>
             <li><strong>Editor's review</strong></li>
@@ -24,11 +38,6 @@
         </div>
         <div class="social-buttons">
           share download coment
-        </div>
-        <div class="team">
-          <% @project.team.each do |user| %>
-            <p><%= user.email %></p>
-          <% end %>
         </div>
       </div>
     </div>
