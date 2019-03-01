@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_28_205522) do
+ActiveRecord::Schema.define(version: 2019_02_28_200907) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,8 +35,6 @@ ActiveRecord::Schema.define(version: 2019_02_28_205522) do
     t.string "state", default: "pending"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.date "Date"
-    t.date "dudedate"
     t.index ["project_id"], name: "index_orders_on_project_id"
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
@@ -49,14 +47,6 @@ ActiveRecord::Schema.define(version: 2019_02_28_205522) do
     t.datetime "updated_at", null: false
     t.string "photo"
     t.index ["project_id"], name: "index_project_assets_on_project_id"
-  end
-
-  create_table "project_details", force: :cascade do |t|
-    t.bigint "project_id"
-    t.string "description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["project_id"], name: "index_project_details_on_project_id"
   end
 
   create_table "project_members", force: :cascade do |t|
@@ -108,7 +98,7 @@ ActiveRecord::Schema.define(version: 2019_02_28_205522) do
     t.string "access_token"
     t.string "first_name"
     t.string "last_name"
-    t.string "profile_picture", default: "unofficial_hand.jpg", null: false
+    t.string "profile_picture", default: "https://res.cloudinary.com/dy3nldgkf/image/upload/c_scale,h_60,w_60/v1551213914/profile-placeholder.png", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
@@ -118,7 +108,6 @@ ActiveRecord::Schema.define(version: 2019_02_28_205522) do
   add_foreign_key "orders", "projects"
   add_foreign_key "orders", "users"
   add_foreign_key "project_assets", "projects"
-  add_foreign_key "project_details", "projects"
   add_foreign_key "project_members", "projects"
   add_foreign_key "project_members", "users"
   add_foreign_key "projects", "users"
