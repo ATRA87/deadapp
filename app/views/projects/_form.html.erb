@@ -9,12 +9,15 @@
     <div class="btn btn-primary" id="add-btn">add</div>
     <% project.users.each do |selected_user| %>
       <select class="form-control select optional" name="project[user_ids][]" id="project_user_ids">
-      <option value="<%= selected_user.id %>"><%= selected_user.email %></option>
-    </select>
+        <option value="<%= selected_user.id %>"><%= selected_user.email %></option>
+        <% users.each do |user| %>
+          <option value="<%= user.id %>"><%= user.email %></option>
+        <% end %>
+      </select>
     <% end %>
     <select class="form-control select optional" name="project[user_ids][]" id="project_user_ids">
       <option value=""></option>
-      <% @users.each do |user| %>
+      <% users.each do |user| %>
         <option value="<%= user.id %>"><%= user.email %></option>
       <% end %>
     </select>
