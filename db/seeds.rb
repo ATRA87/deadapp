@@ -92,15 +92,9 @@ Review.find_each(&:validate!)
 
 puts "---------------- Validating Projects --------------"
 
-# Project.map do |project|
-
-# end
-
 Project.find_each(&:validate!)
 
 puts "---------------- Validating ProjectAssets --------------"
 
 ProjectAsset.find_each(&:validate!)
 
-
-# project.remote_pictures_urls = ['w...', 'w,,']
