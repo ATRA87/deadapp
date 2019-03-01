@@ -12,6 +12,11 @@
       </div>
       <div class="project-info">
         <%= render 'shared/avatar_with_name', user: @project.user %>
+        <div class="team">
+          <% @project.team.each do |user| %>
+            <p><%= user.email %></p>
+          <% end %>
+        </div>
         <div class="ratings">
           <ul>
             <li><strong>Editor's review</strong></li>
@@ -24,11 +29,6 @@
         </div>
         <div class="social-buttons">
           share download coment
-        </div>
-        <div class="team">
-          <% @project.team.each do |user| %>
-            <p><%= user.email %></p>
-          <% end %>
         </div>
       </div>
     </div>
