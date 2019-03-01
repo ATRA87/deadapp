@@ -6,7 +6,7 @@
       </div>
       <h1 class="text-center order-title">Orders</h1>
       <div class="order-cards">
-        <%= @orders.each do |order| %>
+        <% @orders.each do |order| %>
           <%= render "order_card", order: order %>
         <% end %>
       </div>

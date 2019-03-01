@@ -30,7 +30,15 @@
 
 .order-title {
   margin: 0;
-  padding: 48px 0px;
-  border: 2px solid blue;
-  margin: 39px;
 }
+
+.order_card {
+  height: 160px !important;
+  display: flex;
+  flex-direction: row;
+}
+
+ .rounded-image {
+  width: 5em;
+  border-radius: 50%;
+ }
