@@ -3,3 +3,22 @@
 // @import "dashboard";
 // @import "profile";
 // @import "map";
+
+body {
+  font-family: $font-family-sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 32px;
+  color:#35477D;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color:#858AA3;
+}
