@@ -7,20 +7,26 @@
     <label class="form-control-label select optional" for="project_user_ids">Team members</label>
     <input name="project[user_ids][]" type="hidden" value="" />
     <div class="btn btn-primary" id="add-btn">add</div>
-    <% project.users.each do |selected_user| %>
+    <% project.users.each_with_index do |selected_user| %>
+      <div class="selector-field" style="display: flex; align-items: center;">
+        <select class="form-control select optional" name="project[user_ids][]" id="project_user_ids">
+          <option value="<%= selected_user.id %>"><%= selected_user.email %></option>
+          <% users.each do |user| %>
+            <option value="<%= user.id %>"><%= user.email %></option>
+          <% end %>
+        </select>
+        <div id="delete-btn" style="margin-left: 10px;"><i class="far fa-trash-alt" id="delete-btn"></i></div>
+      </div>
+    <% end %>
+    <div class="selector-field" style="display: flex; align-items: center;">
       <select class="form-control select optional" name="project[user_ids][]" id="project_user_ids">
-        <option value="<%= selected_user.id %>"><%= selected_user.email %></option>
+        <option value=""></option>
         <% users.each do |user| %>
           <option value="<%= user.id %>"><%= user.email %></option>
         <% end %>
       </select>
-    <% end %>
-    <select class="form-control select optional" name="project[user_ids][]" id="project_user_ids">
-      <option value=""></option>
-      <% users.each do |user| %>
-        <option value="<%= user.id %>"><%= user.email %></option>
-      <% end %>
-    </select>
+      <div class="delete-btn" style="margin-left: 10px;"><i class="far fa-trash-alt" id="delete-btn"></i></div>
+    </div>
   </div>
 
   <%= f.simple_fields_for ProjectAsset.new do |f2| %>

@@ -2,7 +2,16 @@
   <div class="project-core-info">
     <div class="project-assets-and-info">
       <div class="project-title-and-assets">
-        <h1><%= @project.name %> <%= link_to 'edit', edit_project_path(@project) %></h1>
+        <div class="project-title">
+          <h1><%= @project.name %></h1>
+          <div id="edit-btn">edit</div>
+        </div>
+        <div id="form-modal">
+          <div class="modal-content">
+            <h1>Edit project</h1>
+            <%= render 'form', project: @project, users: @users %>
+          </div>
+        </div>
         <div class="project-assets">
           <%= render 'shared/carousel', project: @project %>
         <% if policy(@project).update? %>
