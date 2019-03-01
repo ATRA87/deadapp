@@ -32,7 +32,10 @@ ActiveRecord::Schema.define(version: 2019_02_28_200907) do
   create_table "orders", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "project_id"
-    t.string "state", default: "pending"
+    t.string "dev_state", default: 0
+    t.integer "client_state", default: 0
+    t.date "due_date"
+    t.integer "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["project_id"], name: "index_orders_on_project_id"
@@ -72,7 +75,10 @@ ActiveRecord::Schema.define(version: 2019_02_28_200907) do
   create_table "reviews", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "order_id"
-    t.integer "rating"
+    t.boolean "editor", default: false
+    t.integer "communication_rating"
+    t.integer "quality_rating"
+    t.integer "delivery_on_time_rating"
     t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
