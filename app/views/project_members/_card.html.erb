@@ -1,0 +1,11 @@
+  <div class="horizontal-card">
+    <% classes = "card-img small" %>
+    <%= render 'shared/project_photo', project: invitation.project, classes: classes %>
+    <%= link_to invitation.project.name, project_path(invitation.project) %>
+    <% if invitation.pending? %>
+      <div class="answer-buttons">
+        <%= link_to 'Reject', project_member_path(invitation), method: 'delete', class:"btn btn-danger" %>
+        <%= link_to 'Join', project_member_path(invitation), method: 'patch', class:"btn btn-success" %>
+      </div>
+    <% end %>
+  </div>

@@ -10,7 +10,8 @@ class ProjectMembersController < ApplicationController
   end
 
   def index
-    @invitations = policy_scope(ProjectMember).where(user: current_user).where(state: 'pending')
+    @pending = policy_scope(ProjectMember).where(user: current_user).where(state: 0)
+    @accepted = policy_scope(ProjectMember).where(user: current_user).where(state: 1)
   end
 
   def update
