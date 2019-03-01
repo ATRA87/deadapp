@@ -1,12 +1,27 @@
-<div class="order-card">
-  <img src="" alt="">
-  <div class="project-name">
-    <%= order.name %>
+<div class="card order_card ">
+  <div class="order-project-img">
+    <%= image_tag "Shaggy", class: "rounded-image img" %>
   </div>
-  <div class="project-description">
-    <%= order.project.details %>
+  <div class="order-description">
+    <span>price</span>
+    <span>due date</span>
+    <span></span>
+    <span>features</span>
+    <span>click for addational detials...</span>
   </div>
-  <div class="project-stats">
-    <%= order.state %>
+  <div class="order-cta">
+    <%= link_to "Accept", root_path, class: "order-accept" %>
+    <%= link_to "Modify", root_path, class: "order-update" %>
+  </div>
+  <div class="order-info">
+    <span class="order-status">
+      Pending
+    </span>
+    <span class="order-creation-date">
+      since Feb 1st 2021
+    </span>
+    <span class="order-updated-date">
+      due Feb 1st 2021
+    </span>
   </div>
 </div>

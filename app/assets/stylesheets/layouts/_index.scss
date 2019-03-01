@@ -5,8 +5,28 @@
 // @import "map";
 
 body {
-  font-size: 16px;
   font-family: $font-family-sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 32px;
+  color:#35477D;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color:#858AA3;
+}
+
+img {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 h2 {

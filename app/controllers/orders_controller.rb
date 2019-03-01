@@ -1,7 +1,6 @@
 class OrdersController < ApplicationController
 
   def index
-    @orders_as_client = current_user.orders
-    @orders_as_owner = current_user.project_orders
+    @orders = policy_scope(Order)
   end
 end

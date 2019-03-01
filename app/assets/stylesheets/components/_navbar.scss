@@ -8,6 +8,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-top-color: #35477D;
+  border-top-width: 2px;
+  border-top-style: solid;
 }
 
 /* Logo */
@@ -38,13 +41,13 @@
 /* Navbar link */
 .navbar-wagon-link {
   color: #35477D;
-  font-size: 14px;
+  font-size: 16px;
 }
-.navbar-wagon-link:hover {
-  color: #35477D;
-  font-weight: bold;
-  text-decoration: none;
-}
+// .navbar-wagon-link:hover {
+//   color: #35477D;
+//   font-weight: bold;
+//   text-decoration: none;
+// }
 
 /* Dropdown menu */
 .navbar-wagon-dropdown-menu {
