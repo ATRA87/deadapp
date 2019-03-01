@@ -52,7 +52,7 @@ ActiveRecord::Schema.define(version: 2019_02_28_200907) do
   create_table "project_members", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "project_id"
-    t.string "state", default: "pending"
+    t.integer "state", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["project_id"], name: "index_project_members_on_project_id"

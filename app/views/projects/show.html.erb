@@ -26,7 +26,7 @@
           share download coment
         </div>
         <div class="team">
-          <% @project.users.each do |user| %>
+          <% @project.team.each do |user| %>
             <p><%= user.email %></p>
           <% end %>
         </div>

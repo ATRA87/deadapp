@@ -20,6 +20,12 @@ class Project < ApplicationRecord
     return ratings.empty? ? 0 : ratings.sum / ratings.count
   end
 
+  def team
+    self.project_members.select do |pm|
+      pm.state == 'accepted'
+    end.map { |pm2| pm2.user }
+  end
+  
   def main_asset
     self.project_assets.find do |pa|
       pa.priority == 1
