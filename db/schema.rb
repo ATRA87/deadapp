@@ -98,7 +98,7 @@ ActiveRecord::Schema.define(version: 2019_02_28_200907) do
     t.string "access_token"
     t.string "first_name"
     t.string "last_name"
-    https://res.cloudinary.com/dy3nldgkf/image/upload/c_scale,h_60,w_60/v1551213914/profile-placeholder.png
+    t.string https://res.cloudinary.com/dy3nldgkf/image/upload/c_scale,h_60,w_60/v1551213914/profile-placeholder.png
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
