@@ -1,100 +1,239 @@
-# remote_pictures_urls = [
-#   [],
-#   [],
-#   [
-#     'https://www.trioangle.com/images/makent-banner.svg',
-#     'https://www.youtube.com/embed/_pmOOsm5FL0?rel=0&amp;showinfo=0',
-#     'https://www.trioangle.com/images/makent/airbnb_clone_Signup.png',
-#     'https://www.trioangle.com/images/makent/technology.svg'
-#   ],
-#   [
-#     'https://www.trioangle.com/images/makentcars-banner.svg',
-#     'https://www.youtube.com/embed/O_7oQeeaYXI?rel=0&amp;showinfo=0',
-#     'https://www.trioangle.com/images/makentcars/car_rental_Multi_login.png',
-#     'https://www.trioangle.com/images/makentcars/technology.svg'
-#   ],
-#   [
-#     'https://www.trioangle.com/images/makentboats-banner.svg',
-#     'https://www.youtube.com/embed/9MlmOfwimUk?rel=0&amp;showinfo=0',
-#     'https://www.trioangle.com/images/makentboats/boat_rental_Multiple_Login_SignUp-Boats.png',
-#     'https://www.trioangle.com/images/makentboats/technology.svg'
-#   ],
-#   [
-#     'https://www.trioangle.com/images/gofer-banner.svg',
-#     'https://www.youtube.com/embed/TDdNh9RNxmg?rel=0&amp;showinfo=0',
-#     'https://www.youtube.com/embed/6SroRpybKVc?rel=0&amp;showinfo=0',
-#     'https://www.trioangle.com/images/gofer/uber_clone_Simple_SignUp_Login.png',
-#     'https://www.trioangle.com/images/gofer/uber_clone_admin.png',
-#     'https://www.trioangle.com/images/gofer/technology.svg'
-#   ],
-#   [
-#     'https://www.trioangle.com/images/spiffy-banner.svg',
-#     'https://www.youtube.com/embed/S3NLdxXpDKg?rel=0&amp;showinfo=0',
-#     'https://www.trioangle.com/images/spiffy/fancy_clone__multiple_login_sign_up.pngs',
-#     'https://www.trioangle.com/images/spiffy/fancy_clone_buyer.png',
-#     'https://www.trioangle.com/images/spiffy/technology.svg'
-#   ],
-#   [
-#     'https://www.trioangle.com/images/igniter-banner.svg',
-#     'https://www.youtube.com/embed/whTJggEswLk?rel=0&amp;showinfo=0',
-#     'https://www.trioangle.com/images/igniter/tinder_clone_Smooth_Search_Filters.png',
-#     'https://www.trioangle.com/images/igniter/tinder_clone_AppStore.png',
-#     'https://www.trioangle.com/images/igniter/technology.svg'
-#   ],
-#   [
-#     'https://www.trioangle.com/images/eatreat-banner.svg',
-#     'https://www.youtube.com/embed/hLtRUeNQqKE?rel=0&amp;showinfo=0',
-#     'https://www.trioangle.com/images/eatreat/technology.svg'
-#   ],
-#   [
-#     'https://www.trioangle.com/images/gofereats-banner.svg',
-#     'https://www.youtube.com/embed/KL9KJnc-5Hk?rel=0&amp;showinfo=0',
-#     'https://www.trioangle.com/images/gofereats/ubereats_clone_track_order.png',
-#     'https://www.trioangle.com/images/gofereats/ubereats_clone_admin.png',
-#     'https://www.trioangle.com/images/gofereats/technology.svg'
-#   ],
-#   [
-#     'https://www.trioangle.com/images/passup-banner.svg',
-#     'https://www.trioangle.com/images/passup/letgo_clone_easy_signup.png',
-#     'https://www.trioangle.com/images/passup/technology.svg'
-#   ]
-# ]
-
-
-
-puts "---------------- Loading Fixtures --------------"
-
-`rails db:fixtures:load`
-
-puts "---------------- Validating Customizations --------------"
-
-Customization.find_each(&:validate!)
-
-puts "---------------- Validating Features --------------"
-
-Feature.find_each(&:validate!)
-
-puts "---------------- Validating Orders --------------"
-
-Order.find_each(&:validate!)
-
-puts "---------------- Validating ProjectMembers --------------"
-
-ProjectMember.find_each(&:validate!)
-
-puts "---------------- Validating Users --------------"
-
-User.find_each(&:validate!)
-
-puts "---------------- Validating Reviews --------------"
-
-Review.find_each(&:validate!)
-
-puts "---------------- Validating Projects --------------"
-
-Project.find_each(&:validate!)
-
-puts "---------------- Validating ProjectAssets --------------"
-
-ProjectAsset.find_each(&:validate!)
-
+User.create!([
+  {email: "bill@gmail.com", encrypted_password: "$2a$11$nLnXYjXOB5Ui4Se3W1pwnumWhowtkGfQzX5R/pQEjgTSH14yv6AAe", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 0, current_sign_in_at: nil, last_sign_in_at: nil, current_sign_in_ip: nil, last_sign_in_ip: nil, provider: nil, uid: nil, access_token: nil, first_name: "Bill", last_name: "K", profile_picture: "https://res.cloudinary.com/diyosnlxf/image/upload/v1551396438/Shaggy.png"},
+  {email: "alfonso@gmail.com", encrypted_password: "$2a$11$aM9z5KNFiXtCdQMnl7Dok.TTsOZwTdff4b8RmQT.hyas3RX5A5aXW", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 0, current_sign_in_at: nil, last_sign_in_at: nil, current_sign_in_ip: nil, last_sign_in_ip: nil, provider: nil, uid: nil, access_token: nil, first_name: "Alfonso", last_name: "Q", profile_picture: "https://res.cloudinary.com/diyosnlxf/image/upload/v1551396438/Fred.jpg"},
+  {email: "claire@gmail.com", encrypted_password: "$2a$11$ERLnn9ub.JcurSKLYIFKEe/brILSRzXW9Xl3b6jCrw7aB73q285gm", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 0, current_sign_in_at: nil, last_sign_in_at: nil, current_sign_in_ip: nil, last_sign_in_ip: nil, provider: nil, uid: nil, access_token: nil, first_name: "Claire", last_name: "F", profile_picture: "https://res.cloudinary.com/diyosnlxf/image/upload/v1551396440/Velma.jpg"},
+  {email: "parsley@deadapp.com", encrypted_password: "$2a$11$TUuUGt/V.lNBIIhoDqjsIOshYQAkXgIX1QkBuQ6esyZf2/a43KL..", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 0, current_sign_in_at: nil, last_sign_in_at: nil, current_sign_in_ip: nil, last_sign_in_ip: nil, provider: nil, uid: nil, access_token: nil, first_name: "Parsley", last_name: "Herb", profile_picture: "https://res.cloudinary.com/diyosnlxf/image/upload/v1551396442/Parsley.jpg"},
+  {email: "sage@deadapp.com", encrypted_password: "$2a$11$OFomd4h0ClF5woGG6/Y32O8vh64.5H.uk5yQIkHsvyCWKzUw/FgQm", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 0, current_sign_in_at: nil, last_sign_in_at: nil, current_sign_in_ip: nil, last_sign_in_ip: nil, provider: nil, uid: nil, access_token: nil, first_name: "Sage", last_name: "Herb", profile_picture: "https://res.cloudinary.com/diyosnlxf/image/upload/v1551396438/Sage.jpg"},
+  {email: "rosemary@deadapp.com", encrypted_password: "$2a$11$wGYA7Zyl5MYX19l3rvveuOMektDqGUxdFStfG5viYKLI5NmwRcByS", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 0, current_sign_in_at: nil, last_sign_in_at: nil, current_sign_in_ip: nil, last_sign_in_ip: nil, provider: nil, uid: nil, access_token: nil, first_name: "Rosemary", last_name: "Herb", profile_picture: "https://res.cloudinary.com/diyosnlxf/image/upload/v1551396443/Rosemary.jpg"},
+  {email: "thyme@deadapp.com", encrypted_password: "$2a$11$BjiILDrSrcIqZEhy.4kfLeYaCVWlmlzsCbh4ewaEFPBWrE3jr58Wa", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 0, current_sign_in_at: nil, last_sign_in_at: nil, current_sign_in_ip: nil, last_sign_in_ip: nil, provider: nil, uid: nil, access_token: nil, first_name: "Thyme", last_name: "Herb", profile_picture: "https://res.cloudinary.com/diyosnlxf/image/upload/v1551396441/Thyme.jpg"},
+  {email: "zombie@deadapp.com", encrypted_password: "$2a$11$vVHizF/d9JuB7UkeOY99VOJyzCkQ2V3O.5bAiiXl9/c4GG.E202mi", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 0, current_sign_in_at: nil, last_sign_in_at: nil, current_sign_in_ip: nil, last_sign_in_ip: nil, provider: nil, uid: nil, access_token: nil, first_name: "Zombie", last_name: "App", profile_picture: "https://res.cloudinary.com/diyosnlxf/image/upload/v1551396440/unofficial_hand.jpg"},
+  {email: "tat1@trioangletechnologies.com", encrypted_password: "$2a$11$Ht6sqsPPNChSGqmCwEe05eJnfLulBMLC.JzNHfpxWV8d3LZKYlVzS", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 0, current_sign_in_at: nil, last_sign_in_at: nil, current_sign_in_ip: nil, last_sign_in_ip: nil, provider: nil, uid: nil, access_token: nil, first_name: "Trio", last_name: "Angle Technologies", profile_picture: "https://www.trioangle.com/images/logo.svg"},
+  {email: "tat2@trioangletechnologies.com", encrypted_password: "$2a$11$PJXxE5ogHIO.7yjql.Sh..GdwT6b2m6l.0n22/N1xfzKe4l0AYgSG", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 0, current_sign_in_at: nil, last_sign_in_at: nil, current_sign_in_ip: nil, last_sign_in_ip: nil, provider: nil, uid: nil, access_token: nil, first_name: "Angle", last_name: "Trio Technologies", profile_picture: "https://www.trioangle.com/images/trio-fav.svg"},
+  {email: "tat3@trioangletechnologies.com", encrypted_password: "$2a$11$2uAxFKiVBd1XpMCMsa58ZurPKp3SQrz38klo9w7rPf.ivtX1PoyKa", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 0, current_sign_in_at: nil, last_sign_in_at: nil, current_sign_in_ip: nil, last_sign_in_ip: nil, provider: nil, uid: nil, access_token: nil, first_name: "Trio Angle", last_name: "Technologies", profile_picture: "https://www.trioangle.com/images/trioangle-abt-banner-2.svg"},
+  {email: "mati@gmail.com", encrypted_password: "$2a$11$Hxv7fJ6dJG8Gj46gnabvfOX.legT3Kpx0Sqd2UqEbQeoi3sZw8PnG", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 1, current_sign_in_at: "2019-03-01 19:40:25", last_sign_in_at: "2019-03-01 19:40:25", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1", provider: nil, uid: nil, access_token: nil, first_name: "Mati", last_name: "C", profile_picture: "https://res.cloudinary.com/diyosnlxf/image/upload/v1551396437/Scooby-Doo.jpg"}
+])
+Customization.create!([
+  {project_id: 802646305, description: "Native iOS & Android Apps: Our experts crafted all the features of the app in native languages of iOS & Android to provide light weight script."},
+  {project_id: 802646305, description: "Standard Features: Cloud Storage, Static Page Management, Google Map Integration, Social Media Integration"},
+  {project_id: 802646305, description: "Addons: Multiple Languages, Multiple Currency"},
+  {project_id: 220550729, description: "Free White Labeling: It is important for it to have your logo and company name everywhere. In the admin panel you can remove our name and logo from everywhere visible and replace it with yours."},
+  {project_id: 220550729, description: "Multiple Login / Sign up: It's easy to create account and login to Makent using various options like Facebook, Google, LinkedIn & Email."},
+  {project_id: 220550729, description: "100% Source Code: Based on the packages selection, you will be afforded with full source code. It helps to change the script to attract your customers."},
+  {project_id: 149085077, description: "Multiple Login & Signup: Makent Boats lets user to easily sign up and login into the service using the multiple medium like Facebook, Google, Linkedin & E-mail."},
+  {project_id: 149085077, description: "Native iOS & Android Apps: Our experts crafted all the features of the app in native languages of iOS & Android to provide light weight script. "},
+  {project_id: 149085077, description: "Free White Labeling: It is important for it to have your logo and company name everywhere. In the admin panel you can remove our name and logo from everywhere visible and replace it with yours."},
+  {project_id: 615416694, description: "Simple Signup / Login: Gofer has simple signup/login option for all it's users. Riders can signup by using Facebook, Google & Phone number. Drivers can signup their account using phone number to ensure security with verification code."},
+  {project_id: 615416694, description: "Free Server Installation: Once the purchase is completed, we install our script to your server at free of cost. With short span, we help you to make your script live."},
+  {project_id: 615416694, description: "Free Bug Support: We continuously work to deliver high quality bug free products. In case of any critical bugs, It's our pleasure to work immediately in free of cost within the support period. Otherwise, we will include it in our near future updates."},
+  {project_id: 363607204, description: "Native iOS & Android Apps: Our experts crafted all the features of the app in native languages of iOS & Android to provide light weight script."},
+  {project_id: 363607204, description: "Free App Submission: We submit your apps which is bought from us. We give you complete support to submit iOS Apps in App Store & Android apps in Play Store."},
+  {project_id: 363607204, description: "Support After App Rejection: We are always here to support you even after the purchase is completed. We wholeheartedly accept if any rejection happens after app submission."},
+  {project_id: 65460081, description: "Smooth Search Filters: Igniter has many interesting search filter options which can make its users to search comfortably with the options like age, gender and distance."},
+  {project_id: 65460081, description: "24 / 7 Support: We are always ready to support you in all means of communication channels in both online & offline."},
+  {project_id: 65460081, description: "Can Able To Use It In Multiple Domain / Server With Both iOS & Android Application"},
+  {project_id: 96879831, description: "It's possible for restaurant owners to set the available date and time of the food item. So that, it will be easy for the user to make orders. "},
+  {project_id: 96879831, description: "Multiple Login & Signup: Users can get connected with eaTreat through hassle free signup using phone number or Email. Restaurants can create their profile using mail or phone number."},
+  {project_id: 96879831, description: "The 1 year of technical support will only be valid for the source code which we provide you, the tech support will be terminated if the source code is edited or tampered."},
+  {project_id: 662322680, description: "Track Orders: Users can easily track the orders from their app from restaurant to the specified address. Tracking is also available for the restaurant owners to track driver moves for collecting food items for delivery."},
+  {project_id: 662322680, description: "Our app contains the promotion / coupon code. It may help you to create an attraction towards the app. "},
+  {project_id: 662322680, description: "Free App Submission: We submit your apps which is bought from us. We give you complete support to submit iOS Apps in App Store & Android apps in Play Store."},
+  {project_id: 284808133, description: "Multiple SignUp / LogIn: Using FB, Gmail and email, the users can easily sign up & login to the site. With same account, the users of PassUp can buy or sell product easily."},
+  {project_id: 284808133, description: "We have a team of technical experts who can handle all your customisation requirements. You can get quote for customisation works from sales@trioangle.com."},
+  {project_id: 284808133, description: "We offer only native Applications where Android was developed in Java and iOS was developed with Swift."}
+])
+Order.create!([
+  {user_id: 975247844, project_id: 479575575, state: "pending"},
+  {user_id: 950668105, project_id: 479575575, state: "accepted"},
+  {user_id: 113187278, project_id: 479575575, state: "accepted"},
+  {user_id: 507817729, project_id: 479575575, state: "accepted"},
+  {user_id: 38386974, project_id: 479575575, state: "accepted"},
+  {user_id: 199301681, project_id: 479575575, state: "accepted"},
+  {user_id: 975247844, project_id: 540542756, state: "pending"},
+  {user_id: 950668105, project_id: 540542756, state: "accepted"},
+  {user_id: 113187278, project_id: 540542756, state: "accepted"},
+  {user_id: 507817729, project_id: 540542756, state: "accepted"},
+  {user_id: 38386974, project_id: 540542756, state: "accepted"},
+  {user_id: 199301681, project_id: 540542756, state: "accepted"},
+  {user_id: 950668105, project_id: 802646305, state: "accepted"},
+  {user_id: 113187278, project_id: 802646305, state: "accepted"},
+  {user_id: 507817729, project_id: 802646305, state: "accepted"},
+  {user_id: 38386974, project_id: 802646305, state: "accepted"},
+  {user_id: 199301681, project_id: 802646305, state: "accepted"},
+  {user_id: 950668105, project_id: 220550729, state: "accepted"},
+  {user_id: 113187278, project_id: 220550729, state: "accepted"},
+  {user_id: 507817729, project_id: 220550729, state: "accepted"},
+  {user_id: 38386974, project_id: 220550729, state: "accepted"},
+  {user_id: 199301681, project_id: 220550729, state: "accepted"},
+  {user_id: 950668105, project_id: 149085077, state: "accepted"},
+  {user_id: 113187278, project_id: 149085077, state: "accepted"},
+  {user_id: 507817729, project_id: 149085077, state: "accepted"},
+  {user_id: 38386974, project_id: 149085077, state: "accepted"},
+  {user_id: 199301681, project_id: 149085077, state: "accepted"},
+  {user_id: 950668105, project_id: 615416694, state: "accepted"},
+  {user_id: 113187278, project_id: 615416694, state: "accepted"},
+  {user_id: 507817729, project_id: 615416694, state: "accepted"},
+  {user_id: 38386974, project_id: 615416694, state: "accepted"},
+  {user_id: 199301681, project_id: 615416694, state: "accepted"},
+  {user_id: 950668105, project_id: 363607204, state: "accepted"},
+  {user_id: 113187278, project_id: 363607204, state: "accepted"},
+  {user_id: 507817729, project_id: 363607204, state: "accepted"},
+  {user_id: 38386974, project_id: 363607204, state: "accepted"},
+  {user_id: 199301681, project_id: 363607204, state: "accepted"},
+  {user_id: 950668105, project_id: 65460081, state: "accepted"},
+  {user_id: 113187278, project_id: 65460081, state: "accepted"},
+  {user_id: 507817729, project_id: 65460081, state: "accepted"},
+  {user_id: 38386974, project_id: 65460081, state: "accepted"},
+  {user_id: 199301681, project_id: 65460081, state: "accepted"},
+  {user_id: 950668105, project_id: 96879831, state: "accepted"},
+  {user_id: 113187278, project_id: 96879831, state: "accepted"},
+  {user_id: 507817729, project_id: 96879831, state: "accepted"},
+  {user_id: 38386974, project_id: 96879831, state: "accepted"},
+  {user_id: 199301681, project_id: 96879831, state: "accepted"},
+  {user_id: 950668105, project_id: 662322680, state: "accepted"},
+  {user_id: 113187278, project_id: 662322680, state: "accepted"},
+  {user_id: 507817729, project_id: 662322680, state: "accepted"},
+  {user_id: 38386974, project_id: 662322680, state: "accepted"},
+  {user_id: 199301681, project_id: 662322680, state: "accepted"},
+  {user_id: 950668105, project_id: 284808133, state: "accepted"},
+  {user_id: 113187278, project_id: 284808133, state: "accepted"},
+  {user_id: 507817729, project_id: 284808133, state: "accepted"},
+  {user_id: 38386974, project_id: 284808133, state: "accepted"},
+  {user_id: 199301681, project_id: 284808133, state: "accepted"}
+])
+Project.create!([
+  {user_id: 505427166, name: "App From The Dead", description: "Got a working app that's gathering dust at the back of your hard disk? Give it some new life by showcasing it on our platform -- maybe it's the perfect app for someone!", category: "Business"},
+  {user_id: 120432755, name: "ParkingApp", description: "Rent out your parking space while you're not using it", category: "Travel"},
+  {user_id: 377615626, name: "Makent – Airbnb Clone", description: "Sharing economy created a great impact in all business, one among them is property rental. Top companies like Airbnb, VRBO, Homestay with millions of listings changes the historical booking flow of rooms. With latest technologies & features, each one differs themselves from others and created their own customer base. But still, Airbnb ranks top because of their constant feature update which benefits both their host & guest. This business model can be customized and used in all on-line rental business with the Airbnb clone script - Makent.\n\nMakent (Airbnb Clone) is a best web & mobile based property rental script and it has all the features of Airbnb. We think in our customers shoe and give them all the needed features to develop their business effectively to reach their targeted user easily. We guaranteed that, you are in/on the right ground to start a perfect shared economy business and can give a big hit easily. When Airbnb update a new feature, you are about to get that feature in your business too. ", category: "Travel"},
+  {user_id: 260613298, name: "Makent Cars – Airbnb Clone For Cars", description: "Makent Cars is the best sharing economy script for cars. It attracts world-wide customers for your business with effective marketing. This on-line interface enables the business owners to connect the car owners & riders effectively. Makent Cars is an exemplary web based peer to peer car rental script.\n\nWithout any further customization you can right away start your car rental business effectively. With all the features from Airbnb along with the customized features for car rental business, it’s the right script for you to start business. With responsive website and user friendly admin panel, your choice to buy script from Trioangle is the great start for your car rental business.", category: "Travel"},
+  {user_id: 948933669, name: "Makent Boats – Boat Rental Script", description: "Airbnb, the pioneer of rental business influences many business minds to initiate business in the Airbnb module. The idea of rental business can be customized for different items, for example, rentals of living property, transports, books, planner dresses and so on.\n\nMakent Boats from Trioangle is the clone script of Airbnb that drafted according to the boat rental business. It is the finest script for peer-peer boat rentals. The online interface attracts boat owners and renters with its rich features and constructively connects boat owner and boat renters. Makent Boat script incorporates every feature of Airbnb with a responsive website and user-friendly admin panel and provides an instant technical solution to launch the boat rental business. So we assure that the technical solution from Trioangle for inaugurating the boat rental business is impeccable and great choice to give a hit.", category: "Travel"},
+  {user_id: 377615626, name: "Gofer – Uber Clone", description: "Gofer is the best Uber clone script with all the needed features to start the taxi booking business instantly.\n\nOur Uber clone is available in both iOS and Android platform to enhance your business to wide audience. Our Gofer can be customized in better way to do business in other services like plumbing, gardening, laundry, courier, delivery and much more on demand services. Our best on-demand Uber clone script has all the standard and extraordinary features for both the end users and service providers.", category: "Travel"},
+  {user_id: 260613298, name: "Spiffy – Fancy Clone", description: "Spiffy is a Fancy Clone Script with Multi-vendor and Best Social eCommerce features. Spiffy is an online shopping clone script which allows users to engaged in social media to do shopping in eCommerce site through picture feeds and sharing. This script is a single platform which allows multi vendor to sell their product in a minutes and use that particular store page as their own website.\n\nIn an eCommerce Concept, multi-vendor which means allowing vendors to create their profile online and offers them a platform to sell their products to their customers spread across the globe. Spiffy also offers the same functionality through its trending and best multi-vendor eCommerce clone script.", category: "Lifestyle"},
+  {user_id: 948933669, name: "Igniter – Tinder Clone", description: "People who use Internet to date someone is increasing every year. Dating Businesses have also became the most profitable niche on the web and all dating business leaders are increasing their revenue every year. Igniter (Tinder clone) is the dating script sparks with the concept of connecting people of same interest based on location.\n\nWith its attractive design and latest technologies, Our script facilitates the uninterrupted communication among the interested matches. Igniter is available in both iOS and Android platforms. By creating an account , the users of Igniter can enjoy unlimited likes, matches and chatting. Igniter subscribers can have benefits of super like, location change, boost features, profile control and many more breath taking features", category: "Lifestyle"},
+  {user_id: 377615626, name: "eaTreat – Just Eat Clone", description: "With the simple business model, Online food ordering business is increasing their revenue day by day. The only reason is convenience. With hand filled menus, the user can easily order their foods. The restaurants are benefited by wide exposure & the admin of these business earns through service fees. eaTreat have all the best of best features to start online food ordering business instantly.\n\neaTreat (Just Eat Clone) is the online food ordering script with multiple striking rich features. eaTreat is simple and convenient to experience user-friendliness. Highly scale-able and rich quality cript is the reason behind the distinctive exclusiveness. The most important trait is our clone script is reliable as well as customizable according to the business requirements. Undeniably eaTreat will meet all the requirements to commence your online food ordering business.", category: "Lifestyle"},
+  {user_id: 260613298, name: "GoferEats – UberEats Clone", description: "Food ordering & delivery service is flourishing really fast. Many successful business proven the worth of online food ordering business, here comes another business module with the combination of both food ordering & delivery option from third party other than the restaurant's delivery person is UberEats. Here is the perfect script to start a business like UberEats.\n\nGoferEats is the UberEats clone script with the concept of online food ordering system with delivery option. GoferEats is completely user friendly to admin, user, restaurant and drivers as well. Responsive and reliability is the major traits of our clone script. Our clone script can be reinforced in both Android and iOS. Salient features of our clone script helps to make stand distinctive from competitors.", category: "Lifestyle"},
+  {user_id: 948933669, name: "PassUp – Letgo Clone", description: "Old myths of buying and selling products are totally changed due to the emerge of eCommerce business concept, the world faced lot of changes in buying & selling products. Not only for new products, its also easy to buy & sell old products with the same concept. Beyond the concept, an added advantage is ads. Yes, Its possible for the script owner to earn more by promoting the products to the large consumers. To start the business, here is the solution called PassUp.\n\nPassUp(Letgo Clone) is the web and mobile based online classified script and it has all the user friendly features like Letgo which supports buy and sell concept of any products. Our supreme quality letgo clone script is crafted with latest technologies & features. PassUp will be easy to customize and maintain.", category: "Lifestyle"}
+])
+ProjectAsset.create!([
+  {project_id: 802646305, web_url: nil, priority: 3, photo: "https://res.cloudinary.com/diyosnlxf/image/upload/v1550774196/uaypees8fujchsyoff5w.jpg"},
+  {project_id: 802646305, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/makent-banner.svg"},
+  {project_id: 802646305, web_url: nil, priority: 2, photo: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/_pmOOsm5FL0\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"},
+  {project_id: 802646305, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/makent/airbnb_clone_Signup.png"},
+  {project_id: 802646305, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/makent/technology.svg"},
+  {project_id: 220550729, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/makentcars-banner.svg"},
+  {project_id: 220550729, web_url: nil, priority: 2, photo: "https://www.youtube.com/embed/O_7oQeeaYXI?rel=0&amp;showinfo=0"},
+  {project_id: 220550729, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/makentcars/car_rental_Multi_login.png"},
+  {project_id: 220550729, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/makentcars/technology.svg"},
+  {project_id: 149085077, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/makentboats-banner.svg"},
+  {project_id: 149085077, web_url: nil, priority: 2, photo: "https://www.youtube.com/embed/9MlmOfwimUk?rel=0&amp;showinfo=0"},
+  {project_id: 149085077, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/makentboats/boat_rental_Multiple_Login_SignUp-Boats.png"},
+  {project_id: 149085077, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/makentboats/technology.svg"},
+  {project_id: 615416694, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/gofer-banner.svg"},
+  {project_id: 615416694, web_url: nil, priority: 2, photo: "https://www.youtube.com/embed/TDdNh9RNxmg?rel=0&amp;showinfo=0"},
+  {project_id: 615416694, web_url: nil, priority: 2, photo: "https://www.youtube.com/embed/6SroRpybKVc?rel=0&amp;showinfo=0"},
+  {project_id: 615416694, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/gofer/uber_clone_Simple_SignUp_Login.png"},
+  {project_id: 615416694, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/gofer/uber_clone_admin.png"},
+  {project_id: 615416694, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/gofer/technology.svg"},
+  {project_id: 363607204, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/spiffy-banner.svg"},
+  {project_id: 363607204, web_url: nil, priority: 2, photo: "https://www.youtube.com/embed/S3NLdxXpDKg?rel=0&amp;showinfo=0"},
+  {project_id: 363607204, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/spiffy/fancy_clone__multiple_login_sign_up.pngs"},
+  {project_id: 363607204, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/spiffy/fancy_clone_buyer.png"},
+  {project_id: 363607204, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/spiffy/technology.svg"},
+  {project_id: 65460081, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/igniter-banner.svg"},
+  {project_id: 65460081, web_url: nil, priority: 2, photo: "https://www.youtube.com/embed/whTJggEswLk?rel=0&amp;showinfo=0"},
+  {project_id: 65460081, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/igniter/tinder_clone_Smooth_Search_Filters.png"},
+  {project_id: 65460081, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/igniter/tinder_clone_AppStore.png"},
+  {project_id: 65460081, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/igniter/technology.svg"},
+  {project_id: 96879831, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/eatreat-banner.svg"},
+  {project_id: 96879831, web_url: nil, priority: 2, photo: "https://www.youtube.com/embed/hLtRUeNQqKE?rel=0&amp;showinfo=0"},
+  {project_id: 96879831, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/eatreat/technology.svg"},
+  {project_id: 662322680, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/gofereats-banner.svg"},
+  {project_id: 662322680, web_url: nil, priority: 2, photo: "https://www.youtube.com/embed/KL9KJnc-5Hk?rel=0&amp;showinfo=0"},
+  {project_id: 662322680, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/gofereats/ubereats_clone_track_order.png"},
+  {project_id: 662322680, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/gofereats/ubereats_clone_admin.png"},
+  {project_id: 662322680, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/gofereats/technology.svg"},
+  {project_id: 284808133, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/passup-banner.svg"},
+  {project_id: 284808133, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/passup/letgo_clone_easy_signup.png"},
+  {project_id: 284808133, web_url: nil, priority: 1, photo: "https://www.trioangle.com/images/passup/technology.svg"}
+])
+ProjectMember.create!([
+  {user_id: 199301681, project_id: 479575575, state: "pending"},
+  {user_id: 950668105, project_id: 540542756, state: "pending"},
+  {user_id: 507817729, project_id: 540542756, state: "pending"},
+  {user_id: 260613298, project_id: 802646305, state: "pending"},
+  {user_id: 948933669, project_id: 802646305, state: "pending"},
+  {user_id: 260613298, project_id: 615416694, state: "pending"},
+  {user_id: 948933669, project_id: 615416694, state: "pending"},
+  {user_id: 260613298, project_id: 96879831, state: "pending"},
+  {user_id: 948933669, project_id: 96879831, state: "pending"},
+  {user_id: 377615626, project_id: 220550729, state: "pending"},
+  {user_id: 948933669, project_id: 220550729, state: "pending"},
+  {user_id: 377615626, project_id: 363607204, state: "pending"},
+  {user_id: 948933669, project_id: 363607204, state: "pending"},
+  {user_id: 377615626, project_id: 662322680, state: "pending"},
+  {user_id: 948933669, project_id: 662322680, state: "pending"},
+  {user_id: 377615626, project_id: 149085077, state: "pending"},
+  {user_id: 260613298, project_id: 149085077, state: "pending"},
+  {user_id: 377615626, project_id: 65460081, state: "pending"},
+  {user_id: 260613298, project_id: 65460081, state: "pending"},
+  {user_id: 377615626, project_id: 284808133, state: "pending"},
+  {user_id: 260613298, project_id: 284808133, state: "pending"}
+])
+Review.create!([
+  {user_id: nil, order_id: 348046263, rating: 5, content: "Nice app, team was a pleasure to work with"},
+  {user_id: nil, order_id: 230134287, rating: 4, content: "The customization process worked surprizingly smoothly. I couldn't believe how easy it was to totally change the look of the app, with the help of the dev team"},
+  {user_id: nil, order_id: 984654490, rating: 5, content: "I wasn't sure what some of the features were for. The dev team were very supportive and helped me to fully understand the app and to make informed decisions"},
+  {user_id: nil, order_id: 617887549, rating: 3, content: "It was great to be able to communicate with the dev team whenever I had a doubt about the process, and I felt comfortable signing the contract"},
+  {user_id: nil, order_id: 332597166, rating: 4, content: "The contract design process helped me to feel secure that I wouldn't get ripped off"},
+  {user_id: nil, order_id: 182081046, rating: 5, content: "I'm glad I found this site -- I could get my business app up and running without needing to know about programming, and without having to commission a custom app. The devs were happy to explain things to me in layman's terms"},
+  {user_id: nil, order_id: 789103638, rating: 5, content: "I wish I had opted to add an iOS app, but otherwise I'm happy with how it turned out"},
+  {user_id: nil, order_id: 906073522, rating: 4, content: "Nice app, team was a pleasure to work with"},
+  {user_id: nil, order_id: 17212731, rating: 4, content: "The customization process worked surprizingly smoothly. I couldn't believe how easy it was to totally change the look of the app, with the help of the dev team"},
+  {user_id: nil, order_id: 526528666, rating: 3, content: "I wasn't sure what some of the features were for. The dev team were very supportive and helped me to fully understand the app and to make informed decisions"},
+  {user_id: nil, order_id: 677707789, rating: 4, content: "It was great to be able to communicate with the dev team whenever I had a doubt about the process, and I felt comfortable signing the contract"},
+  {user_id: nil, order_id: 829182393, rating: 3, content: "The contract design process helped me to feel secure that I wouldn't get ripped off"},
+  {user_id: nil, order_id: 252414858, rating: 3, content: "Nice app, team was a pleasure to work with"},
+  {user_id: nil, order_id: 369285694, rating: 3, content: "The customization process worked surprizingly smoothly. I couldn't believe how easy it was to totally change the look of the app, with the help of the dev team"},
+  {user_id: nil, order_id: 554035883, rating: 4, content: "I wasn't sure what some of the features were for. The dev team were very supportive and helped me to fully understand the app and to make informed decisions"},
+  {user_id: nil, order_id: 1063354122, rating: 4, content: "It was great to be able to communicate with the dev team whenever I had a doubt about the process, and I felt comfortable signing the contract"},
+  {user_id: nil, order_id: 140922785, rating: 5, content: "The contract design process helped me to feel secure that I wouldn't get ripped off"},
+  {user_id: nil, order_id: 551627503, rating: 2, content: "I'm glad I found this site -- I could get my business app up and running without needing to know about programming, and without having to commission a custom app. The devs were happy to explain things to me in layman's terms"},
+  {user_id: nil, order_id: 971537239, rating: 3, content: "I wish I had opted to add an iOS app, but otherwise I'm happy with how it turned out"},
+  {user_id: nil, order_id: 250563524, rating: 4, content: "Nice app, team was a pleasure to work with"},
+  {user_id: nil, order_id: 277601889, rating: 3, content: "The customization process worked surprizingly smoothly. I couldn't believe how easy it was to totally change the look of the app, with the help of the dev team"},
+  {user_id: nil, order_id: 663547640, rating: 5, content: "I wasn't sure what some of the features were for. The dev team were very supportive and helped me to fully understand the app and to make informed decisions"},
+  {user_id: nil, order_id: 749377924, rating: 3, content: "It was great to be able to communicate with the dev team whenever I had a doubt about the process, and I felt comfortable signing the contract"},
+  {user_id: nil, order_id: 899926080, rating: 3, content: "The contract design process helped me to feel secure that I wouldn't get ripped off"},
+  {user_id: nil, order_id: 44365995, rating: 4, content: "I'm glad I found this site -- I could get my business app up and running without needing to know about programming, and without having to commission a custom app. The devs were happy to explain things to me in layman's terms"},
+  {user_id: nil, order_id: 482372876, rating: 4, content: "I wish I had opted to add an iOS app, but otherwise I'm happy with how it turned out"},
+  {user_id: nil, order_id: 734485917, rating: 5, content: "Nice app, team was a pleasure to work with"},
+  {user_id: nil, order_id: 454577008, rating: 3, content: "The customization process worked surprizingly smoothly. I couldn't believe how easy it was to totally change the look of the app, with the help of the dev team"},
+  {user_id: nil, order_id: 34675412, rating: 5, content: "I wasn't sure what some of the features were for. The dev team were very supportive and helped me to fully understand the app and to make informed decisions"},
+  {user_id: nil, order_id: 890645059, rating: 4, content: "It was great to be able to communicate with the dev team whenever I had a doubt about the process, and I felt comfortable signing the contract"},
+  {user_id: nil, order_id: 728940516, rating: 4, content: "The contract design process helped me to feel secure that I wouldn't get ripped off"},
+  {user_id: nil, order_id: 477466489, rating: 5, content: "I'm glad I found this site -- I could get my business app up and running without needing to know about programming, and without having to commission a custom app. The devs were happy to explain things to me in layman's terms"},
+  {user_id: nil, order_id: 485671435, rating: 3, content: "I wish I had opted to add an iOS app, but otherwise I'm happy with how it turned out"},
+  {user_id: nil, order_id: 100373427, rating: 3, content: "Nice app, team was a pleasure to work with"},
+  {user_id: nil, order_id: 855417638, rating: 4, content: "The customization process worked surprizingly smoothly. I couldn't believe how easy it was to totally change the look of the app, with the help of the dev team"},
+  {user_id: nil, order_id: 748172937, rating: 4, content: "I wasn't sure what some of the features were for. The dev team were very supportive and helped me to fully understand the app and to make informed decisions"},
+  {user_id: nil, order_id: 463406610, rating: 5, content: "It was great to be able to communicate with the dev team whenever I had a doubt about the process, and I felt comfortable signing the contract"},
+  {user_id: nil, order_id: 13740908, rating: 3, content: "The contract design process helped me to feel secure that I wouldn't get ripped off"},
+  {user_id: nil, order_id: 433650392, rating: 3, content: "I'm glad I found this site -- I could get my business app up and running without needing to know about programming, and without having to commission a custom app. The devs were happy to explain things to me in layman's terms"},
+  {user_id: nil, order_id: 786418243, rating: 4, content: "I wish I had opted to add an iOS app, but otherwise I'm happy with how it turned out"},
+  {user_id: nil, order_id: 817586148, rating: 4, content: "Nice app, team was a pleasure to work with"},
+  {user_id: nil, order_id: 129789813, rating: 5, content: "The customization process worked surprizingly smoothly. I couldn't believe how easy it was to totally change the look of the app, with the help of the dev team"},
+  {user_id: nil, order_id: 167538370, rating: 3, content: "I wasn't sure what some of the features were for. The dev team were very supportive and helped me to fully understand the app and to make informed decisions"},
+  {user_id: nil, order_id: 284507910, rating: 3, content: "It was great to be able to communicate with the dev team whenever I had a doubt about the process, and I felt comfortable signing the contract"},
+  {user_id: nil, order_id: 670175123, rating: 4, content: "The contract design process helped me to feel secure that I wouldn't get ripped off"},
+  {user_id: nil, order_id: 966171186, rating: 4, content: "I'm glad I found this site -- I could get my business app up and running without needing to know about programming, and without having to commission a custom app. The devs were happy to explain things to me in layman's terms"},
+  {user_id: nil, order_id: 244427433, rating: 5, content: "I wish I had opted to add an iOS app, but otherwise I'm happy with how it turned out"},
+  {user_id: nil, order_id: 301740440, rating: 3, content: "Nice app, team was a pleasure to work with"},
+  {user_id: nil, order_id: 150298660, rating: 3, content: "The customization process worked surprizingly smoothly. I couldn't believe how easy it was to totally change the look of the app, with the help of the dev team"},
+  {user_id: nil, order_id: 1072844983, rating: 4, content: "I wasn't sure what some of the features were for. The dev team were very supportive and helped me to fully understand the app and to make informed decisions"},
+  {user_id: nil, order_id: 563528984, rating: 4, content: "It was great to be able to communicate with the dev team whenever I had a doubt about the process, and I felt comfortable signing the contract"},
+  {user_id: nil, order_id: 378664321, rating: 2, content: "The contract design process helped me to feel secure that I wouldn't get ripped off"},
+  {user_id: nil, order_id: 870451775, rating: 2, content: "I'm glad I found this site -- I could get my business app up and running without needing to know about programming, and without having to commission a custom app. The devs were happy to explain things to me in layman's terms"},
+  {user_id: nil, order_id: 720067463, rating: 2, content: "I wish I had opted to add an iOS app, but otherwise I'm happy with how it turned out"},
+  {user_id: nil, order_id: 502033172, rating: 3, content: "Nice app, team was a pleasure to work with"},
+  {user_id: nil, order_id: 59309745, rating: 4, content: "The customization process worked surprizingly smoothly. I couldn't believe how easy it was to totally change the look of the app, with the help of the dev team"},
+  {user_id: nil, order_id: 881839656, rating: 3, content: "I wasn't sure what some of the features were for. The dev team were very supportive and helped me to fully understand the app and to make informed decisions"}
+])
