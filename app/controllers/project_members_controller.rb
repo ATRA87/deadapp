@@ -26,6 +26,7 @@ class ProjectMembersController < ApplicationController
     authorize @invitation
     return redirect_to project_members_path if @invitation.destroy
 
+    render :index
   end
 
   private
