@@ -51,3 +51,17 @@ $border-radius-small: 2px;
 }
 
 // Override other variables below!
+
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+    background-color: $custom-blue !important;
+    border-color: $custom-blue !important;
+}
+
+.btn-primary:hover {
+  background-color: #858AA3;
+}
+
+a:hover {
+  color: #858AA3;
+  text-decoration: none;
+}
