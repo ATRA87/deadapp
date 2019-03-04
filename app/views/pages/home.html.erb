@@ -1,2 +1,46 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<% if !user_signed_in? %>
+  <%= render "shared/navbar" %>
+<% end %>
+<div class="container-fluid more-margin" id="banner-landing">
+
+<div class="ctas">
+  <div class="cta">
+    <h2 class="big-h2">Entrepreneurs</h2>
+    <p class="big-p"><span class="build bold">Build</span><span class="bold">Find</span> your app</span></p>
+    <p class="big-p"><span class="bold">Customize</span> it <span class="bold">Scale</span></p>
+    <div>SEARCH BAR HERE</div>
+  </div>
+  <div class="cta">
+    <h2 class="big-h2">Devs</h2>
+    <p class="big-p"><span class="bold">Give</span> dead projects life</p>
+    <p class="big-p"><span class="bold">Post</span> your apps <span class="bold">Sell</span></p>
+    <p class="big-p bold">Customizations as a Service</p>
+    <div>
+      <%=  link_to "Post", new_project_path, class:"btn btn-primary" %>
+    </div>
+  </div>
+</div>
+<div class="catas">
+  <img src="<%= asset_url('Full_Logo.png') %>" alt="Logo">
+</div>
+
+
+
+
+  <div>
+    <h2 class="text-center">Check out some of our Apps...</h2>
+    <div></div>
+  </div>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <% @projects.each do |project| %>
+        <div class="col-xs-12 col-md-6 card-wrapper">
+          <%= link_to project_path(project) do %>
+          <%= render 'projects/card', project: project %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+

@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   get 'reviews/create'
   get 'authorizations/linkedin'
   get 'authorizations/failure'
-  root to: 'projects#index'
-  get "profile/:id", to: "pages#profile", as: :profile
+  root to: 'pages#home'
+  get "profile", to: "pages#profile", as: :profile
   devise_for :users, controllers: { omniauth_callbacks: 'authorizations' }
 
   resources :orders do

@@ -90,3 +90,40 @@
   height: 30px;
   margin-right: 5px;
 }
+
+.btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 35px;
+  a {
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .btn-wrapper {
+  justify-content: space-around;
+  padding-right: 0px;
+  }
+}
+
+.card-padding {
+  padding: 10px;
+}
+
+
+
+.more-margin {
+  margin-top: 10em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.big-h2 {
+  font-size:42px !important;
+}
+.big-p {
+  font-size:24px;
+}
