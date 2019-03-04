@@ -1,6 +1,4 @@
 // Specific CSS for your home-page
-
-
 .cta {
   display: flex;
   flex-direction: column;
@@ -9,7 +7,20 @@
 .ctas {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+}
+
+.catas {
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-center: center;
 }
 
 .build {
@@ -20,7 +31,7 @@
 
 
 .more-margin {
-  margin-top: 10em;
+  margin-top: 6em;
 }
 
 .bold {
@@ -28,8 +39,10 @@
 }
 
 .big-h2 {
-  font-size:42px !important;
+  font-size:60px !important;
+  font-weight: 700;
 }
 .big-p {
-  font-size:24px;
+  font-size:20px;
+  padding-left: 4px;
 }
