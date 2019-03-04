@@ -1,6 +1,6 @@
 const starit = () => {
   const stars = document.querySelectorAll(".fa-star");
-  const booking = document.getElementById("booking-id");
+  const order = document.getElementById("order-id");
   const content = document.getElementById("content-review");
   stars.forEach(star => {
     star.addEventListener("click", (event) => {
