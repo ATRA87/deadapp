@@ -20,10 +20,16 @@
   padding: 0px 10px;
 }
 .footer-links a:hover {
-  opacity: 1;
   color: #35477D;
   color: black;
-  opacity: 0.15;
-  font-size: 30px;
+  opacity: 0.5;
+  font-size: 28px;
 }
 
+.modal-card {
+  background: rgba(250,250,250,0.8);
+  padding: 40px 40px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 7px;
+}

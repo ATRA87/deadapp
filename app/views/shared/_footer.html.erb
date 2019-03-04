@@ -1,17 +1,17 @@
-
+<%= render 'shared/newsletter_subscription' %>
 <div class="footer">
   <div class="footer-links unstyle-color-link">
-    <%= link_to root_path do%>
-    <i class="fas fa-envelope-square"></i>
-    <% end %>
-    <%= link_to "https://twitter.com/lewagonbsas" do%>
+    <a href="#" data-toggle="modal" data-target="#newsletter_subscription">
+      <i class="fas fa-envelope-square"></i>
+    </a>
+    <%= link_to "https://twitter.com/lewagonbsas", target: :_blank do%>
     <i class="fab fa-twitter"></i>
     <% end %>
-    <%= link_to "https://www.linkedin.com/lewagon" do%>
+    <%= link_to "https://www.linkedin.com/lewagon", target: :_blank do%>
     <i class="fab fa-linkedin"></i>
     <% end %>
   </div>
   <div class="footer-copyright">
-     <%= image_tag "logo.png", height: 30 %>
+     <%= image_tag "logo.png", height: 20 %>
   </div>
 </div>
