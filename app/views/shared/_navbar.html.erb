@@ -24,7 +24,7 @@
           <%= image_tag "#{current_user.profile_picture}", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
           <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
             <li>
-              <%= link_to profile_path do %>
+              <%= link_to profile_path(current_user) do %>
               <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
               <% end %>
             </li>
@@ -57,7 +57,7 @@
           <li><%= link_to "Messages", "#", class: "navbar-wagon-item navbar-wagon-link" %></li>
           <li><%= link_to "Orders", "#", class: "navbar-wagon-item navbar-wagon-link" %></li>
           <li>
-            <%= link_to "#" do %>
+            <%= link_to profile_path(current_user) do %>
             <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
             <% end %>
           </li>
