@@ -6,6 +6,10 @@ class OrderPolicy < ApplicationPolicy
   end
 
   def create?
-    return true
+    return record.project.user != user # A dev cant make an order for his own project
+  end
+
+  def update?
+    record.user == user || record.project.user == user
   end
 end

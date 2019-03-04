@@ -1,20 +1,20 @@
-  <div class="horizontal-card">
-    <% classes = "small" %>
-    <%= render 'shared/project_photo', project: order.project, classes: classes %>
-    <div class="names">
-      <h4><%= link_to order.project.name, project_path(order.project) %></h4>
-      <%= render 'shared/avatar_with_name', user: order.user, imgSize: "small" %>
-    </div>
-    <div class="project-info"> info
-    </div>
-    <% if order.client_state == 0 %>
-      <div class="answer-buttons">
-        <%= link_to 'Pay', new_order_payment_path(order), class:"btn btn-success" %>
-        <%= link_to 'Edit', edit_order_path(order), class:"btn btn-danger" %>
-      </div>
-    <% end %>
-    <div class="state">
-      <p><%= render 'shared/state_color', state: order.state %></p>
-      <p class="invitation-date"><%= order.created_at.to_date %></p>
-    </div>
+<div class="horizontal-card">
+  <% classes = "small" %>
+  <%= render 'shared/project_photo', project: order.project, classes: classes %>
+  <div class="names">
+    <h4><%= link_to order.project.name, project_path(order.project) %></h4>
+    <%= render 'shared/avatar_with_name', user: order.user, imgSize: "small" %>
   </div>
+  <div class="project-info"> info
+  </div>
+
+  <div class="answer-buttons">
+    <%= render "orders/#{order.state}", order: order %>
+  </div>
+
+    <div class="state">
+    <p><%= render 'shared/state_color', state: order.state %></p>
+    <p class="invitation-date"><%= order.created_at.to_date %></p>
+    <p class="invitation-date"><%= order.due_date %></p>
+  </div>
+</div>

@@ -6,14 +6,14 @@ class Order < ApplicationRecord
   monetize :amount_cents
 
   def state
-    if dev_state == client_state
-      return client_state
-    elsif dev_state == 1 && client_state == 1
-      return 1
-    elsif dev_state == 2 || client_state == 2
-      return 2
-    end
+    return 'declined' if dev_state == 3 || client_state == 3
+    return 'delivered' if dev_state == 2
+    return 'accepted' if dev_state == 1 && client_state == 1
+    return 'pending' if dev_state.zero? && client_state.zero?
+    return 'pending_client' if client_state.zero?
   end
 
-
+  def project_owner?(current_user)
+    project.user == current_user
+  end
 end

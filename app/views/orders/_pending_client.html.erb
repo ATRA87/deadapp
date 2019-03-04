@@ -1,0 +1,6 @@
+<% if order.project_owner?(current_user) %>
+  <%= link_to 'Edit', edit_order_path(order), class:"btn btn-primary" %>
+<% else %>
+  <%= link_to 'Pay', new_order_payment_path(order), class:"btn btn-success" %>
+  <%= link_to 'Edit', edit_order_path(order), class:"btn btn-info" %>
+<% end %>
