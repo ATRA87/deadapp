@@ -6,12 +6,13 @@ class OrdersController < ApplicationController
 
   def create
     @project = Project.find(params[:project_id])
-    @order = Order.new(project: @project, user: current_user, price: 1000)
+    @order = Order.new(project: @project, user: current_user, amount: 1000)
     authorize @order
-    redirect_to @project if @order.save
+    @order.save
+    redirect_to new_order_payment_path(@order)
   end
 
   def index
-    @orders = policy_scope(Order)
+    @orders = policy_scope(Order).order(state: :desc)
   end
 end
