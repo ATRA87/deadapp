@@ -6,8 +6,11 @@ Rails.application.routes.draw do
   get "profile/:id", to: "pages#profile", as: :profile
   devise_for :users, controllers: { omniauth_callbacks: 'authorizations' }
 
+  resources :orders do
+    resources :payments, only: [:new, :create]
+    resources :reviews, only: [:new, :create]
+  end
   resources :projects do
-    resources :orders, only: [:new, :create]
     resources :project_assets, only: [:new, :create]
     collection do
       get 'mine'
@@ -15,9 +18,6 @@ Rails.application.routes.draw do
     resources :project_members, only: [:create, :destroy]
   end
 
-  resources :orders, except: [:new, :create] do
-    resources :reviews, only: [:new, :create]
-  end
   resources :project_members, only: [:index, :show, :edit, :update, :destroy]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
