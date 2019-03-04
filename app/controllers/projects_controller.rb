@@ -37,12 +37,11 @@ class ProjectsController < ApplicationController
   def show
     @users = User.all
     authorize @project
-
-    @orders = []
-    Order.where(user: current_user).where(project: @project) do |o|
-      orders << o if o.review.nil?
+    # get all the orders from the user that havent been reviewed yet
+    # TODO: get only those orders that have been delivered
+    @orders_by_user = current_user.orders.select do |order|
+      order.project == @project && !order.reviewed?
     end
-    authorize @orders unless @orders.first.nil?
   end
 
   def edit
@@ -94,4 +93,3 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
   end
 end
-
