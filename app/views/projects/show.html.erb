@@ -55,10 +55,7 @@
     <div class="project-description">
       <%= @project.description %>
     </div>
-    <%= form_tag orders_path do %>
-      <%= hidden_field_tag 'project_id', @project.id %>
-      <%= submit_tag 'Make order!', class: 'btn btn-primary' %>
-    <% end %>
+    <%= link_to 'Make order', new_order_path(project_id: @project.id), class:"btn btn-primary" %>
   </div>
 
   <div id="reviews-container">

@@ -1,0 +1,7 @@
+<% if order.project_owner?(current_user) %>
+  <%= simple_form_for(order) do |f| %>
+    <%= f.hidden_field :dev_state, value: 2 %>
+  <%= f.submit 'Delivered', class:"btn btn-primary" %>
+  <% end %>
+<% end %>
+

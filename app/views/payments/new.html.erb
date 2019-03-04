@@ -5,6 +5,7 @@
       <span>Amount: <%= humanized_money_with_symbol(@order.amount) %></span>
     </label>
   </article>
+  <input value="1" type="hidden" name="order[dev_state]" id="order_dev_state">
 
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
     data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
