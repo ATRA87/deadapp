@@ -1,4 +1,35 @@
 // Specific CSS for your home-page
-body {
-  background-color: white;
+
+
+.cta {
+  display: flex;
+  flex-direction: column;
+}
+
+.ctas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.build {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+
+
+.more-margin {
+  margin-top: 10em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.big-h2 {
+  font-size:42px !important;
+}
+.big-p {
+  font-size:24px;
 }

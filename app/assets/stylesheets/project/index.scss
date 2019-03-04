@@ -94,7 +94,7 @@
 .btn-wrapper {
   display: flex;
   justify-content: flex-end;
-  padding-right: 25px;
+  padding-right: 35px;
   a {
     margin: 10px;
   }
@@ -108,5 +108,22 @@
 }
 
 .card-padding {
-  padding: 25px;
+  padding: 10px;
+}
+
+
+
+.more-margin {
+  margin-top: 10em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.big-h2 {
+  font-size:42px !important;
+}
+.big-p {
+  font-size:24px;
 }
