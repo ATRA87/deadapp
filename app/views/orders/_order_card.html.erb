@@ -7,7 +7,7 @@
     </div>
     <div class="project-info"> info
     </div>
-    <% if order.pending? %>
+    <% if order.state == 'pending' %>
       <div class="answer-buttons">
         <%= link_to 'Pay', new_order_payment(order), method: 'patch', class:"btn btn-success" %>
         <%= link_to 'Edit', edit_order, method: 'delete', class:"btn btn-danger" %>
