@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_28_200907) do
+ActiveRecord::Schema.define(version: 2019_03_04_183531) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,13 @@ ActiveRecord::Schema.define(version: 2019_02_28_200907) do
     t.bigint "user_id"
     t.bigint "project_id"
     t.string "state", default: "pending"
+    t.integer "dev_state", default: 0
+    t.integer "client_state", default: 0
+    t.integer "estimated_time", default: 0
+    t.date "due_date"
+    t.integer "amount_cents", default: 0, null: false
+    t.string "amount_currency", default: "USD", null: false
+    t.json "payment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["project_id"], name: "index_orders_on_project_id"
@@ -66,16 +73,19 @@ ActiveRecord::Schema.define(version: 2019_02_28_200907) do
     t.datetime "updated_at", null: false
     t.string "description"
     t.string "category"
+    t.integer "price_cents", default: 0, null: false
     t.index ["user_id"], name: "index_projects_on_user_id"
   end
 
   create_table "reviews", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "order_id"
-    t.integer "rating"
     t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "communication_rating"
+    t.integer "quality_rating"
+    t.integer "delivery_on_time_rating"
     t.index ["order_id"], name: "index_reviews_on_order_id"
     t.index ["user_id"], name: "index_reviews_on_user_id"
   end

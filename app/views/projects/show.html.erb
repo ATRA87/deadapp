@@ -4,7 +4,7 @@
       <div class="project-title-and-assets">
         <div class="project-title">
           <h1><%= @project.name %></h1>
-          <div id="edit-btn">edit</div>
+          <div class="btn" id="edit-btn">edit</div>
         </div>
         <div id="form-modal">
           <div class="modal-content">
@@ -22,7 +22,7 @@
       <div class="project-info">
 
         <div class="developers">
-          <%= render 'shared/avatar_with_name', user: @project.user %>
+          <%= render 'shared/avatar_with_name', user: @project.user, imgSize: "small" %>
           <div class="dropdown">
             <div class="dropdown-btn">
               Rest of the team <i class="fas fa-angle-down"></i>
@@ -30,7 +30,7 @@
             <div class="dropdown-content">
               <% @project.team.each do |user| %>
                 <div class="team-member">
-                  <%= render 'shared/avatar_with_name', user: user %>
+                  <%= render 'shared/avatar_with_name', user: user, imgSize: "small" %>
                 </div>
               <% end %>
             </div>
@@ -40,11 +40,11 @@
         <div class="ratings">
           <ul>
             <li><strong>Editor's review</strong></li>
-            <li>Code quality <%= render 'shared/stars', project: @project %></li>
+            <li>Code quality <%= render 'shared/stars_quality', project: @project %></li>
             <li><strong>User's review</strong></li>
-            <li>Comunication <%= render 'shared/stars', project: @project %></li>
-            <li>Quality of product <%= render 'shared/stars', project: @project %></li>
-            <li>Delivered on time <%= render 'shared/stars', project: @project %></li>
+            <li>Comunication <%= render 'shared/stars_communication', project: @project %></li>
+            <li>Quality of product <%= render 'shared/stars_quality', project: @project %></li>
+            <li>Delivered on time <%= render 'shared/stars_delivery_on_time', project: @project %></li>
           </ul>
         </div>
         <div class="social-buttons">
@@ -55,10 +55,14 @@
     <div class="project-description">
       <%= @project.description %>
     </div>
-    <%= link_to 'Contact dev!', edit_project_path(@project), class:'btn btn-primary' %>
+    <%= link_to 'Make order', new_order_path(project_id: @project.id), class:"btn btn-primary" %>
   </div>
 
   <div id="reviews-container">
+    <% if @orders.first %>
+    <p style="display: none;" id="order-id"><%= @orders.first.id %></p>
+    <%= render 'reviews/review', order: @orders.first, user: current_user %>
+    <% end %>
     <h2>Reviews <span>(<%= @project.reviews.count %>)</span></h2>
     <% if @project.reviews.count.zero? %>
       <p>No reviews yet...</p>

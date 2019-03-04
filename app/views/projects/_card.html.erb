@@ -1,20 +1,24 @@
-<div class="card">
-  <% classes = "card-img" %>
-  <%= render 'shared/project_photo', project: project, classes: classes  %>
+<%= link_to project_path(project) do %>
+  <div class="card">
+    <% classes = "card-img" %>
+    <%= render 'shared/project_photo', project: project, classes: classes  %>
 
-  <div class="card-info">
-    <div class="title-rating">
-      <h3><%= project.name %></h3>
-        <%= render 'shared/stars', project: project %>
-    </div>
-    <div class="description">
-      <p><%= project.description.truncate(200, separator: /\s/) %></p>
-    </div>
-    <div class="owner-info">
-      <div class="avatar-container">
-        <%= render 'shared/avatar', user: project.user %>
+    <div class="card-info">
+      <div class="title-rating">
+        <h3><%= project.name %></h3>
+          <%= render 'shared/stars_communication', project: project %>
+          <%= render 'shared/stars_quality', project: project %>
+          <%= render 'shared/stars_delivery_on_time', project: project %>
       </div>
-      <p><%= project.user.email %></p>
+      <div class="description">
+        <p><%= project.description.truncate(200, separator: /\s/) %></p>
+      </div>
+      <div class="owner-info">
+        <div class="avatar-container">
+          <%= render 'shared/avatar', user: project.user %>
+        </div>
+        <p><%= project.user.email %></p>
+      </div>
     </div>
   </div>
-</div>
+<% end %>
