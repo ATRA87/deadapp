@@ -9,6 +9,9 @@ class User < ApplicationRecord
   has_many :side_projects, through: :project_members, source: :project, dependent: :destroy
   has_many :orders, dependent: :destroy
   has_many :project_orders, through: :projects, source: :orders
+  # has_many :owned_offices, foreign_key: 'user_id', class_name: 'Office', dependent: :destroy
+  # has_many :booked_offices, through: :bookings, source: :office, dependent: :destroy
+
 
   def self.from_omniauth(auth)
     puts "auth = #{auth}"
