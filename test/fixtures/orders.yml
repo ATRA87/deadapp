@@ -25,7 +25,6 @@ deadapp_order_6:
 parkingapp_order_1:
   project: parkingapp
   user: bill
-  state: pending
 
 parkingapp_order_2:
   project: parkingapp

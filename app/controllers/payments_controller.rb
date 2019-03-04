@@ -16,7 +16,7 @@ class PaymentsController < ApplicationController
       currency:     @order.amount.currency
     )
 
-    @order.update(payment: charge.to_json, state: 'paid')
+    @order.update(payment: charge.to_json, client_state: 'paid')
     redirect_to orders_path
 
   rescue Stripe::CardError => e
@@ -27,7 +27,7 @@ class PaymentsController < ApplicationController
   private
 
   def set_order
-    @order = current_user.orders.where(state: 'pending').find(params[:order_id])
+    @order = current_user.orders.where(client_state: 'pending').find(params[:order_id])
     authorize @order
   end
 end

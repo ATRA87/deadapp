@@ -22,7 +22,7 @@
       <div class="project-info">
 
         <div class="developers">
-          <%= render 'shared/avatar_with_name', user: @project.user %>
+          <%= render 'shared/avatar_with_name', user: @project.user, imgSize: "small" %>
           <div class="dropdown">
             <div class="dropdown-btn">
               Rest of the team <i class="fas fa-angle-down"></i>
@@ -30,7 +30,7 @@
             <div class="dropdown-content">
               <% @project.team.each do |user| %>
                 <div class="team-member">
-                  <%= render 'shared/avatar_with_name', user: user %>
+                  <%= render 'shared/avatar_with_name', user: user, imgSize: "small" %>
                 </div>
               <% end %>
             </div>

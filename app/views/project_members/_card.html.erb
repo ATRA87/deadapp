@@ -3,7 +3,8 @@
     <%= render 'shared/project_photo', project: invitation.project, classes: classes %>
     <div class="names">
       <h4><%= link_to invitation.project.name, project_path(invitation.project) %></h4>
-      <%= render 'shared/avatar_with_name', user: invitation.project.user %>
+      <% imgSize = "small" %>
+      <%= render 'shared/avatar_with_name', user: invitation.project.user, imgSize: imgSize %>
     </div>
     <div class="project-info"> info
     </div>
