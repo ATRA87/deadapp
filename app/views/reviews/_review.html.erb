@@ -1,8 +1,8 @@
 <input type="text" id='content-review'>
-  <div class="star-position">
-  <% 5.times do |i| %>
-  <i class="fas fa-star" id="<%= i  %>"></i>
+<div class="star-position">
+<% 5.times do |i| %>
+  <i class="fas fa-star" id="<%= i + 1 %>"></i>
   <% end %>
-  </div>
+</div>
 
-  <%= link_to "RATE", order_reviews_path(order), method: :post, remote: true, id: 'btn-rating', class: "button-rounded-rating " %>
+<%= link_to "Review", order_reviews_path(order), method: :post, remote: true, id: "btn-rating", class: "btn btn-primary" %>

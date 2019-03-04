@@ -62,6 +62,10 @@
   </div>
 
   <div id="reviews-container">
+    <% if @orders.first %>
+    <p style="display: none;" id="order-id"><%= @orders.first.id %></p>
+    <%= render 'reviews/review', order: @orders.first, user: current_user %>
+    <% end %>
     <h2>Reviews <span>(<%= @project.reviews.count %>)</span></h2>
     <% if @project.reviews.count.zero? %>
       <p>No reviews yet...</p>

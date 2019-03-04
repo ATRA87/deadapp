@@ -1,10 +1,11 @@
 class ReviewsController < ApplicationController
   skip_before_action :authenticate_user!, only: %i[new create]
-  before_action :set_review_order
 
   def new
     @review = Review.new
-    @order = Order.find(params[order_id])
+    @order = Order.find(params[:order_id])
+    @review.order = @order
+    authorize @review
   end
 
   def create
@@ -20,6 +21,8 @@ class ReviewsController < ApplicationController
     end
     @order = orders.first
     authorize @order unless @order.nil?
+    @review.order = @order
+    authorize @review
 
     if @review.save
       respond_to do |format|
@@ -35,11 +38,6 @@ class ReviewsController < ApplicationController
   end
 
   private
-
-  def set_review_order
-    @review.order = @order
-    authorize @review
-  end
 
   def review_params
     params.require(review).permit(:communication_rating, :quality_rating, :delivery_on_time_rating, :content)
