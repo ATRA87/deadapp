@@ -11,6 +11,7 @@ class Project < ApplicationRecord
   validates :name, presence: true
   validates :category, inclusion: { in: CATEGORIES }
   accepts_nested_attributes_for :project_assets
+  monetize :price_cents
 
   def rating
     ratings = []
