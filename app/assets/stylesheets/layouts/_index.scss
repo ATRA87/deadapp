@@ -32,3 +32,7 @@ img {
 h2 {
   font-size: 32px;
 }
+
+#main-web-wrapper {
+  min-height: calc(100vh-140px);
+}

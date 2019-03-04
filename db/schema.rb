@@ -32,7 +32,6 @@ ActiveRecord::Schema.define(version: 2019_03_03_201105) do
   create_table "orders", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "project_id"
-    t.string "state", default: "pending"
     t.integer "dev_state", default: 0
     t.integer "client_state", default: 0
     t.integer "estimated_time", default: 0

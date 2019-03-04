@@ -12,7 +12,9 @@
   <body>
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
-    <%= yield %>
+    <div id='main-web-wrapper'>
+      <%= yield %>
+    </div>
     <% if user_signed_in? %>
       <%= render 'shared/footer' %>
     <% end %>
