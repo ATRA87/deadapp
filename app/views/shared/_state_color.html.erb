@@ -1,7 +1,7 @@
 <% case state %>
   <% when 'pending' %>
     <p class="state-pending"><%= state.capitalize %></p>
-  <% when 'accepted', 'finished' %>
+  <% when 'accepted', 'finished', 'paid' %>
     <p class="state-accepted"><%= state.capitalize %></p>
   <% when 'declined' %>
     <p class="state-declined"><%= state.capitalize %></p>
