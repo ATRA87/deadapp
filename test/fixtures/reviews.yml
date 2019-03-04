@@ -1,48 +1,48 @@
 deadapp_review_1:
   order: deadapp_order_1
   communication_rating: <%= Review::STARS[4] %>
-  quality_rating: <%= Review::STARS[5] %>
+  quality_rating: <%= Review::STARS[4] %>
   delivery_on_time_rating: <%= Review::STARS[4] %>
   content: 'Nice app, team was a pleasure to work with'
 
 deadapp_review_2:
   order: deadapp_order_2
-  communication_rating: <%= Review::STARS[5] %>
+  communication_rating: <%= Review::STARS[4] %>
   quality_rating: <%= Review::STARS[4] %>
-  delivery_on_time_rating: <%= Review::STARS[5] %>
+  delivery_on_time_rating: <%= Review::STARS[4] %>
   content: "The customization process worked surprizingly smoothly. I couldn't believe how easy it was to totally change the look of the app, with the help of the dev team"
 
 deadapp_review_3:
   order: deadapp_order_3
   communication_rating: <%= Review::STARS[3] %>
-  quality_rating: <%= Review::STARS[5] %>
-  delivery_on_time_rating: <%= Review::STARS[5] %>
+  quality_rating: <%= Review::STARS[4] %>
+  delivery_on_time_rating: <%= Review::STARS[4] %>
   content: "I wasn't sure what some of the features were for. The dev team were very supportive and helped me to fully understand the app and to make informed decisions"
 
 deadapp_review_4:
   order: deadapp_order_4
   communication_rating: <%= Review::STARS[4] %>
   quality_rating: <%= Review::STARS[3] %>
-  delivery_on_time_rating: <%= Review::STARS[5] %>
+  delivery_on_time_rating: <%= Review::STARS[4] %>
   content: "It was great to be able to communicate with the dev team whenever I had a doubt about the process, and I felt comfortable signing the contract"
 
 deadapp_review_5:
   order: deadapp_order_5
   communication_rating: <%= Review::STARS[3] %>
   quality_rating: <%= Review::STARS[3] %>
-  delivery_on_time_rating: <%= Review::STARS[5] %>
+  delivery_on_time_rating: <%= Review::STARS[4] %>
   content: "The contract design process helped me to feel secure that I wouldn't get ripped off"
 
 deadapp_review_6:
   order: deadapp_order_6
-  communication_rating: <%= Review::STARS[5] %>
+  communication_rating: <%= Review::STARS[4] %>
   quality_rating: <%= Review::STARS[4] %>
   delivery_on_time_rating: <%= Review::STARS[4] %>
   content: "I'm glad I found this site -- I could get my business app up and running without needing to know about programming, and without having to commission a custom app. The devs were happy to explain things to me in layman's terms"
 
 parkingapp_review_1:
   order: parkingapp_order_1
-  communication_rating: <%= Review::STARS[5] %>
+  communication_rating: <%= Review::STARS[4] %>
   quality_rating: <%= Review::STARS[4] %>
   delivery_on_time_rating: <%= Review::STARS[4] %>
   content: "I wish I had opted to add an iOS app, but otherwise I'm happy with how it turned out"
@@ -50,7 +50,7 @@ parkingapp_review_1:
 parkingapp_review_2:
   order: parkingapp_order_2
   communication_rating: <%= Review::STARS[4] %>
-  quality_rating: <%= Review::STARS[5] %>
+  quality_rating: <%= Review::STARS[4] %>
   delivery_on_time_rating: <%= Review::STARS[4] %>
   content: 'Nice app, team was a pleasure to work with'
 
@@ -58,12 +58,12 @@ parkingapp_review_3:
   order: parkingapp_order_3
   communication_rating: <%= Review::STARS[4] %>
   quality_rating: <%= Review::STARS[4] %>
-  delivery_on_time_rating: <%= Review::STARS[5] %>
+  delivery_on_time_rating: <%= Review::STARS[4] %>
   content: "The customization process worked surprizingly smoothly. I couldn't believe how easy it was to totally change the look of the app, with the help of the dev team"
 
 parkingapp_review_4:
   order: parkingapp_order_4
-  communication_rating: <%= Review::STARS[5] %>
+  communication_rating: <%= Review::STARS[4] %>
   quality_rating: <%= Review::STARS[4] %>
   delivery_on_time_rating: <%= Review::STARS[3] %>
   content: "I wasn't sure what some of the features were for. The dev team were very supportive and helped me to fully understand the app and to make informed decisions"
