@@ -13,13 +13,13 @@ class Project < ApplicationRecord
   accepts_nested_attributes_for :project_assets
   monetize :price_cents
 
-  def rating
-    ratings = []
-    self.reviews.each do |review|
-      ratings << review.rating
-    end
-    return ratings.empty? ? 0 : ratings.sum / ratings.count
-  end
+  # def rating
+  #   ratings = []
+  #   self.reviews.each do |review|
+  #     ratings << review.rating
+  #   end
+  #   return ratings.empty? ? 0 : ratings.sum / ratings.count
+  # end
 
   def team
     self.project_members.select do |pm|
@@ -32,4 +32,29 @@ class Project < ApplicationRecord
       pa.priority == 1
     end
   end
+
+  def communication_rating
+    ratings = []
+    self.reviews.each do |review|
+      ratings << review.communication_rating
+    end
+    return ratings.empty? ? 0 : ratings.sum / ratings.count
+  end
+
+  def quality_rating
+    ratings = []
+    self.reviews.each do |review|
+      ratings << review.quality_rating
+    end
+    return ratings.empty? ? 0 : ratings.sum / ratings.count
+  end
+
+  def delivery_on_time_rating
+    ratings = []
+    self.reviews.each do |review|
+      ratings << review.delivery_on_time_rating
+    end
+    return ratings.empty? ? 0 : ratings.sum / ratings.count
+  end
+
 end

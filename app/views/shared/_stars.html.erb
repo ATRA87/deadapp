@@ -1,8 +1,24 @@
-<div class="rating">
-  <% project.rating.times do %>
+<div class="rating communication-rating">
+  <% project.communication_rating.times do %>
     <i class="fas fa-star"></i>
   <% end %>
-  <% (5 - project.rating).times do %>
+  <% (5 - project.communication_rating).times do %>
+    <i class="fas fa-star gray"></i>
+  <% end %>
+</div>
+<div class="rating quality-rating">
+  <% project.quality_rating.times do %>
+    <i class="fas fa-star"></i>
+  <% end %>
+  <% (5 - project.quality_rating).times do %>
+    <i class="fas fa-star gray"></i>
+  <% end %>
+</div>
+<div class="rating delivery-on-time-rating">
+  <% project.delivery_on_time_rating.times do %>
+    <i class="fas fa-star"></i>
+  <% end %>
+  <% (5 - project.delivery_on_time_rating).times do %>
     <i class="fas fa-star gray"></i>
   <% end %>
 </div>
