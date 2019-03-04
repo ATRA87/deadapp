@@ -1,27 +1,20 @@
-<div class="card order_card ">
-  <div class="order-project-img">
-    <%= image_tag "Shaggy", class: "rounded-image img" %>
+  <div class="horizontal-card">
+    <% classes = "card-img small" %>
+    <%= render 'shared/project_photo', project: order.project, classes: classes %>
+    <div class="names">
+      <h4><%= link_to order.project.name, project_path(order.project) %></h4>
+      <%= render 'shared/avatar_with_name', user: order.project.user %>
+    </div>
+    <div class="project-info"> info
+    </div>
+    <% if order.state == 'pending' %>
+      <div class="answer-buttons">
+        <%= link_to 'Pay', new_order_payment(order), method: 'patch', class:"btn btn-success" %>
+        <%= link_to 'Edit', edit_order, method: 'delete', class:"btn btn-danger" %>
+      </div>
+    <% end %>
+    <div class="state">
+      <p><%= render 'shared/state_color', state: order.state %></p>
+      <p class="invitation-date"><%= order.created_at.to_date %></p>
+    </div>
   </div>
-  <div class="order-description">
-    <span>price</span>
-    <span>due date</span>
-    <span></span>
-    <span>features</span>
-    <span>click for addational detials...</span>
-  </div>
-  <div class="order-cta">
-    <%= link_to "Accept", root_path, class: "order-accept" %>
-    <%= link_to "Modify", root_path, class: "order-update" %>
-  </div>
-  <div class="order-info">
-    <span class="order-status">
-      Pending
-    </span>
-    <span class="order-creation-date">
-      since Feb 1st 2021
-    </span>
-    <span class="order-updated-date">
-      due Feb 1st 2021
-    </span>
-  </div>
-</div>
