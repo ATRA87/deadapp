@@ -1,9 +1,9 @@
-
+<%= render 'shared/newsletter_subscription' %>
 <div class="footer">
   <div class="footer-links unstyle-color-link">
-    <%= link_to root_path do%>
-    <i class="fas fa-envelope-square"></i>
-    <% end %>
+    <a href="#" data-toggle="modal" data-target="#newsletter_subscription">
+      <i class="fas fa-envelope-square"></i>
+    </a>
     <%= link_to "https://twitter.com/lewagonbsas" do%>
     <i class="fab fa-twitter"></i>
     <% end %>
@@ -12,6 +12,6 @@
     <% end %>
   </div>
   <div class="footer-copyright">
-     <%= image_tag "logo.png", height: 30 %>
+     <%= image_tag "logo.png", height: 20 %>
   </div>
 </div>
