@@ -37,6 +37,12 @@ class ProjectsController < ApplicationController
   def show
     @users = User.all
     authorize @project
+
+    @orders = []
+    Order.where(user: current_user).where(project: @project) do |o|
+      orders << o if o.review.nil?
+    end
+    authorize @orders unless @orders.first.nil?
   end
 
   def edit

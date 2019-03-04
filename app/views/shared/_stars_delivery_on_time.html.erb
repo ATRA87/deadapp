@@ -1,0 +1,8 @@
+<div class="rating delivery-on-time-rating">
+  <% project.delivery_on_time_rating.times do %>
+    <i class="fas fa-star"></i>
+  <% end %>
+  <% (5 - project.delivery_on_time_rating).times do %>
+    <i class="fas fa-star gray"></i>
+  <% end %>
+</div>

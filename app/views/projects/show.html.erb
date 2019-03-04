@@ -40,11 +40,11 @@
         <div class="ratings">
           <ul>
             <li><strong>Editor's review</strong></li>
-            <li>Code quality <%= render 'shared/stars', project: @project %></li>
+            <li>Code quality <%= render 'shared/stars_quality', project: @project %></li>
             <li><strong>User's review</strong></li>
-            <li>Comunication <%= render 'shared/stars', project: @project %></li>
-            <li>Quality of product <%= render 'shared/stars', project: @project %></li>
-            <li>Delivered on time <%= render 'shared/stars', project: @project %></li>
+            <li>Comunication <%= render 'shared/stars_communication', project: @project %></li>
+            <li>Quality of product <%= render 'shared/stars_quality', project: @project %></li>
+            <li>Delivered on time <%= render 'shared/stars_delivery_on_time', project: @project %></li>
           </ul>
         </div>
         <div class="social-buttons">
@@ -59,6 +59,10 @@
   </div>
 
   <div id="reviews-container">
+    <% if @orders.first %>
+    <p style="display: none;" id="order-id"><%= @orders.first.id %></p>
+    <%= render 'reviews/review', order: @orders.first, user: current_user %>
+    <% end %>
     <h2>Reviews <span>(<%= @project.reviews.count %>)</span></h2>
     <% if @project.reviews.count.zero? %>
       <p>No reviews yet...</p>

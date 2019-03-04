@@ -1,12 +1,17 @@
 .rating {
-  padding: 0 10px;
+  padding: 30px, 15px;
 }
 
-.fas.fa-star {
+.fa-star {
   color: #ffe47c;
   font-size: 24px;
 }
 
-.fas.fa-star.gray {
+// .fas, .fa-star, .gray {
+//   color: #eaeaea;
+// }
+
+.gray {
   color: #eaeaea;
+  font-size: 24px;
 }
