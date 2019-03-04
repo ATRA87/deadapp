@@ -7,7 +7,7 @@
 $font-family-sans-serif:  $body-font;
 $headings-font-family:    $headers-font;
 $body-bg:                 $light-gray;
-$font-size-base: 18px;
+$font-size-base: 16px;
 
 // Colors
 $gray-base:       $gray;
@@ -55,6 +55,8 @@ $border-radius-small: 2px;
 .btn-primary, .btn-primary:active, .btn-primary:visited {
     background-color: $custom-blue !important;
     border-color: $custom-blue !important;
+    border-radius: 9px !important;
+    font-weight: lighter;
 }
 
 .btn-primary:hover {

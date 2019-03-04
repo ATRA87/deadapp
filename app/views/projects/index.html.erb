@@ -1,17 +1,30 @@
-<div class="container">
+<div class="container-fluid">
   <% if current_page?(controller: 'projects', action:'mine') %>
-    <div id='invite-new-project-btn'>
-    <%= link_to '+ add new project', new_project_path %>
-    <%= link_to 'my invitations', project_members_path %>
+  <h1 class="text-center">My Projects</h1>
+  <div class='btn-wrapper'>
+    <%= link_to '+ add new project', new_project_path, class: 'btn btn-primary flex-btn' %>
+    <%= link_to 'my invitations', project_members_path, class: 'btn btn-primary flex-btn' %>
   </div>
-  <% end %>
   <div class="row">
     <% @projects.each do |project| %>
-      <div class="col-xs-12 col-md-6 card-wrapper">
-        <%= link_to project_path(project) do %>
-          <%= render 'card', project: project %>
-        <% end %>
-      </div>
+    <div class="col-xs-12 col-md-6 card-wrapper">
+      <%= link_to project_path(project) do %>
+      <%= render 'card', project: project %>
+      <% end %>
+    </div>
     <% end %>
   </div>
+  <% else %>
+  <h1 class="text-center">start putting main landing page here</h1>
+  <div class="row">
+    <% @projects.each do |project| %>
+    <div class="col-xs-12 col-md-6 card-wrapper">
+      <%= link_to project_path(project) do %>
+      <%= render 'card', project: project %>
+      <% end %>
+    </div>
+    <% end %>
+  </div>
+  <% end %>
 </div>
+
