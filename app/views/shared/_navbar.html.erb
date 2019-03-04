@@ -56,11 +56,13 @@
           <li><%= link_to "Projects", mine_projects_path %></li>
           <li><%= link_to "Messages", "#", class: "navbar-wagon-item navbar-wagon-link" %></li>
           <li><%= link_to "Orders", "#", class: "navbar-wagon-item navbar-wagon-link" %></li>
-          <li>
-            <%= link_to "#" do %>
-            <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
-            <% end %>
-          </li>
+          <% if user_signed_in? %>
+            <li>
+              <%= link_to profile_path(current_user) do %>
+              <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
+              <% end %>
+            </li>
+          <% end %>
           <li>
             <%= link_to "#" do %>
             <i class="fa fa-cog"></i>  <%= t(".settings", default: "Settings") %>
