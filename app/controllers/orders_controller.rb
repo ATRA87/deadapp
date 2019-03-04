@@ -9,10 +9,11 @@ class OrdersController < ApplicationController
     @order = Order.new(project: @project, user: current_user, amount: 1000)
     authorize @order
     @order.save
-    redirect_to new_order_payment_path(@order)
+    redirect_to orders_path
   end
 
   def index
-    @orders = policy_scope(Order).order(state: :desc)
+    @orders = policy_scope(Order).where(user: current_user).order(client_state: :desc)
+    @my_projects_orders = current_user.project_orders
   end
 end

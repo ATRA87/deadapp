@@ -14,4 +14,6 @@ class Order < ApplicationRecord
       return 2
     end
   end
+
+
 end

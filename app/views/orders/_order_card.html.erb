@@ -1,16 +1,16 @@
   <div class="horizontal-card">
-    <% classes = "card-img small" %>
+    <% classes = "small" %>
     <%= render 'shared/project_photo', project: order.project, classes: classes %>
     <div class="names">
       <h4><%= link_to order.project.name, project_path(order.project) %></h4>
-      <%= render 'shared/avatar_with_name', user: order.project.user %>
+      <%= render 'shared/avatar_with_name', user: order.user, imgSize: "small" %>
     </div>
     <div class="project-info"> info
     </div>
-    <% if order.state == 'pending' %>
+    <% if order.client_state == 0 %>
       <div class="answer-buttons">
-        <%= link_to 'Pay', new_order_payment(order), method: 'patch', class:"btn btn-success" %>
-        <%= link_to 'Edit', edit_order, method: 'delete', class:"btn btn-danger" %>
+        <%= link_to 'Pay', new_order_payment_path(order), class:"btn btn-success" %>
+        <%= link_to 'Edit', edit_order_path(order), class:"btn btn-danger" %>
       </div>
     <% end %>
     <div class="state">

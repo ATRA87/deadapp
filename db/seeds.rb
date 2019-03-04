@@ -60,11 +60,13 @@
 #   ]
 # ]
 
+if Rails.env.development?
 
+  puts "---------------- Loading Fixtures --------------"
 
-puts "---------------- Loading Fixtures --------------"
+  `rails db:fixtures:load`
 
-`rails db:fixtures:load`
+end
 
 puts "---------------- Validating Customizations --------------"
 
