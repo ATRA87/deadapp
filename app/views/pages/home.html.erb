@@ -1,2 +1,18 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container-fluid banner-landing">
+  <div>
+    <h2 class="text-center">Check out some of our Apps...</h2>
+    <div></div>
+  </div>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <% @projects.each do |project| %>
+        <div class="col-xs-12 col-md-6 card-wrapper">
+          <%= link_to project_path(project) do %>
+          <%= render 'projects/card', project: project %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
