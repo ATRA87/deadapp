@@ -6,7 +6,9 @@
     <div class="card-info">
       <div class="title-rating">
         <h3><%= project.name %></h3>
-          <%= render 'shared/stars', project: project %>
+          <%= render 'shared/stars_communication', project: project %>
+          <%= render 'shared/stars_quality', project: project %>
+          <%= render 'shared/stars_delivery_on_time', project: project %>
       </div>
       <div class="description">
         <p><%= project.description.truncate(200, separator: /\s/) %></p>

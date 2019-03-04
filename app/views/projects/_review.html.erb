@@ -7,9 +7,9 @@
     </div>
     <div class="ratings">
       <ul>
-        <li>Comunication <%= render 'shared/stars', project: review.order.project %></li>
-        <li>Quality of product <%= render 'shared/stars', project: review.order.project %></li>
-        <li>Delivered on time <%= render 'shared/stars', project: review.order.project %></li>
+        <li>Comunication <%= render 'shared/stars_communication', project: review.order.project %></li>
+        <li>Quality of product <%= render 'shared/stars_quality', project: review.order.project %></li>
+        <li>Delivered on time <%= render 'shared/stars_delivery_on_time', project: review.order.project %></li>
       </ul>
     </div>
   </div>

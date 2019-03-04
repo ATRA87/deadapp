@@ -40,11 +40,11 @@
         <div class="ratings">
           <ul>
             <li><strong>Editor's review</strong></li>
-            <li>Code quality <%= render 'shared/stars', project: @project %></li>
+            <li>Code quality <%= render 'shared/stars_quality', project: @project %></li>
             <li><strong>User's review</strong></li>
-            <li>Comunication <%= render 'shared/stars', project: @project %></li>
-            <li>Quality of product <%= render 'shared/stars', project: @project %></li>
-            <li>Delivered on time <%= render 'shared/stars', project: @project %></li>
+            <li>Comunication <%= render 'shared/stars_communication', project: @project %></li>
+            <li>Quality of product <%= render 'shared/stars_quality', project: @project %></li>
+            <li>Delivered on time <%= render 'shared/stars_delivery_on_time', project: @project %></li>
           </ul>
         </div>
         <div class="social-buttons">
