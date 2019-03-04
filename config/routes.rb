@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'reviews/new'
+  get 'reviews/create'
   get 'authorizations/linkedin'
   get 'authorizations/failure'
   root to: 'projects#index'
