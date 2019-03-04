@@ -22,7 +22,7 @@
       <div class="project-info">
 
         <div class="developers">
-          <%= render 'shared/avatar_with_name', user: @project.user %>
+          <%= render 'shared/avatar_with_name', user: @project.user, imgSize: "small" %>
           <div class="dropdown">
             <div class="dropdown-btn">
               Rest of the team <i class="fas fa-angle-down"></i>
@@ -30,7 +30,7 @@
             <div class="dropdown-content">
               <% @project.team.each do |user| %>
                 <div class="team-member">
-                  <%= render 'shared/avatar_with_name', user: user %>
+                  <%= render 'shared/avatar_with_name', user: user, imgSize: "small" %>
                 </div>
               <% end %>
             </div>
@@ -55,7 +55,10 @@
     <div class="project-description">
       <%= @project.description %>
     </div>
-    <%= link_to 'Contact dev!', edit_project_path(@project), class:'btn btn-primary' %>
+    <%= form_tag orders_path do %>
+      <%= hidden_field_tag 'project_id', @project.id %>
+      <%= submit_tag 'Make order!', class: 'btn btn-primary' %>
+    <% end %>
   </div>
 
   <div id="reviews-container">
