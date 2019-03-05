@@ -1,10 +1,4 @@
-<% 
-  if chat.sender == current_user
-    sender = "me"
-  else
-    sender = "him"
-  end
- %>
+<% sender = chat.sender == current_user ? "me" : "him" %>
 
 <div class="chat-bubble-wrapper">
   <div class="chat-bubble <%= sender %>">
