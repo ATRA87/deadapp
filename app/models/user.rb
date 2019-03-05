@@ -43,4 +43,8 @@ class User < ApplicationRecord
   def identifier
     full_name
   end
+
+  def reviews
+    self.projects.map { |project| project.reviews}.flatten
+  end
 end
