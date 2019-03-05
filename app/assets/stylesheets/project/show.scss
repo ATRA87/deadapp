@@ -15,22 +15,27 @@
   min-width: 130px;
 }
 
-#edit-btn{
-  font-size: 24px;
-  position: relative;
-
+#edit-btn {
+  margin-bottom: 20px;
 }
 
-#edit-btn:hover {
-  color: #20367A;
+// #edit-btn{
+//   font-size: 24px;
+//   position: relative;
 
-}
+// }
+
+// #edit-btn:hover {
+//   color: #20367A;
+
+// }
 
 .project-title{
   display: flex;
   h1{
     margin: 0 20px 0 0;
   }
+  justify-content: space-between;
 }
 
 .modal-content {
@@ -199,4 +204,8 @@
     justify-content: space-between;
     margin-bottom: 5px;
   }
+}
+
+.add-asset {
+  margin-top: 20px;
 }
