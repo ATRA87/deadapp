@@ -24,16 +24,22 @@
       <div class="carousel-inner" style="border-radius: 9px;">
         <% if  project.project_assets.count != 0 %>
         <div class="item active">
-          <img src="https://res.cloudinary.com/dy3nldgkf/<%= project.project_assets.first.photo.identifier %>" style="margin: 0 auto; height: 30vw; width: 50vw">
+          <div class="photo-wrapper">
+            <img src="https://res.cloudinary.com/dy3nldgkf/<%= project.project_assets.first.photo.identifier %>">
+          </div>
         </div>
         <% project.project_assets.drop(1).each do |asset| %>
         <div class="item">
-          <img src="https://res.cloudinary.com/dy3nldgkf/<%= asset.photo.identifier %>" style="margin: 0 auto; height: 30vw; width: 50vw">
+          <div class="photo-wrapper">
+            <img src="https://res.cloudinary.com/dy3nldgkf/<%= asset.photo.identifier %>">
+          </div>
         </div>
         <% end %>
         <% else %>
         <div class="item active">
-          <img src="https://res.cloudinary.com/dy3nldgkf/image/upload/v1551292620/image-placeholder_3x2.svg" style="width:100%; height: 100%;">
+          <div class="photo-wrapper">
+            <img src="https://res.cloudinary.com/dy3nldgkf/image/upload/v1551292620/image-placeholder_3x2.svg">
+          </div>
         </div>
         <% end %>
       </div>

@@ -4,7 +4,7 @@ makent_1:
 
 makent_2:
   project: makent
-  photo: image/fetch/<iframe width="560" height="315" src="https://www.youtube.com/embed/_pmOOsm5FL0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  photo: image/youtube/https://www.youtube.com/watch%3Fv=_pmOOsm5FL0
   priority: 2
 
 makent_3:
@@ -21,7 +21,7 @@ m_cars_1:
 
 m_cars_2:
   project: makent_cars
-  photo: image/fetch/https://www.youtube.com/embed/O_7oQeeaYXI?rel=0&amp;showinfo=0
+  photo: image/youtube/https://www.youtube.com/watch%3Fv=O_7oQeeaYXI
   priority: 2
 
 m_cars_3:
@@ -38,7 +38,7 @@ m_boats_1:
 
 m_boats_2:
   project: makent_boats
-  photo: https://www.youtube.com/embed/9MlmOfwimUk?rel=0&amp;showinfo=0
+  photo: image/youtube/https://www.youtube.com/watch%3Fv=9MlmOfwimUk
   priority: 2
 
 m_boats_3:
@@ -55,12 +55,12 @@ gofer_1:
 
 gofer_2:
   project: gofer
-  photo: https://www.youtube.com/embed/TDdNh9RNxmg?rel=0&amp;showinfo=0
+  photo: image/youtube/https://www.youtube.com/watch%3Fv=TDdNh9RNxmg
   priority: 2
 
 gofer_3:
   project: gofer
-  photo: https://www.youtube.com/embed/6SroRpybKVc?rel=0&amp;showinfo=0
+  photo: image/youtube/https://www.youtube.com/watch%3Fv=6SroRpybKVc
   priority: 2
 
 gofer_4:
@@ -81,7 +81,7 @@ spiffy_1:
 
 spiffy_2:
   project: spiffy
-  photo: https://www.youtube.com/embed/S3NLdxXpDKg?rel=0&amp;showinfo=0
+  photo: image/youtube/https://www.youtube.com/watch%3Fv=S3NLdxXpDKg
   priority: 2
 
 spiffy_3:
@@ -102,7 +102,7 @@ igniter_1:
 
 igniter_2:
   project: igniter
-  photo: https://www.youtube.com/embed/whTJggEswLk?rel=0&amp;showinfo=0
+  photo: image/youtube/https://www.youtube.com/watch%3Fv=whTJggEswLk
   priority: 2
 
 igniter_3:
@@ -123,7 +123,7 @@ eat_1:
 
 eat_2:
   project: ea_treat
-  photo: https://www.youtube.com/embed/hLtRUeNQqKE?rel=0&amp;showinfo=0
+  photo: image/youtube/https://www.youtube.com/watch%3Fv=hLtRUeNQqKE
   priority: 2
 
 eat_3:
@@ -136,7 +136,7 @@ gofer_eats_1:
 
 gofer_eats_2:
   project: gofer_eats
-  photo: https://www.youtube.com/embed/KL9KJnc-5Hk?rel=0&amp;showinfo=0
+  photo: image/youtube/https://www.youtube.com/watch%3Fv=KL9KJnc-5Hk
   priority: 2
 
 gofer_eats_3:
