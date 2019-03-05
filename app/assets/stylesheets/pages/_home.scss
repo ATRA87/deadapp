@@ -2,15 +2,22 @@
 .cta {
   display: flex;
   flex-direction: column;
+  margin-top: 1em;
 }
 
 .ctas {
   display: flex;
   justify-content: space-around;
+  margin-top: 4em;
+}
+
+.cta-post {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .catas {
-  height: 300px;
+  height: 334px;
   width: 300px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -21,6 +28,7 @@
   display: flex;
   justify-content: center;
   align-center: center;
+  margin-bottom: 2em;
 }
 
 .build {
@@ -29,9 +37,8 @@
 }
 
 
-
 .more-margin {
-  margin-top: 6em;
+  margin-top: 4em;
 }
 
 .bold {
@@ -45,4 +52,41 @@
 .big-p {
   font-size:20px;
   padding-left: 4px;
+  color: white;
 }
+
+.btn-special{
+  color: #ffffff;
+  border-radius: 9px;
+  background-color: #2fb897 !important;
+  border: none;
+}
+
+#banner-landing {
+  background-color: #35477D;
+  margin-top: 55px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .ctas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+  }
+  .big-h2 {
+    font-size:50px !important;
+    font-weight: 700;
+  }
+  .catas {
+    margin-top: 50px;
+  }
+  .cta-post {
+    justify-content: left;
+    margin-left: 5px;
+  }
+}
+
+
+
+

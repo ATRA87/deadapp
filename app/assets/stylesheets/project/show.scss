@@ -88,7 +88,6 @@
 
 .dropdown:hover .dropdown-btn {
   background-color: #EAEAEA;
-
 }
 
 .dropdown:hover .dropdown-content {
@@ -207,10 +206,10 @@
   width: 100%;
 }
 
-// .item {
-//   display: block;
-//   max-width: 60vw;
-//   max-height: 30vw;
-//   width: auto;
-//   height: auto;
-// }
+.item {
+  display: block;
+  max-width: 60vw;
+  max-height: 30vw;
+  width: auto;
+  height: auto;
+}
