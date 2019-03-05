@@ -1,15 +1,15 @@
 <div class="review">
   <%= render 'shared/avatar_with_name', user: review.user, imgSize: "small" %>
-  <p><%= review.created_at %></p>
+  <p class="date"><%= review.created_at.to_date %></p>
   <div class="content-container">
     <div class="content">
       <%= review.content %>
     </div>
     <div class="ratings">
       <ul>
-        <li>Comunication <%= render 'shared/stars_communication', project: review.order.project %></li>
-        <li>Quality of product <%= render 'shared/stars_quality', project: review.order.project %></li>
-        <li>Delivered on time <%= render 'shared/stars_delivery_on_time', project: review.order.project %></li>
+        <li>Comunication <%= render 'shared/stars', rating: review.communication_rating %></li>
+        <li>Quality of product <%= render 'shared/stars', rating: review.quality_rating %></li>
+        <li>Delivered on time <%= render 'shared/stars', rating: review.delivery_on_time_rating %></li>
       </ul>
     </div>
   </div>

@@ -22,6 +22,7 @@ gem 'carrierwave', '~> 1.2'
 gem "pundit"
 gem 'stripe'
 gem 'money-rails'
+gem 'pusher'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
