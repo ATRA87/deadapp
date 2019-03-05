@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://js.pusher.com/4.1/pusher.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>App From The Dead</title>
@@ -10,10 +11,10 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
+    <%= render 'shared/flashes' %>
     <% if user_signed_in? %>
       <%= render 'shared/navbar' %>
     <% end %>
-    <%= render 'shared/flashes' %>
     <div id='main-web-wrapper'>
       <%= yield %>
     </div>

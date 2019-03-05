@@ -5,11 +5,28 @@
 .alert {
   margin: 0;
   text-align: center;
-  color: white;
+  color: #32B796;
+  font-weight: bold;
+      z-index: 100;
+    padding: 25px;
+    font-weight: bold;
+    font-size: 18px;
 }
 .alert-info {
-  background: $green;
+  background: #35477D;
+  border: none;
 }
 .alert-warning {
-  background: $red;
+  background: #21367a;
+  border: none;
+}
+
+.bang-box{
+  display:flex;
+  justify-content: center;
+}
+
+.bang-bang{
+  color:#35477D;
+  font-size: 25px;
 }

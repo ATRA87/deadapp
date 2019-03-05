@@ -1,13 +1,13 @@
-<div class="container-fluid banner" style="background-image: url('https://res.cloudinary.com/diyosnlxf/image/upload/v1551470220/marius-christensen-542468-unsplash.jpg'), linear-gradient(-115deg, rgba(53,71,125,0.38) 22%, rgba(53,71,125,0.23) 58%);" >
+<div class="container-fluid banner" style="background-image: url('https://res.cloudinary.com/diyosnlxf/image/upload/v1551470220/marius-christensen-542468-unsplash.jpg'), linear-gradient(180deg, rgba(53,71,125,0.38) 100%, rgba(53,71,125,0.23) 58%);" >
   <div class="row">
     <div class="col-xs-12">
       <%= render 'shared/navbar' %>
     </div>
   </div>
   <div class="row">
-    <div class="col-xs-12 col-md-6 sign-up-wrapper">
+    <div class="col-xs-12 sign-up-login-wrapper">
       <div class="sign-up-card" >
-        <h2>Log in</h2>
+        <h1>Get the <i class="fas fa-rocket"></i> Apps</h1>
         <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <%= f.error_notification %>
         <div class="form-inputs">
@@ -21,13 +21,16 @@
         </div>
 
         <div class="form-actions">
-          <%= f.button :submit, "Go to Apps!", class:"sign-up-btn" %>
+          <%= f.button :submit, "Sign In", class:"btn sign-up-btn" %>
         </div>
         <% end %>
         <p id="separator">or</p>
-        <div class="sign-up-btn linked-in-btn">
+        <div class="btn sign-up-btn linked-in-btn">
           <%= link_to user_linkedin_omniauth_authorize_path do %>
-            <i class="fab fa-linkedin"></i> Linked in
+            <i class="fab fa-linkedin-in"></i>
+            <div>
+              <span> Sign In with LinkedIn</span>
+            </div>
           <% end %>
         </div>
       </div>
