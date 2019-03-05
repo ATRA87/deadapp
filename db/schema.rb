@@ -10,10 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_04_183531) do
+ActiveRecord::Schema.define(version: 2019_03_05_143819) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "chats", force: :cascade do |t|
+    t.text "message"
+    t.string "identifier"
+    t.bigint "user_id"
+    t.bigint "project_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["project_id"], name: "index_chats_on_project_id"
+    t.index ["user_id"], name: "index_chats_on_user_id"
+  end
 
   create_table "customizations", force: :cascade do |t|
     t.bigint "project_id"
@@ -112,6 +123,8 @@ ActiveRecord::Schema.define(version: 2019_03_04_183531) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "chats", "projects"
+  add_foreign_key "chats", "users"
   add_foreign_key "customizations", "projects"
   add_foreign_key "features", "orders"
   add_foreign_key "orders", "projects"

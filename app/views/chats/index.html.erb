@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="chat-box" data-project_id="<%= @project.id %>" data-user_id="<%= @user.id %>">
+    <% @chats.each do |chat| %>
+        <%= render 'message', chat: chat %>
+    <% end %>
+  </div>
+
+  <%= form_with(model: [@project, @user, @chat], remote: true, format: :json, id: 'chat-form') do |form| %>
+    <% if @chat.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@chat.errors.count, "error") %> prohibited this chat from being saved:</h2>
+        <ul>
+          <% @chat.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <div class="field position-relative">
+      <%= form.text_field :message, id: :message, class: "form-control", required: true %>
+      <%= form.hidden_field :identifier, id: :identifier, value: current_user.identifier %>
+    </div>
+  <% end %>
+  <%= current_user.full_name %> -
+  <%= current_user.id %>
+</div>

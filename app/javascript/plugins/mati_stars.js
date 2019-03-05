@@ -1,7 +1,7 @@
-const review = document.getElementById("new_review");
-const starit = (ratingName) => {
+export const starit = (ratingName) => {
   const rating = document.getElementById(`${ratingName}-container`);
-  const stars = rating.querySelectorAll(".fa-star");
+  if (rating) {
+    const stars = rating.querySelectorAll(".fa-star");
   var hiddenRating = document.getElementById(ratingName);
   var btn = document.getElementById("btn-rating");
   stars.forEach(star => {
@@ -20,6 +20,8 @@ const starit = (ratingName) => {
       btn.classList.remove("disabled");
     });
   });
+  }
+
 }
 
 starit("communication_rating");
