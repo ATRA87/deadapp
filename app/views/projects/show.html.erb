@@ -28,10 +28,14 @@
               Rest of the team <i class="fas fa-angle-down"></i>
             </div>
             <div class="dropdown-content">
-              <% @project.team.each do |user| %>
-                <div class="team-member">
-                  <%= render 'shared/avatar_with_name', user: user, imgSize: "small" %>
-                </div>
+              <% unless @project.team.empty? %>
+                <% @project.team.each do |user| %>
+                  <div class="team-member">
+                    <%= render 'shared/avatar_with_name', user: user, imgSize: "small" %>
+                  </div>
+                <% end %>
+              <% else %>
+                <p>No team members</p>
               <% end %>
             </div>
           </div>

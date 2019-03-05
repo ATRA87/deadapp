@@ -81,6 +81,10 @@
   padding-bottom: 5px;
 }
 
+.team-member:last-child {
+  border-bottom: none;
+}
+
 .team-member:hover .user-info {
   p { color: #20367A; }
   .card-avatar { border: 1px solid #20367A}

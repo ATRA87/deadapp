@@ -1,21 +1,47 @@
 <div class="container top-margin">
-  <div class="row">
-    <div class="col-xs-12">
-      <h1 class="text-center order-title">My orders</h1>
-      <% if @orders %>
-        <% @orders.each do |order| %>
-          <%= render "order_card", order: order %>
-        <% end %>
+  <ul class="list-inline">
+    <li class="active"><a data-toggle="tab" href="#my_orders"><h1 class="text-center order-title">My orders</h1></a></li>
+    <li><a data-toggle="tab" href="#project_orders"><h1 class="text-center order-title">Project orders</h1></a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="my_orders" class="tab-pane fade in active">
+      <% unless @orders.empty? %>
+        <div class="pending-orders">
+          <% @orders.each do |order| %>
+            <%= render "order_card", order: order %>
+          <% end %>
+        </div>
       <% else %>
         <p class="text-center">You haven't made any orders yet.</p>
       <% end %>
-      <h1 class="text-center order-title">Project orders</h1>
-      <% if @my_projects_orders %>
-        <% @my_projects_orders.each do |order| %>
-          <%= render "order_card", order: order %>
-        <% end %>
+      <% unless @orders_history.empty? %>
+        <h1 class="order-title">History</h1>
+        <div class="orders-history">
+          <% @orders_history.each do |order| %>
+            <%= render "order_card", order: order %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+
+    <div id="project_orders" class="tab-pane fade">
+      <% unless @my_projects_orders.empty? %>
+        <div class="pending-project-orders">
+          <% @my_projects_orders.each do |order| %>
+            <%= render "order_card", order: order %>
+          <% end %>
+        </div>
       <% else %>
         <p class="text-center">None of your projects have any pending order.</p>
+      <% end %>
+      <% unless @my_projects_orders_history.empty? %>
+        <h1 class="order-title">History</h1>
+        <div class="projects-orders-history">
+          <% @my_projects_orders_history.each do |order| %>
+            <%= render "order_card", order: order %>
+          <% end %>
+        </div>
       <% end %>
     </div>
   </div>
