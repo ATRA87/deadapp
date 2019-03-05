@@ -1,13 +1,13 @@
-<h1>Project name: <%= order.project.name %></h1>
+<h1>Project name:<br><%= order.project.name %></h1>
 <h3>Client: <%= current_user.full_name %></h3>
 <%= simple_form_for(order) do |f| %>
-  <% if order.project_owner?(current_user) %>
-    <%= f.input :amount %>
-    <%= f.hidden_field :dev_state, value: 1 %> <!-- set dev state to accepted -->
-  <% else %>
-    <%= f.hidden_field :dev_state, value: 0 %> <!-- set dev state to pending if client edits the order so dev has to check it again -->
-  <% end %>
-  <%= f.input :due_date, as: :date, html5: true %>
-  <%= f.hidden_field :project, value: @project_id %>
-  <%= f.submit %>
+<% if order.project_owner?(current_user) %>
+<%= f.input :amount %>
+<%= f.hidden_field :dev_state, value: 1 %> <!-- set dev state to accepted -->
+<% else %>
+<%= f.hidden_field :dev_state, value: 0 %> <!-- set dev state to pending if client edits the order so dev has to check it again -->
+<% end %>
+<%= f.input :due_date, label: "When should your app to be ready?", as: :date, html5: true %>
+<%= f.hidden_field :project, value: @project_id %>
+<%= f.submit %>
 <% end %>
