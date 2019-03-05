@@ -3,7 +3,7 @@
   padding: 0 20px;
   margin: 20px 0;
   background-color: white;
-  border-radius: 3px;
+  border-radius: 8px;
   box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
   h2 {
     margin: 0;
@@ -127,6 +127,7 @@
     font-weight: lighter;
     font-size: 16px;
     display: flex;
+    padding: 10px 0  8px 0;
   }
   .user-img {
     width: 30px;
@@ -134,18 +135,19 @@
     margin-right: 5px;
   }
   .content {
-    margin-right: 10px;
+    margin-right: 20px;
     flex-grow: 1;
+    padding-bottom: 20px;
   }
 }
 
 .project-core-info {
   font-family: $body-font;
   width: 100%;
-  padding: 20px;
-  margin: 20px 0;
+  padding: 40px 62px 20px 80px;
+  margin: 70px 0 70px 0;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
 }
 
