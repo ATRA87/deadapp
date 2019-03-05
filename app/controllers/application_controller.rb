@@ -12,6 +12,10 @@ class ApplicationController < ActionController::Base
   after_action :verify_authorized, except: skip_actions, unless: :skip_pundit?
   after_action :verify_policy_scoped, only: skip_actions, unless: :skip_pundit?
 
+  def default_url_options
+    { host: ENV["HOST"] || "localhost:3000" }
+  end
+
   private
 
   def skip_pundit?
