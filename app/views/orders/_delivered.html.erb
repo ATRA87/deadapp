@@ -1,0 +1,3 @@
+<% if !order.project_owner?(current_user) && !order.reviewed? %>
+  <%= link_to 'Review project', 'projects/#{order.project.id}/#reviews-container', class:"btn btn-primary" %>
+<% end %>
