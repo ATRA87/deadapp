@@ -1,9 +1,10 @@
 <div class="container-fluid top-margin ">
-<h1 class="text-center ">My Projects</h1>
+   <div class="col-md-10 col-md-offset-1" >
+<h1 class="text-center">My Projects</h1>
 <div class="row card-padding">
   <div class="col-md-10 col-md-offset-1">
     <div class='btn-wrapper'>
-      <%= link_to '+ add new project', new_project_path, class: 'btn btn-primary flex-btn' %>
+      <%= link_to '+ add new project', new_project_path, class: 'btn btn-primary flex-btn'%>
       <%= link_to 'my invitations', project_members_path, class: 'btn btn-primary flex-btn' %>
     </div>
     <% @projects.each do |project| %>
@@ -12,6 +13,7 @@
       </div>
     <% end %>
   </div>
+</div>
 </div>
 </div>
 

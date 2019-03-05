@@ -55,15 +55,19 @@ $border-radius-small: 2px;
 .btn-primary, .btn-primary:active, .btn-primary:visited {
     background-color: $custom-blue !important;
     border-color: $custom-blue !important;
-    border-radius: 9px !important;
+    border-radius: 5px !important;
     font-weight: lighter;
 }
 
 .btn-primary:hover {
   background-color: #858AA3;
+  color: #35477D;
+  opacity: 0.5;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #858AA3;
+  color: #35477D;
+  opacity: 0.5;
   text-decoration: none;
 }
