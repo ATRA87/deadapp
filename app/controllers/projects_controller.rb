@@ -39,8 +39,11 @@ class ProjectsController < ApplicationController
     authorize @project
     # get all the orders from the user that havent been reviewed yet
     # TODO: get only those orders that have been delivered
-    @orders_by_user = current_user.orders.select do |order|
-      order.project == @project && !order.reviewed?
+    @orders_by_user = []
+    if current_user
+      @orders_by_user = current_user.orders.select do |order|
+        order.project == @project && !order.reviewed?
+      end
     end
   end
 
