@@ -57,6 +57,16 @@
     </div>
     <%= link_to 'Make order', new_order_path(project_id: @project.id), class:"btn btn-primary" %>
   </div>
+  <% if current_user %>
+    <%= link_to 'Chat', project_user_chats_path(@project, current_user) unless current_user == @project.user %>
+    <% if current_user == @project.user %>
+      <ul>
+        <% @chat_users.each do |user| %>
+          <li><%= link_to user.full_name, project_user_chats_path(@project, user) %></li>
+        <% end %>
+      </ul>
+    <% end %>
+  <% end %>
 
   <div id="reviews-container">
     <% if @orders_by_user.first %>

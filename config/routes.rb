@@ -13,6 +13,9 @@ Rails.application.routes.draw do
     resources :reviews, only: [:new, :create]
   end
   resources :projects do
+    resources :users, only: [] do
+      resources :chats, only: [:create, :index,]
+    end
     resources :project_assets, only: [:new, :create]
     collection do
       get 'mine'
