@@ -68,7 +68,7 @@ class Project < ApplicationRecord
   def chat_users
     users = []
     chats.each do |chat|
-      users << chat.user unless users.include?(chat.user) or chat.user == user
+      users << chat.sender unless users.include?(chat.sender) or chat.sender == user
     end
     users
   end

@@ -1,6 +1,4 @@
 $(document).ready(() => {
-  let username = '';
-
   const updateChat = function(data) {
     $('.chat-box').append(`
       <div class="col-12">
@@ -25,7 +23,9 @@ $(document).ready(() => {
 
   const channel = pusher.subscribe('chat');
   channel.bind('new', function(data) {
-    if (data.project_id == $('.chat-box').data("booking_id") && data.user_id == $('.chat-box').data("user_id")) {
+    let user_id = $('.chat-box').data("user_id")
+    let project_id = $('.chat-box').data("project_id")
+    if (data.project_id == project_id && (data.sender_id == user_id) || (data.target_id == user_id) ) {
       updateChat(data);
     }
   });

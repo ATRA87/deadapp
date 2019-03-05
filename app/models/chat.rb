@@ -1,5 +1,6 @@
 class Chat < ApplicationRecord
-  belongs_to :user
+  belongs_to :sender, class_name: "User"
+  belongs_to :target, class_name: "User"
   belongs_to :project
   after_create :notify_pusher, on: :create
 

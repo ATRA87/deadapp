@@ -1,16 +1,23 @@
 class ChatsController < ApplicationController
   skip_before_action :authenticate_user!
-  before_action :set_project_and_owner
+  before_action :set_project_and_client_user
 
   def index
-    @chats = policy_scope(Chat).where(project: @project)
+    @chats = policy_scope(Chat).where(project: @project, target: @user)
     @chat = Chat.new
   end
 
   def create
     @chat = Chat.new(chat_params)
     @chat.project = @project
-    @chat.user = current_user
+    @chat.sender = current_user
+
+    if current_user == @project.user
+      @chat.target = @user
+    else
+      @chat.target = current_user
+    end
+
     authorize @chat
     respond_to do |format|
       if @chat.save
@@ -29,7 +36,7 @@ class ChatsController < ApplicationController
     params.require(:chat).permit(:identifier, :message)
   end
 
-  def set_project_and_owner
+  def set_project_and_client_user
     @project = Project.find(params[:project_id])
     @user = User.find(params[:user_id])
   end

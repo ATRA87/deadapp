@@ -18,12 +18,14 @@ ActiveRecord::Schema.define(version: 2019_03_05_143819) do
   create_table "chats", force: :cascade do |t|
     t.text "message"
     t.string "identifier"
-    t.bigint "user_id"
+    t.bigint "sender_id"
+    t.bigint "target_id"
     t.bigint "project_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["project_id"], name: "index_chats_on_project_id"
-    t.index ["user_id"], name: "index_chats_on_user_id"
+    t.index ["sender_id"], name: "index_chats_on_sender_id"
+    t.index ["target_id"], name: "index_chats_on_target_id"
   end
 
   create_table "customizations", force: :cascade do |t|
@@ -124,7 +126,6 @@ ActiveRecord::Schema.define(version: 2019_03_05_143819) do
   end
 
   add_foreign_key "chats", "projects"
-  add_foreign_key "chats", "users"
   add_foreign_key "customizations", "projects"
   add_foreign_key "features", "orders"
   add_foreign_key "orders", "projects"
