@@ -1,4 +1,4 @@
-<% if !user_signed_in? && controller.controller_name != "pages" %>
+<% if !user_signed_in? && (controller.controller_name != "pages" && (controller.controller_name != "projects" && controller.action_name != 'show')) %>
     <div class="navbar-wagon navbar-user-status navbar-fixed-top" %>
 <% elsif !user_signed_in? %>
     <div class="navbar-wagon navbar-fixed-top" %>
