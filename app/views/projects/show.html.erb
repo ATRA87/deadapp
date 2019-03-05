@@ -1,3 +1,6 @@
+<% if !user_signed_in? %>
+  <%= render 'shared/navbar' %>
+<% end %>
 <div class="container-fluid top-margin">
   <div class="col-md-10 col-md-offset-1" >
         <h1><%= @project.name %></h1>
@@ -5,7 +8,6 @@
     <div class="project-assets-and-info">
       <div class="project-title-and-assets">
         <div class="project-title">
-          <h1><%= @project.name %></h1>
           <% if policy(@project).update? %>
           <div class="btn btn-primary" id="edit-btn">Edit project details</div>
           <% end %>
