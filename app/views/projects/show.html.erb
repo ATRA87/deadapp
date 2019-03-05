@@ -1,14 +1,14 @@
 <div class="container top-margin">
+        <h1><%= @project.name %></h1>
   <div class="project-core-info">
     <div class="project-assets-and-info">
       <div class="project-title-and-assets">
         <div class="project-title">
-          <h1><%= @project.name %></h1>
           <div class="btn" id="edit-btn">edit</div>
         </div>
         <div id="form-modal">
           <div class="modal-content">
-            <h1>Edit project</h1>
+            <h2>Edit project</h2>
             <%= render 'form', project: @project, users: @users %>
           </div>
         </div>
@@ -58,12 +58,12 @@
     <%= link_to 'Make order', new_order_path(project_id: @project.id), class:"btn btn-primary" %>
   </div>
 
+    <h2>Reviews <span>(<%= @project.reviews.count %>)</span></h2>
   <div id="reviews-container">
     <% if @orders.first %>
     <p style="display: none;" id="order-id"><%= @orders.first.id %></p>
     <%= render 'reviews/review', order: @orders.first, user: current_user %>
     <% end %>
-    <h2>Reviews <span>(<%= @project.reviews.count %>)</span></h2>
     <% if @project.reviews.count.zero? %>
       <p>No reviews yet...</p>
     <% end %>
