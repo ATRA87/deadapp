@@ -16,4 +16,12 @@ class Order < ApplicationRecord
   def project_owner?(current_user)
     project.user == current_user
   end
+
+  def reviewed?
+    !review.nil?
+  end
+
+  def finished?
+    state == 'finished' || state == 'delivered' || state == 'accepted'
+  end
 end

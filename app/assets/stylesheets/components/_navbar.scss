@@ -11,6 +11,7 @@
   border-top-color: #35477D;
   border-top-width: 2.5px;
   border-top-style: solid;
+  margin-bottom: 10em;
 }
 
 /* Logo */
@@ -88,5 +89,9 @@
 .navbar-logon {
   color: #32B796;
   font-size: 18px;
-  font-weight: lighter !important;
+  font-weight: bold !important;
+}
+
+.dropdown-toggle {
+  color: #35477D;
 }

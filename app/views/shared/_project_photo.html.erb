@@ -1,5 +1,5 @@
 <% if project.project_assets.count != 0 %>
-  <div class="card-img <%= classes %>" style="background-image: url('<%= project.main_asset.photo.identifier %>'); background-position: center; background-size: cover;">
+  <div class="card-img <%= classes %>" style="background-image: url('https://res.cloudinary.com/dy3nldgkf/<%= project.main_asset.photo.identifier %>'); background-position: center; background-size: cover;">
   </div>
 <% else %>
   <div class="card-img <%= classes %>"" style="background-image: url(<%= image_path "Hand_&_Logo.svg" %>); background-position: center;">

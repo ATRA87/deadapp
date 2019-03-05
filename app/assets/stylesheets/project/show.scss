@@ -15,22 +15,27 @@
   min-width: 130px;
 }
 
-#edit-btn{
-  font-size: 24px;
-  position: relative;
-
+#edit-btn {
+  margin-bottom: 20px;
 }
 
-#edit-btn:hover {
-  color: #20367A;
+// #edit-btn{
+//   font-size: 24px;
+//   position: relative;
 
-}
+// }
+
+// #edit-btn:hover {
+//   color: #20367A;
+
+// }
 
 .project-title{
   display: flex;
   h1{
     margin: 0 20px 0 0;
   }
+  justify-content: space-between;
 }
 
 .modal-content {
@@ -88,7 +93,6 @@
 
 .dropdown:hover .dropdown-btn {
   background-color: #EAEAEA;
-
 }
 
 .dropdown:hover .dropdown-content {
@@ -97,6 +101,9 @@
 
 .ratings {
   min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .developers {
@@ -202,17 +209,3 @@
     margin-bottom: 5px;
   }
 }
-
-#myCarousel {
-  // max-width: 700px;
-  // height: calc(width)
-  width: 100%;
-}
-
-// .item {
-//   display: block;
-//   max-width: 60vw;
-//   max-height: 30vw;
-//   width: auto;
-//   height: auto;
-// }
