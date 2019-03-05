@@ -35,6 +35,8 @@ class ProjectsController < ApplicationController
   end
 
   def show
+    @chat_users = @project.chat_users
+
     @users = User.all
     authorize @project
     # get all the orders from the user that havent been reviewed yet

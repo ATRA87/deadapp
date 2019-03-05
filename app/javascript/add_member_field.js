@@ -1,7 +1,11 @@
 const addBtn = document.querySelector('#add-btn');
-const membersForm = document.querySelector('#members');
+
+if (addBtn) {
+  const membersForm = document.querySelector('#members');
 const memberField = document.querySelector('#project_user_ids');
-const options = memberField.querySelectorAll('option');
+ const options = memberField.querySelectorAll('option');
+
+
 
 addBtn.addEventListener('click', (event) => {
   membersForm.insertAdjacentHTML('beforeend', `<div class="selector-field" style="display: flex; align-items: center;">
@@ -18,6 +22,7 @@ deleteBtns.forEach(deleteBtn => {
     // console.log(deleteBtn.parentNode);
   });
 });
+
 
 var modal = document.getElementById('form-modal');
 
@@ -38,4 +43,5 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
 }

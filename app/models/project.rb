@@ -12,7 +12,7 @@ class Project < ApplicationRecord
   validates :category, inclusion: { in: CATEGORIES }
   accepts_nested_attributes_for :project_assets
   monetize :price_cents
-
+  has_many :chats
   # def rating
   #   ratings = []
   #   self.reviews.each do |review|
@@ -22,7 +22,7 @@ class Project < ApplicationRecord
   # end
 
   def team
-    self.project_members.select do |pm|
+    project_members.select do |pm|
       pm.state == 'accepted'
     end.map { |pm2| pm2.user }
   end
@@ -63,5 +63,13 @@ class Project < ApplicationRecord
       ratings << review.delivery_on_time_rating
     end
     (ratings.sum / ratings.count.to_f)
+  end
+
+  def chat_users
+    users = []
+    chats.each do |chat|
+      users << chat.sender unless users.include?(chat.sender) or chat.sender == user
+    end
+    users
   end
 end
