@@ -1,45 +1,40 @@
-makent_0:
-  project: makent
-  photo: https://res.cloudinary.com/diyosnlxf/image/upload/v1550774196/uaypees8fujchsyoff5w.jpg
-  priority: 3 # 1 is default
-
 makent_1:
   project: makent
-  photo: https://www.trioangle.com/images/makent-banner.svg
+  photo: image/fetch/https://www.trioangle.com/images/makent-banner.svg
 
 makent_2:
   project: makent
-  photo: <iframe width="560" height="315" src="https://www.youtube.com/embed/_pmOOsm5FL0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  photo: image/fetch/<iframe width="560" height="315" src="https://www.youtube.com/embed/_pmOOsm5FL0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   priority: 2
 
 makent_3:
   project: makent
-  photo: https://www.trioangle.com/images/makent/airbnb_clone_Signup.png
+  photo: image/fetch/https://www.trioangle.com/images/makent/airbnb_clone_Signup.png
 
 makent_4:
   project: makent
-  photo: https://www.trioangle.com/images/makent/technology.svg
+  photo: image/fetch/https://www.trioangle.com/images/makent/technology.svg
 
 m_cars_1:
   project: makent_cars
-  photo: https://www.trioangle.com/images/makentcars-banner.svg
+  photo: image/fetch/https://www.trioangle.com/images/makentcars-banner.svg
 
 m_cars_2:
   project: makent_cars
-  photo: https://www.youtube.com/embed/O_7oQeeaYXI?rel=0&amp;showinfo=0
+  photo: image/fetch/https://www.youtube.com/embed/O_7oQeeaYXI?rel=0&amp;showinfo=0
   priority: 2
 
 m_cars_3:
   project: makent_cars
-  photo: https://www.trioangle.com/images/makentcars/car_rental_Multi_login.png
+  photo: image/fetch/https://www.trioangle.com/images/makentcars/car_rental_Multi_login.png
 
 m_cars_4:
   project: makent_cars
-  photo: https://www.trioangle.com/images/makentcars/technology.svg
+  photo: image/fetch/https://www.trioangle.com/images/makentcars/technology.svg
 
 m_boats_1:
   project: makent_boats
-  photo: https://www.trioangle.com/images/makentboats-banner.svg
+  photo: image/fetch/https://www.trioangle.com/images/makentboats-banner.svg
 
 m_boats_2:
   project: makent_boats
@@ -48,15 +43,15 @@ m_boats_2:
 
 m_boats_3:
   project: makent_boats
-  photo: https://www.trioangle.com/images/makentboats/boat_rental_Multiple_Login_SignUp-Boats.png
+  photo: image/fetch/https://www.trioangle.com/images/makentboats/boat_rental_Multiple_Login_SignUp-Boats.png
 
 m_boats_4:
   project: makent_boats
-  photo: https://www.trioangle.com/images/makentboats/technology.svg
+  photo: image/fetch/https://www.trioangle.com/images/makentboats/technology.svg
 
 gofer_1:
   project: gofer
-  photo: https://www.trioangle.com/images/gofer-banner.svg
+  photo: image/fetch/https://www.trioangle.com/images/gofer-banner.svg
 
 gofer_2:
   project: gofer
@@ -70,19 +65,19 @@ gofer_3:
 
 gofer_4:
   project: gofer
-  photo: https://www.trioangle.com/images/gofer/uber_clone_Simple_SignUp_Login.png
+  photo: image/fetch/https://www.trioangle.com/images/gofer/uber_clone_Simple_SignUp_Login.png
 
 gofer_5:
   project: gofer
-  photo: https://www.trioangle.com/images/gofer/uber_clone_admin.png
+  photo: image/fetch/https://www.trioangle.com/images/gofer/uber_clone_admin.png
 
 gofer_6:
   project: gofer
-  photo: https://www.trioangle.com/images/gofer/technology.svg
+  photo: image/fetch/https://www.trioangle.com/images/gofer/technology.svg
 
 spiffy_1:
   project: spiffy
-  photo: https://www.trioangle.com/images/spiffy-banner.svg
+  photo: image/fetch/https://www.trioangle.com/images/spiffy-banner.svg
 
 spiffy_2:
   project: spiffy
@@ -91,19 +86,19 @@ spiffy_2:
 
 spiffy_3:
   project: spiffy
-  photo: https://www.trioangle.com/images/spiffy/fancy_clone__multiple_login_sign_up.pngs
+  photo: image/fetch/https://www.trioangle.com/images/spiffy/fancy_clone__multiple_login_sign_up.pngs
 
 spiffy_4:
   project: spiffy
-  photo: https://www.trioangle.com/images/spiffy/fancy_clone_buyer.png
+  photo: image/fetch/https://www.trioangle.com/images/spiffy/fancy_clone_buyer.png
 
 spiffy_5:
   project: spiffy
-  photo: https://www.trioangle.com/images/spiffy/technology.svg
+  photo: image/fetch/https://www.trioangle.com/images/spiffy/technology.svg
 
 igniter_1:
   project: igniter
-  photo: https://www.trioangle.com/images/igniter-banner.svg
+  photo: image/fetch/https://www.trioangle.com/images/igniter-banner.svg
 
 igniter_2:
   project: igniter
@@ -112,19 +107,19 @@ igniter_2:
 
 igniter_3:
   project: igniter
-  photo: https://www.trioangle.com/images/igniter/tinder_clone_Smooth_Search_Filters.png
+  photo: image/fetch/https://www.trioangle.com/images/igniter/tinder_clone_Smooth_Search_Filters.png
 
 igniter_4:
   project: igniter
-  photo: https://www.trioangle.com/images/igniter/tinder_clone_AppStore.png
+  photo: image/fetch/https://www.trioangle.com/images/igniter/tinder_clone_AppStore.png
 
 igniter_5:
   project: igniter
-  photo: https://www.trioangle.com/images/igniter/technology.svg
+  photo: image/fetch/https://www.trioangle.com/images/igniter/technology.svg
 
 eat_1:
   project: ea_treat
-  photo: https://www.trioangle.com/images/eatreat-banner.svg
+  photo: image/fetch/https://www.trioangle.com/images/eatreat-banner.svg
 
 eat_2:
   project: ea_treat
@@ -133,11 +128,11 @@ eat_2:
 
 eat_3:
   project: ea_treat
-  photo: https://www.trioangle.com/images/eatreat/technology.svg
+  photo: image/fetch/https://www.trioangle.com/images/eatreat/technology.svg
 
 gofer_eats_1:
   project: gofer_eats
-  photo: https://www.trioangle.com/images/gofereats-banner.svg
+  photo: image/fetch/https://www.trioangle.com/images/gofereats-banner.svg
 
 gofer_eats_2:
   project: gofer_eats
@@ -146,27 +141,27 @@ gofer_eats_2:
 
 gofer_eats_3:
   project: gofer_eats
-  photo: https://www.trioangle.com/images/gofereats/ubereats_clone_track_order.png
+  photo: image/fetch/https://www.trioangle.com/images/gofereats/ubereats_clone_track_order.png
 
 gofer_eats_4:
   project: gofer_eats
-  photo: https://www.trioangle.com/images/gofereats/ubereats_clone_admin.png
+  photo: image/fetch/https://www.trioangle.com/images/gofereats/ubereats_clone_admin.png
 
 gofer_eats_5:
   project: gofer_eats
-  photo: https://www.trioangle.com/images/gofereats/technology.svg
+  photo: image/fetch/https://www.trioangle.com/images/gofereats/technology.svg
 
 passup_1:
   project: pass_up
-  photo: https://www.trioangle.com/images/passup-banner.svg
+  photo: image/fetch/https://www.trioangle.com/images/passup-banner.svg
 
 passup_2:
   project: pass_up
-  photo: https://www.trioangle.com/images/passup/letgo_clone_easy_signup.png
+  photo: image/fetch/https://www.trioangle.com/images/passup/letgo_clone_easy_signup.png
 
 passup_3:
   project: pass_up
-  photo: https://www.trioangle.com/images/passup/technology.svg
+  photo: image/fetch/https://www.trioangle.com/images/passup/technology.svg
 
 
 

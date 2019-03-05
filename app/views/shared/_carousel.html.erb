@@ -24,11 +24,11 @@
       <div class="carousel-inner" style="border-radius: 9px;">
         <% if  project.project_assets.count != 0 %>
         <div class="item active">
-          <img src="<%= project.project_assets.first.photo.identifier %>" style="margin: 0 auto; height: 30vw; width: 50vw">
+          <img src="https://res.cloudinary.com/dy3nldgkf/<%= project.project_assets.first.photo.identifier %>" style="margin: 0 auto; height: 30vw; width: 50vw">
         </div>
         <% project.project_assets.drop(1).each do |asset| %>
         <div class="item">
-          <img src="<%= asset.photo.identifier %>" style="margin: 0 auto; height: 30vw; width: 50vw">
+          <img src="https://res.cloudinary.com/dy3nldgkf/<%= asset.photo.identifier %>" style="margin: 0 auto; height: 30vw; width: 50vw">
         </div>
         <% end %>
         <% else %>
