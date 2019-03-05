@@ -4,10 +4,8 @@ class ReviewPolicy < ApplicationPolicy
       scope.all
     end
   end
-  def new?
-    record.order.user = user
-  end
+
   def create?
-    record.order.user == user
+    true
   end
 end

@@ -1,0 +1,8 @@
+<div class="rating">
+  <% rating.ceil.times do %>
+    <i class="fas fa-star"></i>
+  <% end %>
+  <% (5 - rating.ceil).times do %>
+    <i class="fas fa-star gray"></i>
+  <% end %>
+</div>

@@ -1,22 +1,27 @@
-const starit = () => {
-  const stars = document.querySelectorAll(".fa-star");
-  const order = document.getElementById("order-id");
-  const content = document.getElementById("content-review");
+const review = document.getElementById("new_review");
+const starit = (ratingName) => {
+  const rating = document.getElementById(`${ratingName}-container`);
+  const stars = rating.querySelectorAll(".fa-star");
+  var hiddenRating = document.getElementById(ratingName);
+  var btn = document.getElementById("btn-rating");
   stars.forEach(star => {
-    star.addEventListener("click", (event) => {
-      const btn = document.getElementById('btn-rating');
-      btn.setAttribute('href', `/bookings/${parseInt(booking.innerText)}/reviews?rating=${star.id}&content=${content.value}`);
-      for (let i = 0; i < 5; i++) {
-        stars[i].classList.remove("gray");
+    star.addEventListener('click', (event) => {
+      for(let i = 4; i >= 0; i--){
+        stars[i].classList.remove("yellow");
       }
-      for (let i = 0; i <= star.id; i++) {
-        stars[i].classList.add("gray");
+      for(let i = 4; i >= 5 - star.id; i--){
+        stars[i].classList.add("yellow");
       }
-      for (let i = star.id + 1; i < 5; i++) {
-        stars[i].classList.remove("gray");
-      }
+
     });
-  })
+    star.addEventListener('click', (event) => {
+      btn.removeAttribute('disabled')
+      hiddenRating.value = star.id;
+      btn.classList.remove("disabled");
+    });
+  });
 }
 
-export { starit };
+starit("communication_rating");
+starit("quality_rating");
+starit("delivery_on_time_rating");

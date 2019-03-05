@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'authorizations/linkedin'
   get 'authorizations/failure'
   root to: 'pages#home'
-  get "profile", to: "pages#profile", as: :profile
+  get "profile/:id", to: "pages#profile", as: :profile
   devise_for :users, controllers: { omniauth_callbacks: 'authorizations' }
 
   resources :orders do

@@ -3,11 +3,16 @@
   padding: 30px;
   margin: 20px 0;
   background-color: white;
-  border-radius: 3px;
+  border-radius: 8px;
   box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
   // height: 500px;
 }
 
 .center {
   text-align: center;
+}
+
+#add-btn {
+  margin-bottom: 6px;
+  padding: 5px 18px;
 }
