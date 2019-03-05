@@ -13,7 +13,7 @@
           <% end %>
         </div>
       <% else %>
-        <p class="text-center">You haven't made any orders yet.</p>
+        <p>You haven't made any orders yet.</p>
       <% end %>
       <% unless @orders_history.empty? %>
         <h1 class="order-title">History</h1>
@@ -33,7 +33,7 @@
           <% end %>
         </div>
       <% else %>
-        <p class="text-center">None of your projects have any pending order.</p>
+        <p>None of your projects have any pending order.</p>
       <% end %>
       <% unless @my_projects_orders_history.empty? %>
         <h1 class="order-title">History</h1>
