@@ -17,6 +17,10 @@
   text-overflow: ellipsis;
 }
 
+li.active {
+  text-decoration: underline #304382;
+}
+
 .names {
   display: flex;
   flex-direction: column;
