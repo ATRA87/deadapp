@@ -102,6 +102,9 @@
 
 .ratings {
   min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .developers {
@@ -204,8 +207,4 @@
     justify-content: space-between;
     margin-bottom: 5px;
   }
-}
-
-.add-asset {
-  margin-top: 20px;
 }
