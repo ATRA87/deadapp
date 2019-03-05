@@ -51,7 +51,6 @@ class Project < ApplicationRecord
     ratings = []
     reviews.each do |review|
       ratings << review.quality_rating
-      raise
     end
     (ratings.sum / ratings.count.to_f)
   end
