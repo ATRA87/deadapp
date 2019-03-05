@@ -1,6 +1,6 @@
 
 .banner{
-  height: calc(100vh-70px);
+  height: 100vh;
   background-size: cover;
   background-position: center;
 }
@@ -39,10 +39,14 @@
   background: rgba(250,250,250,0.6);
   padding: 40px 40px;
   text-align: center;
-  width: 50%;
-  height: 60%;
   border-radius: 8px;
   margin-bottom: 70px;
+  h1 {
+    color: #35477d;
+    padding-bottom: 30px;
+    font-size: 30px;
+    margin: 0px;
+  }
   h2 {
     align-items: flex-end;
     color: #35477d;
@@ -51,19 +55,8 @@
   }
 }
 
-.sign-up-btn{
-  background: #35477d;
-  color: white;
-  width: 100%;
-  box-shadow: 0px 2px 3px rgba(0,0,0,0.1);
-}
 
 
-.sign-up-btn:hover {
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
-}
 
 #separator {
   margin: 20px 0px;
@@ -75,18 +68,4 @@
   outline: none;
   box-shadow: 0px 0px 2px #35477D;
   background-color: #ffffff9c;
-}
-
-.linked-in-btn {
-  a {
-    font-weight: bold;
-    color: white;
-    &:hover {
-      text-decoration: none;
-      color: white
-    }
-  }
-  background-color: #0077B5;
-  padding: 7px;
-
 }
