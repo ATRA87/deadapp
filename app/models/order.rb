@@ -20,4 +20,8 @@ class Order < ApplicationRecord
   def reviewed?
     !review.nil?
   end
+
+  def finished?
+    state == 'finished' || state == 'delivered' || state == 'accepted'
+  end
 end
