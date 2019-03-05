@@ -1,9 +1,11 @@
-<div class="container">
+<div class="row">
+<div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
   <div
     class="chat-box"
     style="margin-top: 5em;"
     data-project_id="<%= @project.id %>"
     data-user_id="<%= @user.id %>"
+    data-current_user="<%= current_user.id %>"
   >
     <% @chats.each do |chat| %>
         <%= render 'message', chat: chat %>
@@ -26,4 +28,6 @@
       <%= form.hidden_field :identifier, id: :identifier, value: current_user.identifier %>
     </div>
   <% end %>
+</div>
+
 </div>

@@ -1,4 +1,37 @@
 .chat-box {
-  background-color: lightgrey;
+  width: 100%;
+  padding: 1.5em;
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
   min-height: 20em;
+  height: 70vh;
+  overflow: scroll;
+  .chat-bubble-wrapper {
+    padding-bottom: 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .chat-bubble {
+      width: 10em;
+      border-radius: 5px;
+      padding: 0.5em;
+      box-shadow: 4px 7px 8px -11px #000000;
+      &.me {
+        background-color: #dcf8c6;
+        align-self: flex-end;
+      }
+      &.him {
+        background-color: #f4f4f4;
+      }
+      .chat-username {
+        font-size: 0.7em;
+        color: gray;
+      }
+      .chat-message {
+        font-size: 1em;
+      }
+    }
+  }
 }
