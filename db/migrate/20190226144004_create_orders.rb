@@ -9,6 +9,7 @@ class CreateOrders < ActiveRecord::Migration[5.2]
       t.date :due_date
       t.monetize :amount, currency: { present: true }
       t.json :payment
+      t.string :notes
 
       t.timestamps
     end

@@ -31,6 +31,8 @@ ActiveRecord::Schema.define(version: 2019_03_05_143819) do
   create_table "customizations", force: :cascade do |t|
     t.bigint "project_id"
     t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["project_id"], name: "index_customizations_on_project_id"
   end
 
@@ -52,6 +54,7 @@ ActiveRecord::Schema.define(version: 2019_03_05_143819) do
     t.integer "amount_cents", default: 0, null: false
     t.string "amount_currency", default: "USD", null: false
     t.json "payment"
+    t.string "notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["project_id"], name: "index_orders_on_project_id"
