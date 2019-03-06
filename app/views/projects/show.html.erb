@@ -25,10 +25,9 @@
       <div class="project-info">
 
         <div class="developers">
-          <%= render 'shared/avatar_with_name', user: @project.user, imgSize: "small" %>
           <div class="dropdown">
             <div class="dropdown-btn">
-              Rest of the team <i class="fas fa-angle-down"></i>
+              <%= render 'shared/avatar_with_name', user: @project.user, imgSize: "small" %>
             </div>
             <div class="dropdown-content">
               <% unless @project.team.empty? %>
