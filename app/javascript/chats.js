@@ -1,12 +1,11 @@
 $(document).ready(() => {
-  const updateChat = function(data) {
+
+  const updateChat = (data, sender) => {
     $('.chat-box').append(`
-      <div class="col-12">
-        <div class="chat bg-secondary d-inline-block text-left text-white mb-2">
-          <div class="chat-bubble">
-            <small class="chat-username">${data.identifier}</small>
-            <p class="m-0 chat-message">${data.message}</p>
-          </div>
+      <div class="chat-bubble-wrapper">
+        <div class="chat-bubble ${sender}">
+          <div class="chat-username">${data.identifier}</div>
+          <div class="chat-message">${data.message}</p>
         </div>
       </div>
     `);
@@ -25,8 +24,12 @@ $(document).ready(() => {
   channel.bind('new', function(data) {
     let user_id = $('.chat-box').data("user_id")
     let project_id = $('.chat-box').data("project_id")
+    let current_user = $('.chat-box').data("current_user")
+    let sender = data.sender_id == current_user ? "me" : "him"
     if (data.project_id == project_id && (data.sender_id == user_id) || (data.target_id == user_id) ) {
-      updateChat(data);
+      updateChat(data, sender);
+      let chatBox = document.querySelector('.chat-box');
+      chatBox.scrollTop = chatBox.scrollHeight - chatBox.clientHeight;
     }
   });
 });

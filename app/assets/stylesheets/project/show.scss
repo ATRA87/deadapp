@@ -11,6 +11,19 @@
   }
 }
 
+#chat-list-container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
+  h2 {
+    margin: 0;
+    text-align: center;
+  }
+}
+
 .dropdown-btn {
   min-width: 130px;
 }
