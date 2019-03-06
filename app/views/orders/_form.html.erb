@@ -7,7 +7,7 @@
 <% else %>
 <%= f.hidden_field :dev_state, value: 0 %> <!-- set dev state to pending if client edits the order so dev has to check it again -->
 <% end %>
-<%= f.input :due_date, label: "When should your app to be ready?", as: :date, html5: true %>
+<%= f.input :due_date, label: "Your app will be working on:", as: :date, html5: true %>
 <%= f.hidden_field :project, value: @project_id %>
 <%= f.submit %>
 <% end %>

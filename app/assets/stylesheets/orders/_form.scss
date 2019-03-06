@@ -1,12 +1,16 @@
 .form-wrapper {
-  height: 86vh;
+  min-height: 87vh;
+  overflow: hidden;
   // height: (100vh - 230px);
 }
 
 .project-photo {
   height: 10vw;
+  margin-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .form-box {
-  margin-top: 10px;
+  margin-top: 20px;
 }
