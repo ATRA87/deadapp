@@ -34,42 +34,23 @@
 
 .profile-info-details {
   display: flex;
+  justify-content: center;
 }
 
 .profile-info-img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  width: 200px;
   height: 200px;
-  flex: 1 0 25%;
-  border-radius: 5px;
-}
-
-.profile-ratings {
-  flex: 1 0 33%;
-  margin-left: 70px;
-
-}
-
-.profile-rating {
-  width: 86%;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  align-items: center;
-  span {
-    font-weight: bold;
-    font-family: roboto;
-    color: #636363;
-  }
 }
 
 .profile-links {
-  flex: 1 0 25%;
-  font-size: 50px;
-  display: flex;
-  justify-content: space-around;
-  padding-right: 60px;
+  font-size: 40px;
+  padding: 10px;
+  a {
+    padding: 30px;
+  }
 }
 
 .profile-description {

@@ -1,32 +1,25 @@
+<% if !user_signed_in? %>
+  <%= render 'shared/navbar' %>
+<% end %>
 <div>
   <div class="container profile top-margin">
     <h1><%= @user.full_name %></h1>
-    <h3>About</h3>
+    <h3>Contact</h3>
     <div class="profile-info">
-      <div class="profile-edit">
-        <%= link_to "#", class: "unstyle-color-link" do %>
-        <i class="fas fa-edit"></i>
-        <% end %>
-      </div>
       <div class="profile-info-details">
         <div class="profile-info-img">
-
           <div class="card-avatar" style="background-image: url('<%= @user.profile_picture %>'); border-radius: 50%; border: 1px solid rbga(0,0,0,0.1); width: 100%; height: 100%; background-position: center; background-size: cover">
-          </div>
-
-        </div>
-        <div class="profile-ratings">
-          <div class="profile-rating">
-           <span>Comunication</span>
-           <div class="profile-star">
-            <i class="fas fa-star"></i>
           </div>
         </div>
   </div> <!-- end of the profile-ratings div -->
-  <div class="profile-links">
+  <div class="profile-links text-center">
     <%= link_to "#", class: "unstyle-color-link" do %>
-    <i class="fas fa-paperclip"></i>
+       <a href="#" data-toggle="modal" data-target="#chat_window">
+      <i class="fas fa-envelope-square"></i>
+    </a>
+
     <% end %>
+
     <%= link_to "#", class: "unstyle-color-link" do %>
     <i class="far fa-comments"></i>
     <% end %>
@@ -35,16 +28,11 @@
     <% end %>
   </div><!-- end of the profile-links-div -->
 </div> <!-- end of the profile-info-details-div -->
-<div class="profile-description">
-  <p>Lorem ipsum dolor sit amet, wisi moderatius vim at, at mel lobortis consetetur. Quo et tritani consectetuer,
-  .</p>
-</div>
-</div>  <!-- end of the profile-info div -->
 
 <div class="profile-reviews">
   <h3>Reviews</h3>
   <div class="profile-review">
-    <%= @user.reviews.each do |review| %>
+    <% @user.reviews.each do |review| %>
      <%= render 'projects/review', review: review %>
     <% end %>
 </div>
@@ -64,6 +52,6 @@
 </div>
 </div>
 </div>
-
+<%= render "shared/chat_window", user: @user %>
 
 

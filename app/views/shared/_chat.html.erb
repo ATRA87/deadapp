@@ -1,0 +1,13 @@
+<div class="profile-projects">
+  <h3>Projects</h3>
+  <div class="row">
+    <% @projects.each do |project| %>
+    <div class="col-xs-12 col-md-6 card-wrapper">
+      <%= link_to project_path(project) do %>
+        <%= render 'projects/card', project: project %>
+      <% end %>
+    </div>
+    <% end %>
+  </div>
+
+</div>
