@@ -23,40 +23,38 @@
               <i class="fab fa-whatsapp"></i></a>
       </div><!-- end of the profile-links-div -->
     </div> <!-- end of the profile-info-details-div -->
-<div class="profile-reviews">
-  <h2>Reviews</h>
-   <div class="profile-reviews">
-    <% unless @user.reviews.empty? %>
-       <% @user.reviews.each do |review| %>
-         <%= render 'projects/review', review: review %>
-        <% end %>
-      <% else %>
-      <div class="footer-copyright" >
-          <%= image_tag "nothing_dead.png", height: 40 %>
-        </div>
+  <h2>Reviews</h2>
+<div>
+  <% unless @user.reviews.empty? %>
+     <% @user.reviews.each do |review| %>
+      <%= render 'projects/review', review: review %>
       <% end %>
-  </div>
-  </div> <!-- end of the profile-reviews div -->
-    <div class="profile-projects footer-copyright">
-     <h2>Projects</h2>
-       <div >
-        <% unless @projects.empty? %>
-         <% @projects.each do |project| %>
-          <div class="col-xs-12 col-md-6 card-wrapper">
-            <%= link_to project_path(project) do %>
-              <%= render 'projects/card_link', project: project %>
-            <% end %>
-          </div>
-        <% end %>
       <% else %>
-        <div class=" profile-projects footer-copyright" >
-          <%= image_tag "nothing_dead.png", height: 40 %>
-        </div>
-      <% end %>
+       <div class="profile-review">
+       <p class="dead-font">No app from the Dead reviews
+for now...
+  </p>
+      </div>
+    <% end %>
     </div>
+<!-- end of the profile-reviews div -->
 
+   <h2>Projects</h2>
+      <% unless @projects.empty? %>
+       <% @projects.each do |project| %>
+        <div class="col-xs-12 col-md-6 card-wrapper">
+          <%= link_to project_path(project) do %>
+            <%= render 'projects/card_link', project: project %>
+          <% end %>
+        </div>
+      <% end %>
+    <% else %>
+      <div class="profile-review">
+        <p class="dead-font">No app from the dead projects for now...</p>
+      </div>
+    <% end %>
 </div>
 </div>
-</div>
+
 
 
