@@ -1,39 +1,44 @@
 <%= simple_form_for [order, review] do |f| %>
-  <div class="rating-container" id="communication_rating-container">
-    Communication
-    <ul class="list-inline rating-list">
-      <li><i class="fas fa-star" id="5"></i></li>
-      <li><i class="fas fa-star" id="4"></i></li>
-      <li><i class="fas fa-star" id="3"></i></li>
-      <li><i class="fas fa-star" id="2"></i></li>
-      <li><i class="fas fa-star" id="1"></i></li>
-    </ul>
-  </div>
+<h1>Add a new review</h1>
+  <div class="new-review-form">
+    <%= f.input :content, label: false, placeholder: 'Write a comment!' %>
+    <div class="new-rating-container">
+      <div class="rating-container" id="communication_rating-container">
+        Communication
+        <ul class="list-inline rating-list">
+          <li><i class="fas fa-star" id="5"></i></li>
+          <li><i class="fas fa-star" id="4"></i></li>
+          <li><i class="fas fa-star" id="3"></i></li>
+          <li><i class="fas fa-star" id="2"></i></li>
+          <li><i class="fas fa-star" id="1"></i></li>
+        </ul>
+      </div>
 
-  <div class="rating-container" id="quality_rating-container">
-    Quality
-    <ul class="list-inline rating-list">
-      <li><i class="fas fa-star" id="5"></i></li>
-      <li><i class="fas fa-star" id="4"></i></li>
-      <li><i class="fas fa-star" id="3"></i></li>
-      <li><i class="fas fa-star" id="2"></i></li>
-      <li><i class="fas fa-star" id="1"></i></li>
-    </ul>
-  </div>
+      <div class="rating-container" id="quality_rating-container">
+        Quality
+        <ul class="list-inline rating-list">
+          <li><i class="fas fa-star" id="5"></i></li>
+          <li><i class="fas fa-star" id="4"></i></li>
+          <li><i class="fas fa-star" id="3"></i></li>
+          <li><i class="fas fa-star" id="2"></i></li>
+          <li><i class="fas fa-star" id="1"></i></li>
+        </ul>
+      </div>
 
-  <div class="rating-container" id="delivery_on_time_rating-container">
-    Delivery on time
-    <ul class="list-inline rating-list">
-      <li><i class="fas fa-star" id="5"></i></li>
-      <li><i class="fas fa-star" id="4"></i></li>
-      <li><i class="fas fa-star" id="3"></i></li>
-      <li><i class="fas fa-star" id="2"></i></li>
-      <li><i class="fas fa-star" id="1"></i></li>
-    </ul>
+      <div class="rating-container" id="delivery_on_time_rating-container">
+        Delivery on time
+        <ul class="list-inline rating-list">
+          <li><i class="fas fa-star" id="5"></i></li>
+          <li><i class="fas fa-star" id="4"></i></li>
+          <li><i class="fas fa-star" id="3"></i></li>
+          <li><i class="fas fa-star" id="2"></i></li>
+          <li><i class="fas fa-star" id="1"></i></li>
+        </ul>
+      </div>
+      <input value="0" type="hidden" name="review[communication_rating]" id="communication_rating">
+      <input value="0" type="hidden" name="review[quality_rating]" id="quality_rating">
+      <input value="0" type="hidden" name="review[delivery_on_time_rating]" id="delivery_on_time_rating">
+    </div>
   </div>
-  <input value="0" type="hidden" name="review[communication_rating]" id="communication_rating">
-  <input value="0" type="hidden" name="review[quality_rating]" id="quality_rating">
-  <input value="0" type="hidden" name="review[delivery_on_time_rating]" id="delivery_on_time_rating">
-  <%= f.input :content %>
   <%= f.button :submit, class:"btn btn-primary", id:"btn-rating", disabled: 'disabled'%>
 <% end %>

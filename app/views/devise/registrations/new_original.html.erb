@@ -1,0 +1,47 @@
+<div class="container-fluid banner" style="background-image: linear-gradient(-180deg, rgba(0,0,0,0.9) 10%, rgb(0, 0, 0,0.1) 20%), url('https://res.cloudinary.com/diyosnlxf/image/upload/v1551470338/nahel-abdul-hadi-1226210-unsplash.jpg');" >
+  <div class="row">
+    <div class="col-xs-12">
+      <%= render 'shared/navbar' %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-6 sign-up-text">
+      <h2><strong>Developers </strong></h2>
+      <p> Repurpose your apps and bring them back to life </p>
+      <h2><strong>Entrepreneurs</strong></h2>
+      <p>Lower the cost & time to market for your app</p>
+      <div>
+        <div class="col-xs-12 col-md-6 sign-up-text" >
+        <h3 style="color: white; position: relative; left: 250px; font-size: 32px;">Join</h3>
+        <img src="<%= asset_url('logo_teal.png') %>" alt="" style="position: relative; left: 250px;">
+        </div>
+      </div>
+      </div>
+      <div class="col-xs-12 col-md-6 sign-up-wrapper">
+        <div class="sign-up-card" style="background: rgba(250,250,250,0.6);">
+         <h2>Sign up</h2>
+         <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+         <%= f.error_notification %>
+         <div class="form-inputs">
+          <%= f.input :email,
+          required: true,
+          autofocus: true,
+          input_html: { autocomplete: "email" }, label: false, placeholder: "appfrom@thedead.com" %>
+          <%= f.input :password,
+          required: true,
+          input_html: { autocomplete: "new-password", class: 'auth-inputs' }, label: false, placeholder: "Enter password" %>
+        </div>
+
+        <div class="form-actions">
+          <%= f.button :submit, "Let's bring it back!", class:"sign-up-btn" %>
+        </div>
+        <div id="separator">or</div>
+        <div class="sign-up-btn linked-in-btn">
+          <%= link_to user_linkedin_omniauth_authorize_path do %>
+            <i class="fab fa-linkedin"></i> Linked in
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

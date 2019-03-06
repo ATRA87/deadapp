@@ -1,26 +1,25 @@
 .footer {
-  background-image: linear-gradient(180deg, rgba(244, 238, 238, 0.09), rgba(190, 187, 187, 0.74),);
+  // background-image: linear-gradient(0deg, rgba(244, 238, 238, -6.91), rgb(244, 244, 244));
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 100px;
   padding: 0px 100px;
-  color: rgba(0,0,0,0.3);
-
-
+  color: #32B796 !important;
+  flex-direction: column;
+  justify-content: center;
 }
 .footer-links {
   display: flex;
   align-items: center;
 }
 .footer-links a {
-  color: #35477D;
+  color: #32B796;
   text-decoration: none;
   font-size: 24px;
   padding: 0px 10px;
 }
 .footer-links a:hover {
-  color: #35477D;
+  // color: #35477D;
   opacity: 0.5;
   font-size: 28px;
 }

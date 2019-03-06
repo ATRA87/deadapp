@@ -1,31 +1,38 @@
 <%= simple_form_for(project) do |f| %>
-  <%= f.input :name, label: "Project name" %>
-  <%= f.input :description, label: "Project description" %>
-  <%= f.input :category, collection: Project::CATEGORIES %>
+<%= f.input :name, label: "Project name" %>
+<%= f.input :description, label: "Project description" %>
+<%= f.input :category, collection: Project::CATEGORIES %>
 
-  <div class="form-group select optional project_users" id="members">
-    <label class="form-control-label select optional" for="project_user_ids">Team members</label>
-    <input name="project[user_ids][]" type="hidden" value="" />
-    <div class="btn btn-primary" id="add-btn">add</div>
-    <% project.users.each do |selected_user| %>
-      <select class="form-control select optional" name="project[user_ids][]" id="project_user_ids">
-        <option value="<%= selected_user.id %>"><%= selected_user.email %></option>
-        <% users.each do |user| %>
-          <option value="<%= user.id %>"><%= user.email %></option>
-        <% end %>
-      </select>
-    <% end %>
-    <select class="form-control select optional" name="project[user_ids][]" id="project_user_ids">
-      <option value=""></option>
+<div class="form-group select optional project_users" id="members">
+  <label class="form-control-label select optional" for="project_user_ids">Team members</label>
+  <input name="project[user_ids][]" type="hidden" value="" />
+  <% project.users.each_with_index do |selected_user, index| %>
+  <div class='member-addon-wrapper'>
+    <select class="form-control select optional member_project_addon" name="project[user_ids][]">
+      <option value="<%= selected_user.id %>"><%= selected_user.email %></option>
       <% users.each do |user| %>
-        <option value="<%= user.id %>"><%= user.email %></option>
+      <option value="<%= user.id %>"><%= user.email %></option>
       <% end %>
     </select>
+    <% if index > 0 %>
+    <div class="delete-btn" style="margin-left: 10px;"><i class="far fa-trash-alt" id="delete-btn"></i></div>
+    <% end %>
   </div>
-
-  <%= f.simple_fields_for ProjectAsset.new do |f2| %>
-    <%= f2.input :photo_cache, as: :hidden %>
-    <%= f2.input :photo %>
   <% end %>
-  <%= f.submit %>
+  <div class='member-addon-wrapper'>
+    <select class="form-control select optional member_project_addon" name="project[user_ids][]">
+      <option value=""></option>
+      <% users.each do |user| %>
+      <option value="<%= user.id %>"><%= user.email %></option>
+      <% end %>
+    </select>
+    <div class="delete-btn" style="margin-left: 10px;"><i class="far fa-trash-alt" id="delete-btn"></i></div>
+  </div>
+</div>
+
+<%= f.simple_fields_for ProjectAsset.new do |f2| %>
+<%= f2.input :photo_cache, as: :hidden %>
+<%= f2.input :photo %>
+<% end %>
+<%= f.submit id:"edit-btn" %>
 <% end %>

@@ -46,6 +46,86 @@ parkingapp_order_6:
   project: parkingapp
   user: zombie
 
+cyclingapp_order_1:
+  project: cyclingapp
+  user: parsley
+
+cyclingapp_order_2:
+  project: cyclingapp
+  user: sage
+
+cyclingapp_order_3:
+  project: cyclingapp
+  user: rosemary
+
+cyclingapp_order_4:
+  project: cyclingapp
+  user: thyme
+
+cyclingapp_order_5:
+  project: cyclingapp
+  user: zombie
+
+lavy_order_1:
+  project: lavy
+  user: parsley
+
+lavy_order_2:
+  project: lavy
+  user: sage
+
+lavy_order_3:
+  project: lavy
+  user: rosemary
+
+lavy_order_4:
+  project: lavy
+  user: thyme
+
+lavy_order_5:
+  project: lavy
+  user: zombie
+
+miranda_order_1:
+  project: miranda
+  user: parsley
+
+miranda_order_2:
+  project: miranda
+  user: sage
+
+miranda_order_3:
+  project: miranda
+  user: rosemary
+
+miranda_order_4:
+  project: miranda
+  user: thyme
+
+miranda_order_5:
+  project: miranda
+  user: zombie
+
+wasted_order_1:
+  project: wasted
+  user: parsley
+
+wasted_order_2:
+  project: wasted
+  user: sage
+
+wasted_order_3:
+  project: wasted
+  user: rosemary
+
+wasted_order_4:
+  project: wasted
+  user: thyme
+
+wasted_order_5:
+  project: wasted
+  user: zombie
+
 makent_order_1:
   project: makent
   user: parsley

@@ -1,6 +1,8 @@
 <div class="review">
-  <%= render 'shared/avatar_with_name', user: review.user, imgSize: "small" %>
-  <p class="date"><%= review.created_at.to_date %></p>
+  <div class="review-user-and-date">
+    <%= render 'shared/avatar_with_name', user: review.user, imgSize: "small" %>
+    <p class="review-date"><%= review.created_at.strftime('%e-%b-%y') %></p>
+  </div>
   <div class="content-container">
     <div class="content">
       <%= review.content %>
