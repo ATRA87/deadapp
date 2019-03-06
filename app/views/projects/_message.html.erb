@@ -1,0 +1,8 @@
+<div class="review">
+  <%= render 'shared/avatar_with_name', user: user, imgSize: "small" %>
+  <div class="content-container">
+    <div class="content">
+      <%= link_to user.chats_as_sender.last.message, project_user_chats_path(@project, user) %>
+    </div>
+  </div>
+</div>

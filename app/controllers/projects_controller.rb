@@ -58,8 +58,12 @@ class ProjectsController < ApplicationController
     @users = User.all
     authorize @project
     @project.update(project_params)
+    @current_team = @project.project_members
     ids = params[:project][:user_ids].uniq
     ids.delete(current_user.id.to_s)
+    @current_team.each do |member_invitation|
+      member_invitation.destroy unless ids.include?(member_invitation.id)
+    end
     ids.each do |member_id|
       next if member_id == ""
 

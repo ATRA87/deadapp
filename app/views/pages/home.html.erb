@@ -36,7 +36,7 @@
       <% @projects.each do |project| %>
         <div class="col-xs-12 col-md-6 card-wrapper">
           <%= link_to project_path(project) do %>
-          <%= render 'projects/card', project: project %>
+          <%= render 'projects/card_link', project: project %>
           <% end %>
         </div>
       <% end %>

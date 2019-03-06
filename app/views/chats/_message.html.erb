@@ -1,8 +1,8 @@
-<div class="col-12">
-  <div class="chat bg-secondary d-inline-block text-left text-white mb-2">
-    <div class="chat-bubble">
-      <small class="chat-username"><%= chat.sender.full_name %></small>
-      <p class="m-0 chat-message"><%= chat.message %></p>
-    </div>
+<% sender = chat.sender == current_user ? "me" : "him" %>
+
+<div class="chat-bubble-wrapper">
+  <div class="chat-bubble <%= sender %>">
+    <div class="chat-username"><%= chat.sender.full_name %></div>
+    <div class="chat-message"><%= chat.message %></div>
   </div>
 </div>
