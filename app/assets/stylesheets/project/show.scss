@@ -298,4 +298,30 @@
   padding-bottom: 30px;
 }
 
+.ratings{
+  min-width: 250px;
+  .fas.fa-star {
+    font-size: 16px;
+  }
+  ul {
+    padding-inline-start: 0;
+  }
+  li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+}
 
+
+@media only screen and (max-width: 900px) {
+  .project-assets-and-info {
+    flex-direction: column;
+  }
+  .project-title-and-assets {
+    margin-bottom: 20px;
+  }
+  .project-info {
+    margin-left: 0px;
+  }
+}
