@@ -7,10 +7,12 @@
   text-align: center;
   color: #32B796;
   font-weight: bold;
-      z-index: 100;
-    padding: 25px;
-    font-weight: bold;
-    font-size: 18px;
+  padding: 25px;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 9999;
+  position: absolute;
+  width: 100%;
 }
 .alert-info {
   background: #35477D;
