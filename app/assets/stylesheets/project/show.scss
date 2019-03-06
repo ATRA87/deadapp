@@ -1,7 +1,7 @@
 #reviews-container {
   width: 100%;
-  padding: 0 20px;
-  margin: 40px 0px 40px 0px;
+  padding: 0 50px;
+  margin: 40px 0px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
@@ -77,12 +77,56 @@
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+.project-info {
+  margin-left: 20px;
+  .user-info {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .social-buttons {
+    display: flex;
+  }
+}
+
+.user-info .user-img {
+  height: 50px;
+  width: 50px;
+}
+
+.project-description {
+  margin-bottom: 20px;
+}
+
+.ratings{
+  min-width: 250px;
+  .fas.fa-star {
+    font-size: 16px;
+  }
+  ul {
+    padding-inline-start: 0;
+  }
+  li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+}
+
 .dropdown-btn {
   border-radius: 3px 0 0 3px;
   padding:  5px;
   display: flex;
   align-items: center;
   // border: 1px solid rgba(0,0,0,0);
+}
+
+.dropdown-btn a {
+  .user-info p {
+    max-width: 210px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 .dropdown-btn i {
@@ -92,8 +136,6 @@
 .dropdown-btn:hover i {
   opacity: 0.5;
 }
-
-
 
 .dropdown-content {
   transition: all .5s ease-in-out;
@@ -133,7 +175,6 @@
 }
 
 .ratings {
-  min-width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -199,8 +240,7 @@
 
 .new_review {
   width: 100%;
-  padding: 20px 20px;
-  margin: 40px 0px 40px 0px;
+  padding: 20px 50px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
@@ -227,13 +267,14 @@
 }
 
 #review_content {
+  border-radius: 9px;
   height: 100%;
 }
 
 .project-core-info {
   font-family: $body-font;
   width: 100%;
-  padding: 40px 62px 20px 80px;
+  padding: 40px 50px;
   margin: 50px 0 70px 0;
   background-color: white;
   border-radius: 8px;
@@ -257,37 +298,4 @@
   padding-bottom: 30px;
 }
 
-.project-info {
-  margin-left: 20px;
-  .user-info {
-    display: flex;
-    margin-bottom: 30px;
-  }
-  .social-buttons {
-    display: flex;
-  }
-}
 
-.user-info .user-img {
-  height: 50px;
-  width: 50px;
-}
-
-.project-description {
-  margin-bottom: 20px;
-}
-
-.ratings{
-  min-width: 250px;
-  .fas.fa-star {
-    font-size: 16px;
-  }
-  ul {
-    padding-inline-start: 0;
-  }
-  li {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5px;
-  }
-}
