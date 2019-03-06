@@ -8,7 +8,7 @@
 .ctas {
   display: flex;
   justify-content: space-around;
-  margin-top: 4em;
+  margin-top: 9em;
 }
 
 .cta-post {
@@ -28,7 +28,8 @@
   display: flex;
   justify-content: center;
   align-center: center;
-  margin-bottom: 2em;
+  margin-bottom: 8em;
+  margin-top: 3em;
 }
 
 .build {
@@ -60,29 +61,49 @@
   border-radius: 9px;
   background-color: #2fb897 !important;
   border: none;
+  padding: 5px 40px 5px;
 }
 
 #banner-landing {
   background-color: #35477D;
 }
 
+#addition {
+  display: flex;
+  justify-content: center;
+}
+
+#new-additions {
+  font-size: 48px !important;
+  color: #32B796 !important;
+  font-weight: bold;
+  z-index: 100;
+  width: 6em;
+  background-size: contain;
+  height: 2em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
 
 @media only screen and (max-width: 600px) {
   .ctas {
     display: flex;
     flex-direction: column;
-    margin-top: 1em;
+    margin-top: 3em;
   }
   .big-h2 {
     font-size:50px !important;
     font-weight: 700;
   }
-  .catas {
-    margin-top: 50px;
-  }
   .cta-post {
     justify-content: left;
     margin-left: 5px;
+  }
+  .logo-wrapper{
+    display: none;
+  }
+  .card-wrapper {
+    margin-bottom: 10px !important;
   }
 }
 

@@ -29,7 +29,8 @@ $border-radius-small: 2px;
   width: 100%;
   margin-top: 0.25rem;
   font-size: 80%;
-  color: $red;
+  color: #33b799;
+  font-weight: bold;
 }
 
 .was-validated .form-control:invalid,
@@ -71,3 +72,5 @@ a:hover {
   opacity: 0.5;
   text-decoration: none;
 }
+
+

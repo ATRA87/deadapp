@@ -36,12 +36,17 @@ h2 {
 }
 
 .top-margin {
-  margin-top: 90px;
+  margin-top: 70px;
   h1 {
   text-align: center;
 }
 }
 
 #main-web-wrapper {
-  min-height: calc(100vh - 100px);
+  min-height: 100vh;
+  background-color: #F4F4F4;
+}
+
+.bold {
+  font-weight: bold;
 }

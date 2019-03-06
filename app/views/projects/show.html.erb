@@ -8,97 +8,97 @@
 <div class="container-fluid top-margin">
   <div class="col-md-10 col-md-offset-1" >
     <h1><%= @project.name %></h1>
-  <div class="project-core-info">
-    <div class="project-assets-and-info">
-      <div class="project-title-and-assets">
-        <div class="project-title">
-          <% if policy(@project).update? %>
-          <div class="btn btn-primary" id="edit-btn">Edit project details</div>
-          <% end %>
-        </div>
+    <div class="project-core-info">
+      <div class="project-assets-and-info">
+        <div class="project-title-and-assets">
+          <div class="project-title">
+            <% if policy(@project).update? %>
+            <div class="btn btn-primary" id="edit-btn">Edit project details</div>
+            <% end %>
+          </div>
 
-        <div id="form-modal">
-          <div class="modal-content">
-            <h2>Edit project</h2>
-            <%= render 'form', project: @project, users: @users %>
+          <div id="form-modal">
+            <div class="modal-content">
+              <h2>Edit project</h2>
+              <%= render 'form', project: @project, users: @users %>
+            </div>
+          </div>
+
+          <div class="project-assets">
+            <%= render 'shared/carousel', project: @project %>
           </div>
         </div>
+        <div class="project-info">
+          <div class="developers">
+            <div class="dropdown">
+              <div class="dropdown-btn">
+                <%= render 'shared/avatar_with_name', user: @project.user, imgSize: "" %>
+                <i class="fas fa-angle-down"></i>
+              </div>
 
-        <div class="project-assets">
-          <%= render 'shared/carousel', project: @project %>
-        </div>
-      </div>
-      <div class="project-info">
-        <div class="developers">
-          <div class="dropdown">
-            <div class="dropdown-btn">
-              <%= render 'shared/avatar_with_name', user: @project.user, imgSize: "" %>
-              <i class="fas fa-angle-down"></i>
-            </div>
-
-            <div class="dropdown-content">
-              <% unless @project.team.empty? %>
-                <% @project.team.each do |user| %>
+              <div class="dropdown-content">
+                <% unless @project.team.empty? %>
+                  <% @project.team.each do |user| %>
+                    <div class="team-member">
+                      <%= render 'shared/avatar_with_name', user: user, imgSize: "small" %>
+                    </div>
+                  <% end %>
+                <% else %>
                   <div class="team-member">
-                    <%= render 'shared/avatar_with_name', user: user, imgSize: "small" %>
+                    <p>No other members</p>
                   </div>
                 <% end %>
-              <% else %>
-                <div class="team-member">
-                  <p>No other members</p>
-                </div>
-              <% end %>
-            </div>
+              </div>
 
+            </div>
+          </div>
+          <div class="ratings">
+            <ul>
+              <li><strong>Editor's review</strong></li>
+              <li>Code quality <%= render 'shared/stars', rating: 5 %></li>
+            </ul>
+
+            <ul>
+              <li><strong>User's review</strong></li>
+              <li>Comunication <%= render 'shared/stars', rating: @project.communication_rating %></li>
+              <li>Quality of product <%= render 'shared/stars', rating: @project.quality_rating %></li>
+              <li>Delivered on time <%= render 'shared/stars', rating: @project.delivery_on_time_rating %></li>
+            </ul>
           </div>
         </div>
-        <div class="ratings">
-          <ul>
-            <li><strong>Editor's review</strong></li>
-            <li>Code quality <%= render 'shared/stars', rating: 5 %></li>
-          </ul>
-
-          <ul>
-            <li><strong>User's review</strong></li>
-            <li>Comunication <%= render 'shared/stars', rating: @project.communication_rating %></li>
-            <li>Quality of product <%= render 'shared/stars', rating: @project.quality_rating %></li>
-            <li>Delivered on time <%= render 'shared/stars', rating: @project.delivery_on_time_rating %></li>
-          </ul>
-        </div>
       </div>
+
+      <div class="project-description">
+        <%= @project.description %>
+      </div>
+
+      <% if current_user %>
+        <%= link_to 'Chat with the dev', project_user_chats_path(@project, current_user), class:"btn btn-primary" unless current_user == @project.user %>
+      <% end %>
+
+      <%= link_to 'Place order', new_order_path(project_id: @project.id), class:"btn btn-primary" %>
     </div>
 
-    <div class="project-description">
-      <%= @project.description %>
-    </div>
-
-    <% if current_user %>
-      <%= link_to 'Chat with the dev', project_user_chats_path(@project, current_user), class:"btn btn-primary" unless current_user == @project.user %>
+    <% if current_user == @project.user %>
+      <div id="chat-list-container">
+        <h2>Messages <span>(<%= @chat_users.count %>)</span></h2>
+        <% @chat_users.each do |user| %>
+          <%= render 'message', user: user %>
+        <% end %>
+      </div>
     <% end %>
 
-    <%= link_to 'Place order', new_order_path(project_id: @project.id), class:"btn btn-primary" %>
-  </div>
-
-  <% if current_user == @project.user %>
-    <div id="chat-list-container">
-      <h2>Messages <span>(<%= @chat_users.count %>)</span></h2>
-      <% @chat_users.each do |user| %>
-        <%= render 'message', user: user %>
-      <% end %>
-    </div>
-  <% end %>
-
-  <h2>Reviews <span>(<%= @project.reviews.count %>)</span></h2>
-  <div id="reviews-container">
+    <h2>Reviews <span>(<%= @project.reviews.count %>)</span></h2>
     <% if @orders_by_user.first %>
       <%= render 'reviews/form', order: @orders_by_user.first, review: Review.new %>
     <% end %>
-    <% if @project.reviews.count.zero? %>
-    <p>No reviews yet...</p>
-    <% end %>
-    <% @project.reviews.order(created_at: :desc).each do |review| %>
-      <%= render 'review', review: review %>
-    <% end %>
+    <div id="reviews-container">
+      <% if @project.reviews.count.zero? %>
+      <p>No reviews yet...</p>
+      <% end %>
+      <% @project.reviews.order(created_at: :desc).each do |review| %>
+        <%= render 'review', review: review %>
+      <% end %>
+    </div>
   </div>
-</div>
 </div>
