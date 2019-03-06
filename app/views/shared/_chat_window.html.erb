@@ -3,26 +3,28 @@
     <div class="modal-card" class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-         <div class="modal-title" id="myModalLabel" class="footer-copyright">
-     <%= image_tag "logo.png", height: 70 %>
-  </div>
+        <div class="modal-title" id="myModalLabel" class="footer-copyright">
+          <%= image_tag "logo.png", height: 70 %>
+        </div>
       </div>
+
       <div class="modal-body">
         <div class="profile-projects">
-  <h2>Chose a project to chat</h2>
-  <div class="row">
-    <% user.projects.each do |project| %>
-    <div class="col-xs-12 col-md-6 card-wrapper">
-      <%= link_to project_path(project) do %>
-        <%= render 'projects/card', project: project %>
-      <% end %>
-    </div>
-    <% end %>
-  </div>
-
-</div>
-      </div>
-
+          <% unless user.projects.empty? %>
+            <h2>Chose a project to chat</h2>
+            <div class="row">
+              <% user.projects.each do |project| %>
+                <div class="col-xs-12 col-md-6 card-wrapper">
+                  <%= link_to project_path(project) do %>
+                    <%= render 'projects/chat_card_link', project: project %>
+                  <% end %>
+                </div>
+              <% end %>
+            </div>
+          <% else %>
+            <h2>No Projects yet</h2>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>

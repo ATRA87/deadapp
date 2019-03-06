@@ -15,13 +15,13 @@
   <div class="profile-links text-center">
     <%= link_to "#", class: "unstyle-color-link" do %>
        <a href="#" data-toggle="modal" data-target="#chat_window">
-      <i class="fas fa-envelope-square"></i>
+    <i class="far fa-comments"></i>
     </a>
 
     <% end %>
 
     <%= link_to "#", class: "unstyle-color-link" do %>
-    <i class="far fa-comments"></i>
+      <i class="fas fa-envelope-square"></i>
     <% end %>
     <%= link_to "#", class: "unstyle-color-link" do %>
     <i class="fab fa-linkedin-in"></i>
@@ -40,12 +40,18 @@
 <div class="profile-projects">
   <h3>Projects</h3>
   <div class="row">
-    <% @projects.each do |project| %>
-    <div class="col-xs-12 col-md-6 card-wrapper">
-      <%= link_to project_path(project) do %>
-        <%= render 'projects/card', project: project %>
+    <% unless @projects.empty? %>
+      <% @projects.each do |project| %>
+        <div class="col-xs-12 col-md-6 card-wrapper">
+          <%= link_to project_path(project) do %>
+            <%= render 'projects/card_link', project: project %>
+          <% end %>
+        </div>
       <% end %>
-    </div>
+    <% else %>
+      <div>
+        No Projects yet
+      </div>
     <% end %>
   </div>
 
