@@ -80,8 +80,8 @@
   </div>
 
   <% if current_user == @project.user %>
-    <h2>Messages <span>(<%= @chat_users.count %>)</span></h2>
     <div id="chat-list-container">
+      <h2>Messages <span>(<%= @chat_users.count %>)</span></h2>
       <% @chat_users.each do |user| %>
         <%= render 'message', user: user %>
       <% end %>

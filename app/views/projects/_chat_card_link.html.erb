@@ -1,0 +1,9 @@
+<% if user_signed_in? %>
+  <%= link_to project_user_chats_path(project, current_user) do %>
+    <%= render "projects/card", project: project %>
+  <% end %>
+<% else %>
+  <%= link_to project_path(project) do %>
+    <%= render "projects/card", project: project %>
+  <% end %>
+<% end %>
