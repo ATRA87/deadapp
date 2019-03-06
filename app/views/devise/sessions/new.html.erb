@@ -1,4 +1,4 @@
-<div class="container-fluid banner" style="background-image: url('https://res.cloudinary.com/diyosnlxf/image/upload/v1551470220/marius-christensen-542468-unsplash.jpg'), linear-gradient(180deg, rgba(53,71,125,0.38) 100%, rgba(53,71,125,0.23) 58%);" >
+<div class="container-fluid banner"style="background-image: linear-gradient(-180deg, rgba(0,0,0,0.8) 10%, rgb(0, 0, 0,0.1) 20%), url(<%= asset_url('Log_In_Background.jpg') %>);">
   <div class="row">
     <div class="col-xs-12">
       <%= render 'shared/navbar' %>
@@ -7,7 +7,7 @@
   <div class="row">
     <div class="col-xs-12 sign-up-login-wrapper">
       <div class="sign-up-card" >
-        <h1>Get the <i class="fas fa-rocket"></i> Apps</h1>
+        <h1>Sign In</h1>
         <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <%= f.error_notification %>
         <div class="form-inputs">
