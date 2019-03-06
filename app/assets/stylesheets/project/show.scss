@@ -1,3 +1,7 @@
+.project-show-container {
+  padding: 20px 70px;
+}
+
 #reviews-container {
   width: 100%;
   padding: 0 50px;
@@ -95,6 +99,8 @@
 
 .project-description {
   margin-bottom: 20px;
+  font-weight: lighter;
+  color: #555;
 }
 
 .ratings{
@@ -180,6 +186,20 @@
   justify-content: space-between;
 }
 
+.rating-title {
+  padding-bottom: 2px;
+}
+
+.rating-type {
+  font-weight: lighter;
+  color: #555;
+  font-style: italic;
+}
+
+.rating-type:last-child {
+  padding-bottom: 15px;
+}
+
 .developers {
   display: flex;
   // justify-content: space-between;
@@ -202,6 +222,7 @@
   .content-container {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
   }
   .user-info {
     color: grey;
@@ -218,7 +239,7 @@
   .content {
     margin-right: 20px;
     flex-grow: 1;
-    padding-bottom: 20px;
+    color: rgba(0,0,0,0.7);
   }
 }
 
@@ -230,6 +251,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .review-date {
@@ -237,6 +259,8 @@
   color: lightgrey;
   font-weight: lighter;
 }
+
+
 
 .new_review {
   width: 100%;
@@ -268,6 +292,7 @@
 
 #review_content {
   border-radius: 9px;
+  margin: 0;
   height: 100%;
 }
 
@@ -275,7 +300,7 @@
   font-family: $body-font;
   width: 100%;
   padding: 40px 50px;
-  margin: 50px 0 70px 0;
+  margin-bottom: 30px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
@@ -295,7 +320,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .ratings{
@@ -305,6 +330,7 @@
   }
   ul {
     padding-inline-start: 0;
+    margin-bottom: 0;
   }
   li {
     display: flex;
@@ -313,8 +339,23 @@
   }
 }
 
-
 @media only screen and (max-width: 900px) {
+  .project-show-container {
+    padding: 20px 10px;
+  }
+  .content-container {
+    flex-direction: column-reverse;
+  }
+  .ratings {
+    padding-bottom: 10px;
+  }
+  .review .content {
+    margin-right: 0;
+  }
+  #reviews-container {
+    padding: 0 20px;
+    margin-top: 20px;
+  }
   .project-assets-and-info {
     flex-direction: column;
   }
@@ -324,4 +365,33 @@
   .project-info {
     margin-left: 0px;
   }
+  .project-core-info {
+    padding: 40px 20px;
+    margin-bottom: 50px;
+  }
+  .carousel-container, #myCarousel {
+    height: 50vw;
+  }
+  .photo-wrapper {
+    height: 50vw;
+    margin: 0 5vw;
+    img {
+      width: 70vw;
+      height: 50vw;
+    }
+  }
+  .new-review-form {
+    flex-direction: column-reverse;
+  }
+  .new_review {
+    padding: 40px 20px;
+  }
+  .new-rating-container, .review_content {
+    width: 100%;
+    padding: 0;
+  }
+  .new-rating-container {
+    margin-bottom: 15px;
+  }
+
 }

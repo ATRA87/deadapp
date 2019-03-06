@@ -5,8 +5,7 @@
 <% if !user_signed_in? %>
   <%= render 'shared/navbar' %>
 <% end %>
-<div class="container-fluid top-margin">
-  <div class="col-md-10 col-md-offset-1" >
+<div class="project-show-container top-margin">
     <h1><%= @project.name %></h1>
     <div class="project-core-info">
       <div class="project-assets-and-info">
@@ -54,15 +53,15 @@
           </div>
           <div class="ratings">
             <ul>
-              <li><strong>Editor's review</strong></li>
-              <li>Code quality <%= render 'shared/stars', rating: 5 %></li>
+              <li class="rating-title"><strong>Editor's review</strong></li>
+              <li class="rating-type">Code quality <%= render 'shared/stars', rating: 5 %></li>
             </ul>
 
             <ul>
-              <li><strong>User's review</strong></li>
-              <li>Comunication <%= render 'shared/stars', rating: @project.communication_rating %></li>
-              <li>Quality of product <%= render 'shared/stars', rating: @project.quality_rating %></li>
-              <li>Delivered on time <%= render 'shared/stars', rating: @project.delivery_on_time_rating %></li>
+              <li class="rating-title"><strong>User's review</strong></li>
+              <li class="rating-type">Comunication <%= render 'shared/stars', rating: @project.communication_rating %></li>
+              <li class="rating-type">Quality of product <%= render 'shared/stars', rating: @project.quality_rating %></li>
+              <li class="rating-type">Delivered on time <%= render 'shared/stars', rating: @project.delivery_on_time_rating %></li>
             </ul>
           </div>
         </div>
@@ -100,5 +99,4 @@
         <%= render 'review', review: review %>
       <% end %>
     </div>
-  </div>
 </div>
