@@ -2,24 +2,24 @@ deadapp_collaborator_1:
   user: alfonso
   project: deadapp
 
-deadapp_collaborator_1:
-  user: sage
+deadapp_collaborator_2:
+  user: bill
   project: deadapp
 
-deadapp_collaborator_1:
+deadapp_collaborator_3:
   user: zombie
   project: deadapp
 
+deadapp_collaborator_3:
+  user: claire
+  project: deadapp
+
 parkingapp_collaborator_1:
-  user: parsley
+  user: nico
   project: parkingapp
 
 parkingapp_collaborator_2:
-  user: thyme
-  project: parkingapp
-
-parkingapp_collaborator_2:
-  user: rosemary
+  user: rodri
   project: parkingapp
 
 makent_collaborator_1:

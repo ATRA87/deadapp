@@ -8,7 +8,7 @@ deadapp:
 
 parkingapp:
   name: ParkingApp
-  user: claire
+  user: meli
   category: <%= Project::CATEGORIES[5] %>
   description: "Rent out your parking space while you're not using it"
 

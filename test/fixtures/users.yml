@@ -26,6 +26,34 @@ claire:
   last_name: F
   profile_picture: https://res.cloudinary.com/diyosnlxf/image/upload/v1551396440/Velma.jpg
 
+meli:
+  email: 'meli@gmail.com'
+  encrypted_password: <%= User.new.send(:password_digest, '123456') %>
+  first_name: Meli
+  last_name: Fernandez Sassone
+  profile_picture: https://res.cloudinary.com/dy3nldgkf/image/upload/v1551893328/meli.jpg
+
+nico:
+  email: 'nico@gmail.com'
+  encrypted_password: <%= User.new.send(:password_digest, '123456') %>
+  first_name: Nicolas
+  last_name: Caif
+  profile_picture: https://res.cloudinary.com/dy3nldgkf/image/upload/v1551893328/nico.jpg
+
+rodri:
+  email: 'rodri@gmail.com'
+  encrypted_password: <%= User.new.send(:password_digest, '123456') %>
+  first_name: Rodrigo
+  last_name: Cabral
+  profile_picture: https://res.cloudinary.com/dy3nldgkf/image/upload/v1551893328/rodri.jpg
+
+mike:
+  email: 'mike@gmail.com'
+  encrypted_password: <%= User.new.send(:password_digest, '123456') %>
+  first_name: Miguel
+  last_name: Lozano
+  profile_picture: https://res.cloudinary.com/dy3nldgkf/image/upload/v1551893327/mike.jpg
+
 parsley:
   email: parsley@deadapp.com
   encrypted_password: <%= User.new.send(:password_digest, '123456') %>
