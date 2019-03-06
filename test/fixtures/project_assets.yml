@@ -1,10 +1,62 @@
 deadapp_1:
   project: deadapp
-  photo: image/upload/v1551470140/Hand___Logo_copy.svg
+  photo: image/fetch/http://www.appfromthedead.com/assets/Full_Logo-133810079703e9589040319f8d81b63cb4574c7c04cc179acc69528ac2992dac.png
 
 parking_app_1:
   project: parkingapp
   photo: image/fetch/https://barcelona-home.com/blog/wp-content/upload/2017/06/parking.png
+
+cycling_app_1:
+  project: cyclingapp
+  photo: image/upload/v1551894224/jff78ue9eca56fkunng1.jpg
+
+cycling_app_2:
+  project: cyclingapp
+  photo: image/upload/v1551894206/dnbsntcxdvpwihbszlfx.png
+
+cycling_app_3:
+  project: cyclingapp
+  photo: image/upload/v1551893693/vckzfuvvpcdamdymia32.png
+
+miranda_1:
+  project: miranda
+  photo: image/upload/v1551893406/Screen_Shot_2019-03-06_at_14.08.13.png
+
+miranda_2:
+  project: miranda
+  photo: image/upload/v1551893403/Screen_Shot_2019-03-06_at_14.08.45.png
+
+miranda_3:
+  project: miranda
+  photo: image/upload/v1551893393/Screen_Shot_2019-03-06_at_14.09.02.png
+
+lavy_1:
+  project: lavy
+  photo: image/upload/v1551893368/Screen_Shot_2019-03-06_at_14.02.19.png
+
+lavy_2:
+  project: lavy
+  photo: image/upload/v1551893364/Screen_Shot_2019-03-06_at_14.03.22.png
+
+lavy_3:
+  project: lavy
+  photo: image/youtube/https://www.youtube.com/watch%3Fv=4xDEv6ehc4o
+
+wasted_1:
+  project: wasted
+  photo: image/upload/v1551893454/Screen_Shot_2019-03-06_at_13.56.03.png
+
+wasted_2:
+  project: wasted
+  photo: image/upload/v1551893451/Screen_Shot_2019-03-06_at_13.55.25.png
+
+wasted_3:
+  project: wasted
+  photo: image/upload/v1551893445/Screen_Shot_2019-03-06_at_13.54.58.png
+
+wasted_4:
+  project: wasted
+  photo: image/upload/v1551893444/Screen_Shot_2019-03-06_at_13.55.05.png
 
 makent_1:
   project: makent
