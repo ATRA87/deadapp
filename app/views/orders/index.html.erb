@@ -5,7 +5,7 @@
   </ul>
 
   <div class="tab-content">
-    <div id="my_orders" class="tab-pane fade in active">
+    <div role="tabpanel" id="my_orders" class="tab-pane fade in active">
       <% unless @orders.empty? %>
         <div class="pending-orders">
           <% @orders.each do |order| %>
@@ -25,7 +25,7 @@
       <% end %>
     </div>
 
-    <div id="project_orders" class="tab-pane fade">
+    <div role="tabpanel" id="project_orders" class="tab-pane fade">
       <% unless @my_projects_orders.empty? %>
         <div class="pending-project-orders">
           <% @my_projects_orders.each do |order| %>

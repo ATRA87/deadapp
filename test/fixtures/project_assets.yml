@@ -1,3 +1,11 @@
+deadapp_1:
+  project: deadapp
+  photo: image/upload/v1551470140/Hand___Logo_copy.svg
+
+parking_app_1:
+  project: parkingapp
+  photo: image/fetch/https://barcelona-home.com/blog/wp-content/upload/2017/06/parking.png
+
 makent_1:
   project: makent
   photo: image/fetch/https://www.trioangle.com/images/makent-banner.svg
