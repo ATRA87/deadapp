@@ -7,7 +7,6 @@
       <div class="title-rating">
         <h3><%= project.name %></h3>
         <%= render 'shared/stars', rating: project.avg_rating %>
-        <%= raise %>
       </div>
       <div class="description">
         <p><%= project.description.truncate(200, separator: /\s/) %></p>
