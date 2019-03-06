@@ -10,7 +10,7 @@ class Order < ApplicationRecord
     return 'delivered' if dev_state == 2
     return 'accepted' if dev_state == 1 && client_state == 1
     return 'pending' if dev_state.zero? && client_state.zero?
-    return 'pending_client' if client_state.zero?
+    return 'awaiting_payment' if client_state.zero?
   end
 
   def project_owner?(current_user)

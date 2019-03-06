@@ -1,13 +1,12 @@
 <% case state %>
   <% when 'pending' %>
-    <p class="state-pending"><%= state.capitalize %></p>
+    <p class="state-yellow"><%= state.capitalize %></p>
   <% when 'accepted', 'finished', 'paid', 'delivered' %>
-    <p class="state-accepted"><%= state.capitalize %></p>
+    <p class="state-green"><%= state.capitalize %></p>
   <% when 'declined' %>
-    <p class="state-declined"><%= state.capitalize %></p>
-  <% when 'ongoing' %>
-    <p class="state-ongoing"><%= state.capitalize %></p>
-
+    <p class="state-red"><%= state.capitalize %></p>
+  <% when 'ongoing', 'awaiting_payment' %>
+    <p class="state-blue"><%= state.gsub('_',' ').capitalize %></p>
   <% else %>
     <p>Undefined</p>
 <% end %>
