@@ -1,95 +1,119 @@
 deadapp_collaborator_1:
   user: alfonso
   project: deadapp
+  state: 1
 
 deadapp_collaborator_2:
   user: bill
   project: deadapp
+  state: 1
 
 deadapp_collaborator_3:
   user: zombie
   project: deadapp
+  state: 1
 
-deadapp_collaborator_3:
+deadapp_collaborator_4:
   user: claire
   project: deadapp
+  state: 1
 
 parkingapp_collaborator_1:
   user: nico
   project: parkingapp
+  state: 1
 
 parkingapp_collaborator_2:
   user: rodri
   project: parkingapp
+  state: 1
 
 makent_collaborator_1:
   user: tat2
   project: makent
+  state: 1
 
 makent_collaborator_2:
   user: tat3
   project: makent
+  state: 1
 
 gofer_collaborator_1:
   user: tat2
   project: gofer
+  state: 1
 
 gofer_collaborator_2:
   user: tat3
   project: gofer
+  state: 1
 
 ea_treat_collaborator_1:
   user: tat2
   project: ea_treat
+  state: 1
 
 ea_treat_collaborator_2:
   user: tat3
   project: ea_treat
+  state: 1
 
 makent_cars_collaborator_1:
   user: tat1
   project: makent_cars
+  state: 1
 
 makent_cars_collaborator_2:
   user: tat3
   project: makent_cars
+  state: 1
 
 spiffy_collaborator_1:
   user: tat1
   project: spiffy
+  state: 1
 
 spiffy_collaborator_2:
   user: tat3
   project: spiffy
+  state: 1
 
 gofer_eats_collaborator_1:
   user: tat1
   project: gofer_eats
+  state: 1
 
 gofer_eats_collaborator_2:
   user: tat3
   project: gofer_eats
+  state: 1
 
 makent_boats_collaborator_1:
   user: tat1
   project: makent_boats
+  state: 1
 
 makent_boats_collaborator_2:
   user: tat2
   project: makent_boats
+  state: 1
 
 igniter_collaborator_1:
   user: tat1
   project: igniter
+  state: 1
 
 igniter_collaborator_2:
   user: tat2
   project: igniter
+  state: 1
 
 pass_up_collaborator_1:
   user: tat1
   project: pass_up
+  state: 1
 
 pass_up_collaborator_2:
   user: tat2
   project: pass_up
+  state: 1
