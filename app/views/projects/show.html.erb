@@ -3,7 +3,7 @@
 <% end %>
 <div class="container-fluid top-margin">
   <div class="col-md-10 col-md-offset-1" >
-        <h1><%= @project.name %></h1>
+    <h1><%= @project.name %></h1>
   <div class="project-core-info">
     <div class="project-assets-and-info">
       <div class="project-title-and-assets">
@@ -12,23 +12,25 @@
           <div class="btn btn-primary" id="edit-btn">Edit project details</div>
           <% end %>
         </div>
+
         <div id="form-modal">
           <div class="modal-content">
             <h2>Edit project</h2>
             <%= render 'form', project: @project, users: @users %>
           </div>
         </div>
+
         <div class="project-assets">
           <%= render 'shared/carousel', project: @project %>
         </div>
       </div>
       <div class="project-info">
-
         <div class="developers">
           <div class="dropdown">
             <div class="dropdown-btn">
               <%= render 'shared/avatar_with_name', user: @project.user, imgSize: "small" %>
             </div>
+
             <div class="dropdown-content">
               <% unless @project.team.empty? %>
                 <% @project.team.each do |user| %>
@@ -42,14 +44,15 @@
                 </div>
               <% end %>
             </div>
-          </div>
 
+          </div>
         </div>
         <div class="ratings">
           <ul>
             <li><strong>Editor's review</strong></li>
             <li>Code quality <%= render 'shared/stars', rating: 5 %></li>
           </ul>
+
           <ul>
             <li><strong>User's review</strong></li>
             <li>Comunication <%= render 'shared/stars', rating: @project.communication_rating %></li>
@@ -63,20 +66,24 @@
     <div class="project-description">
       <%= @project.description %>
     </div>
-    <%= link_to 'Make order', new_order_path(project_id: @project.id), class:"btn btn-primary" %>
-  </div>
-  <% if current_user %>
-    <%= link_to 'Chat', project_user_chats_path(@project, current_user) unless current_user == @project.user %>
-    <% if current_user == @project.user %>
-      <ul>
-        <% @chat_users.each do |user| %>
-          <li><%= link_to user.full_name, project_user_chats_path(@project, user) %></li>
-        <% end %>
-      </ul>
+
+    <% if current_user %>
+      <%= link_to 'Chat with the dev', project_user_chats_path(@project, current_user), class:"btn btn-primary" unless current_user == @project.user %>
     <% end %>
+
+    <%= link_to 'Place order', new_order_path(project_id: @project.id), class:"btn btn-primary" %>
+  </div>
+
+  <% if current_user == @project.user %>
+    <h2>Messages <span>(<%= @chat_users.count %>)</span></h2>
+    <div id="chat-list-container">
+      <% @chat_users.each do |user| %>
+        <%= render 'message', user: user %>
+      <% end %>
+    </div>
   <% end %>
 
-    <h2>Reviews <span>(<%= @project.reviews.count %>)</span></h2>
+  <h2>Reviews <span>(<%= @project.reviews.count %>)</span></h2>
   <div id="reviews-container">
     <% if @orders_by_user.first %>
       <%= render 'reviews/form', order: @orders_by_user.first, review: Review.new %>
