@@ -1,6 +1,7 @@
 <% if !user_signed_in? %>
   <%= render 'shared/navbar' %>
 <% end %>
+<%= render "shared/chat_window", user: @user %>
 <div>
   <div class="container profile top-margin">
     <h1><%= @user.full_name %></h1>
@@ -11,37 +12,37 @@
           <div class="card-avatar" style="background-image: url('<%= @user.profile_picture %>'); border-radius: 50%; border: 1px solid rbga(0,0,0,0.1); width: 100%; height: 100%; background-position: center; background-size: cover">
           </div>
         </div>
-  </div> <!-- end of the profile-ratings div -->
-  <div class="profile-links text-center">
-    <%= link_to "#", class: "unstyle-color-link" do %>
-       <a href="#" data-toggle="modal" data-target="#chat_window">
-    <i class="far fa-comments"></i>
-    </a>
+      </div> <!-- end of the profile-ratings div -->
+  <div class="profile-links text-center unstyle-color-link">
+      <%= link_to "#", class: "unstyle-color-link" do %>
+        <a  href="#" data-toggle="modal" data-target="#chat_window">
+          <i class="far fa-comments unstyle-color-link"></i>
+        </a>
 
-    <% end %>
+       <% end %>
 
     <%= link_to "#", class: "unstyle-color-link" do %>
       <i class="fas fa-envelope-square"></i>
-    <% end %>
-    <%= link_to "#", class: "unstyle-color-link" do %>
-    <i class="fab fa-linkedin-in"></i>
+     <% end %>
+      <%= link_to "#", class: "unstyle-color-link" do %>
+       <i class="fab fa-linkedin-in"></i>
     <% end %>
   </div><!-- end of the profile-links-div -->
 </div> <!-- end of the profile-info-details-div -->
 
 <div class="profile-reviews">
   <h3>Reviews</h3>
-  <div class="profile-review">
-    <% @user.reviews.each do |review| %>
-     <%= render 'projects/review', review: review %>
-    <% end %>
-</div>
+   <div class="profile-review">
+     <% @user.reviews.each do |review| %>
+      <%= render 'projects/review', review: review %>
+      <% end %>
+    </div>
 </div> <!-- end of the profile-reviews div -->
-<div class="profile-projects">
-  <h3>Projects</h3>
-  <div class="row">
-    <% unless @projects.empty? %>
-      <% @projects.each do |project| %>
+  <div class="profile-projects">
+   <h3>Projects</h3>
+     <div class="row">
+      <% unless @projects.empty? %>
+       <% @projects.each do |project| %>
         <div class="col-xs-12 col-md-6 card-wrapper">
           <%= link_to project_path(project) do %>
             <%= render 'projects/card_link', project: project %>
@@ -58,6 +59,5 @@
 </div>
 </div>
 </div>
-<%= render "shared/chat_window", user: @user %>
 
 
