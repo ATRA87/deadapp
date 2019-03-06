@@ -185,6 +185,17 @@
   border-bottom: none;
 }
 
+.review .review-user-and-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.review-date {
+  margin: 0;
+  color: lightgrey;
+}
+
 .project-core-info {
   font-family: $body-font;
   width: 100%;
