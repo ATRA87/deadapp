@@ -18,13 +18,6 @@ cyclingapp:
   description: "Use this app to have your customer plan his ride using a customized navigation app
   with your store logo and colors"
 
-miranda:
-  name: "Miranda: Watch and learn"
-  user: sage
-  category: <%= Project::CATEGORIES[2] %>
-  description: "Miranda: Watch and learn -- let us help you to learn languages from your favourite
-  videos"
-
 lavy:
   name: "Lavy - Laundry Pick up & Delivery"
   user: parsley
@@ -32,6 +25,13 @@ lavy:
   description: "We collect, wash and deliver your laundry and dry cleaning in 24 hours. Easily choose
   collection & delivery times at your convenience, including late evenings and weekends. Our drivers
   bring your items to our cleaning partners, where we take utmost care to ensure great results."
+
+miranda:
+  name: "Miranda: Watch and learn"
+  user: sage
+  category: <%= Project::CATEGORIES[2] %>
+  description: "Miranda: Watch and learn -- let us help you to learn languages from your favourite
+  videos"
 
 wasted:
   name: "Waste'd"
