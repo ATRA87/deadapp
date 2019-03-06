@@ -46,24 +46,24 @@ parkingapp_order_6:
   project: parkingapp
   user: zombie
 
-cyclingappp_order_1:
-  project: cyclingappp
+cyclingapp_order_1:
+  project: cyclingapp
   user: parsley
 
-cyclingappp_order_2:
-  project: cyclingappp
+cyclingapp_order_2:
+  project: cyclingapp
   user: sage
 
-cyclingappp_order_3:
-  project: cyclingappp
+cyclingapp_order_3:
+  project: cyclingapp
   user: rosemary
 
-cyclingappp_order_4:
-  project: cyclingappp
+cyclingapp_order_4:
+  project: cyclingapp
   user: thyme
 
-cyclingappp_order_5:
-  project: cyclingappp
+cyclingapp_order_5:
+  project: cyclingapp
   user: zombie
 
 lavy_order_1:
