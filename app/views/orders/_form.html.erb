@@ -1,12 +1,22 @@
-<h1>Project name:<br><%= order.project.name %></h1>
-<h3>Client: <%= current_user.full_name %></h3>
+<h1>Order Form</h1>
+<ul id="order-form-list">
+  <li><span class="bold">Project name:</span> <%= order.project.name %></li>
+  <li><span class="bold">Client:</span> <%= current_user.full_name %></li>
+  <li><span class="bold">Developer:</span> <%= order.project.user.full_name %></li>
+</ul>
+<div id="standard-customizations" class="bold">Standard customization options:<br><br></div>
 <%= simple_form_for(order) do |f| %>
-<% if order.project_owner?(current_user) %>
-<%= f.input :amount %>
-<%= f.hidden_field :dev_state, value: 1 %> <!-- set dev state to accepted -->
-<% else %>
-<%= f.hidden_field :dev_state, value: 0 %> <!-- set dev state to pending if client edits the order so dev has to check it again -->
-<% end %>
+  <% if order.project_owner?(current_user) %>
+    <%= f.input :amount %>
+    <%= f.hidden_field :dev_state, value: 1 %> <!-- set dev state to accepted -->
+  <% else %>
+    <%= f.hidden_field :dev_state, value: 0 %> <!-- set dev state to pending if client edits the order so dev has to check it again -->
+  <% end %>
+<%= f.input :color_scheme, label: " Color scheme", boolean_style: :inline if order.project.color_scheme == true %>
+<%= f.input :font, label: " Font", boolean_style: :inline if order.project.font == true %>
+<%= f.input :button_shape, label: " Button shape", boolean_style: :inline if order.project.button_shape == true %>
+<%= f.input :social_log_in, label: " Log in with social media", boolean_style: :inline if order.project.social_log_in == true %>
+<%= f.input :order_notes, label: "Premium customizations:", placeholder: "As agreed with the developer" %>
 <%= f.input :due_date, label: "Due date:", as: :date, html5: true %>
 <%= f.hidden_field :project, value: @project_id %>
 <%= f.submit %>
