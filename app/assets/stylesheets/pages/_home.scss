@@ -9,7 +9,7 @@
 }
 .ctas-plus-logo {
  height: 100vh;
-  }
+}
 
 .ctas {
   display: flex;
@@ -91,6 +91,9 @@
   margin-bottom: 1em;
   margin-top: 1em;
 }
+.billnewclass {
+  padding-bottom: 40px;
+}
 
 @media only screen and (max-width: 600px) {
   .ctas {
@@ -111,6 +114,9 @@
   }
   .card-wrapper {
     margin-bottom: 10px !important;
+  }
+  .billnewclass {
+    padding-bottom: 0px;
   }
 }
 
