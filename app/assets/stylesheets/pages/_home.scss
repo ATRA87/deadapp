@@ -133,7 +133,8 @@
     border: none;
   }
   #search-input {
-    flex-grow: 1;
+    flex-grow:
+    1;
   }
   button {
     margin: 0;
@@ -145,4 +146,9 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  #banner-landing {
+    padding: 0;
+  }
+}
 
