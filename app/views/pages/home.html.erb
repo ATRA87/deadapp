@@ -8,16 +8,7 @@
   <% end %>
   <div class="main-wrapper" style="<%= 'margin-top: 70px; padding-top: 50px;' if !user_signed_in? %>">
     <div class="col-md-10 col-md-offset-1 ">
-
-  <% if user_signed_in? %>
-      <h1 class='text-center' style="padding-bottom: 30px;">Find your App</h1>
-        <div class="search-container" style="padding-bottom: 30px;">
-          <form id="search" action="/search" method="get">
-            <input id="search-input" type="text" placeholder="Search for an app" name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
-        </div>
-  <% end %>
+      <h1 class='text-center' style="padding-bottom: 20px; margin-top: 70px; padding-top: 30px;">Find your App</h1>
       <% @projects.each do |project| %>
       <div class="col-xs-12 col-md-6 card-wrapper">
         <%= link_to project_path(project) do %>

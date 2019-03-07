@@ -11,12 +11,14 @@
     <% end %>
 
     <!-- Search -->
-    <div class="navbar-search-container">
-      <form id="search" action="/search" method="get">
-        <input id="search-input" type="text" placeholder="Search for an app" name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
-      </form>
-    </div>
+    <% if user_signed_in? %>
+      <div class="navbar-search-container">
+        <form id="search" action="/search" method="get">
+          <input id="search-input" type="text" placeholder="Search for an app" name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    <% end %>
 
     <!-- Right Navigation -->
     <div class="navbar-wagon-right hidden-xs hidden-sm">
