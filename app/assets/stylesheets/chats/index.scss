@@ -17,6 +17,10 @@
       margin: 0;
       margin-right: 10px;
       font-size: 24px;
+      max-width: 250px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
   .project-and-back a{
@@ -91,4 +95,33 @@
 #message {
   border-radius: 0 0 9px 9px;
   border: none;
+  margin: 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .chat-header {
+    .chat-project-name {
+      display: none;
+    }
+    .btn-and-name{
+      flex-direction: column-reverse;
+      align-text: right;
+    }
+    .back-to-project-btn{
+      font-size: 16px;
+    }
+    .user-info {
+      margin: 0 5px;
+      p {
+        font-size: 16px;
+      }
+    }
+    .btn {
+      padding: 2px 3px;
+      p {
+        font-size: 32px;
+      }
+    }
+  }
 }
