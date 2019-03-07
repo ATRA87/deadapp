@@ -4,11 +4,17 @@
 <div class="container-fluid" id="banner-landing" style="margin-top: 70px; height: 100vh;">
   <div class="row">
     <div class="col-md-10 col-md-offset-1 ">
-      <div class="search-container" style="padding-top: 40px;">
-        <form id="search" action="/search" method="get">
-          <input id="search-input" type="text" placeholder="Search for an app" name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
+      <div id="search-results-container">
+        <div id="search-results-description">
+          <div>
+            <h4>Search results for <span class="bold"><%= params[:search] %></span></h4>
+          </div>
+          <div>
+            <form id="clear-search" action="/" method="get">
+              <button type="submit" class="close"><i class="fa fa-times-circle"></i></button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -24,5 +30,3 @@
     </div>
   </div>
 </div>
-
-<%= render "shared/footer" %>

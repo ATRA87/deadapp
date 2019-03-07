@@ -10,6 +10,14 @@
     <%= image_tag "App_from_the_Dead_Teal.png", height: 50 %>
     <% end %>
 
+    <!-- Search -->
+    <div class="navbar-search-container">
+      <form id="search" action="/search" method="get">
+        <input id="search-input" type="text" placeholder="Search for an app" name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+
     <!-- Right Navigation -->
     <div class="navbar-wagon-right hidden-xs hidden-sm">
 
