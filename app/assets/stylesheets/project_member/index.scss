@@ -3,7 +3,7 @@
   background-color: white;
   border-radius: 9px;
   box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
-  margin: 50px 5px 40px 5px;
+  margin: 25px 0;
   display: flex;
   justify-content: space-between;
   color: black;
@@ -15,13 +15,13 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  .card-segment {
+  .card-segment, .card-segment-names {
     display: flex;
   }
 }
 
 
-@media only screen and (max-width: 678px) {
+@media only screen and (max-width: 600px) {
   .horizontal-card {
     flex-direction: column;
     height: 100%;
@@ -38,7 +38,7 @@ li.active {
 .names {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   h4 {
     margin: 0;
   }
@@ -65,8 +65,9 @@ li.active {
 .answer-buttons {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 5px 10px;
+  margin-right: 20px;
   a{
     padding: 0;
     width: 70px;

@@ -13,13 +13,9 @@
           <% end %>
         </div>
       <% else %>
-      <div class="container">
-        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-          <div class="horizontal-card entire-order-card blank">
-            <h4>You haven't made any orders yet.</h4>
-          </div>
+        <div class="horizontal-card entire-order-card blank no-order-message-container">
+          <h4 id="no-order-message">You haven't made any orders yet.</h4>
         </div>
-      </div>
       <% end %>
       <% unless @orders_history.empty? %>
         <h1 class="order-title">History</h1>
