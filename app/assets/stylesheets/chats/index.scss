@@ -1,12 +1,53 @@
+.chat-header {
+  margin-top: 100px;
+  background-color: white;
+  border-radius: 9px 9px 0 0;
+  box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  height: 100px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  .user-info{
+    margin: 0 30px;
+    flex-direction: row-reverse;
+    p {
+      color: rgba(0,0,0,0.8);
+      margin: 0;
+      margin-right: 10px;
+      font-size: 24px;
+    }
+  }
+  .project-and-back a{
+    display: flex;
+    align-items: center;
+  }
+  .btn-and-name{
+    display: flex;
+    align-items: center;
+  }
+  .chat-project-name {
+    font-size: 24px;
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .back-to-project-btn {
+    font-size: 40px;
+    margin-right: 10px;
+  }
+}
 .chat-box {
   width: 100%;
   padding: 1.5em;
-  margin: 20px 0;
+  margin-top: 0!important;
   background-color: white;
-  border-radius: 8px;
+  // border-radius: 0 0 9px 9px;
   box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
   min-height: 20em;
-  height: 70vh;
+  height: 60vh;
   overflow: scroll;
   .chat-bubble-wrapper {
     padding-bottom: 1em;
@@ -14,10 +55,14 @@
     display: flex;
     flex-direction: column;
     .chat-bubble {
-      width: 10em;
+      min-width: 10em;
+      max-width: 70%;
+      overflow: hidden;
+      text-overflow: ellipsis;
       border-radius: 5px;
       padding: 0.5em;
       box-shadow: 4px 7px 8px -11px #000000;
+
       &.me {
         background-color: #dcf8c6;
         align-self: flex-end;
@@ -26,12 +71,24 @@
         background-color: #f4f4f4;
       }
       .chat-username {
-        font-size: 0.7em;
+        font-size: 1em;
         color: gray;
       }
       .chat-message {
-        font-size: 1em;
+        font-size: 1.3em;
       }
     }
   }
+}
+
+#chat-form {
+  margin-top: 0;
+  box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
+  border: none;
+  border-top: 1px solid rgba(0,0,0,0.1)
+}
+
+#message {
+  border-radius: 0 0 9px 9px;
+  border: none;
 }

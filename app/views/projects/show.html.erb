@@ -79,9 +79,9 @@
       <%= link_to 'Place order', new_order_path(project_id: @project.id), class:"btn btn-primary" %>
     </div>
 
-    <% if current_user == @project.user %>
+    <% if current_user == @project.user && !@chat_users.empty? %>
+      <h2>Messages <span>(<%= @chat_users.count %>)</span></h2>
       <div id="chat-list-container">
-        <h2>Messages <span>(<%= @chat_users.count %>)</span></h2>
         <% @chat_users.each do |user| %>
           <%= render 'message', user: user %>
         <% end %>
