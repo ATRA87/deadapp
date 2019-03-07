@@ -81,7 +81,7 @@
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.project-info {
+.project-assets-and-info .project-info {
   margin-left: 30px;
   flex-grow: 1;
   .user-info {
@@ -383,12 +383,12 @@
   }
   .project-assets-and-info {
     flex-direction: column;
+    .project-info {
+      margin: 0px;
+    }
   }
   .project-title-and-assets {
     margin-bottom: 20px;
-  }
-  .project-info {
-    margin-left: 0px;
   }
   .project-core-info {
     padding: 40px 20px;

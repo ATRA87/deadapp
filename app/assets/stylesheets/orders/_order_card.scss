@@ -17,14 +17,16 @@
   padding: 30px;
   display: flex;
   margin-top: 0 !important;
+
 }
 
 .info-segment-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-grow: 1;
   .project-info {
     margin: 0;
+    margin-left: 30px
   }
   .card-segment {
     justify-content: space-between;
@@ -39,7 +41,7 @@
   margin: 0;
 }
 
-ul .orders-index-tabs {
+ul.orders-index-tabs {
   display: flex;
   justify-content: space-around;
 }
@@ -48,11 +50,12 @@ ul .orders-index-tabs {
   ul .order-title {
     font-size: 28px !important;
   }
-  .project-info {
-    line-height: 1.7;
-  }
   .entire-order-card{
     flex-direction: column !important;
+    .project-info {
+      line-height: 1.7;
+      margin: 0 ;
+    }
   }
   .card-segment {
     flex-direction: column-reverse;
