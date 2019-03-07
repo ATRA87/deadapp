@@ -13,7 +13,13 @@
           <% end %>
         </div>
       <% else %>
-        <p>You haven't made any orders yet.</p>
+      <div class="container">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+          <div class="horizontal-card entire-order-card blank">
+            <h4>You haven't made any orders yet.</h4>
+          </div>
+        </div>
+      </div>
       <% end %>
       <% unless @orders_history.empty? %>
         <h1 class="order-title">History</h1>
@@ -33,7 +39,13 @@
           <% end %>
         </div>
       <% else %>
-        <p>None of your projects have any pending order.</p>
+      <div class="container">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+          <div class="horizontal-card entire-order-card blank">
+            <h4>None of your projects have any pending orders.</h4>
+          </div>
+        </div>
+      </div>
       <% end %>
       <% unless @my_projects_orders_history.empty? %>
         <h1 class="order-title">History</h1>
