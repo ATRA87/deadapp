@@ -18,11 +18,11 @@ class OrdersController < ApplicationController
   end
 
   def index
-    @all_orders = policy_scope(Order).where(user: current_user).order(created_at: :desc).to_a
+    @all_orders = policy_scope(Order).where(user: current_user).order(created_at: :asc).to_a
     @orders = @all_orders.reject(&:finished?)
     @orders_history = @all_orders.select(&:finished?)
-    @my_projects_orders = current_user.project_orders.reject(&:finished?)
-    @my_projects_orders_history = current_user.project_orders.select(&:finished?)
+    @my_projects_orders = current_user.project_orders.reject(&:finished?).reverse
+    @my_projects_orders_history = current_user.project_orders.select(&:finished?).reverse
   end
 
   def edit
