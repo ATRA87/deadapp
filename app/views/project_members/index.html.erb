@@ -1,7 +1,7 @@
 <div class="container">
   <% if @pending.count > 0 %>
     <div class="pending-invitations">
-      <h4>Pending requests</h4>
+      <h1>Pending requests</h1>
       <% @pending.each do |inv| %>
         <%= render 'card', invitation:inv, imgSize: "small" %>
       <% end %>
@@ -9,7 +9,7 @@
   <% end %>
 
   <div class="accepted-invitations">
-    <h4>Your teams</h4>
+    <h1>Your teams</h1>
     <% if @accepted.count > 0 %>
       <% @accepted.each do |inv| %>
         <%= render 'card', invitation: inv, imgSize: "small" %>

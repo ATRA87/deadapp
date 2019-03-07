@@ -81,8 +81,9 @@
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.project-info {
-  margin-left: 20px;
+.project-assets-and-info .project-info {
+  margin-left: 30px;
+  flex-grow: 1;
   .user-info {
     display: flex;
     margin-bottom: 30px;
@@ -99,7 +100,7 @@
 
 .project-description {
   padding-bottom: 25px;
-  margin: 20px;
+  margin: 0px;
   font-weight: lighter;
   color: #555;
   position: relative;
@@ -371,6 +372,7 @@
   }
   .ratings {
     padding-bottom: 10px;
+
   }
   .review .content {
     margin-right: 0;
@@ -381,12 +383,12 @@
   }
   .project-assets-and-info {
     flex-direction: column;
+    .project-info {
+      margin: 0px;
+    }
   }
   .project-title-and-assets {
     margin-bottom: 20px;
-  }
-  .project-info {
-    margin-left: 0px;
   }
   .project-core-info {
     padding: 40px 20px;

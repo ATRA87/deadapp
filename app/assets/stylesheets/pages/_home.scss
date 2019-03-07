@@ -8,7 +8,8 @@
   height: calc(100vh - 70px);
 }
 .ctas-plus-logo {
- height: 100vh;
+ height: calc(100vh - 70px);
+ margin: 0 20px 100px 20px;
 }
 
 .ctas {
