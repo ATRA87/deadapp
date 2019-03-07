@@ -14,13 +14,56 @@
 // }
 
 .entire-order-card{
+  padding: 30px;
   display: flex;
   margin-top: 0 !important;
 }
 
+.info-segment-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+  .project-info {
+    margin: 0;
+  }
+  .card-segment {
+    justify-content: space-between;
+  }
+}
+.no-order-message-container{
+  text-align: center;
+  align-items: center;
+}
+
+#no-order-message{
+  margin: 0;
+}
+
+ul{
+  display: flex;
+  justify-content: space-around;
+}
+
 @media only screen and (max-width: 600px) {
+  ul .order-title {
+    font-size: 28px !important;
+  }
+  .project-info {
+    line-height: 1.7;
+  }
   .entire-order-card{
     flex-direction: column !important;
+  }
+  .card-segment {
+    flex-direction: column-reverse;
+    // justify-content: space-around;
+    align-items: center;
+    .answer-buttons {
+      margin: 0;
+    }
+  }
+  .card-segment-names {
+    margin-bottom: 10px;
   }
 }
 
