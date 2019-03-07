@@ -1,8 +1,7 @@
-<div class="container">
-  <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+
     <div class="horizontal-card entire-order-card">
 
-      <div class="card-segment">
+      <div class="card-segment-names">
         <% classes = "small" %>
         <%= render 'shared/project_photo', project: order.project, classes: classes %>
         <div class="names">
@@ -15,6 +14,7 @@
           <% end %>
         </div>
       </div>
+      <div class="info-segment-wrapper">
 
       <div class="project-info">
         <span><%= order.amount_currency %>$<%= order.amount_cents == 0 ? order.amount_cents/100 : " To be agreed" %></span>
@@ -35,6 +35,7 @@
         </span>
       </div>
 
+
       <div class="card-segment">
         <div class="answer-buttons">
           <%= render "orders/#{order.state}", order: order %>
@@ -45,6 +46,6 @@
           <p class="invitation-date">Since <br><%="#{order.created_at.to_date.strftime("%m/%d/%Y")}"%></p>
         </div>
       </div>
+      </div>
     </div>
-  </div>
-</div>
+

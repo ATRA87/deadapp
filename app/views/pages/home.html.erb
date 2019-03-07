@@ -1,11 +1,19 @@
 <% if !user_signed_in? %>
-<%= render "shared/navbar" %>
+  <%= render "shared/navbar" %>
 <% end %>
 <div class="container-fluid" id="banner-landing">
   <% if !user_signed_in? %>
-  <%= render "pages/cta" %>
+    <%= render "pages/cta" %>
   <% else %>
+    <h1 class='text-center' style="padding-bottom: 30px;">Find your App</h1>
+    <div class="search-container" style="padding-bottom: 30px;">
+      <form id="search" action="/search" method="get">
+        <input id="search-input" type="text" placeholder="Search for an app" name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
   <% end %>
+
   <div class="main-wrapper" style="<%= 'margin-top: 70px; padding-top: 50px;' if !user_signed_in? %>">
     <div class="col-md-10 col-md-offset-1 ">
       <h1 class='text-center' style="padding-bottom: 20px; margin-top: 70px; padding-top: 30px;">Find your App</h1>
@@ -13,10 +21,7 @@
       <div class="col-xs-12 col-md-6 card-wrapper">
         <%= link_to project_path(project) do %>
         <%= render 'projects/card_link', project: project %>
-        <% end %>
-      </div>
       <% end %>
     </div>
-  </div>
-
+  <% end %>
 </div>
