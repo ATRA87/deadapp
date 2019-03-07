@@ -17,14 +17,14 @@
           <a  href="#" data-toggle="modal" data-target="#chat_window">
             <i class="far fa-comments"></i>
           </a>
-          <a href="https://api.addthis.com/oexchange/0.8/forward/email/ offer?url=www.appfromthedead.com&pubid=ra-42fed1e187bae420&title=Look%20at%20app%20from%20the%20dead&ct=1" target="_blank">
-            <i class="far fa-envelope"></i></a>
+         <a href="https://api.addthis.com/oexchange/0.8/forward/email/offer?url=www.appfromthedead.com&pubid=ra-42fed1e187bae420&title=Look%20at%20app%20from%20the%20dead&ct=1" target="_blank">
+           <i class="far fa-envelope"></i></a>
             <a href="https://api.addthis.com/oexchange/0.8/forward/whatsapp/offer?url=www.appfromthedead.com&pubid=ra-42fed1e187bae420&title=Look%20at%20app%20from%20the%20dead&ct=1" target="_blank">
               <i class="fab fa-whatsapp"></i></a>
       </div><!-- end of the profile-links-div -->
     </div> <!-- end of the profile-info-details-div -->
   <h2>Reviews</h2>
-<div>
+<div class="profile-review">
   <% unless @user.reviews.empty? %>
      <% @user.reviews.each do |review| %>
       <%= render 'projects/review', review: review %>
