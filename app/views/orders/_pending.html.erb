@@ -1,5 +1,8 @@
 <% if order.project_owner?(current_user) %>
-  <%= link_to 'Review order', edit_order_path(order), class:"btn btn-primary" %>
+  <%= link_to 'Review', edit_order_path(order), class:"btn btn-primary" %>
 <% else %>
-  <%= link_to 'Edit', edit_order_path(order), class:"btn btn-info" %>
+  <%= link_to 'Edit', edit_order_path(order), class:"btn btn-primary" %>
 <% end %>
+
+
+

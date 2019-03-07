@@ -67,8 +67,9 @@
         </div>
       </div>
 
-      <div class="project-description">
-        <%= @project.description %>
+      <div class="project-description short-description">
+        <p><%= @project.description %></p>
+        <i id="expand-btn" class="fas fa-angle-down text-center"></i>
       </div>
 
       <% if current_user %>
