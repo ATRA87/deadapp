@@ -2,13 +2,20 @@
 .cta {
   display: flex;
   flex-direction: column;
-  margin-top: 1em;
+
 }
+.main-wrapper {
+  height: calc(100vh - 70px);
+}
+.ctas-plus-logo {
+ height: 100vh;
+  }
 
 .ctas {
   display: flex;
   justify-content: space-around;
   margin-top: 9em;
+
 }
 
 .cta-post {
@@ -38,9 +45,9 @@
 }
 
 
-.more-margin {
-  margin-top: 4em;
-}
+// .more-margin {
+//   margin-top: 4em;
+// }
 
 .bold {
   font-weight: bold;

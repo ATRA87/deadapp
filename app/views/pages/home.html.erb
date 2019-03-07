@@ -1,7 +1,10 @@
 <% if !user_signed_in? %>
-  <%= render "shared/navbar" %>
+<%= render "shared/navbar" %>
 <% end %>
 <div class="container-fluid" id="banner-landing">
+  <% if !user_signed_in? %>
+  <%= render "pages/cta" %>
+  <% else %>
 
 <div class="ctas">
   <div class="cta">
@@ -37,17 +40,17 @@
       <div id="new-additions" style="background-image: url(<%= asset_url('Newest_Additions.png') %>);">
       </div>
     </div>
+    
     <div class="col-md-10 col-md-offset-1 ">
-
-  </div>
+      <h1 class='text-center'>Find your App</h1>
       <% @projects.each do |project| %>
-        <div class="col-xs-12 col-md-6 card-wrapper">
-          <%= link_to project_path(project) do %>
-          <%= render 'projects/card_link', project: project %>
-          <% end %>
-        </div>
+      <div class="col-xs-12 col-md-6 card-wrapper">
+        <%= link_to project_path(project) do %>
+        <%= render 'projects/card_link', project: project %>
+        <% end %>
+      </div>
       <% end %>
     </div>
   </div>
-</div>
 
+</div>
