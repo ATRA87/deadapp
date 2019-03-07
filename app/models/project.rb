@@ -13,13 +13,13 @@ class Project < ApplicationRecord
   accepts_nested_attributes_for :project_assets
   monetize :price_cents
   has_many :chats
-  # def rating
-  #   ratings = []
-  #   self.reviews.each do |review|
-  #     ratings << review.rating
-  #   end
-  #   return ratings.empty? ? 0 : ratings.sum / ratings.count
-  # end
+
+  include PgSearch
+  pg_search_scope :search_by_name_and_description,
+    against: [:name, :description],
+    using: {
+      tsearch: { prefix: true } # <-- now `superman batm` will return something!
+  }
 
   def team
     project_members.select do |pm|

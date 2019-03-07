@@ -23,6 +23,7 @@ gem "pundit"
 gem 'stripe'
 gem 'money-rails'
 gem 'pusher'
+gem 'pg_search'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

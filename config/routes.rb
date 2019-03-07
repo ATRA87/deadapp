@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'reviews/create'
   get 'authorizations/linkedin'
   get 'authorizations/failure'
+  get "search", to: "projects#search", as: "search"
   root to: 'pages#home'
   get "profile/:id", to: "pages#profile", as: :profile
   devise_for :users, controllers: { omniauth_callbacks: 'authorizations' }
