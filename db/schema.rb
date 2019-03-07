@@ -53,7 +53,6 @@ ActiveRecord::Schema.define(version: 2019_03_07_133027) do
     t.integer "amount_cents", default: 0, null: false
     t.string "amount_currency", default: "USD", null: false
     t.json "payment"
-    t.string "notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "color_scheme"

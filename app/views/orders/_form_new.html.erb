@@ -1,6 +1,6 @@
 <%= simple_form_for(order) do |f| %>
 <% if order.project_owner?(current_user) %>
-<%= f.input :amount %>
+<%= f.input :amount, label: "Amount: ($)" %>
 <%= f.hidden_field :dev_state, value: 1 %> <!-- set dev state to accepted -->
 <% else %>
 <%= f.hidden_field :dev_state, value: 0 %> <!-- set dev state to pending if client edits the order so dev has to check it again -->

@@ -1,15 +1,15 @@
 <%= simple_form_for(order) do |f| %>
 <% if order.project_owner?(current_user) %>
-<%= f.input :amount %>
+<%= f.input :amount, label: "Amount: ($)" %>
 <%= f.hidden_field :dev_state, value: 1 %> <!-- set dev state to accepted -->
 <% else %>
 <%= f.hidden_field :dev_state, value: 0 %> <!-- set dev state to pending if client edits the order so dev has to check it again -->
 <% end %>
 <%= f.label "Standard customization options:" %>
-<%= f.input :color_scheme, label: " Color scheme", boolean_style: :inline if order.color_scheme == true %>
-<%= f.input :font, label: " Font", boolean_style: :inline if order.font == true %>
-<%= f.input :button_shape, label: " Button shape", boolean_style: :inline if order.button_shape == true %>
-<%= f.input :social_log_in, label: " Log in with social media", boolean_style: :inline if order.social_log_in == true %>
+<%= f.input :color_scheme, label: " Color scheme", boolean_style: :inline %>
+<%= f.input :font, label: " Font", boolean_style: :inline %>
+<%= f.input :button_shape, label: " Button shape", boolean_style: :inline %>
+<%= f.input :social_log_in, label: " Log in with social media", boolean_style: :inline %>
 <%= f.input :order_notes, label: "Premium customizations:" , placeholder: order.order_notes ? order.order_notes : "As agreed with the developer"%>
 <%= f.input :due_date, label: "Due date:", as: :date, html5: true %>
 <% if order.amount_cents == 0 %>
