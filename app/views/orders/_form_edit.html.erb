@@ -11,7 +11,7 @@
   <%= f.input :button_shape, label: " Button shape", boolean_style: :inline %>
   <%= f.input :social_log_in, label: " Log in with social media", boolean_style: :inline %>
   <%= f.input :order_notes, label: "Premium customizations:" , placeholder: order.order_notes ? order.order_notes : "As agreed with the developer"%>
-  <%= f.input :due_date, label: "Due date:", as: :date, html5: true %>
+  <%= f.input :due_date, label: "Due date:", as: :date, html5: true, input_html: { value: (Date.today + 7.days) } %>
     <% if order.amount_cents == 0 %>
       <%= f.label "Total price: To be agreed with the developer" %>
     <% else %>
@@ -19,5 +19,5 @@
   <% end %>
   <br>
   <%= f.hidden_field :project, value: @project_id %>
-  <%= f.submit %>
+  <%= f.submit class:"btn btn-primary"  %>
 <% end %>
