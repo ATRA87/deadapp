@@ -1,1 +1,24 @@
 
+.project-info{
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.invitation-date{
+  font-weight: normal;
+  font-size: 14px;
+}
+
+// .grey{
+//   color: lightgrey !important;
+// }
+
+.entire-order-card{
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .entire-order-card{
+    flex-direction: column !important;
+  }
+}

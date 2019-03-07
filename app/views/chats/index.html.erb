@@ -1,5 +1,17 @@
 <div class="row">
   <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
+    <div class="chat-header">
+      <div class="project-and-back">
+      <%= link_to project_path(@project) do %>
+        <i class="fas fa-angle-left back-to-project-btn"></i>
+        <div class="chat-project-name"><%= @project.name %></div>
+      <% end %>
+      </div>
+      <div class="btn-and-name">
+        <%= link_to 'Place order', new_order_path(project_id: @project.id), class:"btn btn-primary" %>
+        <%= render 'shared/avatar_with_name', user: @project.user, imgSize: "" %>
+      </div>
+    </div>
     <div
       class="chat-box"
       style="margin-top: 5em;"
@@ -24,7 +36,7 @@
         </div>
       <% end %>
       <div class="field position-relative">
-        <%= form.text_field :message, id: :message, class: "form-control", required: true %>
+        <%= form.text_field :message, id: :message, class: "form-control", required: true, placeholder: "Type your message", autocomplete:'off' %>
         <%= form.hidden_field :identifier, id: :identifier, value: current_user.identifier %>
       </div>
     <% end %>

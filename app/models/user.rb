@@ -31,10 +31,17 @@ class User < ApplicationRecord
 
   def full_name
     first = first_name.capitalize if first_name
-    last = last_name.capitalize if last_name
+    @last = ''
+    if last_name
+      last_array = []
+      last_name.split(" ").each do |word|
+        last_array << "#{word.capitalize}"
+      end
+      @last = last_array.join(" ")
+    end
 
-    if first_name or last_name
-      "#{first} #{last}"
+    if first_name || last_name
+      "#{first} #{@last}"
     else
       email
     end
