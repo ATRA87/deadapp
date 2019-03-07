@@ -86,10 +86,20 @@
             <% else %>
           <li>
             <%= link_to root_path, class: "navbar-wagon-item navbar-wagon-link" do %>
-            <i class="fas fa-rocket"></i> Apps
+            <!-- <i class="fas fa-rocket"></i> --> Apps
             <% end %>
             </li>
+            <li>
+                <%= link_to new_user_registration_path, class: "navbar-wagon-item navbar-wagon-link navbar-logon" do %>
+        Sign Up <span class='bang-bang'>!</span>
+      <% end %>
+
+            </li>
           <% end %>
+          <li>
+
+      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link navbar-logon" %>
+          </li>
         </ul>
       </div>
     </div>
