@@ -30,11 +30,8 @@
       <%= render 'projects/review', review: review %>
       <% end %>
       <% else %>
-       <div class="profile-review">
-       <p class="dead-font">No app from the Dead reviews
-for now...
+       <p class="dead-font"><%= @user.full_name.split(" ").first %> has no reviews yet
   </p>
-      </div>
     <% end %>
     </div>
 <!-- end of the profile-reviews div -->
@@ -50,7 +47,7 @@ for now...
       <% end %>
     <% else %>
       <div class="profile-review">
-        <p class="dead-font">No app from the dead projects for now...</p>
+        <p class="dead-font"><%= @user.full_name.split(" ").first %> has no projects</p>
       </div>
     <% end %>
 </div>

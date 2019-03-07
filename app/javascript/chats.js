@@ -1,12 +1,14 @@
 $(document).ready(() => {
 
   const updateChat = (data, sender) => {
+    var date = moment(data.created_at).format('MMM D, h:mm A')
     $('.chat-box').append(`
       <div class="chat-bubble-wrapper">
         <div class="chat-bubble ${sender}">
           <div class="chat-username">${data.identifier}</div>
-          <div class="chat-message">${data.message}</p>
+          <div class="chat-message">${data.message}</div>
         </div>
+        <div class="timestamp ${sender}">${date}</div>
       </div>
     `);
   };

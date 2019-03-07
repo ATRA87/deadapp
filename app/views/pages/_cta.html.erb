@@ -1,0 +1,28 @@
+<div class="ctas-plus-logo">
+  <div class="ctas">
+    <div class="cta">
+      <h2 class="big-h2">Entrepreneurs</h2>
+      <p class="big-p"><span class="build bold">Build</span><span class="bold"> Find</span> your app</span></p>
+      <p class="big-p"><span class="bold">Customize</span> it <span class="bold">Scale</span></p>
+        <div class="search-container">
+          <form id="search" action="/search" method="get">
+            <input id="search-input" type="text" placeholder="Search for an app" name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+    </div>
+    <div class="cta">
+      <h2 class="big-h2">Devs</h2>
+      <p class="big-p"><span class="bold">Give</span> dead apps life</p>
+      <p class="big-p"><span class="bold">Post</span> your apps</p>
+      <p class="big-p"><span class="bold">Sell</span> Customizations as a Service</p>
+      <div class="cta-post">
+        <%=  link_to "Post", new_project_path, class:"btn btn-special" %>
+      </div>
+    </div>
+  </div>
+  <div class='logo-wrapper'>
+    <div class="catas" style="background-image: url(<%= asset_url('Full_Logo.png') %>);">
+    </div>
+  </div>
+</div>
