@@ -19,9 +19,19 @@
       data-user_id="<%= @user.id %>"
       data-current_user="<%= current_user.id %>"
     >
+    <% if @chats.empty? %>
+      <div class="chat-bubble-wrapper">
+        <div class="chat-bubble deadapp">
+          <div class="chat-username">App From The Dead</div>
+          <div class="chat-message">Hey! Just start typing to send any question about this project</div>
+        </div>
+        <div class="timestamp"><%= Time.now.strftime("%b %e, %l:%M %p") %> </div>
+      </div>
+    <% else %>  
       <% @chats.each do |chat| %>
-          <%= render 'message', chat: chat %>
+        <%= render 'message', chat: chat %>
       <% end %>
+    <% end %>
     </div>
 
     <%= form_with(model: [@project, @user, @chat], remote: true, format: :json, id: 'chat-form') do |form| %>
