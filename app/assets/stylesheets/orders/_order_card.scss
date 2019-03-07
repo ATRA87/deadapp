@@ -15,10 +15,28 @@
 
 .entire-order-card{
   display: flex;
+  margin-top: 0 !important;
 }
 
 @media only screen and (max-width: 600px) {
   .entire-order-card{
     flex-direction: column !important;
   }
+}
+
+.blank {
+  h4 {
+    margin-left: 90px;
+    color: $green;
+  }
+}
+
+.far {
+  color: $green;
+}
+
+.names h4 {
+  max-width: 200px;
+  overflow: hidden;
+  white-space: normal;
 }
