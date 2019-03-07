@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
 
+  get 'customizations/new'
+  get 'customizations/create'
+  get 'customizations/edit'
+  get 'customizations/update'
+  get 'customizations/delete'
   get 'reviews/new'
   get 'reviews/create'
   get 'authorizations/linkedin'

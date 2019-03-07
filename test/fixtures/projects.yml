@@ -15,7 +15,10 @@ cyclingapp:
   name: Custom Bike Navigation Map
   user: alfonso
   category: <%= Project::CATEGORIES[3] %>
-  description: "Use this app to let your customer plan their ride using a customized navigation app
+  color_scheme: true
+  font: true
+  button_shape: true
+  description: "Use this app to have your customer plan his ride using a customized navigation app
   with your store logo and colors"
 
 lavy:
