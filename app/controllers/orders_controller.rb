@@ -41,7 +41,7 @@ class OrdersController < ApplicationController
   end
 
   def order_params
-    params.require(:order).permit(:due_date, :amount, :client_state, :dev_state, :amount)
+    params.require(:order).permit(:due_date, :amount, :client_state, :dev_state, :amount, :color_scheme, :font, :button_shape, :social_log_in, :order_notes)
   end
 
   def project_params
