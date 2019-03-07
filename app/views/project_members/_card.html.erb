@@ -6,7 +6,7 @@
       <% imgSize = "small" %>
       <%= render 'shared/avatar_with_name', user: invitation.project.user, imgSize: imgSize %>
     </div>
-    <div class="project-info"> info
+    <div class="invitation-project-description"> <%= invitation.project.description %>
     </div>
     <% if invitation.pending? %>
       <div class="answer-buttons">
