@@ -75,6 +75,13 @@
   border-top: 1px solid #E6E6E6;
 }
 
+.navbar-search-container {
+  display: flex;
+  flex: 1 0 auto;
+  padding-left: 16px;
+  // display: inline-block;
+  // flex-grow: 1;
+}
 
 /* WHEN USER NOT LOGGED IN */
 
