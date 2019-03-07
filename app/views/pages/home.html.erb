@@ -2,45 +2,16 @@
   <%= render "shared/navbar" %>
 <% end %>
 <div class="container-fluid" id="banner-landing">
-
-<div class="ctas">
-  <div class="cta">
-    <h2 class="big-h2">Entrepreneurs</h2>
-    <p class="big-p"><span class="build bold">Build</span><span class="bold"> Find</span> your app</span></p>
-    <p class="big-p"><span class="bold">Customize</span> it <span class="bold">Scale</span></p>
-    <div class="cta-search">SEARCH BAR HERE</div>
-  </div>
-  <div class="cta">
-    <h2 class="big-h2">Devs</h2>
-    <p class="big-p"><span class="bold">Give</span> dead apps life</p>
-    <p class="big-p"><span class="bold">Post</span> your apps</p>
-    <p class="big-p"><span class="bold">Sell</span> Customizations as a Service</p>
-    <div class="cta-post">
-      <%=  link_to "Post", new_project_path, class:"btn btn-danger btn-special" %>
-    </div>
-  </div>
-</div>
-<div class='logo-wrapper'>
-  <div class="catas" style="background-image: url(<%= asset_url('Full_Logo.png') %>);">
-  </div>
-</div>
-
-  <div class="row mobile-margin">
-    <div id="addition">
-      <div id="new-additions" style="background-image: url(<%= asset_url('Newest_Additions.png') %>);">
-      </div>
-    </div>
-    <div class="col-md-10 col-md-offset-1 ">
-
-  </div>
-      <% @projects.each do |project| %>
-        <div class="col-xs-12 col-md-6 card-wrapper">
-          <%= link_to project_path(project) do %>
-          <%= render 'projects/card_link', project: project %>
-          <% end %>
-        </div>
+  <% if !user_signed_in? %>
+    <%= render "pages/cta" %>
+  <% else %>
+    <h1 class='text-center' style="padding-bottom: 30px; margin-top: 100px;">Find your App</h1>
+  <% end %>
+  <% @projects.each do |project| %>
+    <div class="col-xs-12 col-md-6">
+      <%= link_to project_path(project) do %>
+        <%= render 'projects/card_link', project: project %>
       <% end %>
     </div>
-  </div>
+  <% end %>
 </div>
-

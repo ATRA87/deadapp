@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
   before_action :set_project, only: [:show, :edit, :update, :primary_photo]
-  skip_before_action :authenticate_user!, only: [:index, :show]
+  skip_before_action :authenticate_user!, only: [:index, :show, :search]
 
   def new
     @project = Project.new
@@ -32,6 +32,11 @@ class ProjectsController < ApplicationController
 
   def index
     @projects = policy_scope(Project).order(created_at: :desc)
+  end
+
+  def search
+    @projects = policy_scope(Project).search_by_name_and_description(params[:search])
+    authorize @projects
   end
 
   def show
@@ -95,7 +100,7 @@ class ProjectsController < ApplicationController
   private
 
   def project_params
-    params.require(:project).permit(:name, :description, :category, :user_ids)
+    params.require(:project).permit(:name, :description, :category, :user_ids, :color_scheme, :font, :button_shape, :social_log_in)
   end
 
   def set_project

@@ -17,6 +17,10 @@
       margin: 0;
       margin-right: 10px;
       font-size: 24px;
+      max-width: 250px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
   .project-and-back a{
@@ -54,6 +58,13 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    .timestamp {
+      display: flex;
+      margin-top: 0.5em;
+      &.me {
+        justify-content: flex-end;
+      }
+    }
     .chat-bubble {
       min-width: 10em;
       max-width: 70%;
@@ -62,12 +73,15 @@
       border-radius: 5px;
       padding: 0.5em;
       box-shadow: 4px 7px 8px -11px #000000;
-
+      &.deadapp {
+        background-color: goldenrod;
+      }
       &.me {
         background-color: #dcf8c6;
         align-self: flex-end;
       }
       &.him {
+        align-self: flex-start;
         background-color: #f4f4f4;
       }
       .chat-username {
@@ -91,4 +105,33 @@
 #message {
   border-radius: 0 0 9px 9px;
   border: none;
+  margin: 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .chat-header {
+    .chat-project-name {
+      display: none;
+    }
+    .btn-and-name{
+      flex-direction: column-reverse;
+      align-text: right;
+    }
+    .back-to-project-btn{
+      font-size: 16px;
+    }
+    .user-info {
+      margin: 0 5px;
+      p {
+        font-size: 16px;
+      }
+    }
+    .btn {
+      padding: 2px 3px;
+      p {
+        font-size: 32px;
+      }
+    }
+  }
 }

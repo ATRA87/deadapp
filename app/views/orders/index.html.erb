@@ -1,5 +1,5 @@
 <div class="container top-margin">
-  <ul class="list-inline">
+  <ul class="orders-index-tab list-inline">
     <li class="active"><a data-toggle="tab" href="#my_orders"><h1 class="text-center order-title">My orders</h1></a></li>
     <li><a data-toggle="tab" href="#project_orders"><h1 class="text-center order-title">Project orders</h1></a></li>
   </ul>
@@ -13,7 +13,9 @@
           <% end %>
         </div>
       <% else %>
-        <p>You haven't made any orders yet.</p>
+        <div class="horizontal-card entire-order-card blank no-order-message-container">
+          <h4 id="no-order-message">You haven't made any orders yet.</h4>
+        </div>
       <% end %>
       <% unless @orders_history.empty? %>
         <h1 class="order-title">History</h1>
@@ -33,7 +35,13 @@
           <% end %>
         </div>
       <% else %>
-        <p>None of your projects have any pending order.</p>
+      <div class="container">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+          <div class="horizontal-card entire-order-card blank">
+            <h4>None of your projects have any pending orders.</h4>
+          </div>
+        </div>
+      </div>
       <% end %>
       <% unless @my_projects_orders_history.empty? %>
         <h1 class="order-title">History</h1>
@@ -43,7 +51,6 @@
           <% end %>
         </div>
       <% end %>
-    </div>
     </div>
   </div>
 </div>

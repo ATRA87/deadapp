@@ -2,6 +2,11 @@
 <%= f.input :name, label: "Project name" %>
 <%= f.input :description, label: "Project description" %>
 <%= f.input :category, collection: Project::CATEGORIES %>
+<%= f.label "Customization options:" %>
+<%= f.input :color_scheme, label: " Color scheme", boolean_style: :inline %>
+<%= f.input :font, label: " Font", boolean_style: :inline %>
+<%= f.input :button_shape, label: " Button shape", boolean_style: :inline %>
+<%= f.input :social_log_in, label: " Log in with social media", boolean_style: :inline %>
 
 <div class="form-group select optional project_users" id="members">
   <label class="form-control-label select optional" for="project_user_ids">Team members</label>

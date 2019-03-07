@@ -2,13 +2,21 @@
 .cta {
   display: flex;
   flex-direction: column;
-  margin-top: 1em;
+
+}
+.main-wrapper {
+  height: calc(100vh - 70px);
+}
+.ctas-plus-logo {
+ height: calc(100vh - 70px);
+ margin: 0 20px 100px 20px;
 }
 
 .ctas {
   display: flex;
   justify-content: space-around;
   margin-top: 9em;
+
 }
 
 .cta-post {
@@ -38,9 +46,9 @@
 }
 
 
-.more-margin {
-  margin-top: 4em;
-}
+// .more-margin {
+//   margin-top: 4em;
+// }
 
 .bold {
   font-weight: bold;
@@ -84,6 +92,9 @@
   margin-bottom: 1em;
   margin-top: 1em;
 }
+.billnewclass {
+  padding-bottom: 40px;
+}
 
 @media only screen and (max-width: 600px) {
   .ctas {
@@ -105,8 +116,40 @@
   .card-wrapper {
     margin-bottom: 10px !important;
   }
+  .billnewclass {
+    padding-bottom: 0px;
+  }
 }
 
+#search {
+  border-radius: 20px;
+  background-color: white;
+  border: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  #search-input, button {
+    padding: 5px 0;
+    margin: 0 10px;
+    background-color: transparent;
+    border: none;
+  }
+  #search-input {
+    flex-grow:
+    1;
+  }
+  button {
+    margin: 0;
+    width: 50px;
+  }
+  #search-input:focus {
+    border: none;
+    outline: none;
+  }
+}
 
-
+@media only screen and (max-width: 600px) {
+  #banner-landing {
+    padding: 0;
+  }
+}
 

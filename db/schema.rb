@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_05_143819) do
+ActiveRecord::Schema.define(version: 2019_03_07_133027) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,6 +31,8 @@ ActiveRecord::Schema.define(version: 2019_03_05_143819) do
   create_table "customizations", force: :cascade do |t|
     t.bigint "project_id"
     t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["project_id"], name: "index_customizations_on_project_id"
   end
 
@@ -47,13 +49,17 @@ ActiveRecord::Schema.define(version: 2019_03_05_143819) do
     t.bigint "project_id"
     t.integer "dev_state", default: 0
     t.integer "client_state", default: 0
-    t.integer "estimated_time", default: 0
     t.date "due_date"
     t.integer "amount_cents", default: 0, null: false
     t.string "amount_currency", default: "USD", null: false
     t.json "payment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "color_scheme"
+    t.boolean "font"
+    t.boolean "button_shape"
+    t.boolean "social_log_in"
+    t.text "order_notes"
     t.index ["project_id"], name: "index_orders_on_project_id"
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
@@ -86,6 +92,10 @@ ActiveRecord::Schema.define(version: 2019_03_05_143819) do
     t.string "description"
     t.string "category"
     t.integer "price_cents", default: 0, null: false
+    t.boolean "color_scheme", default: false
+    t.boolean "font", default: false
+    t.boolean "button_shape", default: false
+    t.boolean "social_log_in", default: false
     t.index ["user_id"], name: "index_projects_on_user_id"
   end
 

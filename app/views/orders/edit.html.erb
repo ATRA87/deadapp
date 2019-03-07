@@ -1,10 +1,15 @@
-<div class="container form-wrapper" >
-  <h1>Edit order</h1>
+<div class="container form-wrapper top-margin" >
   <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+    <h1 class="order-form-header">Edit Order Form</h1>
     <div class="form-box">
       <% classes = "project-photo" %>
       <%= render 'shared/project_photo', project: @order.project, classes: classes  %>
-      <%= render 'form', project: @project, order: @order %>
+      <ul id="order-form-list">
+        <li><span class="bold">Project name:</span> <%= @order.project.name %></li>
+        <li><span class="bold">Client:</span> <%= current_user.full_name %></li>
+        <li><span class="bold">Developer:</span> <%= @order.project.user.full_name %></li>
+      </ul>
+      <%= render 'form_edit', project: @project, order: @order %>
     </div>
   </div>
 </div>

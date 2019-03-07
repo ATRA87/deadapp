@@ -82,7 +82,8 @@
 }
 
 .project-info {
-  margin-left: 20px;
+  margin-left: 30px;
+  flex-grow: 1;
   .user-info {
     display: flex;
     margin-bottom: 30px;
@@ -99,7 +100,7 @@
 
 .project-description {
   padding-bottom: 25px;
-  margin: 20px;
+  margin: 0px;
   font-weight: lighter;
   color: #555;
   position: relative;
@@ -371,6 +372,7 @@
   }
   .ratings {
     padding-bottom: 10px;
+
   }
   .review .content {
     margin-right: 0;

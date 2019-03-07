@@ -115,6 +115,8 @@ GEM
     mini_mime (1.0.1)
     mini_portile2 (2.4.0)
     minitest (5.11.3)
+    momentjs-rails (2.20.1)
+      railties (>= 3.1)
     monetize (1.9.1)
       money (~> 6.12)
     money (6.13.2)
@@ -150,6 +152,9 @@ GEM
       omniauth (~> 1.9)
     orm_adapter (0.5.0)
     pg (0.21.0)
+    pg_search (2.1.4)
+      activerecord (>= 4.2)
+      activesupport (>= 4.2)
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -273,9 +278,11 @@ DEPENDENCIES
   font-awesome-sass (~> 5.5.0)
   jbuilder (~> 2.0)
   listen (~> 3.0.5)
+  momentjs-rails
   money-rails
   omniauth-linkedin-oauth2
   pg (~> 0.21)
+  pg_search
   pry-byebug
   pry-rails
   puma

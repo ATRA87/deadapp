@@ -8,6 +8,7 @@ gem 'pg', '~> 0.21'
 gem 'puma'
 gem 'rails', '5.2.2'
 gem 'redis'
+gem 'momentjs-rails'
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'
@@ -23,6 +24,7 @@ gem "pundit"
 gem 'stripe'
 gem 'money-rails'
 gem 'pusher'
+gem 'pg_search'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

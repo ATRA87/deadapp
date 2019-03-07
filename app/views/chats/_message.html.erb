@@ -5,4 +5,5 @@
     <div class="chat-username"><%= chat.sender.full_name %></div>
     <div class="chat-message"><%= chat.message %></div>
   </div>
+  <div class="timestamp <%= sender %>"><%= chat.created_at.strftime("%b %e, %l:%M %p") %></div>
 </div>

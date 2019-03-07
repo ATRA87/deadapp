@@ -10,6 +10,16 @@
     <%= image_tag "App_from_the_Dead_Teal.png", height: 50 %>
     <% end %>
 
+    <!-- Search -->
+    <% if user_signed_in? %>
+      <div class="navbar-search-container">
+        <form id="search" action="/search" method="get">
+          <input id="search-input" type="text" placeholder="Search for an app" name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    <% end %>
+
     <!-- Right Navigation -->
     <div class="navbar-wagon-right hidden-xs hidden-sm">
 
@@ -86,10 +96,20 @@
             <% else %>
           <li>
             <%= link_to root_path, class: "navbar-wagon-item navbar-wagon-link" do %>
-            <i class="fas fa-rocket"></i> Apps
+            <!-- <i class="fas fa-rocket"></i> --> Apps
             <% end %>
             </li>
+            <li>
+                <%= link_to new_user_registration_path, class: "navbar-wagon-item navbar-wagon-link navbar-logon" do %>
+        Sign Up <span class='bang-bang'>!</span>
+      <% end %>
+
+            </li>
           <% end %>
+          <li>
+
+      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link navbar-logon" %>
+          </li>
         </ul>
       </div>
     </div>

@@ -12,7 +12,7 @@
   background-color: white;
   border-radius: 9px;
   box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
-  margin: 10px 5px;
+  margin: 20px 5px;
   display: flex;
   flex-direction: column;
   color: black;
@@ -76,13 +76,16 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-bottom: 5px;
   }
 }
 
 .description {
   // padding: 10px 10px;
-  flex-grow: 1;
   // overflow: hidden;
+  height: 90px;
+  overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .owner-info {
@@ -115,6 +118,18 @@
   .btn-wrapper {
   justify-content: space-around;
   padding-right: 0px;
+  }
+  .title-rating {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10px;
+
+  }
+  .card-img {
+    height: 40%;
+  }
+  .card-info {
+    height: 60%;
   }
 }
 
