@@ -18,7 +18,7 @@
 
       <div class="project-info">
         <span><%= order.amount_currency %>$
-          <span class="green-bold"><%= order.amount_cents == 0 ? order.amount_cents/100 : " To be agreed" %>
+          <span class="green-bold"><%= order.amount_cents == 0 ? " To be agreed" : order.amount_cents/100 %>
           </span>
         </span>
         <br>
@@ -52,7 +52,7 @@
       <div class="state">
         <p><%= render 'shared/state_color', state: order.state %></p>
         <p class="invitation-date">Order created <br><%="#{order.created_at.to_date.strftime("%m/%d/%Y")}"%></p>
-      </div>  
+      </div>
     </div>
   </div>
 </div>
