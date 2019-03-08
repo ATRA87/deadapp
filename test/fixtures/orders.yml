@@ -3,459 +3,546 @@ deadapp_order_1:
   user: bill
   dev_state: 1
   client_state: 1
+  amount_cents: 50000
+  color_scheme: true
+  social_log_in: true
 
 deadapp_order_2:
   project: deadapp
   user: parsley
   dev_state: 1
   client_state: 1
+  amount_cents: 45000
+  color_scheme: true
 
 deadapp_order_3:
   project: deadapp
   user: sage
   dev_state: 1
   client_state: 1
+  amount_cents: 55000
+  color_scheme: true
+  button_shape: true
+  social_log_in: true
 
 deadapp_order_4:
   project: deadapp
   user: rosemary
   dev_state: 1
   client_state: 1
+  amount_cents: 60000
+  color_scheme: true
+  font: true
+  button_shape: true
+  social_log_in: true
 
 deadapp_order_5:
   project: deadapp
   user: thyme
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 deadapp_order_6:
   project: deadapp
   user: zombie
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 parkingapp_order_1:
   project: parkingapp
   user: bill
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 parkingapp_order_2:
   project: parkingapp
   user: parsley
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 parkingapp_order_3:
   project: parkingapp
   user: sage
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 parkingapp_order_4:
   project: parkingapp
   user: rosemary
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 parkingapp_order_5:
   project: parkingapp
   user: thyme
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 parkingapp_order_6:
   project: parkingapp
   user: zombie
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 cyclingapp_order_1:
   project: cyclingapp
   user: parsley
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 cyclingapp_order_2:
   project: cyclingapp
   user: sage
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 cyclingapp_order_3:
   project: cyclingapp
   user: rosemary
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 cyclingapp_order_4:
   project: cyclingapp
   user: thyme
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 cyclingapp_order_5:
   project: cyclingapp
   user: zombie
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 lavy_order_1:
   project: lavy
   user: parsley
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 lavy_order_2:
   project: lavy
   user: sage
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 lavy_order_3:
   project: lavy
   user: rosemary
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 lavy_order_4:
   project: lavy
   user: thyme
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 lavy_order_5:
   project: lavy
   user: zombie
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 miranda_order_1:
   project: miranda
   user: parsley
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 miranda_order_2:
   project: miranda
   user: sage
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 miranda_order_3:
   project: miranda
   user: rosemary
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 miranda_order_4:
   project: miranda
   user: thyme
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 miranda_order_5:
   project: miranda
   user: zombie
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 wasted_order_1:
   project: wasted
   user: parsley
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 wasted_order_2:
   project: wasted
   user: sage
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 wasted_order_3:
   project: wasted
   user: rosemary
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 wasted_order_4:
   project: wasted
   user: thyme
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 wasted_order_5:
   project: wasted
   user: zombie
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 makent_order_1:
   project: makent
   user: parsley
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 makent_order_2:
   project: makent
   user: sage
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 makent_order_3:
   project: makent
   user: rosemary
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 makent_order_4:
   project: makent
   user: thyme
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 makent_order_5:
   project: makent
   user: zombie
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 makent_cars_order_1:
   project: makent_cars
   user: parsley
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 makent_cars_order_2:
   project: makent_cars
   user: sage
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 makent_cars_order_3:
   project: makent_cars
   user: rosemary
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 makent_cars_order_4:
   project: makent_cars
   user: thyme
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 makent_cars_order_5:
   project: makent_cars
   user: zombie
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 makent_boats_order_1:
   project: makent_boats
   user: parsley
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 makent_boats_order_2:
   project: makent_boats
   user: sage
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 makent_boats_order_3:
   project: makent_boats
   user: rosemary
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 makent_boats_order_4:
   project: makent_boats
   user: thyme
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 makent_boats_order_5:
   project: makent_boats
   user: zombie
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 gofer_order_1:
   project: gofer
   user: parsley
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 gofer_order_2:
   project: gofer
   user: sage
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 gofer_order_3:
   project: gofer
   user: rosemary
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 gofer_order_4:
   project: gofer
   user: thyme
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 gofer_order_5:
   project: gofer
   user: zombie
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 spiffy_order_1:
   project: spiffy
   user: parsley
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 spiffy_order_2:
   project: spiffy
   user: sage
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 spiffy_order_3:
   project: spiffy
   user: rosemary
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 spiffy_order_4:
   project: spiffy
   user: thyme
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 spiffy_order_5:
   project: spiffy
   user: zombie
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 igniter_order_1:
   project: igniter
   user: parsley
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 igniter_order_2:
   project: igniter
   user: sage
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 igniter_order_3:
   project: igniter
   user: rosemary
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 igniter_order_4:
   project: igniter
   user: thyme
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 igniter_order_5:
   project: igniter
   user: zombie
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 ea_treat_order_1:
   project: ea_treat
   user: parsley
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 ea_treat_order_2:
   project: ea_treat
   user: sage
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 ea_treat_order_3:
   project: ea_treat
   user: rosemary
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 ea_treat_order_4:
   project: ea_treat
   user: thyme
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 ea_treat_order_5:
   project: ea_treat
   user: zombie
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 gofer_eats_order_1:
   project: gofer_eats
   user: parsley
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 gofer_eats_order_2:
   project: gofer_eats
   user: sage
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 gofer_eats_order_3:
   project: gofer_eats
   user: rosemary
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 gofer_eats_order_4:
   project: gofer_eats
   user: thyme
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 gofer_eats_order_5:
   project: gofer_eats
   user: zombie
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 pass_up_order_1:
   project: pass_up
   user: parsley
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 pass_up_order_2:
   project: pass_up
   user: sage
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 pass_up_order_3:
   project: pass_up
   user: rosemary
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 pass_up_order_4:
   project: pass_up
   user: thyme
   dev_state: 1
   client_state: 1
+  amount_cents:
 
 pass_up_order_5:
   project: pass_up
   user: zombie
   dev_state: 1
   client_state: 1
+  amount_cents:
