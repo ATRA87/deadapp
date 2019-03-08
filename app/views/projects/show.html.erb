@@ -91,7 +91,7 @@
       </div>
     <% end %>
 
-    <h2>Reviews <span>(<%= @project.reviews.count %>)</span></h2>
+    <h2 id="reviews-title">Reviews <span>(<%= @project.reviews.count %>)</span></h2>
     <% if @orders_by_user.first %>
       <%= render 'reviews/form', order: @orders_by_user.first, review: Review.new %>
     <% end %>
