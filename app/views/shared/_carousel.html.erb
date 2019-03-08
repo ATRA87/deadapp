@@ -10,7 +10,7 @@
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
-      <% if  project.project_assets.count != 0 %>
+      <% unless project.main_asset.photo.identifier.nil? %>
       <div class="item active">
         <div class="photo-wrapper">
           <img src="https://res.cloudinary.com/dy3nldgkf/<%= project.project_assets.first.photo.identifier %>">
