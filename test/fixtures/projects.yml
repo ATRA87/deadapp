@@ -1,23 +1,3 @@
-deadapp:
-  name: App From The Dead
-  user: mati
-  category: <%= Project::CATEGORIES[1] %>
-  color_scheme: true
-  font: true
-  button_shape: true
-  social_log_in: true
-  description: "Got a working app that's gathering dust at the back of your hard disk? Give it some
-  new life by showcasing it on our platform -- maybe it's the perfect app for someone!"
-
-parkingapp:
-  name: ParkingApp
-  user: meli
-  category: <%= Project::CATEGORIES[5] %>
-  color_scheme: true
-  font: true
-  button_shape: true
-  description: "Rent out your parking space while you're not using it"
-
 cyclingapp:
   name: Custom Bike Navigation Map
   user: alfonso
@@ -233,6 +213,32 @@ pass_up:
   quality letgo clone script is crafted with latest technologies & features. PassUp will be easy to
   customize and maintain."
 
+deadapp:
+  name: App From The Dead
+  user: mati
+  category: <%= Project::CATEGORIES[1] %>
+  color_scheme: true
+  font: true
+  button_shape: true
+  social_log_in: true
+  description: "Got a working app that's gathering dust at the back of your hard disk? Give it some
+  new life by showcasing it on our platform -- maybe it's the perfect app for someone!"
+
+parkingapp:
+  name: ParkingApp
+  user: meli
+  category: <%= Project::CATEGORIES[5] %>
+  color_scheme: true
+  font: true
+  button_shape: true
+  description: "ParkingShare connects people looking for parking with people who have parking to share.
+  Rent out your parking space while you're not using it. No more circling the block for parking. Now
+  you can simply reserve, arrive and live your life. Book parking weeks in advance or search for
+  available parking on demand. ParkingShare makes it easy for you to compare real-time
+  prices, user reviews and walk times to find the perfect space for you. When you use ParkingShare
+  to find parking, you can reserve exclusive spaces in advance, compare real-time prices, and extend
+  reservations right from the app. With the ParkingShare shared parking app, you can list a space in
+  minutes and reserve one even faster. Arrive happier!"
 
 
 
