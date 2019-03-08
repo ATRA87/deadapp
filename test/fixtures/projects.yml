@@ -231,6 +231,7 @@ parkingapp:
   color_scheme: true
   font: true
   button_shape: true
+  social_log_in: true
   description: "ParkingShare connects people looking for parking with people who have parking to share.
   Rent out your parking space while you're not using it. No more circling the block for parking. Now
   you can simply reserve, arrive and live your life. Book parking weeks in advance or search for
