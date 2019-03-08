@@ -1,40 +1,48 @@
 
 <div class="horizontal-card entire-order-card">
 
-  <div class="card-segment-names">
-    <% classes = "small" %>
-    <%= render 'shared/project_photo', project: order.project, classes: classes %>
-    <div class="names">
-      <h4><%= link_to order.project.name, project_path(order.project) %></h4>
-      <!-- order.project_onwer is the DEV -->
-      <% if order.project_owner?(current_user)%>
-      <%= render 'shared/avatar_with_name', user: order.user, imgSize: "small" %>
-      <% else %>
-      <%= render 'shared/avatar_with_name', user: order.project.user, imgSize: "small" %>
-      <% end %>
-    </div>
-  </div>
-  <div class="info-segment-wrapper">
+      <div class="card-segment-names">
+        <% classes = "small" %>
+        <%= render 'shared/project_photo', project: order.project, classes: classes %>
+        <div class="names">
+          <h4><%= link_to order.project.name, project_path(order.project) %></h4>
+          <!-- order.project_onwer is the DEV -->
+          <% if order.project_owner?(current_user)%>
+          <%= render 'shared/avatar_with_name', user: order.user, imgSize: "small" %>
+          <% else %>
+          <%= render 'shared/avatar_with_name', user: order.project.user, imgSize: "small" %>
+          <% end %>
+        </div>
+      </div>
+      <div class="info-segment-wrapper">
 
-    <div class="project-info">
-      <span><%= order.amount_currency %> $<%= order.amount_cents == 0 ? " To be agreed" : order.amount_cents/100 %></span>
-      <br><span> <span class="grey">Due by: </span><%= "#{order.due_date.to_datetime.strftime("%m/%d/%Y")}" unless order.due_date.nil? %></span>
-      <br><span>Standard Customizations:
-        <% if order.color_scheme || order.font || order.button_shape || order.social_log_in %>
-        <i class="far fa-check-circle"></i>
-        <% else %>
-        <i class="far fa-times-circle"></i>
-        <% end %>
-      </span>
-      <br><span>Premium Customizations:
-        <% if order.order_notes %>
-        <i class="far fa-check-circle"></i>
-        <% else %>
-        <i class="far fa-times-circle"></i>
-        <% end %>
-      </span>
-    </div>
-
+      <div class="project-info">
+        <span><%= order.amount_currency %>$
+          <span class="green-bold"><%= order.amount_cents == 0 ? order.amount_cents/100 : " To be agreed" %>
+          </span>
+        </span>
+        <br>
+        <span >Due by: </span>
+        <span class="green-bold"><%= "#{order.due_date.to_datetime.strftime("%m/%d/%Y")}" unless order.due_date.nil? %>
+        </span>
+        </span>
+        <br>
+        <span>Standard Customizations:
+          <% if order.color_scheme || order.font || order.button_shape || order.social_log_in %>
+            <i class="far fa-check-circle"></i>
+          <% else %>
+            <i class="far fa-times-circle"></i>
+          <% end %>
+        </span>
+        <br>
+        <span>Premium Customizations:
+          <% if order.order_notes %>
+            <i class="far fa-check-circle"></i>
+          <% else %>
+            <i class="far fa-times-circle"></i>
+          <% end %>
+        </span>
+      </div>
 
     <div class="card-segment">
       <div class="answer-buttons">
@@ -44,7 +52,7 @@
       <div class="state">
         <p><%= render 'shared/state_color', state: order.state %></p>
         <p class="invitation-date">Order created <br><%="#{order.created_at.to_date.strftime("%m/%d/%Y")}"%></p>
-      </div>
+      </div>  
     </div>
   </div>
 </div>
