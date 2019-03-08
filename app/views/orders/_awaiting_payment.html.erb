@@ -1,8 +1,8 @@
 <% if order.project_owner?(current_user) %>
   <%= link_to 'Edit', edit_order_path(order), class:"btn btn-primary" %>
 <% else %>
-  <%= link_to 'Pay', '#', id:"order-pay-btn", class:"btn btn-success" %>
-  <%= link_to 'Edit', edit_order_path(order), class:"btn btn-info" %>
+  <%= link_to 'Pay', '#', id:"order-pay-btn", class:"btn btn-primary" %>
+  <%= link_to 'Edit', edit_order_path(order), class:"btn btn-primary" %>
 
   <%= form_tag order_payments_path(order), class:"hidden" do %>
     <article>
