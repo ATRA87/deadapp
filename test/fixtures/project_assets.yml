@@ -6,6 +6,22 @@ parking_app_1:
   project: parkingapp
   photo: image/fetch/https://barcelona-home.com/blog/wp-content/upload/2017/06/parking.png
 
+parking_app_2:
+  project: parkingapp
+  photo: image/fetch/https://images.unsplash.com/photo-1493780758133-e5cfb0d00354
+
+parking_app_3:
+  project: parkingapp
+  photo: image/fetch/https://images.unsplash.com/photo-1522318548694-a0b65c40b0c6
+
+parking_app_4:
+  project: parkingapp
+  photo: image/fetch/https://images.unsplash.com/photo-1523362612182-052e9ff2c8da
+
+parking_app_4:
+  project: parkingapp
+  photo: image/fetch/https://res.cloudinary.com/nikoi4/image/upload/v1551219919/sahin-yesilyaprak-1207014-unsplash_1.jpg
+
 cycling_app_1:
   project: cyclingapp
   photo: image/upload/v1551894224/jff78ue9eca56fkunng1.jpg

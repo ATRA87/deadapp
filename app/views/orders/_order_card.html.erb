@@ -1,5 +1,5 @@
 
-    <div class="horizontal-card entire-order-card">
+<div class="horizontal-card entire-order-card">
 
       <div class="card-segment-names">
         <% classes = "small" %>
@@ -44,16 +44,16 @@
         </span>
       </div>
 
-
-      <div class="card-segment">
-        <div class="answer-buttons">
-          <%= render "orders/#{order.state}", order: order %>
-        </div>
-
-        <div class="state">
-          <p><%= render 'shared/state_color', state: order.state%></p>
-        </div>
+    <div class="card-segment">
+      <div class="answer-buttons">
+        <%= render "orders/#{order.state}", order: order %>
       </div>
-      </div>
+
+      <div class="state">
+        <p><%= render 'shared/state_color', state: order.state %></p>
+        <p class="invitation-date">Order created <br><%="#{order.created_at.to_date.strftime("%m/%d/%Y")}"%></p>
+      </div>  
     </div>
+  </div>
+</div>
 
