@@ -225,7 +225,7 @@ deadapp:
   new life by showcasing it on our platform -- maybe it's the perfect app for someone!"
 
 parkingapp:
-  name: ParkingApp
+  name: ParkingShare
   user: meli
   category: <%= Project::CATEGORIES[5] %>
   color_scheme: true
