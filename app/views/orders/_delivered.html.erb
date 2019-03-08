@@ -1,4 +1,4 @@
 
 <% if !order.project_owner?(current_user) && !order.reviewed? %>
-  <%= link_to 'Review', "projects/#{order.project.id}/#reviews-container", class:"btn btn-primary" %>
+  <%= link_to 'Review', "projects/#{order.project.id}/#reviews-title", class:"btn btn-primary" %>
 <% end %>
