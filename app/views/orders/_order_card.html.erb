@@ -43,7 +43,7 @@
 
       <div class="state">
         <p><%= render 'shared/state_color', state: order.state %></p>
-        <p class="invitation-date">Since <br><%="#{order.created_at.to_date.strftime("%m/%d/%Y")}"%></p>
+        <p class="invitation-date">Order created <br><%="#{order.created_at.to_date.strftime("%m/%d/%Y")}"%></p>
       </div>
     </div>
   </div>
