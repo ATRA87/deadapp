@@ -9,7 +9,7 @@
 }
 .ctas-plus-logo {
  height: calc(100vh - 70px);
- margin: 0 20px 100px 20px;
+ margin: 0 20px 220px 20px;
 }
 
 .ctas {
@@ -36,8 +36,8 @@
   display: flex;
   justify-content: center;
   align-center: center;
-  margin-bottom: 8em;
-  margin-top: 3em;
+  margin-bottom: 4em;
+  margin-top: 2.7em;
 }
 
 .build {
@@ -101,6 +101,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 3em;
+    height: 80vh;
   }
   .big-h2 {
     font-size:50px !important;
@@ -118,6 +119,16 @@
   }
   .billnewclass {
     padding-bottom: 0px;
+  }
+  #banner-landing {
+    padding: 0;
+  }
+  .app-intro{
+    font-size: 50px !important;
+    margin-top: 2em;
+  }
+  .ctas-plus-logo{
+    margin: 0 20px 185px 20px;
   }
 }
 
@@ -145,11 +156,14 @@
     border: none;
     outline: none;
   }
+
 }
 
-@media only screen and (max-width: 600px) {
-  #banner-landing {
-    padding: 0;
-  }
+.app-intro{
+  font-family: Permanent Marker;
+  text-align: center;
+  color: #32B796;
+  font-size: 60px;
+  font-weight: bold;
 }
 
