@@ -6,6 +6,10 @@ parking_app_1:
   project: parkingapp
   photo: image/fetch/https://barcelona-home.com/blog/wp-content/upload/2017/06/parking.png
 
+parking_app_2:
+  project: parkingapp
+  photo: image/fetch/https://images.unsplash.com/photo-1493780758133-e5cfb0d00354%3Fixlib=rb-1.2.1%26ixid=eyJhcHBfaWQiOjEyMDd9
+
 cycling_app_1:
   project: cyclingapp
   photo: image/upload/v1551894224/jff78ue9eca56fkunng1.jpg
