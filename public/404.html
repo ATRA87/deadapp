@@ -23,200 +23,204 @@
     <![endif]-->
 
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <title>We're sorry, but something went wrong (500)</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>We're sorry, but something went wrong (500)</title>
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
 
 
- * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+    * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
 
-body {
-  padding: 0;
-  margin: 0;
-}
+    body {
+      padding: 0;
+      margin: 0;
+    }
 
-#notfound {
-  position: relative;
-  height: 100vh;
-  background: #35477D;
-}
+    #notfound {
+      position: relative;
+      height: 100vh;
+      background: #35477D;
+    }
 
-#notfound .notfound {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
+    #notfound .notfound {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
+      transform: translate(-50%, -50%);
+    }
 
-.notfound {
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  line-height: 1.4;
-  padding: 100px 40px -10px 40px;
-  text-align: center;
-  background: rgba(255,255,255,0.8);
-  -webkit-box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.1);
-          box-shadow:0 15px 100px 4px rgba(47, 184, 151);
-}
+    .notfound {
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      line-height: 1.4;
+      padding: 100px 40px -10px 40px;
+      text-align: center;
+      background: rgba(255,255,255,0.8);
+      -webkit-box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.1);
+      box-shadow:0 15px 100px 4px rgba(47, 184, 151);
+    }
 
-.notfound .notfound-404 {
-  margin: 60px 0px 50px 0px;
-  position: relative;
-  height: 180px;
-}
+    .notfound .notfound-404 {
+      margin: 60px 0px 50px 0px;
+      position: relative;
+      height: 180px;
+    }
 
-.notfound .notfound-404 h1 {
-  font-family: 'Roboto', sans-serif;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
+    .notfound .notfound-404 h1 {
+      font-family: 'Roboto', sans-serif;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 165px;
-  font-weight: 700;
-  margin: 0px;
-  color: #262626;
-  text-transform: uppercase;
-}
+      transform: translate(-50%, -50%);
+      font-size: 165px;
+      font-weight: 700;
+      margin: 0px;
+      color: #262626;
+      text-transform: uppercase;
+    }
 
-.notfound .notfound-404 h1>span {
-  color: #32B796;
-}
+    .notfound .notfound-404 h1>span {
+      color: #32B796;
+    }
 
-.notfound h2 {
-  font-family: Permanent marker;
-  font-size: 22px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #151515;
-  margin-top: 15px;
-  margin-bottom: 40px;
-}
+    .notfound h2 {
+      font-family: Permanent marker;
+      font-size: 22px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #151515;
+      margin-top: 15px;
+      margin-bottom: 40px;
+    }
 
-.notfound .notfound-search {
-  position: relative;
-  max-width: 320px;
-  width: 100%;
-  margin: auto;
-}
+    .notfound .notfound-search {
+      position: relative;
+      max-width: 320px;
+      width: 100%;
+      margin: auto;
+    }
 
-.notfound .notfound-search>input {
-  font-family: 'Roboto', sans-serif;
-  width: 100%;
-  height: 50px;
-  padding: 3px 65px 3px 30px;
-  color: #151515;
-  font-size: 16px;
-  background: transparent;
-  border: 2px solid #c5c5c5;
-  border-radius: 40px;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
-}
-
-
-
-@media only screen and (max-width: 767px) {
-  .notfound h2 {
-    font-size: 18px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .notfound .notfound-404 h1 {
-    font-size: 141px;
-  }
-}
+    .notfound .notfound-search>input {
+      font-family: 'Roboto', sans-serif;
+      width: 100%;
+      height: 50px;
+      padding: 3px 65px 3px 30px;
+      color: #151515;
+      font-size: 16px;
+      background: transparent;
+      border: 2px solid #c5c5c5;
+      border-radius: 40px;
+      -webkit-transition: 0.2s all;
+      transition: 0.2s all;
+    }
 
 
-a:hover{
-  text-decoration: none !important;
-  opacity: 0.5
- }
+
+    @media only screen and (max-width: 767px) {
+      .notfound h2 {
+        font-size: 18px;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      .notfound .notfound-404 h1 {
+        font-size: 141px;
+      }
+    }
 
 
-.btn-special {
-    width: 10%;
-    color: white;
-    border-radius: 9px;
-    background-color: #2fb897 !important;
-    border: none;
-    margin-top: 30px;
-    padding: 10px 40px 10px;
-}
+    a:hover{
+      text-decoration: none !important;
+      opacity: 0.5
+    }
 
-.error-img{
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 30%;
-}
 
-.font-color {
-  font-family: Permanent marker;
-  color:#2fb897;
-  justify-content: center;
-}
+    .btn-special {
+      width: 10%;
+      color: white;
+      border-radius: 9px;
+      background-color: #2fb897 !important;
+      border: none;
+      margin-top: 30px;
+      padding: 10px 40px 10px;
+    }
 
-.navbar-wagon {
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: white;
-  transition: all 0.3s ease;
-  height: 70px;
-  padding: 0px 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-top-color: #35477D;
-  border-top-width: 2.5px;
-  border-top-style: solid;
-  font-family: roboto;
-}
+    .error-img{
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 30%;
+    }
+
+    .font-color {
+      font-family: Permanent marker;
+      color:#2fb897;
+      justify-content: center;
+    }
+
+    .navbar-wagon {
+      box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+      background: white;
+      transition: all 0.3s ease;
+      height: 70px;
+      padding: 0px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top-color: #35477D;
+      border-top-width: 2.5px;
+      border-top-style: solid;
+      font-family: roboto;
+    }
 
 
   </style>
 </head>
-  <body>
-    <div class="navbar-wagon">
-      <div>
-        <img height="50" src="/assets/App_from_the_Dead_Teal-f5a30e5cd08a74a0438817a8fc8738bc44f0d889fb18b8c6342a7c5835cae764.png">
-        </div>
-        <div>
-         <a style="color: #32B796;
-      font-size: 18px;
-      font-weight: bold !important;" href="http://www.appfromthedead.com/projects/mine">Projects</a>
-        </div>
-         </div>
-          <div id="notfound">
-          <div class="notfound">
-          <div class="notfound-404">
-            <h1>4<span>0</span>4</h1>
-          </div>
-            <div>
-              <h2>the page you requested could not found</h2>
-            </div>
-              <div>
-                 <a class="btn-special" class="btn btn-danger" href="http://www.appfromthedead.com/">Back to Home</a>
-              </div>
-              <div>
-               <img class="error-img" src="/assets/graveyard.png">
-            </div>
-        </div>
-      </div>
+<body>
+  <div class="navbar-wagon">
+    <div>
+      <img src="https://res.cloudinary.com/dy3nldgkf/image/upload/v1552058839/App_from_the_Dead_Teal.png" height="50" alt="">
+        <!-- App_from_the_Dead_Teal-f5a30e5cd08a74a0438817a8fc8738bc44f0d889fb18b8c6342a7c5835cae764.png -->
+    </div>
+    <div>
+     <a style="color: #32B796;
+     font-size: 18px;
+     font-weight: bold !important;" href="http://www.appfromthedead.com/projects/mine">Projects</a>
+   </div>
+ </div>
+ <div id="notfound">
+  <div class="notfound">
+    <div class="notfound-404">
+      <h1>4<span>0</span>4</h1>
+    </div>
+    <div>
+      <h2>the page you requested could not found</h2>
+    </div>
+    <div>
+     <a class="btn-special" class="btn btn-danger" href="http://www.appfromthedead.com/">Back to Home</a>
+   </div>
+   <div>
+     <img class="error-img" src="https://res.cloudinary.com/dy3nldgkf/image/upload/v1552058867/graveyard.png">
+   </div>
+ </div>
+</div>
 
-  </body>
+</body>
 </div>
